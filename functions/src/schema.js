@@ -108,7 +108,7 @@ const conditionType = new GraphQLObjectType({
       type: GraphQLString
     },
     text: {
-      type: GraphQLString
+      type: GraphQLList(GraphQLString)
     },
     source: {
       type: GraphQLString
