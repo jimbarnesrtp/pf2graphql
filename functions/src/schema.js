@@ -275,7 +275,7 @@ const queryType =  new GraphQLObjectType({
       }
     },
     condition: {
-      type: monsterType,
+      type: conditionType,
       args: {
         name: { type: GraphQLString }
       },
