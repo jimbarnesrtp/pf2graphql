@@ -128,7 +128,7 @@ const monsterType =  new GraphQLObjectType({
     link: {
       type: GraphQLString
     },
-    famiyl: {
+    family: {
       type: GraphQLString
     },
     level: {
