@@ -1,10 +1,59 @@
 const spelllist = require('./spells.js')
 const monList = require('./monsters.js')
 const conList = require('./conditions.js')
+const traitList = require('./traits.js')
+const featList = require('./feats.js')
 const graphql = require('graphql')
+
 const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLList, GraphQLInt } = graphql
 
+const traitType = new GraphQLObjectType({
+  name: 'Trait',
+  fields: {
+    name: {
+      type: GraphQLString
+    },
+    type: {
+      type: GraphQLString
+    },
+    link: {
+      type: GraphQLString
+    },
+    text: {
+      type: GraphQLString
+    },
+    source: {
+      type: GraphQLString
+    }
+  }
+})
 
+const featType = new GraphQLObjectType({
+  name: 'Feat',
+  fields: {
+    name: {
+      type: GraphQLString
+    },
+    level: {
+      type: GraphQLInt
+    },
+    traits: {
+      type: GraphQLList(GraphQLString)
+    },
+    link: {
+      type: GraphQLString
+    },
+    prereq: {
+      type: GraphQLString
+    },
+    benefits: {
+      type: GraphQLString
+    },
+    text: {
+      type: GraphQLList(GraphQLString)
+    }
+  }
+})
 const spellType =  new GraphQLObjectType({
   name: 'Spell',
   fields: {
@@ -12,10 +61,10 @@ const spellType =  new GraphQLObjectType({
       type: GraphQLString
     },
     level: {
-      type: GraphQLString
+      type: GraphQLInt
     },
     spellText: {
-      type: GraphQLList(GraphQLString)
+      type: GraphQLString
     },
     tradition: {
       type: GraphQLList(GraphQLString)
@@ -132,7 +181,7 @@ const monsterType =  new GraphQLObjectType({
       type: GraphQLString
     },
     level: {
-      type: GraphQLString
+      type: GraphQLInt
     },
     alignment: {
       type: GraphQLString
@@ -244,6 +293,62 @@ const queryType =  new GraphQLObjectType({
       type: new GraphQLList(spellType),
       resolve: () => {
         return spelllist.spells
+      }
+    },
+    trait: {
+      type: traitType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return traitList.traits.filter(trait => {
+            return trait.name == name;
+        })[0]
+      }
+    },
+    traitSearch: {
+      type: new GraphQLList(traitType),
+      args: {
+        searchString: { type: GraphQLString }
+      },
+      resolve: (source, {searchString}) => {
+        return traitList.traits.filter(trait => {
+            return trait.name.startsWith(searchString);
+        })
+      }
+    },
+    traits: {
+      type: new GraphQLList(traitType),
+      resolve: () => {
+        return traitList.traits
+      }
+    },
+    feat: {
+      type: featType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return featList.feats.filter(feat => {
+            return feat.name == name;
+        })[0]
+      }
+    },
+    featearch: {
+      type: new GraphQLList(featType),
+      args: {
+        searchString: { type: GraphQLString }
+      },
+      resolve: (source, {searchString}) => {
+        return featList.feats.filter(feat => {
+            return feat.name.startsWith(searchString);
+        })
+      }
+    },
+    feats: {
+      type: new GraphQLList(featType),
+      resolve: () => {
+        return featList.feats
       }
     },
     monster: {
