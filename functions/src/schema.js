@@ -3,8 +3,8 @@ const monList = require('./monsters.js')
 const conList = require('./conditions.js')
 const traitList = require('./traits.js')
 const featList = require('./feats.js')
-const focusList = require('/focusspells.js')
-const ritualList = require('/rituals.js')
+const focusList = require('./focusspells.js')
+const ritualList = require('./rituals.js')
 const graphql = require('graphql')
 
 const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLList, GraphQLInt } = graphql
@@ -167,7 +167,7 @@ const ritualType =  new GraphQLObjectType({
       duration: {
         type: GraphQLString
       },
-      target: {
+      targets: {
         type: GraphQLString
       },
       cast: {
@@ -182,25 +182,25 @@ const ritualType =  new GraphQLObjectType({
       cost: {
         type: GraphQLString
       },
-      secondaryCasters: {
+      secondarycasters: {
         type: GraphQLInt
       },
-      primaryCheck: {
+      primarycheck: {
         type: GraphQLString
       },
-      secondaryChecks: {
+      secondarychecks: {
         type: GraphQLString
       },
-      criticalSuccess: {
+      criticalsuccess: {
         type: GraphQLString
       },
-      Success: {
+      success: {
         type: GraphQLString
       },
-      Failure: {
+      failure: {
         type: GraphQLString
       },
-      criticalFailure: {
+      criticaldailure: {
         type: GraphQLString
       },
       heightened5th: {
@@ -427,7 +427,7 @@ const queryType =  new GraphQLObjectType({
         name: { type: GraphQLString }
       },
       resolve: (source, {name}) => {
-        return focusList.spells.filter(spell => {
+        return focusList.spellList.filter(spell => {
             return spell.name == name;
         })[0]
       }
@@ -438,7 +438,7 @@ const queryType =  new GraphQLObjectType({
         searchString: { type: GraphQLString }
       },
       resolve: (source, {searchString}) => {
-        return focusList.spells.filter(spell => {
+        return focusList.spellList.filter(spell => {
             return spell.name.startsWith(searchString);
         })
       }
@@ -446,7 +446,7 @@ const queryType =  new GraphQLObjectType({
     focusSpells: {
       type: new GraphQLList(focusSpellType),
       resolve: () => {
-        return focusList.spells
+        return focusList.spellList
       }
     },
     ritual: {
