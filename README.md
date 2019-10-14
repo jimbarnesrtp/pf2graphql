@@ -5,12 +5,12 @@ It is hosted on firebase here [API link, will show graphiql](https://us-central1
 
 Items to be added
 * ~~Spells~~
-* Focus Spells
-* General Feats
-* Class Feats
-* Ancestry Feats
+* ~~Focus Spells~~
+* ~~General Feats~~
+* ~~Class Feats~~
+* ~~Ancestry Feats~~
 * Adventuring Gear
-* Monsters - I believe(Verified as much as the data I can)
+* ~~Monsters~~
 * Backgrounds
 * Armors
 * Alechemical Items
@@ -30,8 +30,8 @@ Items to be added
 * Conditions
 * Domains
 * Dieties
-* Rituals
-* Traits
+* ~~Rituals~~
+* ~~Traits~~
 
 
 

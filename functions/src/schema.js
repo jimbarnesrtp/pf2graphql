@@ -3,6 +3,8 @@ const monList = require('./monsters.js')
 const conList = require('./conditions.js')
 const traitList = require('./traits.js')
 const featList = require('./feats.js')
+const focusList = require('/focusspells.js')
+const ritualList = require('/rituals.js')
 const graphql = require('graphql')
 
 const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLList, GraphQLInt } = graphql
@@ -98,6 +100,130 @@ const spellType =  new GraphQLObjectType({
     }
   }
 })
+
+const focusSpellType =  new GraphQLObjectType({
+  name: 'FocusSpell',
+  fields: {
+    type: {
+      type: GraphQLString
+    },
+    level: {
+      type: GraphQLInt
+    },
+    name: {
+      type: GraphQLString
+    },
+    traits: {
+      type: GraphQLList(GraphQLString)
+    },
+    source: {
+      type: GraphQLString
+    },
+    range: {
+      type: GraphQLString
+    },
+    duration: {
+      type: GraphQLString
+    },
+    targets: {
+      type: GraphQLString
+    },
+    cast: {
+      type: GraphQLString
+    },
+    link: {
+      type: GraphQLString
+    },
+    area: {
+      type: GraphQLString
+    },
+    text: {
+      type: GraphQLString
+    }
+  }
+})
+
+const ritualType =  new GraphQLObjectType({
+    name: 'Ritual',
+    fields: {
+      name: {
+        type: GraphQLString
+      },
+      level: {
+        type: GraphQLInt
+      },
+      link: {
+        type: GraphQLString
+      },
+      traits: {
+        type: GraphQLList(GraphQLString)
+      },
+      source: {
+        type: GraphQLString
+      },
+      range: {
+        type: GraphQLString
+      },
+      duration: {
+        type: GraphQLString
+      },
+      target: {
+        type: GraphQLString
+      },
+      cast: {
+        type: GraphQLString
+      },
+      area: {
+        type: GraphQLString
+      },
+      text: {
+        type: GraphQLString
+      },
+      cost: {
+        type: GraphQLString
+      },
+      secondaryCasters: {
+        type: GraphQLInt
+      },
+      primaryCheck: {
+        type: GraphQLString
+      },
+      secondaryChecks: {
+        type: GraphQLString
+      },
+      criticalSuccess: {
+        type: GraphQLString
+      },
+      Success: {
+        type: GraphQLString
+      },
+      Failure: {
+        type: GraphQLString
+      },
+      criticalFailure: {
+        type: GraphQLString
+      },
+      heightened5th: {
+        type: GraphQLString
+      },
+      heightened6th: {
+        type: GraphQLString
+      },
+      heightened7th: {
+        type: GraphQLString
+      },
+      heightened8th: {
+        type: GraphQLString
+      },
+      heightened9th: {
+        type: GraphQLString
+      },
+      heightened10th: {
+        type: GraphQLString
+      }
+
+    }
+  })
 
 const monsSellType = new GraphQLObjectType({
   name: 'spells',
@@ -293,6 +419,62 @@ const queryType =  new GraphQLObjectType({
       type: new GraphQLList(spellType),
       resolve: () => {
         return spelllist.spells
+      }
+    },
+    focusSpell: {
+      type: focusSpellType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return focusList.spells.filter(spell => {
+            return spell.name == name;
+        })[0]
+      }
+    },
+    focusSpellSearch: {
+      type: new GraphQLList(focusSpellType),
+      args: {
+        searchString: { type: GraphQLString }
+      },
+      resolve: (source, {searchString}) => {
+        return focusList.spells.filter(spell => {
+            return spell.name.startsWith(searchString);
+        })
+      }
+    },
+    focusSpells: {
+      type: new GraphQLList(focusSpellType),
+      resolve: () => {
+        return focusList.spells
+      }
+    },
+    ritual: {
+      type: ritualType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return ritualList.rituals.filter(ritual => {
+            return ritual.name == name;
+        })[0]
+      }
+    },
+    ritualSearch: {
+      type: new GraphQLList(ritualType),
+      args: {
+        searchString: { type: GraphQLString }
+      },
+      resolve: (source, {searchString}) => {
+        return ritualList.rituals.filter(ritual => {
+            return ritual.name.startsWith(searchString);
+        })
+      }
+    },
+    rituals: {
+      type: new GraphQLList(ritualType),
+      resolve: () => {
+        return ritualList.rituals
       }
     },
     trait: {
