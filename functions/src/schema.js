@@ -5,6 +5,7 @@ const traitList = require('./traits.js')
 const featList = require('./feats.js')
 const focusList = require('./focusspells.js')
 const ritualList = require('./rituals.js')
+const advGear = require('./advgear.js')
 const graphql = require('graphql')
 
 const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLList, GraphQLInt } = graphql
@@ -27,6 +28,57 @@ const traitType = new GraphQLObjectType({
     source: {
       type: GraphQLString
     }
+  }
+})
+
+const gearType = new GraphQLObjectType({
+  name: "AdventuringGear",
+  fields: {
+    traits: {
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
+    },
+    name: {
+      type: GraphQLString
+    },
+    link: {
+      type: GraphQLString
+    },
+    text: {
+      type: GraphQLString
+    },
+    source: {
+      type: GraphQLString
+    },
+    price: {
+      type: GraphQLString
+    },
+    bulk: {
+      type: GraphQLString
+    },
+    level: {
+      type: GraphQLInt
+    },
+    actions: {
+      type: GraphQLString
+    },
+    activate: {
+      type: GraphQLString
+    },
+    frequency: {
+      type: GraphQLString
+    },
+    effect: {
+      type: GraphQLString
+    },
+    category: {
+      type: GraphQLString
+    },
+
   }
 })
 
@@ -72,7 +124,12 @@ const spellType =  new GraphQLObjectType({
       type: GraphQLList(GraphQLString)
     },
     traits: {
-      type: GraphQLList(GraphQLString)
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
     },
     source: {
       type: GraphQLString
@@ -114,7 +171,12 @@ const focusSpellType =  new GraphQLObjectType({
       type: GraphQLString
     },
     traits: {
-      type: GraphQLList(GraphQLString)
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
     },
     source: {
       type: GraphQLString
@@ -156,7 +218,12 @@ const ritualType =  new GraphQLObjectType({
         type: GraphQLString
       },
       traits: {
-        type: GraphQLList(GraphQLString)
+        type: new GraphQLList(traitType),
+        resolve(source,args){
+          return traitList.traits.filter(trait => {
+            return source.traits.includes(trait.name);
+        })
+        }
       },
       source: {
         type: GraphQLString
@@ -319,7 +386,12 @@ const monsterType =  new GraphQLObjectType({
       type: GraphQLString
     },
     traits: {
-      type: GraphQLList(GraphQLString)
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
     },
     recallKnowledge: {
       type: GraphQLString
@@ -516,7 +588,7 @@ const queryType =  new GraphQLObjectType({
         })[0]
       }
     },
-    featearch: {
+    featSearch: {
       type: new GraphQLList(featType),
       args: {
         searchString: { type: GraphQLString }
@@ -531,6 +603,34 @@ const queryType =  new GraphQLObjectType({
       type: new GraphQLList(featType),
       resolve: () => {
         return featList.feats
+      }
+    },
+    advGear: {
+      type: gearType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return advGear.itemList.filter(item => {
+            return item.name == name;
+        })[0]
+      }
+    },
+    advGearSearch: {
+      type: new GraphQLList(gearType),
+      args: {
+        searchString: { type: GraphQLString }
+      },
+      resolve: (source, {searchString}) => {
+        return advGear.itemList.filter(item => {
+            return item.name.startsWith(searchString);
+        })
+      }
+    },
+    advGears: {
+      type: new GraphQLList(gearType),
+      resolve: () => {
+        return advGear.itemList
       }
     },
     monster: {
