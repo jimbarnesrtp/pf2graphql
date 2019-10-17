@@ -6,7 +6,9 @@ const featList = require('./feats.js')
 const focusList = require('./focusspells.js')
 const ritualList = require('./rituals.js')
 const advGear = require('./advgear.js')
+const armors = require('./armors.js')
 const graphql = require('graphql')
+
 
 const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLList, GraphQLInt } = graphql
 
@@ -358,7 +360,165 @@ const conditionType = new GraphQLObjectType({
   }
 })
 
+const armorType = new GraphQLObjectType({
+  name: 'armor',
+  fields: {
+    name: {
+      type: GraphQLString
+    },
+    category: {
+      type: GraphQLString
+    },
+    armorCategory: {
+      type: GraphQLString
+    },
+    link: {
+      type: GraphQLString
+    },
+    level: {
+      type: GraphQLInt
+    },
+    price: {
+      type: GraphQLString
+    },
+    acBonus: {
+      type: GraphQLString
+    },
+    dexCap: {
+      type: GraphQLString
+    },
+    checkPenalty: {
+      type: GraphQLString
+    },
+    speedPenalty: {
+      type: GraphQLString
+    },
+    strength: {
+      type: GraphQLString
+    },
+    bulk: {
+      type: GraphQLString
+    },
+    group: {
+      type: GraphQLString
+    },
+    traits: {
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
+    },
+    text: {
+      type: GraphQLString
+    }
+    
+  }
+})
 
+const magicArmorType = new GraphQLObjectType({
+  name: 'MagicArmor',
+  fields: {
+    name: {
+      type: GraphQLString
+    },
+    category: {
+      type: GraphQLString
+    },
+    link: {
+      type: GraphQLString
+    },
+    level: {
+      type: GraphQLInt
+    },
+    price: {
+      type: GraphQLString
+    },
+    traits: {
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
+    },
+    text: {
+      type: GraphQLString
+    }
+  }
+})
+
+const namedMagicArmorType = new GraphQLObjectType({
+  name: 'NamedMagicArmor',
+  fields: {
+    name: {
+      type: GraphQLString
+    },
+    category: {
+      type: GraphQLString
+    },
+    link: {
+      type: GraphQLString
+    },
+    level: {
+      type: GraphQLInt
+    },
+    price: {
+      type: GraphQLString
+    },
+    traits: {
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
+    },
+    text: {
+      type: GraphQLString
+    },
+    bulk: {
+      type: GraphQLString
+    },
+    source: {
+      type: GraphQLString
+    },
+    usage: {
+      type: GraphQLString
+    }
+  }
+})
+
+
+const materialArmorType = new GraphQLObjectType({
+  name: 'ArmorMaterial',
+  fields: {
+    name: {
+      type: GraphQLString
+    },
+    level: {
+      type: GraphQLInt
+    },
+    price: {
+      type: GraphQLString
+    },
+    traits: {
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
+    },
+    craftrequirements: {
+      type: GraphQLString
+    },
+    price: {
+      type: GraphQLString
+    }
+  }
+})
 
 
 const monsterType =  new GraphQLObjectType({
@@ -677,10 +837,78 @@ const queryType =  new GraphQLObjectType({
       resolve: () => {
         return conList.conditions
       }
+    },
+    armor: {
+      type: armorType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return armors.armorList.filter(armor => {
+            return armor.name == name;
+        })[0]
+      }
+    },
+    armors: {
+      type: new GraphQLList(armorType),
+      resolve: () => {
+        return armors.armorList
+      }
+    },
+    magicArmor: {
+      type: magicArmorType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return armors.baseMagicArmor.filter(armor => {
+            return armor.name == name;
+        })[0]
+      }
+    },
+    magicArmors: {
+      type: new GraphQLList(magicArmorType),
+      resolve: () => {
+        return armors.baseMagicArmor
+      }
+    },
+    armorMaterial: {
+      type: materialArmorType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return armors.preciousMaterialArmor.filter(armor => {
+            return armor.name == name;
+        })[0]
+      }
+    },
+    armorMaterials: {
+      type: new GraphQLList(materialArmorType),
+      resolve: () => {
+        return armors.preciousMaterialArmor
+      }
+    },
+    specialArmor: {
+      type: namedMagicArmorType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return armors.magicArmorList.filter(armor => {
+            return armor.name == name;
+        })[0]
+      }
+    },
+    specialArmors: {
+      type: new GraphQLList(namedMagicArmorType),
+      resolve: () => {
+        return armors.magicArmorList
+      }
     }
   }
 })
-
+//namedMagicArmorType
 
 const schema = new GraphQLSchema({
   query: queryType
