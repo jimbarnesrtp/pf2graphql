@@ -22,7 +22,7 @@ Items to be added
 * Services
 * Shields
 * Snares 
-* Weapons
+* ~~Weapons~~
 * Staves
 * Structures
 * Wands
