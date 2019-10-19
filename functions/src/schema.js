@@ -8,6 +8,7 @@ const ritualList = require('./rituals.js')
 const advGear = require('./advgear.js')
 const armors = require('./armors.js')
 const weapons = require('./weapons.js')
+const shields = require('./shields.js')
 const graphql = require('graphql')
 
 
@@ -692,8 +693,6 @@ const baseMagicWeaponType = new GraphQLObjectType({
   }
 })
 
-//TODO specialmats finish into query
-
 const materialWeaponType = new GraphQLObjectType({
   name: 'WeaponMaterial',
   
@@ -736,7 +735,6 @@ const materialWeaponType = new GraphQLObjectType({
   }
 })
 
-//TODO magicweapons to query section
 
 const magicWeaponType = new GraphQLObjectType({
   name: 'MagicWeapon',
@@ -756,7 +754,6 @@ const magicWeaponType = new GraphQLObjectType({
     bulk: {
       type: GraphQLString
     },
-
     traits: {
       type: new GraphQLList(traitType),
       resolve(source,args){
@@ -810,6 +807,139 @@ const magicWeaponType = new GraphQLObjectType({
     
   }
 })
+// TODO add to query
+
+const shieldType = new GraphQLObjectType({
+  name: 'shield',
+  fields: {
+    name: {
+      type: GraphQLString
+    },
+    link: {
+      type: GraphQLString
+    },
+    price: {
+      type: GraphQLString
+    },
+    category: {
+      type: GraphQLString
+    },
+    bulk: {
+      type: GraphQLString
+    },
+    acBonus: {
+      type: GraphQLString
+    },
+    speedPenalty: {
+      type: GraphQLString
+    },
+    hardness: {
+      type: GraphQLInt
+    },
+    hp_bt: {
+      type: GraphQLString
+    },
+    text: {
+      type: GraphQLString
+    }
+  }
+})
+//TODO add to query
+
+const shieldMaterialType = new GraphQLObjectType({
+  name: 'shieldmaterial',
+  fields: {
+    name: {
+      type: GraphQLString
+    },
+    link: {
+      type: GraphQLString
+    },
+    source: {
+      type: GraphQLString
+    },
+    level: {
+      type: GraphQLInt
+    },
+    price: {
+      type: GraphQLString
+    },
+    bulke: {
+      type: GraphQLString
+    },
+    craftrequirements: {
+      type: GraphQLString
+    },
+    text: {
+      type: GraphQLString
+    },
+    traits: {
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
+    },
+    usage: {
+      type: GraphQLString
+    },
+    category: {
+      type: GraphQLString
+    }
+    
+  }
+})
+
+//TODO add to query
+/*    
+  
+
+  
+        "usage": "held in 1 hand;",
+        "bulk": "L",
+        "actions": "Reaction",
+        "activate": " command; ",
+        "frequency": " once per day; ",
+        "trigger": " You are targeted by a spell; ",
+        "requirements": " The  reflecting shield is raised; ",
+        "effect": " You attempt to reflect the spell on its caster, with the effects of a 9th-level  spell turning with a counteract modifier of +40.",
+        "craftrequirements": " Supply one casting of  spell turning, and the initial raw materials must include at least 2,750 gp of silver."
+    */
+const specificShieldType = new GraphQLObjectType({
+  name: 'specificshield',
+  fields: {
+    name: {
+      type: GraphQLString
+    },
+    link: {
+      type: GraphQLString
+    },
+    source: {
+      type: GraphQLString
+    },
+    text: {
+      type: GraphQLString
+    },
+    traits: {
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
+    },
+    price: {
+      type: GraphQLString
+    },
+    level: {
+      type: GraphQLInt
+    }
+    
+    
+  }
+})
+
 
 const monsterType =  new GraphQLObjectType({
   name: 'Monster',
@@ -1278,6 +1408,40 @@ const queryType =  new GraphQLObjectType({
         return weapons.baseMagicWeapons.filter(weap => {
             return weap.name.startsWith(searchString);
         })
+      }
+    }, // materialWeaponType
+    weaponMaterials: {
+      type: new GraphQLList(materialWeaponType),
+      resolve: () => {
+        return weapons.specialMats
+      }
+    },
+    weaponMaterial: {
+      type: materialWeaponType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return weapons.specialMats.filter(weap => {
+            return weap.name == name;
+        })[0]
+      }
+    }, //magicWeaponType
+    magicWeaponss: {
+      type: new GraphQLList(magicWeaponType),
+      resolve: () => {
+        return weapons.magicWeapons
+      }
+    },
+    magicWeapon: {
+      type: magicWeaponType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return weapons.magicWeapons.filter(weap => {
+            return weap.name == name;
+        })[0]
       }
     }
   }

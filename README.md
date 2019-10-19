@@ -20,7 +20,7 @@ Items to be added
 * Held Items
 * Runes
 * Services
-* Shields
+* ~~Shields~~
 * Snares 
 * ~~Weapons~~
 * Staves
