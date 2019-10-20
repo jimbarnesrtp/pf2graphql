@@ -15,7 +15,7 @@ Items to be added
 * ~~Monsters~~
 * Backgrounds
 * ~~Armors~~
-* Alechemical Items
+* ~~Alechemical Items~~
 * Consumables
 * Held Items
 * Runes

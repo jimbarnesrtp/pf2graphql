@@ -9,6 +9,7 @@ const advGear = require('./advgear.js')
 const armors = require('./armors.js')
 const weapons = require('./weapons.js')
 const shields = require('./shields.js')
+const alchy = require('./alchemicalitems.js')
 const graphql = require('graphql')
 
 
@@ -807,7 +808,6 @@ const magicWeaponType = new GraphQLObjectType({
     
   }
 })
-// TODO add to query
 
 const shieldType = new GraphQLObjectType({
   name: 'shield',
@@ -844,7 +844,6 @@ const shieldType = new GraphQLObjectType({
     }
   }
 })
-//TODO add to query
 
 const shieldMaterialType = new GraphQLObjectType({
   name: 'shieldmaterial',
@@ -891,21 +890,7 @@ const shieldMaterialType = new GraphQLObjectType({
   }
 })
 
-//TODO add to query
-/*    
-  
 
-  
-        "usage": "held in 1 hand;",
-        "bulk": "L",
-        "actions": "Reaction",
-        "activate": " command; ",
-        "frequency": " once per day; ",
-        "trigger": " You are targeted by a spell; ",
-        "requirements": " The  reflecting shield is raised; ",
-        "effect": " You attempt to reflect the spell on its caster, with the effects of a 9th-level  spell turning with a counteract modifier of +40.",
-        "craftrequirements": " Supply one casting of  spell turning, and the initial raw materials must include at least 2,750 gp of silver."
-    */
 const specificShieldType = new GraphQLObjectType({
   name: 'specificshield',
   fields: {
@@ -934,12 +919,102 @@ const specificShieldType = new GraphQLObjectType({
     },
     level: {
       type: GraphQLInt
+    },
+    usage: {
+      type: GraphQLString
+    },
+    bulk: {
+      type: GraphQLString
+    },
+    actions: {
+      type: GraphQLString
+    },
+    activate: {
+      type: GraphQLString
+    },
+    frequency: {
+      type: GraphQLString
+    },
+    trigger: {
+      type: GraphQLString
+    },
+    requirements: {
+      type: GraphQLString
+    },
+    effect: {
+      type: GraphQLString
+    },
+    craftrequirements: {
+      type: GraphQLString
     }
     
     
   }
 })
+// TODO add bombs, poisons, elixirs, and alchemical tools
 
+/*  
+
+** BOMB ** 
+"name": " Acid Flask (Moderate)",
+    "source": "Core Rulebook pg. 544",
+    "level": 3,
+    "price": "10 gp",
+    "text": "This flask filled with corrosive acid deals 1 acid damage, the listed persistent acid damage, and the listed acid splash damage. Many types grant an item bonus to attack rolls. You gain a +1 item bonus to attack rolls. The bomb deals 2d6 persistent acid damage and 2 acid splash damage.",
+    "traits": ["Acid", "Alchemical", "Bomb", "Consumable", "Splash"],
+    "usage": "held in 1 hand;",
+    "bulk": "L",
+    "actions": "Single Action",
+    "activate": "Strike"
+
+** ELIXIR **
+"name": " Serene Mutagen (Major)",
+    "source": "Core Rulebook pg. 549",
+    "level": 17,
+    "price": "3,000 gp",
+    "traits": ["Alchemical", "Consumable", "Elixir", "Mutagen", "Polymorph"],
+    "usage": "held in 1 hand;",
+    "bulk": "L",
+    "benefit": "You gain an item bonus to Will saves and Perception, Medicine, Nature, Religion, and Survival checks. This bonus improves when you attempt Will saves against mental effects.",
+    "drawback": "You take a \u20131 penalty to attack rolls and save DCs of offensive spells, and a \u20131 penalty per damage die to all weapon, unarmed attack, and spell damage.",
+    "actions": "Single Action",
+    "activate": "Interact",
+    "text": "You gain inner serenity, focused on fine details and steeled against mental assaults, but you find violence off-putting. The bonus is +4, and the duration is 1 hour. When you roll a success on a Will save against a mental effect, you get a critical success instead, and your critical failures on Will saves against mental effects become failures instead."
+
+
+   ** POISON **
+    "name": "Brimstone Fumes",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=109",
+    "category": "poison",
+    "level": 16,
+    "price": " 1,500 gp",
+    "bulk": " L",
+    "traits": ["Alchemical", "Consumable", "Evil", "Inhaled", "Poison"],
+    "text": "Fumes from the forges of Hell drain health and strength alike. ",
+    "source": "Core Rulebook pg. 551",
+    "usage": " held in 1 hand; ",
+    "savingthrow": " DC 36 Fortitude; ",
+    "onset": "1 round; ",
+    "maximumduration": " 6 rounds; ",
+    "stage1": " 7d6 poison damage and enfeebled 1 (1\u00a0round); ",
+    "stage2": " 8d6 poison damage and enfeebled 2 (1\u00a0round); ",
+    "stage3": " 10d6 poison damage and enfeebled 3 (1\u00a0round)",
+    "actions": "Single Action",
+    "activate": " Interact"
+
+  ** TOOL **
+    "name": "Snake Oil",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=136",
+    "category": "tools",
+    "level": 1,
+    "price": " 2 gp",
+    "bulk": " L",
+    "traits": ["Alchemical", "Consumable"],
+    "text": "You can apply snake oil onto a wound or other outward symptom of an affliction or condition (such as sores from a disease or discoloration from a poison). For the next hour, the symptom disappears and the wounded or afflicted creature doesn\u2019t feel as if it still has the wound or affliction, though all effects remain. A creature can uncover the ruse by succeeding at a DC 17 Perception check, but only if it uses a Seek action to specifically examine the snake oil\u2019s effects.",
+    "source": "Core Rulebook pg. 554",
+    "usage": " held in 2 hands; ",
+    "actions": "Single Action",
+    "activate": " Interact"*/
 
 const monsterType =  new GraphQLObjectType({
   name: 'Monster',
@@ -1427,7 +1502,7 @@ const queryType =  new GraphQLObjectType({
         })[0]
       }
     }, //magicWeaponType
-    magicWeaponss: {
+    magicWeapons: {
       type: new GraphQLList(magicWeaponType),
       resolve: () => {
         return weapons.magicWeapons
@@ -1441,6 +1516,57 @@ const queryType =  new GraphQLObjectType({
       resolve: (source, {name}) => {
         return weapons.magicWeapons.filter(weap => {
             return weap.name == name;
+        })[0]
+      }
+    }, //shieldType
+    shields: {
+      type: new GraphQLList(shieldType),
+      resolve: () => {
+        return shields.baseShields
+      }
+    },
+    shield: {
+      type: shieldType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return shields.baseShields.filter(item => {
+            return item.name == name;
+        })[0]
+      }
+    }, //shieldMaterialType
+    shieldMaterials: {
+      type: new GraphQLList(shieldMaterialType),
+      resolve: () => {
+        return shields.specialMaterialShields
+      }
+    },
+    shieldMaterial: {
+      type: shieldMaterialType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return shields.specialMaterialShields.filter(item => {
+            return item.name == name;
+        })[0]
+      }
+    }, //specificShieldType
+    magicShields: {
+      type: new GraphQLList(specificShieldType),
+      resolve: () => {
+        return shields.specificShields
+      }
+    },
+    magicShield: {
+      type: specificShieldType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return shields.specificShields.filter(item => {
+            return item.name == name;
         })[0]
       }
     }
