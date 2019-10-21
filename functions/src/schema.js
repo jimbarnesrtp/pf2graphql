@@ -953,68 +953,205 @@ const specificShieldType = new GraphQLObjectType({
 })
 // TODO add bombs, poisons, elixirs, and alchemical tools
 
-/*  
+const bombType = new GraphQLObjectType({
+  name: 'bomb',
+  fields: {
+    name: {
+      type: GraphQLString
+    },
+    link: {
+      type: GraphQLString
+    },
+    source: {
+      type: GraphQLString
+    },
+    level: {
+      type: GraphQLInt
+    },
+    price: {
+      type: GraphQLString
+    },
+    text: {
+      type: GraphQLString
+    },
+    traits: {
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
+    },
+    usage: {
+      type: GraphQLString
+    },
+    bulk: {
+      type: GraphQLString
+    },
+    actions: {
+      type: GraphQLString
+    },
+    activate: {
+      type: GraphQLString
+    }
+  }
+})
 
-** BOMB ** 
-"name": " Acid Flask (Moderate)",
-    "source": "Core Rulebook pg. 544",
-    "level": 3,
-    "price": "10 gp",
-    "text": "This flask filled with corrosive acid deals 1 acid damage, the listed persistent acid damage, and the listed acid splash damage. Many types grant an item bonus to attack rolls. You gain a +1 item bonus to attack rolls. The bomb deals 2d6 persistent acid damage and 2 acid splash damage.",
-    "traits": ["Acid", "Alchemical", "Bomb", "Consumable", "Splash"],
-    "usage": "held in 1 hand;",
-    "bulk": "L",
-    "actions": "Single Action",
-    "activate": "Strike"
+const elixirType = new GraphQLObjectType({
+  name: 'elixir',
+  fields: {
+    name: {
+      type: GraphQLString
+    },
+    link: {
+      type: GraphQLString
+    },
+    source: {
+      type: GraphQLString
+    },
+    level: {
+      type: GraphQLInt
+    },
+    price: {
+      type: GraphQLString
+    },
+    text: {
+      type: GraphQLString
+    },
+    traits: {
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
+    },
+    usage: {
+      type: GraphQLString
+    },
+    bulk: {
+      type: GraphQLString
+    },
+    actions: {
+      type: GraphQLString
+    },
+    activate: {
+      type: GraphQLString
+    },
+    benefit: {
+      type: GraphQLString
+    },
+    drawback: {
+      type: GraphQLString
+    }
+  }
+})
 
-** ELIXIR **
-"name": " Serene Mutagen (Major)",
-    "source": "Core Rulebook pg. 549",
-    "level": 17,
-    "price": "3,000 gp",
-    "traits": ["Alchemical", "Consumable", "Elixir", "Mutagen", "Polymorph"],
-    "usage": "held in 1 hand;",
-    "bulk": "L",
-    "benefit": "You gain an item bonus to Will saves and Perception, Medicine, Nature, Religion, and Survival checks. This bonus improves when you attempt Will saves against mental effects.",
-    "drawback": "You take a \u20131 penalty to attack rolls and save DCs of offensive spells, and a \u20131 penalty per damage die to all weapon, unarmed attack, and spell damage.",
-    "actions": "Single Action",
-    "activate": "Interact",
-    "text": "You gain inner serenity, focused on fine details and steeled against mental assaults, but you find violence off-putting. The bonus is +4, and the duration is 1 hour. When you roll a success on a Will save against a mental effect, you get a critical success instead, and your critical failures on Will saves against mental effects become failures instead."
+const poisonType = new GraphQLObjectType({
+  name: 'poison',
+  fields: {
+    name: {
+      type: GraphQLString
+    },
+    link: {
+      type: GraphQLString
+    },
+    source: {
+      type: GraphQLString
+    },
+    level: {
+      type: GraphQLInt
+    },
+    price: {
+      type: GraphQLString
+    },
+    text: {
+      type: GraphQLString
+    },
+    traits: {
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
+    },
+    usage: {
+      type: GraphQLString
+    },
+    bulk: {
+      type: GraphQLString
+    },
+    actions: {
+      type: GraphQLString
+    },
+    activate: {
+      type: GraphQLString
+    },
+    savingthrow: {
+      type: GraphQLString
+    },
+    onset: {
+      type: GraphQLString
+    },
+    maximumduration: {
+      type: GraphQLString
+    },
+    stage1: {
+      type: GraphQLString
+    },
+    stage2: {
+      type: GraphQLString
+    },
+    stage3: {
+      type: GraphQLString
+    }
+  }
+})
 
-
-   ** POISON **
-    "name": "Brimstone Fumes",
-    "link": "https://2e.aonprd.com/Equipment.aspx?ID=109",
-    "category": "poison",
-    "level": 16,
-    "price": " 1,500 gp",
-    "bulk": " L",
-    "traits": ["Alchemical", "Consumable", "Evil", "Inhaled", "Poison"],
-    "text": "Fumes from the forges of Hell drain health and strength alike. ",
-    "source": "Core Rulebook pg. 551",
-    "usage": " held in 1 hand; ",
-    "savingthrow": " DC 36 Fortitude; ",
-    "onset": "1 round; ",
-    "maximumduration": " 6 rounds; ",
-    "stage1": " 7d6 poison damage and enfeebled 1 (1\u00a0round); ",
-    "stage2": " 8d6 poison damage and enfeebled 2 (1\u00a0round); ",
-    "stage3": " 10d6 poison damage and enfeebled 3 (1\u00a0round)",
-    "actions": "Single Action",
-    "activate": " Interact"
-
-  ** TOOL **
-    "name": "Snake Oil",
-    "link": "https://2e.aonprd.com/Equipment.aspx?ID=136",
-    "category": "tools",
-    "level": 1,
-    "price": " 2 gp",
-    "bulk": " L",
-    "traits": ["Alchemical", "Consumable"],
-    "text": "You can apply snake oil onto a wound or other outward symptom of an affliction or condition (such as sores from a disease or discoloration from a poison). For the next hour, the symptom disappears and the wounded or afflicted creature doesn\u2019t feel as if it still has the wound or affliction, though all effects remain. A creature can uncover the ruse by succeeding at a DC 17 Perception check, but only if it uses a Seek action to specifically examine the snake oil\u2019s effects.",
-    "source": "Core Rulebook pg. 554",
-    "usage": " held in 2 hands; ",
-    "actions": "Single Action",
-    "activate": " Interact"*/
+const toolType = new GraphQLObjectType({
+  name: 'tool',
+  fields: {
+    name: {
+      type: GraphQLString
+    },
+    link: {
+      type: GraphQLString
+    },
+    source: {
+      type: GraphQLString
+    },
+    level: {
+      type: GraphQLInt
+    },
+    price: {
+      type: GraphQLString
+    },
+    text: {
+      type: GraphQLString
+    },
+    traits: {
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
+    },
+    usage: {
+      type: GraphQLString
+    },
+    bulk: {
+      type: GraphQLString
+    },
+    actions: {
+      type: GraphQLString
+    },
+    activate: {
+      type: GraphQLString
+    }
+  }
+})
 
 const monsterType =  new GraphQLObjectType({
   name: 'Monster',
@@ -1569,10 +1706,78 @@ const queryType =  new GraphQLObjectType({
             return item.name == name;
         })[0]
       }
+    }, //bombType
+    bombs: {
+      type: new GraphQLList(bombType),
+      resolve: () => {
+        return alchy.bombs
+      }
+    },
+    bomb: {
+      type: bombType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return alchy.bombs.filter(item => {
+            return item.name == name;
+        })[0]
+      }
+    }, //elixirType
+    elixirs: {
+      type: new GraphQLList(elixirType),
+      resolve: () => {
+        return alchy.elixirs
+      }
+    },
+    elixir: {
+      type: elixirType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return alchy.elixir.filter(item => {
+            return item.name == name;
+        })[0]
+      }
+    }, //poisonType
+    poisons: {
+      type: new GraphQLList(poisonType),
+      resolve: () => {
+        return alchy.poisons
+      }
+    },
+    poison: {
+      type: poisonType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return alchy.poison.filter(item => {
+            return item.name == name;
+        })[0]
+      }
+    }, //toolType
+    alchTools: {
+      type: new GraphQLList(toolType),
+      resolve: () => {
+        return alchy.tools
+      }
+    },
+    alchTool: {
+      type: toolType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return alchy.tools.filter(item => {
+            return item.name == name;
+        })[0]
+      }
     }
   }
 })
-//namedMagicArmorType
+
 
 const schema = new GraphQLSchema({
   query: queryType

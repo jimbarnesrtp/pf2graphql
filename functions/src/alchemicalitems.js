@@ -2,6 +2,7 @@ const bombs = [{
     "source": "Core Rulebook pg. 544",
     "actions": "Single Action",
     "name": " Acid Flask (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=74",
     "level": 1,
     "price": "3 gp",
     "text": "This flask filled with corrosive acid deals 1 acid damage, the listed persistent acid damage, and the listed acid splash damage. Many types grant an item bonus to attack rolls. It deals 1d6 persistent acid damage and 1 acid splash damage.",
@@ -11,6 +12,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Acid Flask (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=74",
     "source": "Core Rulebook pg. 544",
     "level": 3,
     "price": "10 gp",
@@ -22,6 +24,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Acid Flask (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=74",
     "source": "Core Rulebook pg. 544",
     "level": 11,
     "price": "250 gp",
@@ -33,6 +36,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Acid Flask (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=74",
     "source": "Core Rulebook pg. 544",
     "level": 17,
     "price": "2,500 gp",
@@ -46,6 +50,7 @@ const bombs = [{
     "source": "Core Rulebook pg. 545",
     "actions": "Single Action",
     "name": " Alchemist's Fire (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=75",
     "level": 1,
     "price": "3 gp",
     "text": "Alchemist\u2019s fire is a combination of volatile liquids that ignite when exposed to air. Alchemist\u2019s fire deals the listed fire damage, persistent fire damage, and splash damage. Many types grant an item bonus to attack rolls. The bomb deals 1d8 fire damage, 1 persistent fire damage, and 1 fire splash damage.",
@@ -55,6 +60,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Alchemist's Fire (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=75",
     "source": "Core Rulebook pg. 545",
     "level": 3,
     "price": "10 gp",
@@ -66,6 +72,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Alchemist's Fire (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=75",
     "source": "Core Rulebook pg. 545",
     "level": 11,
     "price": "250 gp",
@@ -77,6 +84,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Alchemist's Fire (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=75",
     "source": "Core Rulebook pg. 545",
     "level": 17,
     "price": "2,500 gp",
@@ -90,6 +98,7 @@ const bombs = [{
     "source": "Core Rulebook pg. 545",
     "actions": "Single Action",
     "name": " Bottled Lightning (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=76",
     "level": 1,
     "price": "3 gp",
     "text": "Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals the listed electricity damage and electricity splash damage. On a hit, the target becomes flat-footed until the start of your next turn. Many types grant an item bonus to attack rolls. It deals 1d6 electricity damage and 1 electricity splash damage.",
@@ -99,6 +108,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Bottled Lightning (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=76",
     "source": "Core Rulebook pg. 545",
     "level": 3,
     "price": "10 gp",
@@ -110,6 +120,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Bottled Lightning (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=76",
     "source": "Core Rulebook pg. 545",
     "level": 11,
     "price": "250 gp",
@@ -121,6 +132,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Bottled Lightning (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=76",
     "source": "Core Rulebook pg. 545",
     "level": 17,
     "price": "2,500 gp",
@@ -134,6 +146,7 @@ const bombs = [{
     "source": "Core Rulebook pg. 545",
     "actions": "Single Action",
     "name": " Frost Vial (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=77",
     "level": 1,
     "price": "3 gp",
     "text": "The liquid reagents in this vial rapidly absorb heat when exposed to air. A frost vial deals the listed cold damage and cold splash damage. On a hit, the target takes a status penalty to its Speeds until the end of its next\u00a0turn. Many types of frost vial also grant an item bonus to attack rolls. The bomb deals 1d6 cold damage and 1 cold splash damage, and the target takes a \u20135-foot penalty.",
@@ -143,6 +156,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Frost Vial (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=77",
     "source": "Core Rulebook pg. 545",
     "level": 3,
     "price": "10 gp",
@@ -154,6 +168,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Frost Vial (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=77",
     "source": "Core Rulebook pg. 545",
     "level": 11,
     "price": "250 gp",
@@ -165,6 +180,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Frost Vial (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=77",
     "source": "Core Rulebook pg. 545",
     "level": 17,
     "price": "2,500 gp",
@@ -178,6 +194,7 @@ const bombs = [{
     "source": "Core Rulebook pg. 545",
     "actions": "Single Action",
     "name": " Tanglefoot Bag (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=78",
     "level": 1,
     "price": "3 gp",
     "text": "A tanglefoot bag is filled with sticky substances. When you hit a creature with a tanglefoot bag, that creature takes a status penalty to its Speeds for 1 minute. Many types of tanglefoot bag also grant an item bonus on attack rolls. On a critical hit, a creature in contact with a solid surface becomes stuck to the surface and immobilized for 1 round, and a creature flying via wings has its wings tangled, causing it to fall safely to the ground and become unable to Fly again for 1 round. Tanglefoot bags are not effective when used on a creature that is in water. The target can end any effects by Escaping or spending a total of 3 actions to carefully remove the sticky substances. These Interact actions don\u2019t have to be consecutive, and other creatures can provide the actions as well. The target takes a \u201310-foot penalty, and the Escape DC is 17.",
@@ -187,6 +204,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Tanglefoot Bag (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=78",
     "source": "Core Rulebook pg. 545",
     "level": 3,
     "price": "10 gp",
@@ -198,6 +216,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Tanglefoot Bag (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=78",
     "source": "Core Rulebook pg. 545",
     "level": 11,
     "price": "250 gp",
@@ -209,6 +228,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Tanglefoot Bag (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=78",
     "source": "Core Rulebook pg. 545",
     "level": 17,
     "price": "2,500 gp",
@@ -222,6 +242,7 @@ const bombs = [{
     "source": "Core Rulebook pg. 546",
     "actions": "Single Action",
     "name": " Thunderstone (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=79",
     "level": 1,
     "price": "3 gp",
     "text": "When this stone hits a creature or a hard surface, it explodes with a deafening bang. A thunderstone deals the listed sonic damage and sonic splash damage, and each creature within 10 feet of the space in which the stone exploded must succeed at a Fortitude saving throw with the listed DC or be deafened until the end of its next turn. Many types of thunderstone grant an item bonus to attack rolls. The bomb deals 1d4 sonic damage and 1 sonic splash damage, and the DC is 17.",
@@ -231,6 +252,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Thunderstone (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=79",
     "source": "Core Rulebook pg. 546",
     "level": 3,
     "price": "10 gp",
@@ -242,6 +264,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Thunderstone (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=79",
     "source": "Core Rulebook pg. 546",
     "level": 11,
     "price": "250 gp",
@@ -253,6 +276,7 @@ const bombs = [{
     "activate": "Strike"
 }, {
     "name": " Thunderstone (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=79",
     "source": "Core Rulebook pg. 546",
     "level": 17,
     "price": "2,500 gp",
@@ -267,6 +291,7 @@ const bombs = [{
 const elixirs = [{
     "source": "Core Rulebook pg. 546",
     "name": " Antidote (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=80",
     "level": 1,
     "price": "3 gp",
     "text": "An antidote protects you against toxins. Upon drinking an antidote, you gain an item bonus to Fortitude saving throws against poisons for 6 hours. You gain a +2 item bonus.",
@@ -277,6 +302,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Antidote (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=80",
     "source": "Core Rulebook pg. 546",
     "level": 6,
     "price": "35 gp",
@@ -288,6 +314,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Antidote (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=80",
     "source": "Core Rulebook pg. 546",
     "level": 10,
     "price": "160 gp",
@@ -299,6 +326,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Antidote (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=80",
     "source": "Core Rulebook pg. 546",
     "level": 14,
     "price": "675 gp",
@@ -311,6 +339,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 546",
     "name": " Antiplague (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=81",
     "level": 1,
     "price": "3 gp",
     "text": "Antiplague can fortify the body\u2019s defenses against diseases. Upon drinking an antiplague, you gain an item bonus to Fortitude saving throws against diseases for 24 hours; this applies to your daily save against a disease\u2019s progression. You gain a +2 item bonus.",
@@ -321,6 +350,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Antiplague (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=81",
     "source": "Core Rulebook pg. 546",
     "level": 6,
     "price": "35 gp",
@@ -332,6 +362,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Antiplague (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=81",
     "source": "Core Rulebook pg. 546",
     "level": 10,
     "price": "160 gp",
@@ -343,6 +374,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Antiplague (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=81",
     "source": "Core Rulebook pg. 546",
     "level": 14,
     "price": "675 gp",
@@ -355,6 +387,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 547",
     "name": " Cheetah's Elixir (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=86",
     "level": 1,
     "price": "3 gp",
     "text": "Enzymatic compounds in this elixir strengthen and excite the muscles in your legs. You gain a status bonus to your Speed for the listed duration. The bonus is +5 feet, and the duration is 1 minute.",
@@ -365,6 +398,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Cheetah's Elixir (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=86",
     "source": "Core Rulebook pg. 547",
     "level": 5,
     "price": "25 gp",
@@ -376,6 +410,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Cheetah's Elixir (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=86",
     "source": "Core Rulebook pg. 547",
     "level": 9,
     "price": "110 gp",
@@ -388,6 +423,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 548",
     "name": " Elixir of Life (Minor)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=91",
     "level": 1,
     "price": "3 gp",
     "text": "Elixirs of life accelerate the body\u2019s natural healing processes and immune system. Upon drinking this elixir, you regain the listed number of Hit Points and gain an item bonus to saving throws against diseases and poisons for 10 minutes. The elixir restores 1d6 Hit Points, and the bonus is +1.",
@@ -398,6 +434,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Elixir of Life (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=91",
     "source": "Core Rulebook pg. 548",
     "level": 5,
     "price": "30 gp",
@@ -409,6 +446,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Elixir of Life (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=91",
     "source": "Core Rulebook pg. 548",
     "level": 9,
     "price": "150 gp",
@@ -420,6 +458,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Elixir of Life (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=91",
     "source": "Core Rulebook pg. 548",
     "level": 13,
     "price": "600 gp",
@@ -431,6 +470,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Elixir of Life (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=91",
     "source": "Core Rulebook pg. 548",
     "level": 15,
     "price": "1,300 gp",
@@ -442,6 +482,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Elixir of Life (True)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=91",
     "source": "Core Rulebook pg. 548",
     "level": 19,
     "price": "3,000 gp",
@@ -454,6 +495,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 549",
     "name": " Leaper's Elixir (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=95",
     "level": 1,
     "price": "3 gp",
     "text": "This tingly solution increases the elasticity and contraction of your leg muscles. For 1 minute after drinking this elixir, you can or as a single action instead of 2 actions. If you do, you don\u2019t perform the initial (nor do you fail if you don\u2019t Stride 10 feet).",
@@ -464,6 +506,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Leaper's Elixir (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=95",
     "source": "Core Rulebook pg. 549",
     "level": 7,
     "price": "55 gp",
@@ -476,6 +519,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 546",
     "name": " Bestial Mutagen (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=82",
     "level": 1,
     "price": "4 gp",
     "text": "Your features transform into something bestial and you take on muscle mass, but your lumbering form is clumsy. You gain a +1 item bonus, your claw deals 1d4 slashing damage, your jaws deal 1d6 piercing damage, and the duration is 1 minute.",
@@ -488,6 +532,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Bestial Mutagen (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=82",
     "source": "Core Rulebook pg. 546",
     "level": 3,
     "price": "12 gp",
@@ -501,6 +546,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Bestial Mutagen (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=82",
     "source": "Core Rulebook pg. 546",
     "level": 11,
     "price": "300 gp",
@@ -514,6 +560,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Bestial Mutagen (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=82",
     "source": "Core Rulebook pg. 546",
     "level": 17,
     "price": "3,000 gp",
@@ -528,6 +575,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 547",
     "name": " Cognative Mutagen (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=87",
     "level": 1,
     "price": "4 gp",
     "text": "Your mind becomes clear and cognition flows freely, but physical matters seem ephemeral. The bonus is +1, and the duration is 1 minute.",
@@ -540,6 +588,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Cognative Mutagen (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=87",
     "source": "Core Rulebook pg. 547",
     "level": 3,
     "price": "12 gp",
@@ -553,6 +602,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Cognative Mutagen (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=87",
     "source": "Core Rulebook pg. 547",
     "level": 11,
     "price": "300 gp",
@@ -566,6 +616,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Cognative Mutagen (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=87",
     "source": "Core Rulebook pg. 547",
     "level": 17,
     "price": "3,000 gp",
@@ -580,6 +631,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 548",
     "name": " Eagle Eye Elixir (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=90",
     "level": 1,
     "price": "4 gp",
     "text": "After you drink this elixir, you notice subtle visual details. For the next hour, you gain an item bonus to Perception checks that is greater when attempting to find secret doors and traps. The bonus is +1, or +2 to find secret doors and traps.",
@@ -590,6 +642,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Eagle Eye Elixir (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=90",
     "source": "Core Rulebook pg. 548",
     "level": 5,
     "price": "27 gp",
@@ -601,6 +654,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Eagle Eye Elixir (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=90",
     "source": "Core Rulebook pg. 548",
     "level": 10,
     "price": "200 gp",
@@ -612,6 +666,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Eagle Eye Elixir (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=90",
     "source": "Core Rulebook pg. 548",
     "level": 16,
     "price": "2,000 gp",
@@ -624,6 +679,7 @@ const elixirs = [{
 }, {
     "source": "The Fall of Plaguestone pg. 56",
     "name": "Energy Mutagen (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=474",
     "level": 1,
     "price": "4 gp",
     "text": "When created, this mutagen is attuned to your choice of one of four energy types: acid, cold, electricity, or fire. When consumed, the mutagen suffuses your body with energy that spills out of you whenever you attack. At higher levels, it can even grant you the ability to unleash the energy in controlled bursts. You gain resistance 5, add 1 point of damage on a hit with a melee weapon, and the duration is 1 minute.",
@@ -636,6 +692,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": "Energy Mutagen (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=474",
     "source": "The Fall of Plaguestone pg. 56",
     "level": 3,
     "price": "12 gp",
@@ -649,6 +706,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": "Energy Mutagen (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=474",
     "source": "The Fall of Plaguestone pg. 56",
     "level": 11,
     "price": "300 gp",
@@ -662,6 +720,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": "Energy Mutagen (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=474",
     "source": "The Fall of Plaguestone pg. 56",
     "level": 17,
     "price": "3,000 gp",
@@ -676,6 +735,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 548",
     "name": " Juggernaut Mutagen (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=94",
     "level": 1,
     "price": "4 gp",
     "text": "After you drink this mutagen, your body becomes thick and sturdy. You exhibit a healthy glow, though you tend to be ponderous and unobservant. The bonus is +1, you gain 5 temporary Hit Points, and the duration is 1 minute.",
@@ -688,6 +748,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Juggernaut Mutagen (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=94",
     "source": "Core Rulebook pg. 548",
     "level": 3,
     "price": "12 gp",
@@ -701,6 +762,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Juggernaut Mutagen (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=94",
     "source": "Core Rulebook pg. 548",
     "level": 11,
     "price": "300 gp",
@@ -714,6 +776,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Juggernaut Mutagen (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=94",
     "source": "Core Rulebook pg. 548",
     "level": 17,
     "price": "3,000 gp",
@@ -728,6 +791,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 549",
     "name": " Quicksilver Mutagen (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=97",
     "level": 1,
     "price": "4 gp",
     "text": "Your features become thin and angular. You become swifter and nimbler, but your body also becomes\u00a0fragile. The bonus to rolls is +1, the bonus to Speed is +5 feet, and the duration is 1 minute.",
@@ -740,6 +804,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Quicksilver Mutagen (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=97",
     "source": "Core Rulebook pg. 549",
     "level": 3,
     "price": "12 gp",
@@ -753,6 +818,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Quicksilver Mutagen (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=97",
     "source": "Core Rulebook pg. 549",
     "level": 11,
     "price": "300 gp",
@@ -766,6 +832,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Quicksilver Mutagen (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=97",
     "source": "Core Rulebook pg. 549",
     "level": 17,
     "price": "3,000 gp",
@@ -780,6 +847,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 549",
     "name": " Serene Mutagen (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=100",
     "level": 1,
     "price": "4 gp",
     "text": "You gain inner serenity, focused on fine details and steeled against mental assaults, but you find violence off-putting. The bonus is +1, or +2 vs. mental, and the duration is 1 minute.",
@@ -792,6 +860,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Serene Mutagen (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=100",
     "source": "Core Rulebook pg. 549",
     "level": 3,
     "price": "12 gp",
@@ -805,6 +874,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Serene Mutagen (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=100",
     "source": "Core Rulebook pg. 549",
     "level": 11,
     "price": "300 gp",
@@ -818,6 +888,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Serene Mutagen (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=100",
     "source": "Core Rulebook pg. 549",
     "level": 17,
     "price": "3,000 gp",
@@ -832,6 +903,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 550",
     "name": " Silvertongue Mutagen (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=101",
     "level": 1,
     "price": "4 gp",
     "text": "Your features become striking and your voice becomes musical and commanding, though facts and figures become hazy for you and emotion clouds your ability to reason. The bonus is +1, and the duration is 1 minute.",
@@ -844,6 +916,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Silvertongue Mutagen (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=101",
     "source": "Core Rulebook pg. 550",
     "level": 3,
     "price": "12 gp",
@@ -857,6 +930,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Silvertongue Mutagen (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=101",
     "source": "Core Rulebook pg. 550",
     "level": 11,
     "price": "300 gp",
@@ -870,6 +944,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Silvertongue Mutagen (Major)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=101",
     "source": "Core Rulebook pg. 550",
     "level": 17,
     "price": "3,000 gp",
@@ -884,6 +959,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 547",
     "name": " Darkvision Elixir (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=89",
     "level": 2,
     "price": "6 gp",
     "text": "After you drink this elixir, your sight becomes sharper in darkness. You gain darkvision for the listed duration. The duration is 10 minutes.",
@@ -894,6 +970,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Darkvision Elixir (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=89",
     "source": "Core Rulebook pg. 547",
     "level": 4,
     "price": "11 gp",
@@ -905,6 +982,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Darkvision Elixir (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=89",
     "source": "Core Rulebook pg. 547",
     "level": 8,
     "price": "90 gp",
@@ -922,10 +1000,14 @@ const elixirs = [{
     "bulk": "L",
     "actions": "Single Action",
     "activate": "Interact",
+    "name": " Infiltrator's Elixir",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=93",
+    "level": 2,
     "text": "Favored by spies and tricksters, an infiltrator\u2019s elixir is used to alter your appearance. When imbibed, you take the shape of a humanoid creature of your size, but different enough so you might be unrecognizable. If you aren\u2019t a humanoid, you might take on a form more similar to your own, at the GM\u2019s discretion. The creator of the elixir decides the basics of the appearance you transform into when you imbibe the elixir, including eye color, skin tone, and hair color. The elixir can\u2019t change your form into that of a specific person. After the form takes hold, you retain it for the next 10 minutes. Drinking this elixir counts as setting up a disguise to Impersonate. You gain a +4 status bonus to your Deception DC to avoid others seeing through your disguise, and you add your level to this DC even if untrained."
 }, {
     "source": "Core Rulebook pg. 547",
     "name": " Bravo's Brew (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=84",
     "level": 2,
     "price": "7 gp",
     "text": "This flask of foaming beer grants courage. For the next hour after drinking this elixir, you gain an item bonus to Will saves, which is greater when attempting Will saves against fear. The bonus on Will saves is +1, or +2 against fear.",
@@ -936,6 +1018,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Bravo's Brew (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=84",
     "source": "Core Rulebook pg. 547",
     "level": 10,
     "price": "150 gp",
@@ -947,6 +1030,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Bravo's Brew (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=84",
     "source": "Core Rulebook pg. 547",
     "level": 15,
     "price": "700 gp",
@@ -964,10 +1048,14 @@ const elixirs = [{
     "bulk": "L",
     "actions": "Single Action",
     "activate": "Interact",
+    "name": " Cat's Eye Elixir",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=85",
+    "level": 2,
     "text": "After you consume this elixir, your vision sharpens and you become sensitive to even the most minute movements. For the next minute, you reduce the flat check to target hidden creatures to 5, and you don\u2019t need to attempt a flat check to target concealed creatures. These benefits apply only against creatures within 30 feet of you."
 }, {
     "source": "Core Rulebook pg. 547",
     "name": " Comprehension Elixir (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=88",
     "level": 2,
     "price": "7 gp",
     "text": "This bitter draught opens your mind to the potential of the written word. For the listed duration after drinking this elixir, you can understand any words you read, so long as they are written in a common language. This elixir doesn\u2019t automatically allow you to understand codes or extremely esoteric passages\u2014you still need to attempt a skill check to Decipher Writing. The duration is 1 minute.",
@@ -978,6 +1066,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Comprehension Elixir (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=88",
     "source": "Core Rulebook pg. 547",
     "level": 7,
     "price": "54 gp",
@@ -995,10 +1084,14 @@ const elixirs = [{
     "bulk": "L",
     "actions": "Single Action",
     "activate": "Interact",
+    "name": " Stone Fist Elixir",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=102",
+    "level": 4,
     "text": "Your fists become hard as stone. For 1 hour, your fists deal 1d6 bludgeoning damage and lose the nonlethal trait."
 }, {
     "source": "Core Rulebook pg. 547",
     "name": " Bomber's Eye Elixir (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=83",
     "level": 4,
     "price": "14 gp",
     "text": "This tincture lets you pinpoint your foes. For the next 5 minutes, your alchemical bomb Strikes reduce the circumstance bonus to AC your targets gain from cover. Reduce your targets\u2019 circumstance bonus by 1.",
@@ -1009,6 +1102,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Bomber's Eye Elixir (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=83",
     "source": "Core Rulebook pg. 547",
     "level": 14,
     "price": "700 gp",
@@ -1021,6 +1115,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 549",
     "name": " Salamander Elixir (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=98",
     "level": 4,
     "price": "15 gp",
     "text": "This elixir is made from salamander scales to withstand fire. For 24 hours, you are protected from the effects of severe heat.",
@@ -1031,6 +1126,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Salamander Elixir (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=98",
     "source": "Core Rulebook pg. 549",
     "level": 12,
     "price": "320 gp",
@@ -1042,6 +1138,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Salamander Elixir (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=98",
     "source": "Core Rulebook pg. 549",
     "level": 16,
     "price": "1,400 gp",
@@ -1054,6 +1151,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 550",
     "name": " Winter Wolf Elixir (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=103",
     "level": 4,
     "price": "15 gp",
     "text": "This elixir warms your core and improves your circulation. For 24 hours, you are protected from the effects of severe cold.",
@@ -1064,6 +1162,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Winter Wolf Elixir (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=103",
     "source": "Core Rulebook pg. 550",
     "level": 12,
     "price": "320 gp",
@@ -1075,6 +1174,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Winter Wolf Elixir (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=103",
     "source": "Core Rulebook pg. 550",
     "level": 16,
     "price": "1,400 gp",
@@ -1087,6 +1187,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 549",
     "name": " Mistform Elixir (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=96",
     "level": 4,
     "price": "18 gp",
     "text": "A faint mist emanates from your skin, making you concealed for the listed duration. As usual being concealed when your position is still obvious, you can\u2019t use this concealment to or . The duration is 3 rounds.",
@@ -1097,6 +1198,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Mistform Elixir (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=96",
     "source": "Core Rulebook pg. 549",
     "level": 6,
     "price": "56 gp",
@@ -1108,6 +1210,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Mistform Elixir (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=96",
     "source": "Core Rulebook pg. 549",
     "level": 10,
     "price": "180 gp",
@@ -1120,6 +1223,7 @@ const elixirs = [{
 }, {
     "source": "Core Rulebook pg. 549",
     "name": " Sea Touch Elixir (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=99",
     "level": 5,
     "price": "22 gp",
     "text": "This briny concoction alters the skin on your hands and feet. The spaces between your fingers and toes become webbed, granting you a swim Speed of 20 feet for the listed duration. The duration is 10 minutes.",
@@ -1130,6 +1234,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Sea Touch Elixir (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=99",
     "source": "Core Rulebook pg. 549",
     "level": 12,
     "price": "300 gp",
@@ -1141,6 +1246,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": " Sea Touch Elixir (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=99",
     "source": "Core Rulebook pg. 549",
     "level": 15,
     "price": "920 gp",
@@ -1153,6 +1259,7 @@ const elixirs = [{
 }, {
     "source": "The Fall of Plaguestone pg. 56",
     "name": "Stone Body Mutagen (Lesser)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=475",
     "level": 5,
     "price": "22 gp",
     "text": "This mutagen calcifies your body making it as hard as stone. You gain resistance 5 to physical damage (except bludgeoning) and the duration is 10 minutes.",
@@ -1165,6 +1272,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": "Stone Body Mutagen (Moderate)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=475",
     "source": "The Fall of Plaguestone pg. 56",
     "level": 12,
     "price": "300 gp",
@@ -1178,6 +1286,7 @@ const elixirs = [{
     "activate": "Interact"
 }, {
     "name": "Stone Body Mutagen (Greater)",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=475",
     "source": "The Fall of Plaguestone pg. 56",
     "level": 15,
     "price": "920 gp",
@@ -1196,6 +1305,9 @@ const elixirs = [{
     "bulk": "L",
     "actions": "Single Action",
     "activate": "Interact",
+    "name": " Elixir of Rejuvenation",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=92",
+    "level": 20,
     "text": "The elixir of rejuvenation restores a creature to full health and eradicates toxins affecting it. When you drink this elixir, you\u2019re restored to your maximum Hit Points, and all afflictions of 20th level or lower affecting you are removed. You can instead administer this elixir to a creature that has been dead for a week or less. When you do, that creature is instantly brought back to life with 1 Hit Point and no spell slots, Focus Points, or other daily resources. ,"
 }, {
     "source": "Lost Omens World Guide pg. 55",
@@ -1204,6 +1316,9 @@ const elixirs = [{
     "bulk": "L",
     "actions": "Single Action",
     "activate": "Interact",
+    "name": "Sun Orchid Elixir",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=497",
+    "level": 20,
     "text": "When you drink this elixir, you physically become as you were in whatever phase of your youth you desire. Your new body begins in peak health, regardless of what your actual condition was at that age. Any physical or mental imperfections\u2014 including scars, lost limbs, and curses, diseases, poisons of 20th level or lower\u2014 are removed, and you regain your full Hit Points. You immediately begin to age normally again, with your natural lifespan extended as if you had never aged past your new apparent age. You retain all your memories. Unlike Crafting most items, brewing the sun orchid elixir takes 1 month\u2019s time. While an individual vial of sun orchid elixir isn\u2019t unique, the formula is unique, and it\u2019s known only to Artokus Kirran of Thuvia."
 }]
 
