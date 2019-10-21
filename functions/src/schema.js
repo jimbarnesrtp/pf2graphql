@@ -10,6 +10,7 @@ const armors = require('./armors.js')
 const weapons = require('./weapons.js')
 const shields = require('./shields.js')
 const alchy = require('./alchemicalitems.js')
+const cons = require('./consumables.js')
 const graphql = require('graphql')
 
 
@@ -951,7 +952,6 @@ const specificShieldType = new GraphQLObjectType({
     
   }
 })
-// TODO add bombs, poisons, elixirs, and alchemical tools
 
 const bombType = new GraphQLObjectType({
   name: 'bomb',
@@ -1152,6 +1152,8 @@ const toolType = new GraphQLObjectType({
     }
   }
 })
+
+// TODO add ammunition, oil, other, potions, talismans
 
 const monsterType =  new GraphQLObjectType({
   name: 'Monster',
