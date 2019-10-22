@@ -1155,6 +1155,88 @@ const toolType = new GraphQLObjectType({
 
 // TODO add ammunition, oil, other, potions, talismans
 
+
+/*      
+
+** AMMUNITION**
+
+"name": "Storm Arrow",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=169",
+    "category": "ammunition",
+    "level": 9,
+    "price": " 130 gp",
+    "traits": ["Air", "Consumable", "Electricity", "Evocation", "Magical"],
+    "text": "The head of this arrow is made from gleaming copper. When an activated  storm arrow  hits a target, it is buffeted by raging winds and struck by a bolt of lightning that deals 3d12 electricity damage and the target must attempt a DC 25 Reflex saving throw. If this arrow is shot from a weapon with a  shock  property rune, the save DC increases to 27, though the attack doesn\u2019t benefit from the  shock  property rune itself.",
+    "source": "Core Rulebook pg. 560",
+    "ammunition": "arrow",
+    "actions": "Single Action",
+    "activate": " Interact",
+    "criticalsuccess": " The foe is unaffected.",
+    "success": " The foe takes half damage and isn\u2019t affected by the wind.",
+    "failure": " The foe takes full damage and is buffeted by winds for 1 round, taking a \u20132 circumstance penalty to ranged attack rolls and a \u201310-foot circumstance penalty to its fly Speed.",
+    "criticalfailure": " As failure, but the foe takes double damage." 
+
+  *** OIL ***
+        "name": "Oil of Repulsion",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=180",
+    "category": "oil",
+    "level": 11,
+    "price": " 175 gp",
+    "traits": ["Abjuration", "Consumable", "Magical", "Oil"],
+    "text": "This oil contains magnetically charged iron filings repelled into opposite ends of the vial. For 1 minute after you apply this oil to armor, any creature that hits you with a melee Strike must attempt a DC 28 Fortitude save with the following effects.",
+    "source": "Core Rulebook pg. 562",
+    "usage": " held in 2 hands",
+    "actions": "Single Action",
+    "activate": " Interact",
+    "success": " The creature is unaffected.",
+    "failure": " The creature is pushed up to 10 feet away from you (the GM determines the direction).",
+    "criticalfailure": " As failure, and the creature is also knocked prone. "
+
+**8 OTHER ***
+    "name": "Holy Water",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=245",
+    "category": "other",
+    "level": 1,
+    "price": " 3 gp",
+    "bulk": " L",
+    "traits": ["Consumable", "Divine", "Good", "Splash"],
+    "text": "This vial contains water blessed by a good deity. You activate a vial of  holy water  by throwing it as a Strike. It\u2019s a simple thrown weapon with a range increment of 20 feet. Unlike an alchemical bomb, it doesn\u2019t add the manipulate trait to the attack made with it. Holy water  deals 1d6 good damage and 1\u00a0good splash damage. It damages only fiends, undead, and creatures that have a weakness to good damage.",
+    "source": "Core Rulebook pg. 571",
+    "usage": " held in 1 hand; ",
+    "actions": "Single Action",
+    "activate": " Strike"
+
+*** potions ***
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=185",
+    "name": " Dragon's Breath Potion (Young)",
+    "activate": "",
+    "source": "Core Rulebook pg. 562",
+    "level": 7,
+    "price": "20 gp",
+    "text": "This liquid contains blood from a certain type of dragon. For 1 hour after you imbibe the concoction, you can unleash a breath weapon used by that type of dragon. The potency of the breath depends on the potion\u2019s type, based on the age of the dragon whose blood was used to make the potion. This potion has the trait matching the damage type of the breath weapon . Exhaling dragon breath uses a single action. The damage type and the area of the dragon breath depend on the type of dragon blood in the potion, as shown in the table below. Regardless of the dragon type, the breath weapon deals 4d6 damage, and each creature in the area must attempt a DC 23 basic save of a type determined by the type of the dragon. After you use the breath weapon, you can\u2019t do so again for 1d4 rounds.",
+    "traits": ["Consumable", "Evocation", "Magical", "Potion"],
+    "usage": "held in 1 hand",
+    "actions": "Single Action",
+    "category": "potion"
+
+**** talismans ***
+
+    "name": "Viper's Fang",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=238",
+    "category": "talisman",
+    "level": 14,
+    "price": " 850 gp",
+    "traits": ["Consumable", "Evocation", "Magical", "Talisman"],
+    "text": "When you activate this resin-strengthened viper skull, you make an  You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn\u2019t count toward your multiple attack penalty, and your multiple attack penalty doesn\u2019t apply to this Strike.Attack of Opportunity against the triggering creature.  If you have Attack of Opportunity, you can activate the  viper\u2019s fang  as a free action.",
+    "source": "Core Rulebook pg. 142",
+    "usage": " affixed to a weapon",
+    "trigger": " A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it\u2019s using. A creature within your reach uses a manipulate or move action, makes a ranged attack, or leaves a square during a moving action it's using; ",
+    "actions": "Reaction",
+    "activate": " Envision; ",
+    "requirements": " You are a master with the affixed weapon"
+    
+    */
+
 const monsterType =  new GraphQLObjectType({
   name: 'Monster',
   fields: {

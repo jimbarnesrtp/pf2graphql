@@ -16,7 +16,7 @@ Items to be added
 * Backgrounds
 * ~~Armors~~
 * ~~Alechemical Items~~
-* Consumables
+* ~~Consumables~~
 * Held Items
 * Runes
 * Services
