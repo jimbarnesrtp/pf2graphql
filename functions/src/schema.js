@@ -114,20 +114,23 @@ const featType = new GraphQLObjectType({
     }
   }
 })
+
+/*     
+    */
 const spellType =  new GraphQLObjectType({
   name: 'Spell',
   fields: {
     name: {
       type: GraphQLString
     },
+    link: {
+      type: GraphQLString
+    },
     level: {
       type: GraphQLInt
     },
-    spellText: {
+    text: {
       type: GraphQLString
-    },
-    tradition: {
-      type: GraphQLList(GraphQLString)
     },
     traits: {
       type: new GraphQLList(traitType),
@@ -140,27 +143,83 @@ const spellType =  new GraphQLObjectType({
     source: {
       type: GraphQLString
     },
-    range: {
-      type: GraphQLString
-    },
-    duration: {
-      type: GraphQLString
-    },
-    target: {
+    traditions: {
       type: GraphQLString
     },
     cast: {
       type: GraphQLString
     },
-    savingThrow: {
-      type: GraphQLString
-    },
-    link: {
+    actions: {
       type: GraphQLString
     },
     area: {
       type: GraphQLString
-    }
+    },
+    range: {
+      type: GraphQLString
+    },
+    targets: {
+      type: GraphQLString
+    },
+    savingthrow: {
+      type: GraphQLString
+    },
+    duration: {
+      type: GraphQLString
+    },
+    criticalsuccess: {
+      type: GraphQLString
+    },
+    success: {
+      type: GraphQLString
+    },
+    failure: {
+      type: GraphQLString
+    },
+    criticalfailure: {
+      type: GraphQLString
+    },
+    actions: {
+      type: GraphQLString
+    },
+    trigger: {
+      type: GraphQLString
+    },
+    effect: {
+      type: GraphQLString
+    },
+    heightened3rd: {
+      type: GraphQLString
+    },
+    heightened4th: {
+      type: GraphQLString
+    },
+    heightened5th: {
+      type: GraphQLString
+    },
+    heightened6th: {
+      type: GraphQLString
+    },
+    heightened7th: {
+      type: GraphQLString
+    },
+    heightened8th: {
+      type: GraphQLString
+    },
+    heightened9th: {
+      type: GraphQLString
+    },
+    heightened10th: {
+      type: GraphQLString
+    },
+    heightenedplus1: {
+      type: GraphQLString
+    },
+    heightenedplus2: {
+      type: GraphQLString
+    },
+    
+    
   }
 })
 
@@ -1532,7 +1591,7 @@ const queryType =  new GraphQLObjectType({
         searchString: { type: GraphQLString }
       },
       resolve: (source, {searchString}) => {
-        return monlist.monsters.filter(monsters => {
+        return monList.monsters.filter(monster => {
             return monster.name.startsWith(searchString);
         })
       }
