@@ -54,7 +54,7 @@ const spellList = [{
     "cast": " verbal",
     "area": " 60-foot emanation",
     "duration": " 1 round",
-    "text": "You inspire your allies with words or tunes of encouragement.    You and all allies in the area gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects."
+    "text": "You inspire your allies with words or tunes of encouragement. You and all allies in the area gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects."
 }, {
     "type": "cantrip",
     "level": 0,
@@ -72,7 +72,7 @@ const spellList = [{
     "name": "Silver's Refrain (abj)",
     "link": "https://2e.aonprd.com/Spells.aspx?ID=555",
     "traits": ["Rare", "Abjuration", "Bard", "Cantrip", "Composition"],
-    "source": "Pathfinder #147: Tomorrow Must Burn pg. 73",
+    "source": "Pathfinder #147: Tomorrow Must Burn pg. 74",
     "cast": " verbal",
     "area": " 60-foot emanation",
     "duration": " 1 round",
@@ -107,7 +107,7 @@ const spellList = [{
     "source": "Core Rulebook pg. 402",
     "cast": " verbal",
     "duration": " 1 minute",
-    "text": "The memories of long-dead spellcasters grant you knowledge in a specific skill. Choose any non-Lore skill, or a Lore skill related to the ancient empire from which your bloodline sprang. You temporarily become trained in that skill and might gain other memories associated with an ancestor who was trained in that skill. If you attempt a task or activity that lasts beyond this spell's duration, use the lower proficiency modifier.  Heightened (6th)  You temporarily become an expert in the skill you choose."
+    "text": "The memories of long-dead spellcasters grant you knowledge in a specific skill. Choose any non-Lore skill, or a  Lore  skill related to the ancient empire from which your bloodline sprang. You temporarily become trained in that skill and might gain other memories associated with an ancestor who was trained in that skill. If you attempt a task or activity that lasts beyond this spell's duration, use the lower proficiency modifier.  Heightened (6th)  You temporarily become an expert in the skill you choose."
 }, {
     "type": "spell",
     "level": 1,
@@ -207,7 +207,7 @@ const spellList = [{
     "level": 1,
     "name": "Charming Words (enc)",
     "link": "https://2e.aonprd.com/Spells.aspx?ID=523",
-    "traits": ["Uncommon", "Auditory", "Emotion", "Enchantment", "Incapacitation", "Linguistic", "Wizard"],
+    "traits": ["Uncommon", "Auditory", "Enchantment", "Incapacitation", "Linguistic", "Mental", "Wizard"],
     "source": "Core Rulebook pg. 406",
     "cast": " verbal",
     "range": " 30 feet; ",
@@ -292,7 +292,7 @@ const spellList = [{
     "source": "Core Rulebook pg. 406",
     "cast": " verbal",
     "range": " 30 feet; ",
-    "targets": " 1 willing living craeture",
+    "targets": " 1 willing living creature",
     "duration": " until the end of your next turn",
     "text": "You glimpse into the target's future. Roll a d20; when the target attempts a non-secret saving throw or skill check, it can use the number you rolled instead of rolling, and the spell ends. Alternatively, you can instead reveal the result of the die roll for one of the target's secret checks during the duration, and the spell ends. Casting it again ends any active  diviner's sight  you have cast, as well as any active  diviner's sight  on the target."
 }, {
@@ -304,7 +304,7 @@ const spellList = [{
     "source": "Core Rulebook pg. 403",
     "cast": " verbal",
     "duration": " 1 minute",
-    "text": "Vicious claws grow from your fingers. They are finesse unarmed attacks that deal 1d4 slashing damage and 1d6 extra damage of a type determined by the dragon in your bloodline.  Dragon Claws  Dragon TypeArea and Damage TypeSaving Throw Black and copper60-foot line of acidReflex Blue and bronze60-foot line of electricityReflex Brass60-foot line of fireReflex Green30-foot cone of poisonFortitude Gold or red30-foot cone of fireReflex Silver or white30-foot cone of coldReflex   Your scales from blood magic glow with faint energy, giving you resistance 5 to the same damage type.  Heightened (5th)  The extra damage increases to 2d6, and the resistance increases to 10.  Heightened (9th)  The extra damage increases to 3d6, and the resistance increases to 15."
+    "text": "Vicious claws grow from your fingers. They are finesse unarmed attacks that deal 1d4 slashing damage and 1d6 extra damage of a type determined by the dragon in your bloodline.  Dragon Claws  Dragon TypeArea and Damage TypeSaving Throw Black and copper60-foot line of acidReflex Blue and bronze60-foot line of electricityReflex Brass60-foot line of fireReflex Green30-foot cone of poisonFortitude Gold or red30-foot cone of fireReflex Silver or white30-foot cone of coldReflex    Your scales from blood magic glow with faint energy, giving you resistance 5 to the same damage type.  Heightened (5th)  The extra damage increases to 2d6, and the resistance increases to 10.  Heightened (9th)  The extra damage increases to 3d6, and the resistance increases to 15."
 }, {
     "type": "spell",
     "level": 1,
@@ -333,7 +333,7 @@ const spellList = [{
     "link": "https://2e.aonprd.com/Spells.aspx?ID=508",
     "traits": ["Uncommon", "Enchantment", "Mental", "Sorcerer"],
     "source": "Core Rulebook pg. 404",
-    "cast": " or more somatic, verbal",
+    "cast": " or more (somatic, verbal)",
     "range": " 30 feet; ",
     "area": " 5-foot burst or more",
     "savingthrow": " Will; ",
@@ -417,7 +417,7 @@ const spellList = [{
     "cast": " somatic",
     "range": " touch or 30 feet (see text); ",
     "targets": " 1 willing living animal creature",
-    "text": "You heal an animal's wounds, restoring 1d8 Hit Points to the target. The number of actions spent Casting this Spell determines its effect.    somatic Th e spell has a range of touch.  somatic, verbal The spell has a range of 30 feet and restores an additional 8 Hit Points to the target.  Heightened (+1)  The amount of healing increases by 1d8, and the additional healing for the 2-action version increases by 8."
+    "text": "You heal an animal's wounds, restoring 1d8 Hit Points to the target. The number of actions spent Casting this Spell determines its effect.    somatic The spell has a range of touch.  somatic, verbal The spell has a range of 30 feet and restores an additional 8 Hit Points to the target.  Heightened (+1)  The amount of healing increases by 1d8, and the additional healing for the 2-action version increases by 8."
 }, {
     "type": "spell",
     "level": 1,
@@ -560,6 +560,17 @@ const spellList = [{
     "targets": " 1 living creature",
     "duration": " until the end of the target's next turn",
     "text": "You temporarily improve the target's physique. The target gains a +2 status bonus to the next Acrobatics check, Athletics check, Fortitude save, or Reflex save it attempts."
+}, {
+    "type": "spell",
+    "level": 1,
+    "name": "Practice Makes Perfect (div)",
+    "link": "https://2e.aonprd.com/Spells.aspx?ID=559",
+    "traits": ["Uncommon", "Cleric", "Divination"],
+    "source": "Pathfinder #148: Fires of the Haunted City pg. 65",
+    "cast": " somatic; ",
+    "trigger": " You or an ally within range fails a skill check for a skill in which you or they are trained.",
+    "range": " 30 feet",
+    "text": "The target gains a +2 status bonus to the triggering check, or a +3 bonus if the target has master or better proficiency in the skill. This bonus can change the outcome of the target\u2019s check."
 }, {
     "type": "spell",
     "level": 1,
@@ -746,7 +757,7 @@ const spellList = [{
     "targets": " 1 living creature touched",
     "savingthrow": " Will; ",
     "duration": " 1 minute",
-    "text": "You instill within a creature the touch of the grave. For the duration,  harm  spells treat the creature as undead and  heal  spells treat the creature as living. In addition,  harm  spells gain a +2 status bonus to the Hit Points restored to the target. If the target wishes to avoid the spell, it can attempt a Will save to reduce the effects.   Critical Success  The target is unaffected.  Success  The target heals half as much from  heal  and takes half as much damage from  harm  for 1 round.  Failure  Effects as described in the text.  Heightened (+1)  The status bonus to the Hit Points restored increases by 2."
+    "text": "You instill within a creature the touch of the grave. For the duration,  harm  spells treat the creature as undead and  heal  spells treat the creature as living. In addition,  harm  spells gain a +2 status bonus to the Hit Points restored to the target.   If the target wishes to avoid the spell, it can attempt a Will save to reduce the effects.   Critical Success  The target is unaffected.  Success  The target heals half as much from  heal  and takes half as much damage from  harm  for 1 round.  Failure  Effects as described in the text.  Heightened (+1)  The status bonus to the Hit Points restored increases by 2."
 }, {
     "type": "spell",
     "level": 1,
@@ -779,7 +790,7 @@ const spellList = [{
 }, {
     "type": "spell",
     "level": 1,
-    "name": "Walking Nightmare (enc)",
+    "name": "Waking Nightmare (enc)",
     "link": "https://2e.aonprd.com/Spells.aspx?ID=468",
     "traits": ["Uncommon", "Cleric", "Emotion", "Enchantment", "Fear", "Mental"],
     "source": "Core Rulebook pg. 399",
@@ -845,6 +856,28 @@ const spellList = [{
 }, {
     "type": "spell",
     "level": 2,
+    "name": "Invoke the Crimson Oath (evo)",
+    "link": "https://2e.aonprd.com/Spells.aspx?ID=556",
+    "traits": ["Uncommon", "Evocation"],
+    "source": "Lost Omens Character Guide pg. 90",
+    "cast": " somatic, verbal",
+    "area": " 20-foot cone",
+    "savingthrow": " basic Fortitude",
+    "text": "Brandishing your weapon and shouting the final line of the Crimson Oath, you unleash a blast of destructive ruby energy. You must be wielding a melee weapon, and you perform this spell\u2019s somatic component by swinging the weapon in a downward arc. You deal normal melee damage for your weapon, including all appropriate bonuses, penalties, modifiers, and properties, to each creature in the spell\u2019s area; they must each attempt a basic Fortitude save. A creature that critically fails this save also suffers any additional effect you would normally inflict with your weapon on a critical hit; if the creature that critically fails its save is also immune to critical hits, it merely fails the save instead.    You can convert all the physical damage from this spell into positive damage against all undead creatures in the area."
+}, {
+    "type": "spell",
+    "level": 2,
+    "name": "Light of Revelation (div)",
+    "link": "https://2e.aonprd.com/Spells.aspx?ID=557",
+    "traits": ["Uncommon", "Divination", "Light", "Revelation"],
+    "source": "Lost Omens Character Guide pg. 91",
+    "cast": " somatic, verbal",
+    "range": " 30-foot emanation",
+    "duration": " 5 minutes",
+    "text": "You shed a luminous aura, illuminating a 30-foot radius with bright light. You and all allies in this area gain a +1 status bonus to Perception checks to detect hidden or undetected creatures, as well as hidden objects, doors, and other features."
+}, {
+    "type": "spell",
+    "level": 2,
     "name": "Magic Warrior Aspect (tra)",
     "link": "https://2e.aonprd.com/Spells.aspx?ID=547",
     "traits": ["Uncommon", "Morph", "Transmutation"],
@@ -872,6 +905,17 @@ const spellList = [{
     "cast": " verbal; ",
     "trigger": " You miss a Strike with an unarmed attack.",
     "text": "You call upon insight from your training to recover accuracy. Reroll the missed attack roll and keep the new result."
+}, {
+    "type": "spell",
+    "level": 2,
+    "name": "Sun Blade (evo)",
+    "link": "https://2e.aonprd.com/Spells.aspx?ID=558",
+    "traits": ["Uncommon", "Evocation", "Fire", "Light", "Positive"],
+    "source": "Lost Omens Character Guide pg. 91",
+    "cast": " somatic, verbal",
+    "range": " 60 feet; ",
+    "targets": " 1 creature",
+    "text": "You fire a ray of burning sunlight from your weapon. You must be wielding a sword or spear to cast sun blade, and you perform this spell\u2019s somatic component with the weapon. Make a spell attack roll. The ray deals 1d4 fire damage. If the target is evil, the ray deals an additional 1d4 good damage, and if the target is undead, the ray deals an additional 1d4 positive damage (both effects apply against creatures that are both evil and undead). If you are in an area of bright natural sunlight, increase the die size of each damage die by one step (from d4 to d6).   Critical Success  The ray deals double damage.  Failure  The ray deals full damage.  Heightened (+1)  The damage increases by 1d4 fire, 1d4 good, and 1d4 positive (or 1d6 of each type of damage in bright natural sunlight)."
 }, {
     "type": "spell",
     "level": 2,
@@ -914,7 +958,7 @@ const spellList = [{
     "cast": " somatic, verbal",
     "area": " 30-foot cone or 60-foot line originating from you",
     "savingthrow": " basic Reflex or Fortitude",
-    "text": "You spew energy from your mouth, dealing 5d6 damage. The area, damage type, and save depend on the dragon type in your bloodline. Dragon Breath  Dragon TypeArea and Damage TypeSaving Throw Black and copper60-foot line of acidReflex Blue and bronze60-foot line of electricityReflex Brass60-foot line of fireReflex Green30-foot cone of poisonFortitude Gold or red30-foot cone of fireReflex Silver or white30-foot cone of coldReflex   Heightened (+1)  The damage increases by 2d6."
+    "text": "You spew energy from your mouth, dealing 5d6 damage. The area, damage type, and save depend on the dragon type in your bloodline. Dragon Breath  Dragon TypeArea and Damage TypeSaving Throw Black and copper60-foot line of acidReflex Blue and bronze60-foot line of electricityReflex Brass60-foot line of fireReflex Green30-foot cone of poisonFortitude Gold or red30-foot cone of fireReflex Silver or white30-foot cone of coldReflex    Heightened (+1)  The damage increases by 2d6."
 }, {
     "type": "spell",
     "level": 3,
@@ -927,6 +971,17 @@ const spellList = [{
     "targets": " 1 creature",
     "savingthrow": " basic Fortitude",
     "text": "You close your hand and pull life energy from another creature into yourself. This deals 3d4 negative damage; the target must attempt a basic Fortitude save. You gain temporary Hit Points equal to the damage the target takes, after resolving its save and applying your blood magic if applicable. If the target's Hit Points were lower than the damage you dealt, you gain temporary Hit Points equal to their remaining Hit Points instead. The temporary Hit Points last for 1 minute.  Heightened (+1)  The damage increases by 1d4."
+}, {
+    "type": "spell",
+    "level": 3,
+    "name": "Electrified Crystal Ward (evo)",
+    "link": "https://2e.aonprd.com/Spells.aspx?ID=561",
+    "traits": ["Rare", "Electricity", "Evocation"],
+    "source": "Pathfinder #148: Fires of the Haunted City pg. 75",
+    "cast": " somatic",
+    "range": " touch; ",
+    "targets": " 1 hinge or latch",
+    "text": "You create an  electric latch rune  hazard on the target, creating a special crystalline lock on the object. You can also substitute your spell DC for any of the hazard\u2019s listed DCs. You can have only one such hazard active at a time, and if you cast this spell while a previous  electric latch rune  is active, the older hazard discharges harmlessly.  Heightened (+2)  The hazard\u2019s damage increases by 1d12."
 }, {
     "type": "spell",
     "level": 3,
@@ -946,7 +1001,7 @@ const spellList = [{
     "source": "Core Rulebook pg. 404",
     "cast": " verbal",
     "duration": " 1 minute",
-    "text": "Devil horns grow from your skull, and your skin takes on features of the devil responsible for your diabolic bloodline. You gain resistance 5 to evil, fire, and poison, and resistance 1 to physical damage (except silver). You can take good damage, even if you aren't evil, and you gain weakness 5 to good damage.  Heightened (+1)  The resistance to evil, fire, and poison increases by 5, the resistance to physical damage (except silver) by 2, and the weakness to good damage by 5."
+    "text": "Devil horns grow from your skull, and your skin takes on features of the devil responsible for your diabolic bloodline. You gain resistance 5 to evil, fire, and poison, and resistance 1 to physical damage (except silver). You can take good damage, even if you aren't evil, and you gain weakness 5 to good damage.  Heightened (+2)  The resistance to evil, fire, and poison increases by 5, the resistance to physical damage (except silver) by 2, and the weakness to good damage by 5."
 }, {
     "type": "spell",
     "level": 3,
@@ -1022,7 +1077,7 @@ const spellList = [{
     "traits": ["Uncommon", "Abjuration"],
     "source": "Lost Omens World Guide pg. 83",
     "cast": " verbal; ",
-    "Requirements": " Your previous action was a successful unarmed Strike.",
+    "requirements": " Your previous action was a successful unarmed Strike.",
     "targets": " the creature you hit",
     "duration": " 2 rounds",
     "text": "You light your foe with revealing flame. The GM attempts a secret counteract check against each illusion affecting the creature; on a success, you suppress the illusion for the duration, rather than end the effect."
@@ -1072,7 +1127,7 @@ const spellList = [{
     "link": "https://2e.aonprd.com/Spells.aspx?ID=401",
     "traits": ["Uncommon", "Cleric", "Transmutation"],
     "source": "Core Rulebook pg. 389",
-    "cast": " material, verbal",
+    "cast": " material, somatic",
     "range": " 15 feet; ",
     "targets": " 1 item or work of art that fits entirely within the range",
     "duration": " 10 minutes",
@@ -1097,7 +1152,7 @@ const spellList = [{
     "traits": ["Uncommon", "Cleric", "Enchantment", "Incapacitation", "Mental"],
     "source": "Core Rulebook pg. 390",
     "cast": " verbal; ",
-    "Requirements": " Your most recent action dealt damage to a target",
+    "requirements": " Your most recent action dealt damage to a target",
     "range": " 100 feet; ",
     "targets": " A creature you dealt damage to on your most recent action.",
     "savingthrow": " Will; ",
@@ -1149,7 +1204,7 @@ const spellList = [{
     "cast": " somatic, verbal",
     "area": " 15-foot emanation",
     "duration": " 1 minute",
-    "text": "Swirling sands of divine devastation surround you, weakening the defenses of all they touch. Reduce the resistances of creatures in the area (including yourself) by 2.  Heightened (+2)  Swirling sands of divine devastation surround you, weakening the defenses of all they touch. Reduce the resistances of creatures in the area (including yourself) by 2."
+    "text": "Swirling sands of divine devastation surround you, weakening the defenses of all they touch. Reduce the resistances of creatures in the area (including yourself) by 2.  Heightened (+2)  Reduce the resistances by an addition 2."
 }, {
     "type": "spell",
     "level": 4,
@@ -1159,7 +1214,7 @@ const spellList = [{
     "source": "Core Rulebook pg. 406",
     "cast": " somatic",
     "range": " 20 feet",
-    "text": "You teleport to a location up to 20 feet away within your line of sight.  Heightened (+1)  You teleport to a location up to 20 feet away within your line of sight."
+    "text": "You teleport to a location up to 20 feet away within your line of sight.  Heightened (+1)  The distance you can teleport increases by 5 feet."
 }, {
     "type": "spell",
     "level": 4,
@@ -1255,7 +1310,7 @@ const spellList = [{
     "source": "Core Rulebook pg. 392",
     "cast": " verbal; ",
     "trigger": " An effect would deal fire damage to either you or an ally within range.",
-    "range": " 30 feet; ",
+    "range": " 60 feet; ",
     "targets": " the creature that would take fire damage",
     "text": "You swiftly deflect incoming flames. The target gains fire resistance 15 against the triggering effect.  Heightened (+2)  The resistance increases by 5."
 }, {
@@ -1371,7 +1426,7 @@ const spellList = [{
     "traits": ["Uncommon", "Cleric", "Conjuration", "Plant", "Positive"],
     "source": "Core Rulebook pg. 394",
     "cast": " somatic; ",
-    "Requirements": " You have a free hand.",
+    "requirements": " You have a free hand.",
     "text": "A palm-sized raw fruit or vegetable appears in your open hand. You choose the specific type of food. A creature can consume the food with an Interact action to regain 3d10+12 Hit Points and be nourished as if it had eaten a meal. If uneaten, the food rots and crumbles to dust after 1 minute.  Heightened (+1)  The Hit Points restored increase by 6."
 }, {
     "type": "spell",
@@ -1392,7 +1447,7 @@ const spellList = [{
     "source": "Core Rulebook pg. 394",
     "cast": " somatic",
     "duration": " 1 minute",
-    "text": "Drawing life force into yourself, you become a beacon of positive energy. You glow with bright light in a 10-foot emanation, and you gain an internal pool of light called a luminance reservoir, which begins with a value of 4. At the start of each of your turns, you can use a free action to increase the luminance reservoir by 4. If you do, the radius of your light increases by 10 feet.    If an undead creature damages you with an attack or spell while it's within the area of your light, that creature takes positive damage equal to half your luminance reservoir value. It takes this damage only the first time it damages you in a round.    You can Dismiss this Spell. When you do, you can target a creature within your light and direct the positive energy into it. The target must be a willing living creature or an undead creature. This heals a living target or damages an undead target by an amount equal to your luminance reservoir's value. When you cast  positive luminance , any other  positive luminance  spell you already had in effect ends.  Heightened (+1)  Both the initial value of your luminance reservoir and the amount you gain each turn increase by 1."
+    "text": "Drawing life force into yourself, you become a beacon of positive energy. You glow with bright light in a 10-foot emanation, and you gain an internal pool of light called a luminance reservoir, which begins with a value of 4. At the start of each of your turns, you can use a free action to increase the luminance reservoir by 4. If you do, the radius of your light increases by 10 feet.    If an undead creature damages you with an attack or spell while it's within the area of your light, that creature takes positive damage equal to half your luminance reservoir value. It takes this damage only the first time it damages you in a round.    You can Dismiss this Spell. When you do, you can target a creature within your light and direct the positive energy into it. The target must be a willing living creature or an undead creature. This heals a living target or damages an undead target by an amount equal to your luminance reservoir's value.   When you cast  positive luminance , any other  positive luminance  spell you already had in effect ends.  Heightened (+1)  Both the initial value of your luminance reservoir and the amount you gain each turn increase by 1."
 }, {
     "type": "spell",
     "level": 4,
@@ -1433,7 +1488,7 @@ const spellList = [{
     "link": "https://2e.aonprd.com/Spells.aspx?ID=446",
     "traits": ["Uncommon", "Cleric", "Healing", "Necromancy", "Positive"],
     "source": "Core Rulebook pg. 396",
-    "cast": " somatic",
+    "cast": " (somatic)",
     "area": " 20-foot emanation; ",
     "targets": " 1 living creature per action spent to cast this spell",
     "text": "You snatch creatures from the jaws of death. You can spend 1 to 3 actions Casting this Spell, and you can target a number of creatures equal to the actions spent. Each target regains 3d6 Hit Points. If the target had the dying condition, coming back from dying due to this healing doesn't increase its wounded condition.  Heightened (+1)  Increase the healing by 1d6."
@@ -1465,9 +1520,9 @@ const spellList = [{
 }, {
     "type": "spell",
     "level": 4,
-    "name": "Shared Nightmare",
+    "name": "Shared Nightmare (enc)",
     "link": "https://2e.aonprd.com/Spells.aspx?ID=451",
-    "traits": ["Uncommon", "Cleric", "Emotion", "Humanoid", "Incapacitation", "Mental"],
+    "traits": ["Uncommon", "Cleric", "Emotion", "Enchantment", "Incapacitation", "Mental"],
     "source": "Core Rulebook pg. 396",
     "cast": " somatic, verbal",
     "range": " 30 feet; ",
@@ -1517,7 +1572,19 @@ const spellList = [{
     "trigger": " You or an ally within range attempts a saving throw",
     "range": " 120 feet; ",
     "targets": " the triggering creature",
-    "text": "You twist the forces of fate to make a moment dire or uneventful, with no in-between. The target gains a +1 status bonus to the triggering saving throw. If the saving throw's result is a success, it becomes a critical success. If it's a failure, it becomes a critical failure, and the critical failure can't be reduced by abilities that usually reduce critical failure, such as improved evasion.    If the triggering ability did not have both a critical success and critical failure condition, tempt fate fails, but you don't expend the Focus Point for Casting this Spell.  Heightened (8th)  The bonus on the saving throw is +2."
+    "text": "You twist the forces of fate to make a moment dire or uneventful, with no in-between. The target gains a +1 status bonus to the triggering saving throw. If the saving throw's result is a success, it becomes a critical success. If it's a failure, it becomes a critical failure, and the critical failure can't be reduced by abilities that usually reduce critical failure, such as improved evasion.    If the triggering ability did not have both a critical success and critical failure condition,  tempt fate  fails, but you don't expend the Focus Point for Casting this Spell.  Heightened (8th)  The bonus on the saving throw is +2."
+}, {
+    "type": "spell",
+    "level": 4,
+    "name": "Tireless Worker (nec)",
+    "link": "https://2e.aonprd.com/Spells.aspx?ID=560",
+    "traits": ["Healing", "Necromancy"],
+    "source": "Pathfinder #148: Fires of the Haunted City pg. 65",
+    "cast": " somatic, verbal",
+    "range": " 30 feet; ",
+    "targets": " 1 creature",
+    "duration": " sustained for up to 1 minute",
+    "text": "You suppress your choice of one of the following conditions that\u2019s affecting the target:  clumsy encumbered enfeebled , or  fatigued . If you don\u2019t remove the effect that caused the condition, the condition returns after the spell\u2019s duration expires."
 }, {
     "type": "spell",
     "level": 4,
@@ -1547,7 +1614,7 @@ const spellList = [{
     "link": "https://2e.aonprd.com/Spells.aspx?ID=463",
     "traits": ["Uncommon", "Cleric", "Illusion", "Visual"],
     "source": "Core Rulebook pg. 398",
-    "cast": " somatic, verbal",
+    "cast": " material, verbal",
     "range": " 30 feet; ",
     "targets": " 1 creature",
     "savingthrow": " Will; ",
@@ -1575,7 +1642,7 @@ const spellList = [{
     "cast": " somatic",
     "range": " 500 feet",
     "duration": " 1 hour",
-    "text": "You create an invisible eye sensor, as  clairvoyance . When created, this eye must be in your line of sight. When the spell's duration ends, you can spend 1 Focus Point as a free action to extend the duration for another hour, though as normal, it ends immediately during your next daily preparations."
+    "text": "You create an invisible eye sensor, as  clairvoyance .    When created, this eye must be in your line of sight. When the spell's duration ends, you can spend 1 Focus Point as a free action to extend the duration for another hour, though as normal, it ends immediately during your next daily preparations."
 }, {
     "type": "spell",
     "level": 4,
@@ -1589,9 +1656,9 @@ const spellList = [{
 }, {
     "type": "spell",
     "level": 4,
-    "name": "Word of Freedom",
+    "name": "Word of Freedom (enc)",
     "link": "https://2e.aonprd.com/Spells.aspx?ID=470",
-    "traits": ["Uncommon", "Cleric", "Mental"],
+    "traits": ["Uncommon", "Cleric", "Enchantment", "Mental"],
     "source": "Core Rulebook pg. 399",
     "cast": " verbal",
     "range": " 30 feet; ",
@@ -1642,7 +1709,7 @@ const spellList = [{
     "source": "Core Rulebook pg. 403",
     "cast": " somatic",
     "range": " 30 feet; ",
-    "targets": " 1 evil creaeture",
+    "targets": " 1 evil creature",
     "duration": " 1 round",
     "text": "A blazing symbol appears on the target, marking it for divine justice. You and your allies receive a +1 status bonus to your attack rolls and skill checks against it. Anytime a good creature damages it, the good creature deals an additional 1d4 good damage. The target is then temporarily immune for 1 minute.  Heightened (+2)  The good damage increases by 1."
 }, {
@@ -1810,7 +1877,7 @@ const spellList = [{
     "level": 8,
     "name": "Quivering Palm (nec)",
     "link": "https://2e.aonprd.com/Spells.aspx?ID=487",
-    "traits": ["Uncommon", "Monk", "Necromancy"],
+    "traits": ["Uncommon", "Incapacitation", "Monk", "Necromancy"],
     "source": "Core Rulebook pg. 401",
     "cast": " somatic, verbal",
     "savingthrow": " Fortitude; ",
@@ -1834,7 +1901,7 @@ const spellList = [{
     "traits": ["Uncommon", "Air", "Druid", "Electricity", "Evocation"],
     "source": "Core Rulebook pg. 400",
     "cast": " somatic, verbal; ",
-    "Requirements": " You are outdoors and aboveground.",
+    "requirements": " You are outdoors and aboveground.",
     "area": " 100-foot emanation",
     "duration": " sustained up to 1 minute",
     "text": "The sky above you darkens in a matter of moments, swirling with ominous clouds punctuated by flashes of lighting. Each round when you Sustain the Spell, you can select one of the following effects to occur in the area.  Calm No additional effect.Fog Heavy fog rolls in, concealing the area with the effects of obscuring mist.Rain Torrential rain falls from the sky, dousing ordinary flames. Creatures in the area take a \u20132 circumstance penalty to Acrobatics and Perception checks. Wind Powerful winds buffet the area in all directions. Ranged attacks take a \u20134 circumstance penalty, and all flying is against the wind and counts as moving through difficult terrain.  In addition, once per round you can use a single action, which has the concentrate and manipulate traits, to call down a bolt of lightning, striking any target in range that you can see. You deal 10d6 electricity damage to the target; it must attempt a basic Reflex save. On a failure, it is also deafened for 1 round."
@@ -1848,7 +1915,7 @@ const spellList = [{
     "cast": " verbal",
     "range": " 30 feet; ",
     "targets": " 1 creature",
-    "text": "You perform music so perfect that the target may die of joy or sorrow. Once targeted, the creature becomes temporarily immune for 1 minute. The effect of the spell depends on the target's level and current Hit Points.    16th or Lower  The target dies instantly.    17th  If the target has 50 Hit Points or fewer, it dies instantly; otherwise, it drops to 0 Hit Points and becomes dying 1.    18th or Higher  The target takes 50 damage. If this brings it to 0 Hit Points, it dies instantly."
+    "text": "You perform music so perfect that the target may die of joy or sorrow. Once targeted, the creature becomes temporarily immune for 1 minute. The effect of the spell depends on the target's level and current Hit Points.    16th or Lower  The target dies instantly.   17th  If the target has 50 Hit Points or fewer, it dies instantly; otherwise, it drops to 0 Hit Points and becomes dying 1.   18th or Higher  The target takes 50 damage. If this brings it to 0 Hit Points, it dies instantly."
 }, {
     "type": "spell",
     "level": 1,
