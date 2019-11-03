@@ -11,6 +11,7 @@ Items to be added
 * ~~General Feats~~
 * ~~Class Feats~~
 * ~~Ancestry Feats~~
+* ~~Archetype Feats~~
 * ~~Adventuring Gear~~
 * ~~Monsters~~
 * Backgrounds

@@ -98,20 +98,59 @@ const featType = new GraphQLObjectType({
       type: GraphQLInt
     },
     traits: {
-      type: GraphQLList(GraphQLString)
+      type: new GraphQLList(traitType),
+      resolve(source,args){
+        return traitList.traits.filter(trait => {
+          return source.traits.includes(trait.name);
+      })
+      }
     },
     link: {
       type: GraphQLString
     },
-    prereq: {
+    prerequisites: {
       type: GraphQLString
     },
     benefits: {
       type: GraphQLString
     },
     text: {
-      type: GraphQLList(GraphQLString)
+      type: GraphQLString
+    },
+    source: {
+      type: GraphQLString
+    },
+    archetype: {
+      type: GraphQLString
+    },
+    criticalsuccess: {
+      type: GraphQLString
+    },
+    success: {
+      type: GraphQLString
+    },
+    failure: {
+      type: GraphQLString
+    },
+    special: {
+      type: GraphQLString
+    },
+    trigger: {
+      type: GraphQLString
+    },
+    frequency: {
+      type: GraphQLString
+    },
+    access: {
+      type: GraphQLString
+    },
+    actions: {
+      type: GraphQLString
+    },
+    activate: {
+      type: GraphQLString
     }
+    
   }
 })
 
@@ -1696,7 +1735,7 @@ const queryType =  new GraphQLObjectType({
         name: { type: GraphQLString }
       },
       resolve: (source, {name}) => {
-        return featList.feats.filter(feat => {
+        return featList.baseFeats.filter(feat => {
             return feat.name == name;
         })[0]
       }
@@ -1707,7 +1746,7 @@ const queryType =  new GraphQLObjectType({
         searchString: { type: GraphQLString }
       },
       resolve: (source, {searchString}) => {
-        return featList.feats.filter(feat => {
+        return featList.baseFeats.filter(feat => {
             return feat.name.startsWith(searchString);
         })
       }
@@ -1715,9 +1754,38 @@ const queryType =  new GraphQLObjectType({
     feats: {
       type: new GraphQLList(featType),
       resolve: () => {
-        return featList.feats
+        return featList.baseFeats
+      }
+    },//archetype feats
+    archtypefeat: {
+      type: featType,
+      args: {
+        name: { type: GraphQLString }
+      },
+      resolve: (source, {name}) => {
+        return featList.archFeats.filter(feat => {
+            return feat.name == name;
+        })[0]
       }
     },
+    archFeatSearch: {
+      type: new GraphQLList(featType),
+      args: {
+        searchString: { type: GraphQLString }
+      },
+      resolve: (source, {searchString}) => {
+        return featList.archFeats.filter(feat => {
+            return feat.name.startsWith(searchString);
+        })
+      }
+    },
+    archfeats: {
+      type: new GraphQLList(featType),
+      resolve: () => {
+        return featList.archFeats
+      }
+    },
+
     advGear: {
       type: gearType,
       args: {
