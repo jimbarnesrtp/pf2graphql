@@ -49,94 +49,102 @@ const ammunition = [{
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
     "source": "Core Rulebook pg. 560",
     "": "spellstrike ammunitionspellstrike ammunition",
-    "actions": "Two Actions",
-    "activate": "Cast a Spell",
     "name": " Spellstrike Ammunition (Type I)",
     "level": 3,
-    "price": "12 gpMaximum Spell Level 1st",
-    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.",
+    "price": "12 gp",
+    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.Maximum Spell Level 1st",
     "traits": ["Consumable", "Magical", "Transmutation"],
-    "ammunition": "any"
+    "ammunition": "any",
+    "actions": "Two Actions",
+    "activate": "Cast a Spell"
 }, {
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
     "name": " Spellstrike Ammunition (Type II)",
-    "price": "30 gpMaximum Spell Level 2nd",
     "source": "Core Rulebook pg. 560",
     "level": 5,
-    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.",
-    "traits": ["Consumable", "Magical", "Transmutation"],
-    "ammunition": "any",
-    "actions": "Two Actions"
-}, {
-    "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
-    "name": " Spellstrike Ammunition (Type III)",
-    "price": "70 gpMaximum Spell Level 3rd",
-    "source": "Core Rulebook pg. 560",
-    "level": 7,
-    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.",
-    "traits": ["Consumable", "Magical", "Transmutation"],
-    "ammunition": "any",
-    "actions": "Two Actions"
-}, {
-    "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
-    "name": " Spellstrike Ammunition (Type IV)",
-    "price": "150 gpMaximum Spell Level 4th",
-    "source": "Core Rulebook pg. 560",
-    "level": 9,
-    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.",
-    "traits": ["Consumable", "Magical", "Transmutation"],
-    "ammunition": "any",
-    "actions": "Two Actions"
-}, {
-    "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
-    "name": " Spellstrike Ammunition (Type V)",
-    "price": "300 gpMaximum Spell Level 5th",
-    "source": "Core Rulebook pg. 560",
-    "level": 11,
-    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.",
-    "traits": ["Consumable", "Magical", "Transmutation"],
-    "ammunition": "any",
-    "actions": "Two Actions"
-}, {
-    "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
-    "name": " Spellstrike Ammunition (Type VI)",
-    "price": "600 gpMaximum Spell Level 6th",
-    "source": "Core Rulebook pg. 560",
-    "level": 13,
-    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.",
-    "traits": ["Consumable", "Magical", "Transmutation"],
-    "ammunition": "any",
-    "actions": "Two Actions"
-}, {
-    "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
-    "name": " Spellstrike Ammunition (Type VII)",
-    "price": "1,300 gpMaximum Spell Level 7th",
-    "source": "Core Rulebook pg. 560",
-    "level": 15,
-    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.",
-    "traits": ["Consumable", "Magical", "Transmutation"],
-    "ammunition": "any",
-    "actions": "Two Actions"
-}, {
-    "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
-    "name": " Spellstrike Ammunition (Type VIII)",
-    "price": "3,000 gpMaximum Spell Level 8th",
-    "source": "Core Rulebook pg. 560",
-    "level": 17,
-    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.",
-    "traits": ["Consumable", "Magical", "Transmutation"],
-    "ammunition": "any",
-    "actions": "Two Actions"
-}, {
-    "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
-    "name": " Spellstrike Ammunition (Type IX)",
-    "price": "8,000 gpMaximum Spell Level 9th",
-    "source": "Core Rulebook pg. 560",
-    "level": 19,
+    "price": "30 gp",
+    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.Maximum Spell Level 2nd",
     "traits": ["Consumable", "Magical", "Transmutation"],
     "ammunition": "any",
     "actions": "Two Actions",
-    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price."
+    "activate": "Cast a Spell"
+}, {
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
+    "name": " Spellstrike Ammunition (Type III)",
+    "source": "Core Rulebook pg. 560",
+    "level": 7,
+    "price": "70 gp",
+    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.Maximum Spell Level 3rd",
+    "traits": ["Consumable", "Magical", "Transmutation"],
+    "ammunition": "any",
+    "actions": "Two Actions",
+    "activate": "Cast a Spell"
+}, {
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
+    "name": " Spellstrike Ammunition (Type IV)",
+    "source": "Core Rulebook pg. 560",
+    "level": 9,
+    "price": "150 gp",
+    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.Maximum Spell Level 4th",
+    "traits": ["Consumable", "Magical", "Transmutation"],
+    "ammunition": "any",
+    "actions": "Two Actions",
+    "activate": "Cast a Spell"
+}, {
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
+    "name": " Spellstrike Ammunition (Type V)",
+    "source": "Core Rulebook pg. 560",
+    "level": 11,
+    "price": "300 gp",
+    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.Maximum Spell Level 5th",
+    "traits": ["Consumable", "Magical", "Transmutation"],
+    "ammunition": "any",
+    "actions": "Two Actions",
+    "activate": "Cast a Spell"
+}, {
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
+    "name": " Spellstrike Ammunition (Type VI)",
+    "source": "Core Rulebook pg. 560",
+    "level": 13,
+    "price": "600 gp",
+    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.Maximum Spell Level 6th",
+    "traits": ["Consumable", "Magical", "Transmutation"],
+    "ammunition": "any",
+    "actions": "Two Actions",
+    "activate": "Cast a Spell"
+}, {
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
+    "name": " Spellstrike Ammunition (Type VII)",
+    "source": "Core Rulebook pg. 560",
+    "level": 15,
+    "price": "1,300 gp",
+    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.Maximum Spell Level 7th",
+    "traits": ["Consumable", "Magical", "Transmutation"],
+    "ammunition": "any",
+    "actions": "Two Actions",
+    "activate": "Cast a Spell"
+}, {
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
+    "name": " Spellstrike Ammunition (Type VIII)",
+    "source": "Core Rulebook pg. 560",
+    "level": 17,
+    "price": "3,000 gp",
+    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price.Maximum Spell Level 8th",
+    "traits": ["Consumable", "Magical", "Transmutation"],
+    "ammunition": "any",
+    "actions": "Two Actions",
+    "activate": "Cast a Spell"
+}, {
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=167",
+    "name": " Spellstrike Ammunition (Type IX)",
+    "source": "Core Rulebook pg. 560",
+    "level": 19,
+    "price": "8,000 gp",
+    "traits": ["Consumable", "Magical", "Transmutation"],
+    "ammunition": "any",
+    "actions": "Two Actions",
+    "activate": "Cast a Spell",
+    "text": "Mystic patterns create a magic reservoir within this ammunition. You activate   by Casting a Spell into the ammunition. The spell must be of a spell level the ammunition can hold, and the spell must be able to target a creature other than the caster. A creature hit by activated   is targeted by the spell. If the creature isn\u2019t a valid target for the spell, the spell is lost.  The ammunition affects only the target hit, even if the spell would normally affect more than one target. If the spell requires a spell attack roll, use the result of your ranged attack roll with the ammunition to determine the degree of success of the spell. If the spell requires a saving throw, the target attempts the save against your spell DC.  The maximum level of spell the ammunition can hold determines its item level and Price. Maximum Spell Level 9th"
 }, {
     "name": "Climbing Bolt",
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=160",
@@ -164,24 +172,25 @@ const ammunition = [{
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=162",
     "source": "Core Rulebook pg. 559",
     "": "explosive ammunition",
-    "actions": "Single Action",
-    "activate": "Interact",
     "name": " Explosive Ammunition",
     "level": 9,
     "price": "130 gp",
     "text": "This piece of ammunition is coated in gritty black soot. When activated   hits a target, the missile explodes in a 10-foot burst, dealing 6d6 fire damage to each creature in the area (including the target). Each creature must attempt a DC 25 basic Reflex save.",
     "traits": ["Consumable", "Evocation", "Fire", "Magical"],
-    "ammunition": "any"
+    "ammunition": "any",
+    "actions": "Single Action",
+    "activate": "Interact"
 }, {
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=162",
     "name": " Explosive Ammunition (Greater)",
-    "price": "520 gpThe damage is 10d6 and the save DC is 30.",
     "source": "Core Rulebook pg. 559",
     "level": 13,
+    "price": "520 gp",
     "traits": ["Consumable", "Evocation", "Fire", "Magical"],
     "ammunition": "any",
     "actions": "Single Action",
-    "text": "This piece of ammunition is coated in gritty black soot. When activated   hits a target, the missile explodes in a 10-foot burst, dealing 6d6 fire damage to each creature in the area (including the target). Each creature must attempt a DC 25 basic Reflex save."
+    "activate": "Interact",
+    "text": "This piece of ammunition is coated in gritty black soot. When activated   hits a target, the missile explodes in a 10-foot burst, dealing 6d6 fire damage to each creature in the area (including the target). Each creature must attempt a DC 25 basic Reflex save. The damage is 10d6 and the save DC is 30."
 }, {
     "name": "Storm Arrow",
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=169",
@@ -247,6 +256,7 @@ const ammunition = [{
     "activate": " Interact",
     "craftrequirements": " Supply one casting of flesh to stone."
 }]
+
 const oils = [{
     "name": "Nectar of Purification",
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=174",
@@ -262,24 +272,25 @@ const oils = [{
 }, {
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=181",
     "source": "Core Rulebook pg. 562",
-    "actions": "Single Action",
-    "activate": "Interact",
     "name": " Oil of Weightlessness",
     "level": 2,
     "price": "6 gp",
     "text": "You can spread this shimmering oil on an item of 1 Bulk or less to make it feel weightless. It has negligible Bulk for 1 hour.",
     "traits": ["Consumable", "Magical", "Oil", "Transmutation"],
-    "usage": "held in 2 hands"
+    "usage": "held in 2 hands",
+    "actions": "Single Action",
+    "activate": "Interact"
 }, {
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=181",
     "name": " Oil of Weightlessness (Greater)",
-    "price": "36 gpThis oil can affect an item of 2 Bulk or less and lasts 8 hours.",
     "source": "Core Rulebook pg. 562",
     "level": 6,
+    "price": "36 gp",
     "traits": ["Consumable", "Magical", "Oil", "Transmutation"],
     "usage": "held in 2 hands",
     "actions": "Single Action",
-    "text": "You can spread this shimmering oil on an item of 1 Bulk or less to make it feel weightless. It has negligible Bulk for 1 hour."
+    "activate": "Interact",
+    "text": "You can spread this shimmering oil on an item of 1 Bulk or less to make it feel weightless. It has negligible Bulk for 1 hour. This oil can affect an item of 2 Bulk or less and lasts 8 hours."
 }, {
     "name": "Oil of Potency",
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=179",
@@ -319,24 +330,26 @@ const oils = [{
 }, {
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=182",
     "source": "Core Rulebook pg. 562",
-    "actions": "Single Action",
-    "activate": "Interact",
     "name": " Salve of Antiparalysis",
     "level": 6,
     "price": "40 gp",
     "text": "Applying this filmy salve to a creature helps it overcome magical paralysis. The creature recovers as if it were the target of a 3rd-level   spell. ",
     "traits": ["Consumable", "Healing", "Magical", "Necromancy", "Oil"],
-    "usage": "held in 2 hands"
+    "usage": "held in 2 hands",
+    "actions": "Single Action",
+    "activate": "Interact"
 }, {
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=182",
     "name": " Salve of Antiparalysis (Greater)",
-    "price": "325 gpAgreater salve of antiparalysiscan potentially remove petrification. The creature recovers as if it were the target of both a 6th-levelremove paralysisspell and a",
     "source": "Core Rulebook pg. 562",
     "level": 12,
+    "price": "325 gp",
+    "": "greater salve of antiparalysisremove paralysis",
     "traits": ["Consumable", "Healing", "Magical", "Necromancy", "Oil"],
     "usage": "held in 2 hands",
     "actions": "Single Action",
-    "text": "Applying this filmy salve to a creature helps it overcome magical paralysis. The creature recovers as if it were the target of a 3rd-level   spell.  spell."
+    "activate": "Interact",
+    "text": "Applying this filmy salve to a creature helps it overcome magical paralysis. The creature recovers as if it were the target of a 3rd-level   spell.  A can potentially remove petrification. The creature recovers as if it were the target of both a 6th-level spell and a spell."
 }, {
     "name": "Aligned Oil",
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=173",
@@ -411,96 +424,106 @@ const oils = [{
     "actions": "Single Action",
     "activate": " Interact"
 }]
+
 other = [{
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=244",
     "source": "Core Rulebook pg. 570",
-    "actions": "Single Action",
-    "activate": "Interact",
     "name": " Feather Token (Anchor)",
     "level": 7,
-    "price": "55 gpThis feather can be activated only on a boat. When activated, this feather transforms into a massive anchor that causes the boat to immediately stop. After 1 day, the anchor vanishes and the boat can move as normal. The anchor is attached to the boat by a magical chain of force, but the chain can be removed by",
-    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description. or destroyed (Hardness 30, HP 40).",
+    "price": "55 gp",
+    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.This feather can be activated only on a boat. When activated, this feather transforms into a massive anchor that causes the boat to immediately stop. After 1 day, the anchor vanishes and the boat can move as normal. The anchor is attached to the boat by a magical chain of force, but the chain can be removed by or destroyed (Hardness 30, HP 40).",
     "traits": ["Conjuration", "Consumable", "Magical"],
+    "actions": "Single Action",
+    "activate": "Interact",
     "category": "other"
 }, {
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=244",
     "name": " Feather Token (Bird)",
     "source": "Core Rulebook pg. 570",
     "level": 3,
-    "price": "8 gpWhen activated, this token transforms into a small sparrow that waits on your finger for you to relay a message up to 1 minute in length, along with the name and rough location of a\u00a0recipient. The recipient must be someone you have met, and the location must be somewhere you have visited. After receiving the message, the bird flies off to deliver it, traveling at 30 miles per hour and then searching for the target in the location you provided. If the bird finds the target, it moves adjacent to them, your words emanate from the bird, and the bird then flies off and vanishes. The bird also vanishes if it fails to find your target after 10 hours of searching the location you specified.",
-    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.",
+    "price": "8 gp",
+    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.When activated, this token transforms into a small sparrow that waits on your finger for you to relay a message up to 1 minute in length, along with the name and rough location of a\u00a0recipient. The recipient must be someone you have met, and the location must be somewhere you have visited. After receiving the message, the bird flies off to deliver it, traveling at 30 miles per hour and then searching for the target in the location you provided. If the bird finds the target, it moves adjacent to them, your words emanate from the bird, and the bird then flies off and vanishes. The bird also vanishes if it fails to find your target after 10 hours of searching the location you specified.",
     "traits": ["Conjuration", "Consumable", "Magical"],
     "actions": "Single Action",
+    "activate": "Interact",
     "category": "other"
 }, {
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=244",
     "name": " Feather Token (Chest)",
-    "price": "10 gpWhen you use this token, a small wooden chest appears and immediately opens. This chest can hold up to 10 Bulk worth of items. Once the chest is closed, it transforms again\u2014this time into a key\u2014taking all of the stored items with it. You can activate this key by spending an Interact action to turn it in an imaginary lock, which causes it to transform back into a chest with all of the items still inside. Once it has turned into a chest a second time, it forever remains a wooden chest.",
     "source": "Core Rulebook pg. 570",
     "level": 3,
-    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.",
+    "price": "10 gp",
+    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.When you use this token, a small wooden chest appears and immediately opens. This chest can hold up to 10 Bulk worth of items. Once the chest is closed, it transforms again\u2014this time into a key\u2014taking all of the stored items with it. You can activate this key by spending an Interact action to turn it in an imaginary lock, which causes it to transform back into a chest with all of the items still inside. Once it has turned into a chest a second time, it forever remains a wooden chest.",
     "traits": ["Conjuration", "Consumable", "Magical"],
     "actions": "Single Action",
+    "activate": "Interact",
     "category": "other"
 }, {
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=244",
     "name": " Feather Token (Fan)",
-    "price": "15 gpActivating this feather requires you to fan it in a given direction. If this direction is toward the sail of a vessel, the feather flutters up toward the sail and fans continuously, filling the sail with air and granting the vessel a +10-foot circumstance bonus to its Speed for 8 hours. If fanned in any other direction, it instead produces a single casting of",
     "source": "Core Rulebook pg. 570",
     "level": 4,
-    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description. (DC 20).",
+    "price": "15 gp",
+    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.Activating this feather requires you to fan it in a given direction. If this direction is toward the sail of a vessel, the feather flutters up toward the sail and fans continuously, filling the sail with air and granting the vessel a +10-foot circumstance bonus to its Speed for 8 hours. If fanned in any other direction, it instead produces a single casting of (DC 20).",
     "traits": ["Conjuration", "Consumable", "Magical"],
     "actions": "Single Action",
+    "activate": "Interact",
     "category": "other"
 }, {
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=244",
     "name": " Feather Token (Holly Bush)",
     "source": "Core Rulebook pg. 570",
     "level": 2,
-    "price": "6 gpWhen this feather is activated, it immediately transforms into a living holly bush, filling a single square. This bush can provide standard cover. In addition, the bush has 2d4 bright-red berries. While holly berries are usually poisonous, these berries are infused with beneficial magic. You can pick and eat a berry as an Interact action to recover 1 Hit Point. Once plucked from the bush, a berry becomes non-magical after a few seconds, so it doesn\u2019t heal you if you don\u2019t eat it within the span of your Interact action.If activated on soil, the plant continues to grow and thrive (although it doesn\u2019t produce any more healing berries). If activated elsewhere, it withers and dies within 1d4 days.",
-    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.",
+    "price": "6 gp",
+    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.When this feather is activated, it immediately transforms into a living holly bush, filling a single square. This bush can provide standard cover. In addition, the bush has 2d4 bright-red berries. While holly berries are usually poisonous, these berries are infused with beneficial magic. You can pick and eat a berry as an Interact action to recover 1 Hit Point. Once plucked from the bush, a berry becomes non-magical after a few seconds, so it doesn\u2019t heal you if you don\u2019t eat it within the span of your Interact action. If activated on soil, the plant continues to grow and thrive (although it doesn\u2019t produce any more healing berries). If activated elsewhere, it withers and dies within 1d4 days.",
     "traits": ["Conjuration", "Consumable", "Magical"],
     "actions": "Single Action",
+    "activate": "Interact",
     "category": "other"
 }, {
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=244",
     "name": " Feather Token (Ladder)",
-    "price": "3 gpWhen activated, this feather transforms permanently into a 20-foot-long wooden ladder.",
     "source": "Core Rulebook pg. 570",
     "level": 1,
-    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.",
+    "price": "3 gp",
+    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.When activated, this feather transforms permanently into a 20-foot-long wooden ladder.",
     "traits": ["Conjuration", "Consumable", "Magical"],
     "actions": "Single Action",
+    "activate": "Interact",
     "category": "other"
 }, {
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=244",
     "name": " Feather Token (Swan Boat)",
-    "price": "76 gpThis feather can be activated only when tossed into a large body of water, such as a lake or broad river. It transforms into a swan-shaped boat capable of carrying up to 32 Medium creatures, 8 Large creatures, or 2 Huge creatures. The boat moves on the water at a Speed of 50 feet, and lasts 1 day.",
     "source": "Core Rulebook pg. 570",
     "level": 8,
-    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.",
+    "price": "76 gp",
+    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.This feather can be activated only when tossed into a large body of water, such as a lake or broad river. It transforms into a swan-shaped boat capable of carrying up to 32 Medium creatures, 8 Large creatures, or 2 Huge creatures. The boat moves on the water at a Speed of 50 feet, and lasts 1 day.",
     "traits": ["Conjuration", "Consumable", "Magical"],
     "actions": "Single Action",
+    "activate": "Interact",
     "category": "other"
 }, {
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=244",
     "name": " Feather Token (Tree)",
-    "price": "38 gpThis token can be activated only on an unoccupied patch of earth or soil. When activated, this token transforms into an oak tree, 60 feet tall with a 5-foot-wide trunk. The tree continues to live and grow if conditions are favorable.",
     "source": "Core Rulebook pg. 570",
     "level": 6,
-    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.",
+    "price": "38 gp",
+    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.This token can be activated only on an unoccupied patch of earth or soil. When activated, this token transforms into an oak tree, 60 feet tall with a 5-foot-wide trunk. The tree continues to live and grow if conditions are favorable.",
     "traits": ["Conjuration", "Consumable", "Magical"],
     "actions": "Single Action",
+    "activate": "Interact",
     "category": "other"
 }, {
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=244",
     "name": " Feather Token (Whip)",
-    "price": "130 gpThis feather transforms into a+1 striking dancing whipwhen activated. The whip immediately jumps from your grasp and proceeds to attack your enemies until 1 minute has passed or it fails its flat check fordancing, at which point it vanishes. If the whip\u2019s target isn\u2019t prone, the whip uses its actions to attempt to Trip that creature instead of making a Strike. The whip\u2019s total attack modifier for Striking or Tripping is +18 instead of the normal bonus for adancingweapon.",
     "source": "Core Rulebook pg. 570",
     "level": 9,
+    "price": "130 gp",
+    "": "+1 striking dancing whipdancingdancing",
     "traits": ["Conjuration", "Consumable", "Magical"],
     "actions": "Single Action",
-    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description.",
+    "activate": "Interact",
+    "text": "Each feather token appears to be a simple feather from some exotic bird. The feather\u2019s shaft, dipped in gold, bears a single arcane rune. Activating a feather token causes it to transform into another object, which then can be used as normal for that object. Each feather can be activated only once, with most of them permanently becoming the item in their description. This feather transforms into a when activated. The whip immediately jumps from your grasp and proceeds to attack your enemies until 1 minute has passed or it fails its flat check for , at which point it vanishes. If the whip\u2019s target isn\u2019t prone, the whip uses its actions to attempt to Trip that creature instead of making a Strike. The whip\u2019s total attack modifier for Striking or Tripping is +18 instead of the normal bonus for a weapon.",
     "category": "other"
 }, {
     "name": "Holy Water",
@@ -601,6 +624,7 @@ other = [{
     "actions": "Two Actions",
     "activate": " Command, Interact"
 }]
+
 const potions = [{
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=186",
     "source": "Core Rulebook pg. 563",
@@ -943,6 +967,7 @@ const potions = [{
     "actions": "Single Action",
     "activate": " Interact"
 }]
+
 const talismans = [{
     "name": "Owlbear Claw",
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=230",
@@ -1062,11 +1087,11 @@ const talismans = [{
     "text": "Light spring water fizzes and bubbles within this small glass globe, spilling onto the affixed armor when activated. Until the end of your turn, the armor lets you move across water and other liquids as if they were solid ground. If you Stride or Step over a weight-sensitive pressure plate, you don\u2019t cause the plate to depress, which prevents you from triggering any device or hazard attached to the pressure plate. When the ampoule\u2019s effect ends, you sink, fall, break through flimsy ground, or land on pressure plates as normal for your current location.",
     "source": "Core Rulebook pg. 566",
     "usage": " affixed to armor",
-    "actions": "Free Action",
+    "actions": "Single Action",
     "activate": " Envision; ",
     "requirements": " You're an expert in Acrobatics"
 }, {
-    "name": "Mezmerizing Opal",
+    "name": "Mesmerizing Opal",
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=225",
     "category": "talisman",
     "level": 2,
@@ -1121,6 +1146,16 @@ const talismans = [{
     "trigger": " You Stride or Step; ",
     "requirements": " You are an expert in Acrobatics"
 }, {
+    "name": "Snapleaf",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=512",
+    "category": "talisman",
+    "level": 3,
+    "price": " 9 gp",
+    "traits": ["Consumable", "Illusion", "Magical", "Talisman"],
+    "text": "This small, crystalline carving takes the shape of a tree leaf and attaches to armor or clothing with a simple strap. When you activate the  snapleaf , you gain the benefits of  feather fall  and a 2nd-level  invisibility  spell for 1 minute or until you stop falling, whichever comes first.",
+    "source": "Lost Omens Character Guide pg. 73",
+    "usage": " affixed to armor"
+}, {
     "name": "Dragon Turtle Scale",
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=206",
     "category": "talisman",
@@ -1130,9 +1165,22 @@ const talismans = [{
     "text": "This shimmering green scale is usually attached to a golden clasp or chain. When you activate the scale, for 1 minute you gain a swim Speed equal to half your land Speed.",
     "source": "Core Rulebook pg. 566",
     "usage": " affixed to armor",
-    "actions": "Free Action",
+    "actions": "Single Action",
     "activate": " Envision; ",
     "requirements": " You're an expert in Athletics"
+}, {
+    "name": "Fortifying Pebble",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=522",
+    "category": "talisman",
+    "level": 4,
+    "price": " 13 gp",
+    "traits": ["Uncommon", "Abjuration", "Consumable", "Magical", "Talisman"],
+    "text": "This small pebble is strangely dense and surprisingly durable, affixed to an object by a sturdy steel chain. When you activate the pebble, the affixed object takes 10 less damage.",
+    "source": "Lost Omens Character Guide pg. 110",
+    "usage": " affixed to armor, shield, or weapon",
+    "actions": "Free Action",
+    "activate": " envision; ",
+    "trigger": " The affixed object would take damage"
 }, {
     "name": "Bloodseeker Beak",
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=201",
@@ -1152,7 +1200,7 @@ const talismans = [{
     "category": "talisman",
     "level": 4,
     "price": " 20 gp",
-    "traits": ["Enchantment", "Fear", "Magical", "Magical", "Mental", "Talisman"],
+    "traits": ["Consumable", "Enchantment", "Fear", "Magical", "Mental", "Talisman"],
     "text": "Dark smoke seems to writhe within this obsidian gem. When you activate the gem, you make an  Intimidating Strike , as the fighter feat.  If you have the Intimidating Strike feat, increase the frightened condition value from this Intimidating Strike to frightened 2, or frightened 3 on a critical hit.",
     "source": "Core Rulebook pg. 566",
     "usage": " affixed to a weapon",
@@ -1238,7 +1286,7 @@ const talismans = [{
     "actions": "Free Action",
     "activate": " Envision; ",
     "trigger": " You attempt an Intimidation check to Coerce or Demoralize, but you haven't rolled yet; ",
-    "requirements": " You are an expert in Initimidation"
+    "requirements": " You are an expert in Intimidation"
 }, {
     "name": "Murderer's Knot",
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=228",
@@ -1278,7 +1326,7 @@ const talismans = [{
     "usage": " affixed to a weapon",
     "actions": "Free Action",
     "activate": " Interact; ",
-    "trigger": " You attack an adjacent creature and havne't rolled your attack roll; ",
+    "trigger": " You attack an adjacent creature and haven't rolled your attack roll; ",
     "requirements": " You're a master in Intimidation"
 }, {
     "name": "Jade Bauble",
@@ -1346,7 +1394,7 @@ const talismans = [{
     "usage": " affixed to armor",
     "actions": "Free Action",
     "activate": " Envision; ",
-    "trigger": " An attach misses you; ",
+    "trigger": " An attack misses you; ",
     "requirements": " You are a master in Stealth"
 }, {
     "name": "Eye of Apprehension",
@@ -1390,18 +1438,35 @@ const talismans = [{
     "trigger": " The affixed item would take damage; ",
     "requirements": " You are a master in Crafting"
 }, {
+    "name": "Grinning Pugwampi",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=544",
+    "category": "talisman",
+    "level": 14,
+    "price": " 700 gp",
+    "traits": ["Uncommon", "Consumable", "Enchantment", "Magical", "Misfortune", "Talisman"],
+    "text": "This bone statuette of a sneering gremlin crumbles to dust when activated, imparting a fraction of its subject\u2019s infamous misfortune unto those you strike.",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 77",
+    "usage": " affixed to weapon",
+    "actions": "Free Action",
+    "activate": " envision; ",
+    "trigger": " You damage a  flat-footed creature with the affixed weapon; ",
+    "effect": " The damaged creature must attempt a DC 33 Will save.",
+    "criticalsuccess": " The creature is unaffected.",
+    "success": " The creature must roll twice and take the worse result on the next check it attempts.",
+    "failure": " The creature must roll twice and take the worse result on all checks until the end of its next turn."
+}, {
     "name": "Viper's Fang",
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=238",
     "category": "talisman",
     "level": 14,
     "price": " 850 gp",
     "traits": ["Consumable", "Evocation", "Magical", "Talisman"],
-    "text": "When you activate this resin-strengthened viper skull, you make an  You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn\u2019t count toward your multiple attack penalty, and your multiple attack penalty doesn\u2019t apply to this Strike.Attack of Opportunity against the triggering creature.  If you have Attack of Opportunity, you can activate the  viper\u2019s fang  as a free action.",
-    "source": "Core Rulebook pg. 142",
+    "text": "When you activate this resin-strengthened viper skull, you make an  Attack of Opportunity  against the triggering creature.  If you have Attack of Opportunity, you can activate the  viper\u2019s fang  as a free action.",
+    "source": "Core Rulebook pg. 569",
     "usage": " affixed to a weapon",
-    "trigger": " A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it\u2019s using. A creature within your reach uses a manipulate or move action, makes a ranged attack, or leaves a square during a moving action it's using; ",
     "actions": "Reaction",
     "activate": " Envision; ",
+    "trigger": " A creature within your reach uses a manipulate or move action, makes a ranged attack, or leaves a square during a moving action it's using; ",
     "requirements": " You are a master with the affixed weapon"
 }, {
     "name": "Dazing Coil",
@@ -1463,7 +1528,7 @@ const talismans = [{
     "level": 17,
     "price": " 2,400 gp",
     "traits": ["Abjuration", "Consumable", "Magical", "Talisman"],
-    "text": "Made from a treated sliver of cold iron, this talisman allows you to counteract magical effects. When you activate the  dispelling sliver , it attempts to counteract a single spell active on the target, with the effects of an 8th-level  dispel magic  spell.  If you activate the talisman on a successful  Dispelling Slice , the talisman attempts to counteract all spells active on the target.",
+    "text": "Made from a treated sliver of cold iron, this talisman allows you to counteract magical effects. When you activate the  dispelling sliver , it attempts to counteract a single spell active on the target, with the effects of an 8th-level  dispel magic  spell (counteract modifier +29)  If you activate the talisman on a successful  Dispelling Slice , the talisman attempts to counteract all spells active on the target.",
     "source": "Core Rulebook pg. 566",
     "usage": " affixed to a weapon",
     "actions": "Free Action",

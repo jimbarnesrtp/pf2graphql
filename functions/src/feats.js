@@ -61,7 +61,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=760",
     "prerequisites": "trained in Medicine",
     "benefits": "Heal yourself or an ally in battle",
-    "text": "You can patch up yourself or an adjacent ally, even in combat. Attempt a Medicine check with the same DC as for Treat Wounds and provide the corresponding amount of healing. As with Treat Wounds, you can attempt checks against higher DCs if you have the minimum proficiency rank. The target is then temporarily immune to your Battle Medicine for 1 day."
+    "text": "You can patch up yourself or an adjacent ally, even in combat. Attempt a Medicine check with the same DC as for Treat Wounds, and restore a corresponding amount of Hit Points; this does not remove the   condition. As with Treat Wounds, you can attempt checks against higher DCs if you have the minimum proficiency rank. The target is then temporarily immune to your Battle Medicine for 1 day."
 }, {
     "name": "Breath Control",
     "level": 1,
@@ -485,7 +485,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=855",
     "prerequisites": "",
     "benefits": "Increase your maximum HP and reduce the DCs of recovery checks",
-    "text": "You can withstand more punishment than most before succumbing. Increase your maximum Hit Points by your level. You reduce the DC of recovery checks by 1 (page 459)."
+    "text": "You can withstand more punishment than most before succumbing. Increase your maximum Hit Points by your level. The DC of recovery checks is equal to 9 + your dying condition value (page 459)."
 }, {
     "name": "Train Animal",
     "level": 1,
@@ -1125,7 +1125,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=105",
     "prerequisites": "",
     "benefits": "Your bestial mutagen brings out the beast lurking within you.",
-    "text": "Your   brings out the beast lurking within you, granting you especially sharp claws and teeth as well as a ferocious appearance. Whenever you\u2019re affected by a bestial mutagen you created, you gain the mutagen\u2019s item bonus to your Intimidation checks. In addition, your claws and jaws are increasingly vicious, and they gain the   trait. Finally, you can increase the mutagen\u2019s penalty to AC from \u20131 to \u20132 and, in exchange, increase the damage die size of your claws and jaws by one step."
+    "text": "Your   brings out the beast lurking within you, granting you especially sharp claws and teeth as well as a ferocious appearance. Whenever you\u2019re affected by a bestial mutagen, you gain the mutagen\u2019s item bonus to your Intimidation checks. In addition, your claws and jaws are increasingly vicious, and they gain the   trait. Finally, you can increase the mutagen\u2019s penalty to AC from \u20131 to \u20132 and, in exchange, increase the damage die size of your claws and jaws by one step."
 }, {
     "name": "Powerful Alchemy",
     "level": 8,
@@ -1149,7 +1149,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=108",
     "prerequisites": "",
     "benefits": "You can cause your body to twist and flow like the quicksilver within your mutagens.",
-    "text": "You can cause your body to twist and flow like the quicksilver within your mutagens. Whenever you are under the effects of a   you created, you can stretch your legs and Step up to 10 feet, and you can squish and compress your body, allowing you to make it through tight spaces as if you were one size smaller, in addition to any effect from Squeezing."
+    "text": "You can cause your body to twist and flow like the quicksilver within your mutagens. Whenever you are under the effects of a  , you can stretch your legs and Step up to 10 feet, and you can squish and compress your body, allowing you to make it through tight spaces as if you were one size smaller, in addition to any effect from Squeezing."
 }, {
     "name": "Expanded Splash",
     "level": 10,
@@ -1157,7 +1157,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=109",
     "prerequisites": "Calculated Splash",
     "benefits": "The particularly volatile compounds that you brew into your bombs result in them creating especially large and powerful explosions.",
-    "text": "The particularly volatile compounds that you brew into your bombs result in them creating especially large and powerful explosions. When you throw an alchemical bomb you created and that bomb has the   trait, you can add your Intelligence modifier to the bomb\u2019s usual splash damage, and it deals splash damage to every creature within 10 feet of the target."
+    "text": "The particularly volatile compounds that you brew into your bombs result in them creating especially large and powerful explosions. When you throw an alchemical bomb that has the   trait, you can add your Intelligence modifier to the bomb\u2019s usual splash damage, and it deals splash damage to every creature within 10 feet of the target."
 }, {
     "name": "Greater Debilitating Bomb",
     "level": 10,
@@ -1173,7 +1173,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=111",
     "prerequisites": "",
     "benefits": "You mix a special additive into your elixir that calms the drinker\u2019s body and mind.",
-    "text": "You mix a special additive into your elixir that calms the drinker\u2019s body and mind. The elixir of life attempts to counteract one fear effect or one effect imposing the paralyzed condition on the drinker."
+    "text": "You mix a special additive into your elixir that calms the drinker\u2019s body and mind. The elixir of life attempts to counteract one fear effect or one effect imposing the paralyzed condition on the drinker using the item's level and a counteract modifier equal to your class DC - 10.\r\n"
 }, {
     "name": "Potent Poisoner",
     "level": 10,
@@ -1197,7 +1197,15 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=114",
     "prerequisites": "",
     "benefits": "The fortifying additives you brew into your mutagens make your juggernaut form impervious.",
-    "text": "The fortifying additives you brew into your mutagens make your juggernaut form impervious. Whenever you\u2019re affected by a   you created, you gain resistance to all physical damage equal to your Intelligence modifier (minimum 0)."
+    "text": "The fortifying additives you brew into your mutagens make your juggernaut form impervious. Whenever you\u2019re affected by a  , you gain resistance to all physical damage equal to your Intelligence modifier (minimum 0)."
+}, {
+    "name": "Shaped Contaminant",
+    "level": 12,
+    "traits": ["Alchemist", " Uncommon"],
+    "link": "https://2e.aonprd.com/Feats.aspx?ID=1153",
+    "prerequisites": "",
+    "benefits": "Through a combination of careful manipulation and precise breath control, you can deploy inhaled toxins precisely",
+    "text": "Through a combination of careful manipulation and precise breath control, you can deploy inhaled toxins precisely. When you activate an   poison, you can cause it to fill a 20-foot line that\u2019s 5 feet tall rather than a 10-foot cube. You gain a +3 status bonus to saving throws against inhaled poisons that you activate."
 }, {
     "name": "Uncanny Bombs",
     "level": 12,
@@ -1253,7 +1261,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=121",
     "prerequisites": "",
     "benefits": "Specialized tweaks to your formula that supplements your genius considerably broaden the benefits you gain from cognitive mutagens.",
-    "text": "Specialized tweaks to your formula that supplements your genius considerably broaden the benefits you gain from cognitive mutagens. When you\u2019re affected by a   you created, you also gain the mutagen\u2019s item bonus to Deception, Diplomacy, Intimidation, Medicine, Nature, Performance, Religion, and Survival checks. In addition, you can communicate telepathically with creatures within 60 feet with whom you share a language. The communication is two-way once you establish it, so a creature you contact can also communicate with you."
+    "text": "Specialized tweaks to your formula that supplements your genius considerably broaden the benefits you gain from cognitive mutagens. When you\u2019re affected by a  , you also gain the mutagen\u2019s item bonus to Deception, Diplomacy, Intimidation, Medicine, Nature, Performance, Religion, and Survival checks. In addition, you can communicate telepathically with creatures within 60 feet with whom you share a language. The communication is two-way once you establish it, so a creature you contact can also communicate with you."
 }, {
     "name": "Persistent Mutagen",
     "level": 16,
@@ -1261,7 +1269,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=122",
     "prerequisites": "Extend Elixir",
     "benefits": "You\u2019ve trained your physical form to remain stable within the a given altered state.",
-    "text": "You\u2019ve trained your physical form to remain stable within the a given altered state. Once per day, when you consume an alchemical item with the   and   traits that you have crafted, you can retain its effects until the next time you make your daily preparations instead of its normal duration."
+    "text": "You\u2019ve trained your physical form to remain stable within the a given altered state. Once per day, when you consume an alchemical item with the   and   traits, you can retain its effects until the next time you make your daily preparations instead of its normal duration."
 }, {
     "name": "Improbable Elixirs",
     "level": 18,
@@ -1269,7 +1277,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=123",
     "prerequisites": "",
     "benefits": "Your mastery of alchemical secrets enables you to replicate effects most believe can be achieved only via magic.",
-    "text": "Your mastery of alchemical secrets enables you to replicate effects most believe can be achieved only via magic. Select a number of potions equal to your Intelligence modifier (minimum 1) of 9th level or lower. You gain formulas to Craft these potions as alchemical items with the   trait. When Crafting these alchemical elixirs, you can substitute alchemical reagents for an equal value of magical components, and you can use   instead of any other required tool kits. Other than that, the formula does not change. Once you\u2019ve chosen the potion formulas, they can\u2019t be changed."
+    "text": "Your mastery of alchemical secrets enables you to replicate effects most believe can be achieved only via magic. Select a number of potions equal to your Intelligence modifier (minimum 1) of 9th level or lower. You gain formulas to create these potions as alchemical items with the elixir trait. When making these alchemical elixirs, you can substitute alchemical reagents for an equal value of magical components, and you can use   (for  ) or an alchemist\u2019s lab (for the Craft activity) instead of any other required tool kits. Other than that, the formula does not change. Once you\u2019ve chosen the potion formulas, they can\u2019t be changed."
 }, {
     "name": "Mindblank Mutagen",
     "level": 18,
@@ -1277,7 +1285,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=124",
     "prerequisites": "",
     "benefits": "With a minor adjustment of ratios in the formula for your serene mutagen, you gain mental protections.",
-    "text": "With a minor adjustment of ratios in the formula for your  , you gain mental protections. When you\u2019re affected by a serene mutagen you created,  ,  , and   effects of 9th level or lower detect nothing from you or your possessions and auras. For instance,   would still detect other magic in the area, but not any magic on you."
+    "text": "With a minor adjustment of ratios in the formula for your  , you gain mental protections. When you\u2019re affected by a serene mutagen,  ,  , and   effects of 9th level or lower detect nothing from you or your possessions and auras. For instance,   would still detect other magic in the area, but not any magic on you."
 }, {
     "name": "Miracle Worker",
     "level": 18,
@@ -1425,7 +1433,7 @@ const baseFeats = [{
 }, {
     "name": "Wounded Rage",
     "level": 4,
-    "traits": ["Barbarian", " Rage"],
+    "traits": ["Barbarian"],
     "link": "https://2e.aonprd.com/Feats.aspx?ID=143",
     "prerequisites": "",
     "benefits": "You roar in pain, awakening the rage within you.",
@@ -1533,7 +1541,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=156",
     "prerequisites": "",
     "benefits": "You thrash the grabbed foe around.",
-    "text": "You thrash the grabbed foe around. It takes bludgeoning damage equal to your Strength modifier plus your ferocious specialization damage plus your Rage damage. The foe must attempt a basic Fortitude save against your class DC."
+    "text": "You thrash the grabbed foe around. It takes bludgeoning damage equal to your Strength modifier plus your weapon specialization damage plus your Rage damage. The foe must attempt a basic Fortitude save against your class DC."
 }, {
     "name": "Come and Get Me",
     "level": 10,
@@ -1573,7 +1581,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=161",
     "prerequisites": "Intimidating Glare",
     "benefits": "You unleash a terrifying howl.",
-    "text": "You unleash a terrifying howl. Attempt Intimidate checks to Demoralize each creature within 30 feet. Regardless of the results of your checks, each creature is then temporarily immune to Terrifying Howl for 1 minute."
+    "text": "You unleash a terrifying howl. Attempt Intimidate checks to Demoralize each enemy within 30 feet. Regardless of the results of your checks, each enemy is then temporarily immune to Terrifying Howl for 1 minute."
 }, {
     "name": "Dragon's Rage Wings",
     "level": 12,
@@ -1625,7 +1633,7 @@ const baseFeats = [{
 }, {
     "name": "Giant's Lunge",
     "level": 14,
-    "traits": ["Barbarian", " Concentrate", " Instinct"],
+    "traits": ["Barbarian", " Concentrate", " Instinct", " Rage"],
     "link": "https://2e.aonprd.com/Feats.aspx?ID=168",
     "prerequisites": "giant instinct",
     "benefits": "You extend your body and prepare to attack foes outside your normal reach.",
@@ -1661,7 +1669,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=172",
     "prerequisites": "dragon instinct, Dragon\u2019s Rage Wings",
     "benefits": "You transform into a ferocious large dragon.",
-    "text": "You transform into a ferocious Large dragon, gaining the effects of 6th-level   except that you use your own AC and attack modifier; you also apply your extra damage from Rage. The action to Dismiss the transformation gains the rage trait.  At 18th level, you gain a +20-foot status bonus to your fly Speed, your damage bonus with dragon Strikes increases to +12, your breath weapon DC increases to 30, and you gain a +14 status bonus to your breath weapon damage."
+    "text": "You transform into a ferocious Large dragon, gaining the effects of 6th-level   except that you use your own AC and attack modifier; you also apply your extra damage from Rage. You use your class DC for your breath weapon DC. The action to Dismiss the transformation gains the rage trait.  At 18th level, you gain a +20-foot status bonus to your fly Speed, your damage bonus with dragon Strikes increases to +12, and you gain a +14 status bonus to your breath weapon damage."
 }, {
     "name": "Reckless Abandon",
     "level": 16,
@@ -1677,7 +1685,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=174",
     "prerequisites": "",
     "benefits": "Your critical hits are particularly devastating.",
-    "text": "Your critical hits are particularly devastating. On a critical hit, add one extra damage die. This is in addition to any extra dice you gain if the weapon is deadly or fatal. The target also takes persistent bleed damage equal to two damage dice."
+    "text": "Your critical hits are particularly devastating. On a critical hit with a melee strike, add one extra damage die. This is in addition to any extra dice you gain if the weapon is deadly or fatal. The target also takes persistent bleed damage equal to two damage dice."
 }, {
     "name": "Perfect Clarity",
     "level": 18,
@@ -1845,7 +1853,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=195",
     "prerequisites": "polymath muse, master in Occultism",
     "benefits": "Your broad experiences translate to a range of skills.",
-    "text": "Your broad experiences translate to a range of skills. You add your level to all skill checks in which you are untrained. You can attempt any skill check that normally requires you to be trained, even if you are untrained. If you have legendary proficiency in Occultism, you can attempt any skill check that normally requires you to have expert proficiency, even if untrained or trained."
+    "text": "Your broad experiences translate to a range of skills. Your proficiency bonus to untrained skill checks is equal to your level. You can attempt any skill check that normally requires you to be trained, even if you are untrained. If you have legendary proficiency in Occultism, you can attempt any skill check that normally requires you to have expert proficiency, even if untrained or trained."
 }, {
     "name": "Inspire Heroics",
     "level": 8,
@@ -2389,7 +2397,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=257",
     "prerequisites": "divine ally (blade), tenets of good",
     "benefits": "Divine energy fills your weapon.",
-    "text": "Divine energy fills your weapon. Whenever you critically hit a foe with Smite Evil or a Retributive Strike, your attack adds an extra damage die, and the target is slowed 1 on its next turn."
+    "text": "Divine energy fills your weapon. Whenever you critically hit a foe with   or a Retributive Strike, your attack adds an extra damage die, and the target is slowed 1 on its next turn."
 }, {
     "name": "Shield of Grace",
     "level": 16,
@@ -3071,6 +3079,14 @@ const baseFeats = [{
     "benefits": "You share a special kinship with all things green and living.",
     "text": "You share a special kinship with all things green and living. You (and your leshy familiar, if you have one) are constantly under the effects of speak with plants. Most non-creature plants recognize you as a druid of the leaf order and are friendly to you."
 }, {
+    "name": "Pesh Skin",
+    "level": 12,
+    "traits": ["Druid", " Morph", " Uncommon"],
+    "link": "https://2e.aonprd.com/Feats.aspx?ID=1152",
+    "prerequisites": "",
+    "benefits": "Your plant form sprouts hundreds of spines, and your blood causes mild hallucinations in creatures exposed to it",
+    "text": "Your plant form sprouts hundreds of spines, and your blood causes mild hallucinations in creatures exposed to it. Each time a creature touches you, hits you with an unarmed attack, or hits you with a melee weapon attack while adjacent to you, that creature takes 1d6 piercing damage. Increase the damage to 2d6 if the polymorph spell is 8th level or higher, or to 3d6 if it\u2019s 10th level.  When an adjacent creature damages you with piercing or slashing damage, it must succeed at a Fortitude save against your class DC or become   (or stupefied 2 on a critical failure) until the end of its next turn.  These benefits last until you\u2019re no longer polymorphed into a plant."
+}, {
     "name": "Primal Focus",
     "level": 12,
     "traits": ["Druid"],
@@ -3155,7 +3171,7 @@ const baseFeats = [{
     "level": 18,
     "traits": ["Druid"],
     "link": "https://2e.aonprd.com/Feats.aspx?ID=352",
-    "prerequisites": "Wild Focus",
+    "prerequisites": "Primal Focus",
     "benefits": "Your reservoir of Focus Points is a deep wellspring.",
     "text": "Your reservoir of Focus Points is a deep wellspring. If you have spent at least 3 Focus Points since the last time you Refocused, you recover 3 Focus Points when you Refocus instead of 1."
 }, {
@@ -3645,7 +3661,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=410",
     "prerequisites": "Incredible Aim",
     "benefits": "After your first shot singles out your opponent\u2019s position, you direct another that ricochets around obstacles and strikes unerringly.",
-    "text": "After your first shot singles out your opponent\u2019s position, you direct another that ricochets around obstacles and strikes unerringly. Make a ranged weapon Strike. You ignore the target\u2019s concealed condition and all cover."
+    "text": "After your first shot singles out your opponent\u2019s position, you direct another that ricochets around obstacles and strikes unerringly. Make a ranged weapon Strike against a creature you previously attacked this turn. You ignore the target\u2019s concealed condition and all cover."
 }, {
     "name": "Lunging Stance",
     "level": 12,
@@ -4043,7 +4059,7 @@ const baseFeats = [{
     "level": 8,
     "traits": ["Monk", " Stance"],
     "link": "https://2e.aonprd.com/Feats.aspx?ID=459",
-    "prerequisites": "You are unarmored.",
+    "prerequisites": "",
     "benefits": "You enter the stance of impenetrable iron, refusing to yield to any blow.",
     "text": "You enter the stance of impenetrable iron, refusing to yield to any blow. You can make iron sweep unarmed attacks. These deal 1d8 bludgeoning damage; are in the brawling group; and have the nonlethal, parry, sweep, and unarmed traits. While in Ironblood Stance, you gain resistance 2 to all damage. The resistance increases to 3 at 12th level, to 4 at 16th level, and to 5 at 20th level."
 }, {
@@ -4059,7 +4075,7 @@ const baseFeats = [{
     "level": 8,
     "traits": ["Monk", " Stance"],
     "link": "https://2e.aonprd.com/Feats.aspx?ID=461",
-    "prerequisites": "You are unarmored.",
+    "prerequisites": "",
     "benefits": "You extend your arms like gnarled branches to interfere with your foes\u2019 movements.",
     "text": "You extend your arms like gnarled branches to interfere with your foes\u2019 movements. You can make lashing branch unarmed attacks. These deal 1d8 slashing damage; are in the brawling group; and have the agile, finesse, nonlethal, and unarmed traits.  While you\u2019re in Tangled Forest Stance and can act, every enemy in your reach that tries to move away from you must succeed at a Reflex save, Acrobatics check, or Athletics check against your class DC or be immobilized for that action. If you prefer, you can allow the enemy to move."
 }, {
@@ -4107,7 +4123,7 @@ const baseFeats = [{
     "level": 10,
     "traits": ["Monk"],
     "link": "https://2e.aonprd.com/Feats.aspx?ID=467",
-    "prerequisites": "once per round",
+    "prerequisites": "",
     "benefits": "Any journey consists of more than simply reaching your destination. ",
     "text": "Any journey consists of more than simply reaching your destination. You use two of the following actions in any order: Stand, Step, and Stride. You can\u2019t use the same action twice."
 }, {
@@ -4515,7 +4531,7 @@ const baseFeats = [{
     "level": 8,
     "traits": ["Ranger"],
     "link": "https://2e.aonprd.com/Feats.aspx?ID=517",
-    "prerequisites": "wild stride, master in Survival, Favored Terrain",
+    "prerequisites": "master in Survival, Favored Terrain",
     "benefits": "You adapt to your surroundings in any natural terrain. ",
     "text": "You adapt to your surroundings in any natural terrain. You can spend 1 hour practicing in your current terrain in order to make it your favored terrain, replacing your current favored terrain temporarily. If you spend a full day out of the new favored terrain, your favored terrain reverts back to your original choice when you took the Favored Terrain feat."
 }, {
@@ -4595,7 +4611,7 @@ const baseFeats = [{
     "level": 12,
     "traits": ["Ranger"],
     "link": "https://2e.aonprd.com/Feats.aspx?ID=527",
-    "prerequisites": "master in Crafting, Snare Specialist",
+    "prerequisites": "master in Crafting, Quick Snares, Snare Specialist",
     "benefits": "You can rig a trap with incredible speed.",
     "text": "You can rig a trap with incredible speed. When you create a snare that normally takes 1 minute to Craft, you can Craft it using a single Interact action instead."
 }, {
@@ -4635,7 +4651,7 @@ const baseFeats = [{
     "level": 14,
     "traits": ["Ranger"],
     "link": "https://2e.aonprd.com/Feats.aspx?ID=532",
-    "prerequisites": "Camouflage",
+    "prerequisites": "an animal companion, Camouflage",
     "benefits": "You\u2019ve trained your animal companion to blend in to its surroundings.",
     "text": "You\u2019ve trained your animal companion to blend in to its surroundings. Your animal companion gains the benefit of the   feat. If your companion is a specialized ambusher, its proficiency rank for Stealth increases to master (or legendary if it was already master)."
 }, {
@@ -4829,7 +4845,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=556",
     "prerequisites": "",
     "benefits": "You\u2019ve dabbled in a variety of tricks, gaining minor magical abilities from a particular tradition.",
-    "text": "You\u2019ve dabbled in a variety of tricks, gaining minor magical abilities from a particular tradition. Choose arcane, divine, occult, or primal magic, and gain two cantrips from the common cantrips available to that tradition."
+    "text": "You\u2019ve dabbled in a variety of tricks, gaining minor magical abilities from a particular tradition. Choose arcane, divine, occult, or primal magic, and gain two cantrips from the common cantrips available to that tradition. Your key spellcasting ability is Charisma, and you're trained in spell attack rolls and DCs for the tradition of your chosen cantrips"
 }, {
     "name": "Mobility",
     "level": 2,
@@ -4885,7 +4901,7 @@ const baseFeats = [{
     "link": "https://2e.aonprd.com/Feats.aspx?ID=563",
     "prerequisites": "",
     "benefits": "You apply poison to a weapon.",
-    "text": "You apply a poison to the required weapon. If your next attack with that weapon before the end of your next turn hits and deals damage, it applies the effects of the poison, provided that poison can be delivered by contact or injury. If you critically fail the attack roll, the poison is wasted as normal.   During your daily preparations, you can prepare a number of simple injury poisons equal to your rogue level. These poisons deal 1d4 poison damage. Only you can apply these poisons properly, and they expire the next time you prepare."
+    "text": "You apply a poison to the required weapon; if you're not holding a poison and have a free hand, you can Interact to draw a poison as part of this action. If your next attack with that weapon before the end of your next turn hits and deals damage, it applies the effects of the poison, provided that poison can be delivered by contact or injury. If you critically fail the attack roll, the poison is wasted as normal.   During your daily preparations, you can prepare a number of simple injury poisons equal to your rogue level. These poisons deal 1d4 poison damage. Only you can apply these poisons properly, and they expire the next time you prepare."
 }, {
     "name": "Reactive Pursuit",
     "level": 4,
@@ -5038,6 +5054,14 @@ const baseFeats = [{
     "prerequisites": "Debilitating Strike",
     "benefits": "Your debilitations are especially effective on your most powerful attacks.",
     "text": "Your debilitations are especially effective on your most powerful attacks. Whenever you critically succeed at an attack roll against an enemy and use Debilitating Strike, add the following debilitation to the list you can choose from.     The target is unaffected.   The target is slowed 1 until the end of your next turn.   The target is slowed 2 until the end of your next turn.   The target is paralyzed until the end of your next turn."
+}, {
+    "name": "Deadly Poison Weapon",
+    "level": 12,
+    "traits": ["Rogue", " Uncommon"],
+    "link": "https://2e.aonprd.com/Feats.aspx?ID=1151",
+    "prerequisites": "Improved Poison Weapon",
+    "benefits": "Your poisons are devastatingly potent",
+    "text": "Your poisons are devastatingly potent. When you apply a simple poison with  , the poison deals 4d4 poison damage instead of 1d4 poison damage. When you apply an   poison to your weapon, the DC to resist that poison increases by 2, to a maximum of your class DC."
 }, {
     "name": "Fantastic Leap",
     "level": 12,
@@ -5385,7 +5409,7 @@ const baseFeats = [{
 }, {
     "name": "Greater Mental Evolution",
     "level": 16,
-    "traits": ["Sorcerer", " Arcane"],
+    "traits": ["Sorcerer"],
     "link": "https://2e.aonprd.com/Feats.aspx?ID=626",
     "prerequisites": "Arcane Evolution or Occult Evolution",
     "benefits": "Your bloodline\u2019s deep connection to mental essence greatly enhances your spell repertoire. ",
@@ -5393,7 +5417,7 @@ const baseFeats = [{
 }, {
     "name": "Greater Vital Evolution",
     "level": 16,
-    "traits": ["Sorcerer", " Divine"],
+    "traits": ["Sorcerer"],
     "link": "https://2e.aonprd.com/Feats.aspx?ID=627",
     "prerequisites": "Divine Evolution or Primal Evolution",
     "benefits": "Vital power surges through you like a font of energy.",
@@ -5603,7 +5627,7 @@ const baseFeats = [{
     "level": 12,
     "traits": ["Wizard"],
     "link": "https://2e.aonprd.com/Feats.aspx?ID=653",
-    "prerequisites": "Counterspell, Quick Recognize",
+    "prerequisites": "Counterspell, Quick Recognition",
     "benefits": "You creatively apply your prepared spells to counterspell a much wider variety of your opponents\u2019 magic.",
     "text": "You creatively apply your prepared spells to Counterspell a much wider variety of your opponents\u2019 magic. Instead of being able to counter a foe\u2019s spell with Counterspell only if you have that same spell prepared, you can use Counterspell as long as you have the spell the foe is casting in your spellbook. When you use Counterspell in this way, the prepared spell you expend must share a trait other than its tradition with the triggering spell. At the GM\u2019s discretion, you can instead use a spell that has an opposing trait or that otherwise logically would counter the triggering spell (such as using a cold or water spell to counter   or using   to counter a fear spell). Regardless of what spell you expend, you take a \u20132 penalty to your counteract check, though the GM can waive this penalty if the expended spell is especially appropriate."
 }, {
@@ -5701,7 +5725,7 @@ const archFeats = [{
     "name": "Alchemist Dedication",
     "level": 2,
     "source": "Core Rulebook pg. 220",
-    "archetype": "Alchemist",
+    "archetype": " Alchemist",
     "prerequisites": "Intelligence 14",
     "special": "You cannot select another dedication feat until you have gained two other feats from the alchemist archetype.",
     "text": "You put your alchemical interest into practice. You become trained in alchemical bombs and Crafting; if you were already trained in Crafting, you instead become trained in a skill of your choice. You become trained in alchemist class DC. You gain the alchemist\u2019s infused reagents class feature, gaining a number of reagents each day equal to your level. You also gain the Alchemical Crafting feat and four additional formulas for 1st-level alchemical items, as well as the ability to create free items during your daily preparations. Your advanced alchemy level is 1 and doesn\u2019t increase on its own.",
@@ -5711,7 +5735,7 @@ const archFeats = [{
     "name": "Basic Concoction",
     "level": 4,
     "source": "Core Rulebook pg. 220",
-    "archetype": "Alchemist",
+    "archetype": " Alchemist",
     "prerequisites": "Alchemist Dedication",
     "text": "You gain a 1st- or 2nd-level alchemist feat.",
     "traits": ["Archetype"]
@@ -5720,7 +5744,7 @@ const archFeats = [{
     "name": "Quick Alchemy",
     "level": 4,
     "source": "Core Rulebook pg. 220",
-    "archetype": "Alchemist",
+    "archetype": " Alchemist",
     "prerequisites": "Alchemist Dedication",
     "text": "You gain the Quick Alchemy action.",
     "traits": ["Archetype"]
@@ -5739,7 +5763,7 @@ const archFeats = [{
     "name": "Expert Alchemy",
     "level": 6,
     "source": "Core Rulebook pg. 220",
-    "archetype": "Alchemist",
+    "archetype": " Alchemist",
     "prerequisites": "Alchemist Dedication, expert in Crafting",
     "text": "Your advanced alchemy level increases to 3. At 10th level, it increases to 5.",
     "traits": ["Archetype"]
@@ -5748,7 +5772,7 @@ const archFeats = [{
     "name": "Mastery Alchemy",
     "level": 12,
     "source": "Core Rulebook pg. 220",
-    "archetype": "Alchemist",
+    "archetype": " Alchemist",
     "prerequisites": "Expert Alchemy, master in Crafting",
     "traits": ["Archetype"],
     "text": "Your advanced alchemy level increases to 7. For every level you gain beyond 12th, your advanced alchemy level increases by 1."
@@ -5757,7 +5781,7 @@ const archFeats = [{
     "name": "Barbarian Dedication",
     "level": 2,
     "source": "Core Rulebook pg. 221",
-    "archetype": "Barbarian",
+    "archetype": " Barbarian",
     "prerequisites": "Strength 14, Constitution 14",
     "special": "You cannot select another dedication feat until you have gained two other feats from the barbarian archetype.",
     "text": "You become trained in Athletics; if you were already trained in Athletics, you instead become trained in a skill of your choice. You become trained in barbarian class DC. You can use the Rage action. Choose an instinct as you would if you were a barbarian. You have that instinct for all purposes and become bound by its anathema, but you don\u2019t gain any of the other abilities it grants.",
@@ -5767,7 +5791,7 @@ const archFeats = [{
     "name": "Barbarian Resiliency",
     "level": 4,
     "source": "Core Rulebook pg. 221",
-    "archetype": "Barbarian",
+    "archetype": " Barbarian",
     "prerequisites": "Barbarian Dedication, class granting no more Hit Points per level than 10 + your Constitution modifier",
     "text": "You gain 3 additional Hit Points for each barbarian archetype class feat you have. As you continue selecting barbarian archetype class feats, you continue to gain additional Hit Points in this way.",
     "traits": ["Archetype"]
@@ -5776,7 +5800,7 @@ const archFeats = [{
     "name": "Basic Fury",
     "level": 4,
     "source": "Core Rulebook pg. 221",
-    "archetype": "Barbarian",
+    "archetype": " Barbarian",
     "prerequisites": "Barbarian Dedication",
     "text": "You gain a 1st- or 2nd-level barbarian feat.",
     "traits": ["Archetype"]
@@ -5785,7 +5809,7 @@ const archFeats = [{
     "name": "Advanced Fury",
     "level": 6,
     "source": "Core Rulebook pg. 221",
-    "archetype": "Barbarian",
+    "archetype": " Barbarian",
     "prerequisites": "Basic Fury",
     "special": "You can select this feat more than once. Each time you select it, you gain another barbarian feat.",
     "text": "You gain one barbarian feat. For the purpose of meeting its prerequisites, your barbarian level is equal to half your character level.",
@@ -5795,7 +5819,7 @@ const archFeats = [{
     "name": "Instinct Ability",
     "level": 6,
     "source": "Core Rulebook pg. 221",
-    "archetype": "Barbarian",
+    "archetype": " Barbarian",
     "prerequisites": "Barbarian Dedication",
     "text": "You gain the instinct ability for the instinct you chose for Barbarian Dedication.",
     "traits": ["Archetype"]
@@ -5804,7 +5828,7 @@ const archFeats = [{
     "name": "Juggernaut's Fortitude",
     "level": 12,
     "source": "Core Rulebook pg. 221",
-    "archetype": "Barbarian",
+    "archetype": " Barbarian",
     "prerequisites": "Barbarian Dedication, expert in Fortitude saves",
     "traits": ["Archetype"],
     "text": "Your proficiency rank in Fortitude saves increases to master."
@@ -5813,17 +5837,17 @@ const archFeats = [{
     "name": "Bard Dedication",
     "level": 2,
     "source": "Core Rulebook pg. 222",
-    "archetype": "Bard",
+    "archetype": " Bard",
     "prerequisites": "Charisma 14",
     "special": "You cannot select another dedication feat until you have gained two other feats from the bard archetype.",
-    "text": "You cast spells like a bard and gain the Cast a Spell activity. You gain a spell repertoire with two common cantrips from the occult spell list, or any other cantrips you learn or discover. You\u2019re trained in spell attack rolls and spell DCs for occult spells. Your key spellcasting ability for bard archetype spells is Charisma, and they are occult bard spells. You become trained in Occultism and Performance; for each of these skills in which you were already trained, you instead become trained in a skill of your choice. Choose a muse as you would if you were a bard. You have that muse for all purposes, allowing you to take that muse\u2019s feats, but you don\u2019t gain any of the other abilities it grants.",
+    "text": "You cast spells like a bard and gain the Cast a Spell activity. You gain a spell repertoire with two common cantrips from the occult spell list, or any other cantrips you learn or discover. You can prepare or add to your repertoire common cantrips of your spellcasting tradition, whether from this book or other cantrips of that tradition you learn or discover. You\u2019re trained in spell attack rolls and spell DCs for occult spells. Your key spellcasting ability for bard archetype spells is Charisma, and they are occult bard spells. You become trained in Occultism and Performance; for each of these skills in which you were already trained, you instead become trained in a skill of your choice. Choose a muse as you would if you were a bard. You have that muse for all purposes, allowing you to take that muse\u2019s feats, but you don\u2019t gain any of the other abilities it grants.",
     "traits": ["Archetype", "Dedication", "Multiclass"]
 }, {
     "link": "https://2e.aonprd.com/Archetypes.aspx?ID=3",
     "name": "Basic Bard Spellcasting",
     "level": 4,
     "source": "Core Rulebook pg. 222",
-    "archetype": "Bard",
+    "archetype": " Bard",
     "prerequisites": "Bard Dedication",
     "text": "You gain the basic spellcasting benefits (page 219). Each time you gain a spell slot of a new level from the bard archetype, add a common occult spell or another spell you learned or discovered to your repertoire, of the appropriate spell level.",
     "traits": ["Archetype"]
@@ -5832,7 +5856,7 @@ const archFeats = [{
     "name": "Basic Muse's Whispers",
     "level": 4,
     "source": "Core Rulebook pg. 222",
-    "archetype": "Bard",
+    "archetype": " Bard",
     "prerequisites": "Bard Dedication",
     "text": "You gain a 1st- or 2nd-level bard feat.",
     "traits": ["Archetype"]
@@ -5841,7 +5865,7 @@ const archFeats = [{
     "name": "Advanced Muse's Whispers",
     "level": 6,
     "source": "Core Rulebook pg. 222",
-    "archetype": "Bard",
+    "archetype": " Bard",
     "prerequisites": "Basic Muse\u2019s Whispers",
     "special": "You can select this feat more than once. Each time you select it, you gain another bard feat.",
     "text": "You gain one bard feat. For the purpose of meeting its prerequisites, your bard level is equal to half your character level.",
@@ -5851,7 +5875,7 @@ const archFeats = [{
     "name": "Counter Perform",
     "level": 6,
     "source": "Core Rulebook pg. 222",
-    "archetype": "Bard",
+    "archetype": " Bard",
     "prerequisites": "Bard Dedication",
     "text": "You gain the composition spell. If you don\u2019t already have one, you gain a focus pool of 1 Focus Point, which you can Refocus by engaging your muse. (For more on composition spells, see page 97.)",
     "traits": ["Archetype"]
@@ -5860,7 +5884,7 @@ const archFeats = [{
     "name": "Inspirational Performance",
     "level": 8,
     "source": "Core Rulebook pg. 222",
-    "archetype": "Bard",
+    "archetype": " Bard",
     "prerequisites": "Bard Dedication",
     "text": "You gain the composition cantrip.",
     "traits": ["Archetype"]
@@ -5869,7 +5893,7 @@ const archFeats = [{
     "name": "Occult Breadth",
     "level": 8,
     "source": "Core Rulebook pg. 222",
-    "archetype": "Bard",
+    "archetype": " Bard",
     "prerequisites": "Basic Bard Spellcasting",
     "text": "Your repertoire expands, and you can cast more occult spells each day. Increase the number of spells in your repertoire and the number of spell slots you gain from bard archetype feats by 1 for each spell level other than your two highest spell levels.",
     "traits": ["Archetype"]
@@ -5878,7 +5902,7 @@ const archFeats = [{
     "name": "Expert Bard Spellcasting",
     "level": 12,
     "source": "Core Rulebook pg. 222",
-    "archetype": "Bard",
+    "archetype": " Bard",
     "prerequisites": "Basic Bard Spellcasting, master in Occultism",
     "text": "You gain the expert spellcasting benefits.",
     "traits": ["Archetype"]
@@ -5887,7 +5911,7 @@ const archFeats = [{
     "name": "Master Bard Spellcasting",
     "level": 18,
     "source": "Core Rulebook pg. 222",
-    "archetype": "Bard",
+    "archetype": " Bard",
     "prerequisites": "Expert Bard Spellcasting, legendary in Occultism",
     "traits": ["Archetype"],
     "text": "You gain the master spellcasting benefits."
@@ -5896,7 +5920,7 @@ const archFeats = [{
     "name": "Champion Dedication",
     "level": 2,
     "source": "Core Rulebook pg. 223",
-    "archetype": "Champion",
+    "archetype": " Champion",
     "prerequisites": "Strength 14, Charisma 14",
     "special": "You cannot select another dedication feat until you have gained two other feats from the champion archetype.",
     "text": "Choose a deity and cause as you would if you were a champion. You become trained in light, medium, and heavy armor. You become trained in Religion and your deity\u2019s associated skill; for each of these skills in which you were already trained, you instead become trained in a skill of your choice. You become trained in champion class DC. You are bound by your deity\u2019s anathema and must follow the champion\u2019s code and alignment requirements for your cause. You don\u2019t gain any other abilities from your choice of deity or cause",
@@ -5906,7 +5930,7 @@ const archFeats = [{
     "name": "Basic Devotion",
     "level": 4,
     "source": "Core Rulebook pg. 223",
-    "archetype": "Champion",
+    "archetype": " Champion",
     "prerequisites": "Champion Dedication",
     "text": "You gain a 1st- or 2nd-level champion feat.",
     "traits": ["Archetype"]
@@ -5915,7 +5939,7 @@ const archFeats = [{
     "name": "Champion Resiliencey",
     "level": 4,
     "source": "Core Rulebook pg. 223",
-    "archetype": "Champion",
+    "archetype": " Champion",
     "prerequisites": "Champion Dedication, class granting no more Hit Points per level than 8 + your Constitution modifier",
     "text": "You gain 3 additional Hit Points for each champion archetype class feat you have. As you continue selecting champion archetype class feats, you continue to gain additional Hit Points in this way.",
     "traits": ["Archetype"]
@@ -5924,7 +5948,7 @@ const archFeats = [{
     "name": "Healing Touch",
     "level": 4,
     "source": "Core Rulebook pg. 223",
-    "archetype": "Champion",
+    "archetype": " Champion",
     "prerequisites": "Champion Dedication",
     "text": "You gain the appropriate devotion spell for your cause ( for the paladin, redeemer, and liberator). If you don\u2019t already have one, you gain a focus pool of 1 Focus Point, which you can Refocus by praying or serving your deity. (For more on devotion spells, see page 107.)",
     "traits": ["Archetype"]
@@ -5933,7 +5957,7 @@ const archFeats = [{
     "name": "Advanced Devotion",
     "level": 6,
     "source": "Core Rulebook pg. 223",
-    "archetype": "Champion",
+    "archetype": " Champion",
     "prerequisites": "Basic Devotion",
     "special": "You can select this feat more than once. Each time you select it, you gain another champion feat.",
     "text": "You gain one champion feat. For the purpose of meeting its prerequisites, your champion level is equal to half your character level.",
@@ -5943,7 +5967,7 @@ const archFeats = [{
     "name": "Champion's Reaction",
     "level": 6,
     "source": "Core Rulebook pg. 223",
-    "archetype": "Champion",
+    "archetype": " Champion",
     "prerequisites": "Champion Dedication",
     "text": "You can use the champion\u2019s reaction associated with your cause.",
     "traits": ["Archetype"]
@@ -5952,7 +5976,7 @@ const archFeats = [{
     "name": "Divine Ally",
     "level": 6,
     "source": "Core Rulebook pg. 223",
-    "archetype": "Champion",
+    "archetype": " Champion",
     "prerequisites": "Champion Dedication",
     "text": "You gain a of your choice.",
     "traits": ["Archetype"]
@@ -5961,7 +5985,7 @@ const archFeats = [{
     "name": "Diverse Armor Expert",
     "level": 14,
     "source": "Core Rulebook pg. 223",
-    "archetype": "Champion",
+    "archetype": " Champion",
     "prerequisites": "Champion Dedication, expert in unarmored defense or one or more types of armor",
     "traits": ["Archetype"],
     "text": "Your proficiency ranks for light armor, medium armor, heavy armor, and unarmored defense increase to expert."
@@ -5970,17 +5994,17 @@ const archFeats = [{
     "name": "Cleric Dedication",
     "level": 2,
     "source": "Core Rulebook pg. 224",
-    "archetype": "Cleric",
+    "archetype": " Cleric",
     "prerequisites": "Wisdom 14",
     "special": "You cannot select another dedication feat until you have gained two other feats from the cleric archetype.",
-    "text": "You cast spells like a cleric. You gain access to the Cast a Spell activity. You can prepare two common cantrips each day from the divine spell list in this book or any other cantrips you learn or discover. You\u2019re trained in spell attack rolls and spell DCs for divine spells. Your key spellcasting ability for cleric archetype spells is Wisdom, and they are divine cleric spells. Choose a deity as you would if you were a cleric. You become bound by that deity\u2019s anathema. You become trained in Religion and your deity\u2019s associated skill; for each of these skills in which you were already trained, you instead become trained in a skill of your choice. You don\u2019t gain any other abilities from your choice of deity.",
+    "text": "You cast spells like a cleric. You gain access to the Cast a Spell activity. You can prepare two common cantrips each day from the divine spell list in this book or any other cantrips you learn or discover. You can prepare or add to your repertoire common cantrips of your spellcasting tradition, whether from this book or other cantrips of that tradition you learn or discover. You\u2019re trained in spell attack rolls and spell DCs for divine spells. Your key spellcasting ability for cleric archetype spells is Wisdom, and they are divine cleric spells. Choose a deity as you would if you were a cleric. You become bound by that deity\u2019s anathema. You become trained in Religion and your deity\u2019s associated skill; for each of these skills in which you were already trained, you instead become trained in a skill of your choice. You don\u2019t gain any other abilities from your choice of deity.",
     "traits": ["Archetype", "Dedication", "Multiclass"]
 }, {
     "link": "https://2e.aonprd.com/Archetypes.aspx?ID=5",
     "name": "Basic Cleric Spellcasting",
     "level": 4,
     "source": "Core Rulebook pg. 224",
-    "archetype": "Cleric",
+    "archetype": " Cleric",
     "prerequisites": "Cleric Dedication",
     "text": "You gain the basic spellcasting benefits. You can prepare your deity\u2019s spells in your spell slots of the appropriate level from the cleric archetype.",
     "traits": ["Archetype"]
@@ -5989,7 +6013,7 @@ const archFeats = [{
     "name": "Basic Dogma",
     "level": 4,
     "source": "Core Rulebook pg. 224",
-    "archetype": "Cleric",
+    "archetype": " Cleric",
     "prerequisites": "Cleric Dedication",
     "text": "You gain a 1st- or 2nd-level cleric feat.",
     "traits": ["Archetype"]
@@ -5998,7 +6022,7 @@ const archFeats = [{
     "name": "Advanced Dogma",
     "level": 6,
     "source": "Core Rulebook pg. 224",
-    "archetype": "Cleric",
+    "archetype": " Cleric",
     "prerequisites": "Basic Dogma",
     "special": "You can select this feat more than once. Each time you select it, you gain another cleric feat.",
     "text": "You gain one cleric feat. For the purpose of meeting its prerequisites, your cleric level is equal to half your character level.",
@@ -6008,7 +6032,7 @@ const archFeats = [{
     "name": "Divine Breadth",
     "level": 8,
     "source": "Core Rulebook pg. 224",
-    "archetype": "Cleric",
+    "archetype": " Cleric",
     "prerequisites": "Basic Cleric Spellcasting",
     "text": "You can cast more divine spells each day. Increase the spell slots you gain from cleric archetype feats by 1 for each spell level other than your two highest spell levels.",
     "traits": ["Archetype"]
@@ -6017,7 +6041,7 @@ const archFeats = [{
     "name": "Expert Cleric Spellcasting",
     "level": 12,
     "source": "Core Rulebook pg. 224",
-    "archetype": "Cleric",
+    "archetype": " Cleric",
     "prerequisites": "Basic Cleric Spellcasting, master in Religion",
     "text": "You gain the expert spellcasting benefits.",
     "traits": ["Archetype"]
@@ -6026,7 +6050,7 @@ const archFeats = [{
     "name": "Master Cleric Spellcasting",
     "level": 18,
     "source": "Core Rulebook pg. 224",
-    "archetype": "Cleric",
+    "archetype": " Cleric",
     "prerequisites": "Expert Cleric Spellcasting, legendary in Religion",
     "traits": ["Archetype"],
     "text": "You gain the master spellcasting benefits."
@@ -6035,17 +6059,17 @@ const archFeats = [{
     "name": "Druid Dedication",
     "level": 2,
     "source": "Core Rulebook pg. 225",
-    "archetype": "Druid",
+    "archetype": " Druid",
     "prerequisites": "Wisdom 14",
     "special": "You cannot select another dedication feat until you have gained two other feats from the druid archetype.",
-    "text": "You cast spells like a druid. You gain access to the Cast a Spell activity. You can prepare two common cantrips each day from the primal spell list in this book or any other cantrips you learn or discover. You\u2019re trained in spell attack rolls and spell DCs for primal spells. Your key spellcasting ability for druid archetype spells is Wisdom, and they are primal druid spells. You learn the Druidic language. Choose an order as you would if you were a druid. You become a member of that order and are bound by its anathema, allowing you to take the order\u2019s feats. You become trained in Nature and your order\u2019s associated skill; for each of these skills in which you were already trained, you become trained in a skill of your choice. You don\u2019t gain any other abilities from your choice of order.",
+    "text": "You cast spells like a druid. You gain access to the Cast a Spell activity. You can prepare two common cantrips each day from the primal spell list in this book or any other cantrips you learn or discover. You can prepare or add to your repertoire common cantrips of your spellcasting tradition, whether from this book or other cantrips of that tradition you learn or discover. You\u2019re trained in spell attack rolls and spell DCs for primal spells. Your key spellcasting ability for druid archetype spells is Wisdom, and they are primal druid spells. You learn the Druidic language. Choose an order as you would if you were a druid. You become a member of that order and are bound by its anathema, allowing you to take the order\u2019s feats. You become trained in Nature and your order\u2019s associated skill; for each of these skills in which you were already trained, you become trained in a skill of your choice. You don\u2019t gain any other abilities from your choice of order.",
     "traits": ["Archetype", "Dedication", "Multiclass"]
 }, {
     "link": "https://2e.aonprd.com/Archetypes.aspx?ID=6",
     "name": "Basic Druid Spellcasting",
     "level": 4,
     "source": "Core Rulebook pg. 225",
-    "archetype": "Druid",
+    "archetype": " Druid",
     "prerequisites": "Druid Dedication",
     "text": "You gain the basic spellcasting benefits.",
     "traits": ["Archetype"]
@@ -6054,7 +6078,7 @@ const archFeats = [{
     "name": "Basic Wilding",
     "level": 4,
     "source": "Core Rulebook pg. 225",
-    "archetype": "Druid",
+    "archetype": " Druid",
     "prerequisites": "Druid Dedication",
     "text": "You gain a 1st- or 2nd-level druid feat.",
     "traits": ["Archetype"]
@@ -6063,7 +6087,7 @@ const archFeats = [{
     "name": "Order Spell",
     "level": 4,
     "source": "Core Rulebook pg. 225",
-    "archetype": "Druid",
+    "archetype": " Druid",
     "prerequisites": "Druid Dedication",
     "text": "You gain the initial order spell from your order. If you don\u2019t already have one, you gain a focus pool of 1 Focus Point, which you can Refocus by being one with nature. (For more on order spells, see page 131.)",
     "traits": ["Archetype"]
@@ -6072,7 +6096,7 @@ const archFeats = [{
     "name": "Advanced Wilding",
     "level": 6,
     "source": "Core Rulebook pg. 225",
-    "archetype": "Druid",
+    "archetype": " Druid",
     "prerequisites": "Basic Wilding",
     "special": "You can select this feat more than once. Each time you select it, you gain another druid feat.",
     "text": "You gain one druid feat. For the purpose of meeting its prerequisites, your druid level is equal to half your character level.",
@@ -6082,7 +6106,7 @@ const archFeats = [{
     "name": "Primal Breadth",
     "level": 8,
     "source": "Core Rulebook pg. 225",
-    "archetype": "Druid",
+    "archetype": " Druid",
     "prerequisites": "Basic Druid Spellcasting",
     "text": "Increase the spell slots you gain from druid archetype feats by 1 for each spell level other than your two highest spell levels.",
     "traits": ["Archetype"]
@@ -6091,7 +6115,7 @@ const archFeats = [{
     "name": "Expert Druid Spellcasting",
     "level": 12,
     "source": "Core Rulebook pg. 225",
-    "archetype": "Druid",
+    "archetype": " Druid",
     "prerequisites": "Basic Druid Spellcasting, master in Nature",
     "text": "You gain the expert spellcasting benefits.",
     "traits": ["Archetype"]
@@ -6100,7 +6124,7 @@ const archFeats = [{
     "name": "Master Druid Spellcasting",
     "level": 18,
     "source": "Core Rulebook pg. 225",
-    "archetype": "Druid",
+    "archetype": " Druid",
     "prerequisites": "Expert Druid Spellcasting, legendary in Nature",
     "traits": ["Archetype"],
     "text": "You gain the master spellcasting benefits."
@@ -6109,7 +6133,7 @@ const archFeats = [{
     "name": "Fighter Dedication",
     "level": 2,
     "source": "Core Rulebook pg. 226",
-    "archetype": "Fighter",
+    "archetype": " Fighter",
     "prerequisites": "Strength 14, Dexterity 14",
     "special": "You cannot select another dedication feat until you have gained two other feats from the fighter archetype.",
     "text": "You become trained in simple weapons and martial weapons. You become trained in your choice of or ; if you are already trained in both of these skills, you instead become trained in a skill of your choice. You become trained in fighter class DC.",
@@ -6119,7 +6143,7 @@ const archFeats = [{
     "name": "Basic Maneuver",
     "level": 4,
     "source": "Core Rulebook pg. 226",
-    "archetype": "Fighter",
+    "archetype": " Fighter",
     "prerequisites": "Fighter Dedication",
     "text": "You gain a 1st- or 2nd-level fighter feat.",
     "traits": ["Archetype"]
@@ -6128,7 +6152,7 @@ const archFeats = [{
     "name": "Fighter Resiliency",
     "level": 4,
     "source": "Core Rulebook pg. 226",
-    "archetype": "Fighter",
+    "archetype": " Fighter",
     "prerequisites": "Fighter Dedication, class granting no more Hit Points per level than 8 + your Constitution modifier",
     "text": "You gain 3 additional Hit Points for each fighter archetype class feat you have. As you continue selecting fighter archetype class feats, you continue to gain additional Hit Points in this way.",
     "traits": ["Archetype"]
@@ -6137,7 +6161,7 @@ const archFeats = [{
     "name": "Opportunist",
     "level": 4,
     "source": "Core Rulebook pg. 142",
-    "archetype": "Fighter",
+    "archetype": " Fighter",
     "prerequisites": "Fighter Dedication",
     "trigger": "A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it\u2019s using.",
     "text": "You gain the Attack of Opportunity reaction. You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn\u2019t count toward your multiple attack penalty, and your multiple attack penalty doesn\u2019t apply to this Strike.",
@@ -6147,7 +6171,7 @@ const archFeats = [{
     "name": "Advanced Maneuver",
     "level": 6,
     "source": "Core Rulebook pg. 226",
-    "archetype": "Fighter",
+    "archetype": " Fighter",
     "prerequisites": "Basic Maneuver",
     "special": "You can select this feat more than once. Each time you select it, you gain another fighter feat.",
     "text": "You gain a fighter feat. For the purpose of meeting its prerequisites, your fighter level is equal to half your character level.",
@@ -6157,7 +6181,7 @@ const archFeats = [{
     "name": "Diverse Weapon Expert",
     "level": 12,
     "source": "Core Rulebook pg. 226",
-    "archetype": "Fighter",
+    "archetype": " Fighter",
     "prerequisites": "Fighter Dedication, expert in any kind of weapon or unarmed attack",
     "traits": ["Archetype"],
     "text": "Your proficiency ranks for simple weapons and martial weapons increase to expert, and your proficiency rank for advanced weapons increases to trained."
@@ -6166,7 +6190,7 @@ const archFeats = [{
     "name": "Monk Dedication",
     "level": 2,
     "source": "Core Rulebook pg. 227",
-    "archetype": "Monk",
+    "archetype": " Monk",
     "prerequisites": "Strength 14, Dexterity 14",
     "special": "You can\u2019t select another dedication feat until you have gained two other feats from the monk archetype.",
     "text": "You become trained in unarmed attacks and gain the powerful fist class feature (page 156). You become trained in your choice of Acrobatics or Athletics; if you are already trained in both of these skills, you become trained in a skill of your choice. You become trained in monk class DC.",
@@ -6176,7 +6200,7 @@ const archFeats = [{
     "name": "Basic Kata",
     "level": 4,
     "source": "Core Rulebook pg. 227",
-    "archetype": "Monk",
+    "archetype": " Monk",
     "prerequisites": "Monk Dedication",
     "text": "You gain a 1st- or 2nd-level monk feat.",
     "traits": ["Archetype"]
@@ -6185,7 +6209,7 @@ const archFeats = [{
     "name": "Monk Resiliency",
     "level": 4,
     "source": "Core Rulebook pg. 227",
-    "archetype": "Monk",
+    "archetype": " Monk",
     "prerequisites": "Monk Dedication, class granting no more Hit Points per level than 8 + your Constitution modifier",
     "text": "You gain 3 additional Hit Points for each monk archetype class feat you have. As you continue selecting monk archetype class feats, you continue to gain additional Hit Points in this way.",
     "traits": ["Archetype"]
@@ -6194,7 +6218,7 @@ const archFeats = [{
     "name": "Advanced Kata",
     "level": 6,
     "source": "Core Rulebook pg. 227",
-    "archetype": "Monk",
+    "archetype": " Monk",
     "prerequisites": "Basic Kata",
     "special": "You can select this feat more than once. Each time you select it, you gain another monk feat.",
     "text": "You gain one monk feat. For the purpose of meeting its prerequisites, your monk level is equal to half your character level.",
@@ -6204,7 +6228,7 @@ const archFeats = [{
     "name": "Monk Moves",
     "level": 8,
     "source": "Core Rulebook pg. 227",
-    "archetype": "Monk",
+    "archetype": " Monk",
     "prerequisites": "Monk Dedication",
     "text": "You gain a +10-foot status bonus to your Speed when you\u2019re not wearing armor.",
     "traits": ["Archetype"]
@@ -6213,7 +6237,7 @@ const archFeats = [{
     "name": "Monk's Flurry",
     "level": 10,
     "source": "Core Rulebook pg. 156",
-    "archetype": "Monk",
+    "archetype": " Monk",
     "prerequisites": "Monk Dedication",
     "text": "You gain the Flurry of Blows action. Make two unarmed Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses. Apply your multiple attack penalty to the Strikes normally. As it has the flourish trait, you can use Flurry of Blows only once per turn.",
     "traits": ["Archetype", "Flourish", "Monk"]
@@ -6222,7 +6246,7 @@ const archFeats = [{
     "name": "Perfection's Path",
     "level": 12,
     "source": "Core Rulebook pg. 227",
-    "archetype": "Monk",
+    "archetype": " Monk",
     "prerequisites": "Monk Dedication, expert in at least one saving throw",
     "traits": ["Archetype"],
     "text": "Choose one saving throw (Fortitude, Reflex, or Will) in which you are an expert. Your proficiency rank in the chosen saving throw increases to master."
@@ -6231,7 +6255,7 @@ const archFeats = [{
     "name": "Ranger Dedication",
     "level": 2,
     "source": "Core Rulebook pg. 168",
-    "archetype": "Ranger",
+    "archetype": " Ranger",
     "prerequisites": "Dexterity 14",
     "special": "You cannot select another dedication feat until you have gained two other feats from the ranger archetype.",
     "text": "You become trained in Survival; if you were already trained in Survival, you instead become trained in another skill of your choice. You become trained in ranger class DC. You can use the Hunt Prey action. You designate a single creature as your prey and focus your attacks against that creature. You must be able to see or hear the prey, or you must be tracking the prey during exploration. You gain a +2 circumstance bonus to Perception checks when you Seek your prey and a +2 circumstance bonus to Survival checks when you Track your prey. You also ignore the penalty for making ranged attacks within your second range increment against the prey you\u2019re hunting. You can have only one creature designated as your prey at a time. If you use Hunt Prey against a creature when you already have a creature designated, the prior creature loses the designation and the new prey gains the designation. Your designation lasts until your next daily preparations.",
@@ -6241,7 +6265,7 @@ const archFeats = [{
     "name": "Basic Hunter's Trick",
     "level": 4,
     "source": "Core Rulebook pg. 228",
-    "archetype": "Ranger",
+    "archetype": " Ranger",
     "prerequisites": "Ranger Dedication",
     "text": "You gain a 1st- or 2nd-level ranger feat.",
     "traits": ["Archetype"]
@@ -6250,7 +6274,7 @@ const archFeats = [{
     "name": "Ranger Resiliency",
     "level": 4,
     "source": "Core Rulebook pg. 228",
-    "archetype": "Ranger",
+    "archetype": " Ranger",
     "prerequisites": "Ranger Dedication, class granting no more Hit Points per level than 8 + your Constitution modifier",
     "text": "You gain 3 additional Hit Points for each ranger archetype class feat you have. As you continue selecting ranger archetype class feats, you continue to gain additional Hit Points in this way.",
     "traits": ["Archetype"]
@@ -6259,7 +6283,7 @@ const archFeats = [{
     "name": "Advanced Hunter's Trick",
     "level": 6,
     "source": "Core Rulebook pg. 228",
-    "archetype": "Ranger",
+    "archetype": " Ranger",
     "prerequisites": "Basic Hunter\u2019s Trick",
     "special": "You can select this feat more than once. Each time you select it, you gain another ranger feat.",
     "text": "You gain one ranger feat. For the purpose of meeting its prerequisites, your ranger level is equal to half your character level.",
@@ -6269,7 +6293,7 @@ const archFeats = [{
     "name": "Master Spotter",
     "level": 12,
     "source": "Core Rulebook pg. 228",
-    "archetype": "Ranger",
+    "archetype": " Ranger",
     "prerequisites": "Ranger Dedication, expert in Perception",
     "traits": ["Archetype"],
     "text": "Your proficiency rank in Perception increases to master."
@@ -6278,7 +6302,7 @@ const archFeats = [{
     "name": "Rogue Dedication",
     "level": 2,
     "source": "Core Rulebook pg. 229",
-    "archetype": "Rogue",
+    "archetype": " Rogue",
     "prerequisites": "Dexterity 14",
     "special": "You cannot gain another dedication feat until you have gained two other feats from the rogue archetype.",
     "text": "You gain a skill feat and the rogue\u2019s surprise attack class feature (page 181). You become trained in light armor. In addition, you become trained in Stealth or Thievery plus one skill of your choice; if you are already trained in both Stealth and Thievery, you become trained in an additional skill of your choice. You become trained in rogue class DC.",
@@ -6288,7 +6312,7 @@ const archFeats = [{
     "name": "Basic Trickery",
     "level": 4,
     "source": "Core Rulebook pg. 229",
-    "archetype": "Rogue",
+    "archetype": " Rogue",
     "prerequisites": "Rogue Dedication",
     "text": "You gain a 1st- or 2nd-level rogue feat.",
     "traits": ["Archetype"]
@@ -6297,7 +6321,7 @@ const archFeats = [{
     "name": "Sneak Attacker",
     "level": 4,
     "source": "Core Rulebook pg. 229",
-    "archetype": "Rogue",
+    "archetype": " Rogue",
     "prerequisites": "Rogue Dedication",
     "text": "You gain the sneak attack class feature (page 181), except it deals 1d4 damage, increasing to 1d6 at 6th level. You don\u2019t increase the number of dice as you gain levels.",
     "traits": ["Archetype"]
@@ -6306,7 +6330,7 @@ const archFeats = [{
     "name": "Advanced Trickery",
     "level": 6,
     "source": "Core Rulebook pg. 229",
-    "archetype": "Rogue",
+    "archetype": " Rogue",
     "prerequisites": "Basic Trickery",
     "special": "You can select this feat more than once. Each time you select it, you gain another rogue feat.",
     "text": "You gain one rogue feat. For the purpose of meeting its prerequisites, your rogue level is equal to half your character level.",
@@ -6316,7 +6340,7 @@ const archFeats = [{
     "name": "Skill Mastery",
     "level": 8,
     "source": "Core Rulebook pg. 229",
-    "archetype": "Rogue",
+    "archetype": " Rogue",
     "prerequisites": "Rogue Dedication, trained in at least one skill and expert in at least one skill",
     "special": "You can select this feat up to five times.",
     "text": "Increase your proficiency rank in one of your skills from expert to master and in another of your skills from trained to expert. You gain a skill feat associated with one of the skills you chose.",
@@ -6326,7 +6350,7 @@ const archFeats = [{
     "name": "Uncanny Dodge",
     "level": 10,
     "source": "Core Rulebook pg. 229",
-    "archetype": "Rogue",
+    "archetype": " Rogue",
     "prerequisites": "Rogue Dedication",
     "text": "You gain the deny advantage class feature (page 181).",
     "traits": ["Archetype"]
@@ -6335,7 +6359,7 @@ const archFeats = [{
     "name": "Evasiveness",
     "level": 12,
     "source": "Core Rulebook pg. 229",
-    "archetype": "Rogue",
+    "archetype": " Rogue",
     "prerequisites": "Rogue Dedication, expert in Reflex saves",
     "traits": ["Archetype"],
     "text": "Your proficiency rank for Reflex saves increases to master."
@@ -6344,17 +6368,17 @@ const archFeats = [{
     "name": "Sorcerer Dedication",
     "level": 2,
     "source": "Core Rulebook pg. 230",
-    "archetype": "Sorcerer",
+    "archetype": " Sorcerer",
     "prerequisites": "Charisma 14",
     "special": "You cannot select another dedication feat until you have gained two other feats from the sorcerer archetype.",
-    "text": "Choose a bloodline. You become trained in the bloodline\u2019s two skills; for each of these skills in which you were already trained, you become trained in a skill of your choice. You cast spells like a sorcerer. You gain access to the Cast a Spell activity. You gain a spell repertoire with two common cantrips from the spell list associated with your bloodline, or any other cantrips you learn or discover. You\u2019re trained in spell attack rolls and spell DCs for your tradition\u2019s spells. Your key spellcasting ability for sorcerer archetype spells is Charisma, and they are sorcerer spells of your bloodline\u2019s tradition. You don\u2019t gain any other abilities from your choice of bloodline.",
+    "text": "Choose a bloodline. You become trained in the bloodline\u2019s two skills; for each of these skills in which you were already trained, you become trained in a skill of your choice. You cast spells like a sorcerer. You gain access to the Cast a Spell activity. You gain a spell repertoire with two common cantrips from the spell list associated with your bloodline, or any other cantrips you learn or discover. You can prepare or add to your repertoire common cantrips of your spellcasting tradition, whether from this book or other cantrips of that tradition you learn or discover. You\u2019re trained in spell attack rolls and spell DCs for your tradition\u2019s spells. Your key spellcasting ability for sorcerer archetype spells is Charisma, and they are sorcerer spells of your bloodline\u2019s tradition. You don\u2019t gain any other abilities from your choice of bloodline.",
     "traits": ["Archetype", "Dedication", "Multiclass"]
 }, {
     "link": "https://2e.aonprd.com/Archetypes.aspx?ID=11",
     "name": "Basic Blood Potency",
     "level": 4,
     "source": "Core Rulebook pg. 230",
-    "archetype": "Sorcerer",
+    "archetype": " Sorcerer",
     "prerequisites": "Sorcerer Dedication",
     "text": "You gain a 1st- or 2nd-level sorcerer feat.",
     "traits": ["Archetype"]
@@ -6363,7 +6387,7 @@ const archFeats = [{
     "name": "Basic Bloodline Spell",
     "level": 4,
     "source": "Core Rulebook pg. 230",
-    "archetype": "Sorcerer",
+    "archetype": " Sorcerer",
     "prerequisites": "Sorcerer Dedication",
     "text": "You gain your bloodline\u2019s initial bloodline spell. If you don\u2019t already have one, you also gain a focus pool of 1 Focus Point, which you can Refocus without any special effort. (For more on bloodline spells, see page 194.)",
     "traits": ["Archetype"]
@@ -6372,16 +6396,16 @@ const archFeats = [{
     "name": "Basic Sorcerer Spellcasting",
     "level": 4,
     "source": "Core Rulebook pg. 230",
-    "archetype": "Sorcerer",
+    "archetype": " Sorcerer",
     "prerequisites": "Sorcerer Dedication",
-    "text": "You gain the basic spellcasting benefits. Each time you gain a spell slot of a new level from the sorcerer archetype, add a spell of the appropriate spell level to your repertoire: a common spell of your bloodline\u2019s tradition, one of your bloodline\u2019s granted spells, or another spell you have learned or discovered.",
+    "text": "Choose a bloodline. You become trained in the bloodline\u2019s two skills; for each of these skills in which you were already trained, you become trained in a skill of your choice. You cast spells like a sorcerer. You gain access to the Cast a Spell activity. You gain a spell repertoire with two common cantrips from the spell list associated with your bloodline, from the spells granted by your bloodline, or any other cantrips of that tradition you learn or discover. You can prepare or add to your repertoire common cantrips of your spellcasting tradition, whether from this book or other cantrips of that tradition you learn or discover. You\u2019re trained in spell attack rolls and spell DCs for your tradition\u2019s spells. Your key spellcasting ability for sorcerer archetype spells is Charisma, and they are sorcerer spells of your bloodline\u2019s tradition. You don\u2019t gain any other abilities from your choice of bloodline.",
     "traits": ["Archetype"]
 }, {
     "link": "https://2e.aonprd.com/Archetypes.aspx?ID=11",
     "name": "Advanced Blood Potency",
     "level": 6,
     "source": "Core Rulebook pg. 230",
-    "archetype": "Sorcerer",
+    "archetype": " Sorcerer",
     "prerequisites": "Basic Blood Potency",
     "special": "You can select this feat more than once. Each time you do, you gain another sorcerer feat.",
     "text": "You gain one sorcerer feat. For the purpose of prerequisites, your sorcerer level is half your character level.",
@@ -6391,7 +6415,7 @@ const archFeats = [{
     "name": "Bloodline Breadth",
     "level": 8,
     "source": "Core Rulebook pg. 230",
-    "archetype": "Sorcerer",
+    "archetype": " Sorcerer",
     "prerequisites": "Basic Sorcerer Spellcasting",
     "text": "Your repertoire expands, and you can cast more spells of your bloodline\u2019s tradition each day. Increase the number of spells in your repertoire and number of spell slots you gain from sorcerer archetype feats by 1 for each spell level other than your two highest spell levels.",
     "traits": ["Archetype"]
@@ -6400,7 +6424,7 @@ const archFeats = [{
     "name": "Expert Sorcerer Spellcasting",
     "level": 12,
     "source": "Core Rulebook pg. 230",
-    "archetype": "Sorcerer",
+    "archetype": " Sorcerer",
     "prerequisites": "Basic Sorcerer Spellcasting; master in Arcana, Nature, Occultism, or Religion, depending on bloodline",
     "text": "You gain the expert spellcasting benefits.",
     "traits": ["Archetype"]
@@ -6409,7 +6433,7 @@ const archFeats = [{
     "name": "Master Sorcerer Spellcasting",
     "level": 18,
     "source": "Core Rulebook pg. 230",
-    "archetype": "Sorcerer",
+    "archetype": " Sorcerer",
     "prerequisites": "Expert Sorcerer Spellcasting; legendary in Arcana, Nature, Occultism, or Religion, depending on bloodline",
     "traits": ["Archetype"],
     "text": "You gain the master spellcasting benefits."
@@ -6418,7 +6442,7 @@ const archFeats = [{
     "name": "Wizard Dedication",
     "level": 2,
     "source": "Core Rulebook pg. 231",
-    "archetype": "Wizard",
+    "archetype": " Wizard",
     "prerequisites": "Intelligence 14",
     "special": "You can\u2019t select another dedication feat until you have gained two other feats from the wizard archetype.",
     "text": "You cast spells like a wizard, gaining a spellbook with four common arcane cantrips of your choice. You gain the Cast a Spell activity. You can prepare two cantrips each day from your spellbook. You\u2019re trained in arcane spell attack rolls and spell DCs. Your key spellcasting ability for wizard archetype spells is Int, and they are arcane wizard spells. You become trained in Arcana; if you were already trained in Arcana, you instead become trained in a skill of your choice.",
@@ -6428,7 +6452,7 @@ const archFeats = [{
     "name": "Arcane School Spell",
     "level": 4,
     "source": "Core Rulebook pg. 231",
-    "archetype": "Wizard",
+    "archetype": " Wizard",
     "prerequisites": "Wizard Dedication",
     "text": "Select one arcane school of magic. You gain the school\u2019s initial school spell. If you don\u2019t already have one, you gain a focus pool of 1 Focus Point, which you can Refocus by studying. (For more on arcane schools, see page 204.)",
     "traits": ["Archetype"]
@@ -6437,7 +6461,7 @@ const archFeats = [{
     "name": "Basic Arcana",
     "level": 4,
     "source": "Core Rulebook pg. 231",
-    "archetype": "Wizard",
+    "archetype": " Wizard",
     "prerequisites": "Wizard Dedication",
     "text": "You gain a 1st- or 2nd-level wizard feat of your choice.",
     "traits": ["Archetype"]
@@ -6446,7 +6470,7 @@ const archFeats = [{
     "name": "Basic Wizard Spellcasting",
     "level": 4,
     "source": "Core Rulebook pg. 231",
-    "archetype": "Wizard",
+    "archetype": " Wizard",
     "prerequisites": "Wizard Dedication",
     "text": "You gain the basic spellcasting benefits. Each time you gain a spell slot of a new level from the wizard archetype, add two common spells of that level to your spellbook.",
     "traits": ["Archetype"]
@@ -6455,7 +6479,7 @@ const archFeats = [{
     "name": "Advanced Arcana",
     "level": 6,
     "source": "Core Rulebook pg. 231",
-    "archetype": "Wizard",
+    "archetype": " Wizard",
     "prerequisites": "Basic Arcana",
     "special": "You can select this feat more than once. Each time you select it, you gain another wizard feat.",
     "text": "You gain one wizard feat. For the purpose of meeting its prerequisites, your wizard level is equal to half your character level.",
@@ -6465,7 +6489,7 @@ const archFeats = [{
     "name": "Arcane Breadth",
     "level": 8,
     "source": "Core Rulebook pg. 231",
-    "archetype": "Wizard",
+    "archetype": " Wizard",
     "prerequisites": "Basic Wizard Spellcasting",
     "text": "You can cast more arcane spells each day. Increase the spell slots you gain from wizard archetype feats by 1 for each spell level other than your two highest spell levels.",
     "traits": ["Archetype"]
@@ -6474,7 +6498,7 @@ const archFeats = [{
     "name": "Expert Wizard Spellcasting",
     "level": 12,
     "source": "Core Rulebook pg. 231",
-    "archetype": "Wizard",
+    "archetype": " Wizard",
     "prerequisites": "Basic Wizard Spellcasting, master in Arcana",
     "text": "You gain the expert spellcasting benefits.",
     "traits": ["Archetype"]
@@ -6483,7 +6507,7 @@ const archFeats = [{
     "name": "Master Wizard Spellcasting",
     "level": 18,
     "source": "Core Rulebook pg. 231",
-    "archetype": "Wizard",
+    "archetype": " Wizard",
     "prerequisites": "Expert Wizard Spellcasting, legendary in Arcana",
     "traits": ["Archetype"],
     "text": "You gain the master spellcasting benefits."
@@ -6492,7 +6516,7 @@ const archFeats = [{
     "name": "Aldori Duelist Dedication",
     "level": 2,
     "source": "Lost Omens World Guide pg. 35",
-    "archetype": "Aldori Duelist",
+    "archetype": " Aldori Duelist",
     "prerequisites": "trained in Aldori dueling swords",
     "access": "You are from the Broken Lands region.",
     "special": "You cannot select another dedication feat until you have gained two other feats from the Aldori Duelist archetype.",
@@ -6503,7 +6527,7 @@ const archFeats = [{
     "name": "Aldori Parry",
     "level": 4,
     "source": "Lost Omens World Guide pg. 35",
-    "archetype": "Aldori Duelist",
+    "archetype": " Aldori Duelist",
     "prerequisites": "Aldori Duelist Dedication",
     "requirements": "You are wielding only an Aldori dueling sword and have your other hand or hands free.",
     "text": "You can parry attacks against you with your . You gain a +2 circumstance bonus to AC until the start of your next turn as long as you continue to meet the requirement.",
@@ -6513,7 +6537,7 @@ const archFeats = [{
     "name": "Duelist's Edge",
     "level": 4,
     "source": "Lost Omens World Guide pg. 35",
-    "archetype": "Aldori Duelist",
+    "archetype": " Aldori Duelist",
     "prerequisites": "Aldori Duelist Dedication",
     "trigger": "You roll initiative, and you can observe at least one opponent.",
     "text": "You hone your reaction time through duels and learn to draw your weapon seamlessly as you begin a fight. You gain a +2 circumstance bonus to the triggering initiative roll, and you can immediately Interact to draw your .",
@@ -6523,7 +6547,7 @@ const archFeats = [{
     "name": "Aldori Riposte",
     "level": 6,
     "source": "Lost Omens World Guide pg. 35",
-    "archetype": "Aldori Duelist",
+    "archetype": " Aldori Duelist",
     "prerequisites": "Aldori Parry",
     "requirements": "You are benefiting from Aldori Parry.",
     "trigger": "An opponent within your reach critically fails a Strike against you.",
@@ -6534,7 +6558,7 @@ const archFeats = [{
     "name": "Unnerving Prowess",
     "level": 6,
     "source": "Lost Omens World Guide pg. 35",
-    "archetype": "Aldori Duelist",
+    "archetype": " Aldori Duelist",
     "prerequisites": "Aldori Duelist Dedication",
     "trigger": "You critically succeed at a Strike or Disarm with your Aldori dueling sword",
     "text": "Your incredible skill with your blade unnerves your foes. You attempt to the target of your Strike or . This Demoralize attempt does not have the auditory trait, nor do you take a penalty to the check if the target doesn\u2019t understand your language.",
@@ -6544,7 +6568,7 @@ const archFeats = [{
     "name": "Saving Slash",
     "level": 10,
     "source": "Lost Omens World Guide pg. 35",
-    "archetype": "Aldori Duelist",
+    "archetype": " Aldori Duelist",
     "prerequisites": "Aldori Duelist Dedication",
     "trigger": "An opponent critically hits you with a melee attack.",
     "traits": ["Archetype"],
@@ -6554,7 +6578,7 @@ const archFeats = [{
     "name": "Bellflower Dedication",
     "level": 6,
     "source": "Pathfinder #147: Tomorrow Must Burn pg. 75",
-    "archetype": "Bellflower Tiller",
+    "archetype": " Bellflower Tiller",
     "prerequisites": "Charisma 14, expert in Stealth and Survival, member of the Bellflower Network",
     "special": "You cannot select another dedication feat until you have gained two other feats from the Bellflower tiller archetype.",
     "text": "You dedicate yourself to freeing slaves and escorting them to freedom. You gain a +5-foot status bonus to your Speed. Choose up to six other people to be your \u201ccrop.\u201d Members of your crop can use your Speed for overland travel if it\u2019s higher than their own. Members more than 60 feet from you lose all benefits (from this or other Bellflower tiller feats) of being part of your crop, but they regain those benefits immediately when they return. You can add or remove someone from your crop by spending 10 minutes in conversation with them.",
@@ -6564,7 +6588,7 @@ const archFeats = [{
     "name": "Garden Path",
     "level": 8,
     "source": "Pathfinder #147: Tomorrow Must Burn pg. 75",
-    "archetype": "Bellflower Tiller",
+    "archetype": " Bellflower Tiller",
     "prerequisites": "Bellflower Dedication",
     "text": "You can guide your crop to move without notice. When you and any of your crop are , you can choose one member of your crop to temporarily gain the benefits of the skill feat until the group is no longer Avoiding Notice. The group rolls two checks instead of one, using the higher die roll. This is a effect.",
     "traits": ["Archetype"]
@@ -6573,7 +6597,7 @@ const archFeats = [{
     "name": "Practiced Guidance",
     "level": 8,
     "source": "Pathfinder #147: Tomorrow Must Burn pg. 75",
-    "archetype": "Bellflower Tiller",
+    "archetype": " Bellflower Tiller",
     "prerequisites": "Bellflower Dedication",
     "text": "Making one\u2019s way to safety can be harrowing, but you have extensive practice at helping others along that path. When you roll a success to a member of your crop, you get a critical success instead.",
     "traits": ["Archetype"]
@@ -6582,7 +6606,7 @@ const archFeats = [{
     "name": "Scarecrow",
     "level": 8,
     "source": "Pathfinder #147: Tomorrow Must Burn pg. 75",
-    "archetype": "Bellflower Tiller",
+    "archetype": " Bellflower Tiller",
     "prerequisites": "Bellflower Dedication",
     "text": "You fight fiercely to protect your crop. When you hit a creature that is adjacent to two or more members of your crop with a weapon or unarmed attack, you gain a circumstance bonus to your damage roll equal to the number of weapon damage dice. When you hit a creature who has a member of your crop grabbed, that member can attempt to using a reaction.",
     "traits": ["Archetype"]
@@ -6591,7 +6615,7 @@ const archFeats = [{
     "name": "Tiller's Aid",
     "level": 10,
     "source": "Pathfinder #147: Tomorrow Must Burn pg. 75",
-    "archetype": "Bellflower Tiller",
+    "archetype": " Bellflower Tiller",
     "prerequisites": "Bellflower Dedication",
     "text": "You can use the reaction to help a member of your crop even if you haven\u2019t prepared to do so.",
     "traits": ["Archetype"]
@@ -6600,7 +6624,7 @@ const archFeats = [{
     "name": "Tiller's Drive",
     "level": 10,
     "source": "Pathfinder #147: Tomorrow Must Burn pg. 75",
-    "archetype": "Bellflower Tiller",
+    "archetype": " Bellflower Tiller",
     "prerequisites": "Bellflower Dedication",
     "text": "Your Speed bonus from Bellflower Dedication increases to +10 feet. Members of your crop receive a +5-foot circumstance bonus to Speed.",
     "traits": ["Archetype"]
@@ -6609,7 +6633,7 @@ const archFeats = [{
     "name": "Cut the Bonds",
     "level": 12,
     "source": "Pathfinder #147: Tomorrow Must Burn pg. 75",
-    "archetype": "Bellflower Tiller",
+    "archetype": " Bellflower Tiller",
     "prerequisites": "Bellflower Dedication, expert in a melee weapon",
     "traits": ["Archetype", "Attack"],
     "text": "Select a magical effect that has made an adjacent member of your crop clumsy, grabbed, paralyzed, restrained, or slowed. Attempt a counteract check using your attack modifier (including your multiple attack penalty) with a melee weapon with which you have expert proficiency. Your counteract level is half your level rounded up. On a success, you free that member from the effect; on a failure, you can\u2019t attempt to use Cut the Bonds on that effect on that crop member until 24 hours have passed"
@@ -6618,7 +6642,7 @@ const archFeats = [{
     "name": "Crystal Keeper Dedication",
     "level": 4,
     "source": "Pathfinder #148: Fires of the Haunted City pg. 74",
-    "archetype": "Crystal Keeper",
+    "archetype": " Crystal Keeper",
     "prerequisites": "trained in Elven Lore or Society",
     "special": "You can\u2019t select another dedication feat until you have gained two other feats from the crystal keeper archetype.",
     "text": "You can use Arcana, Occultism, Religion, or Society to Decipher Writing by meditating before a crystal, regardless of the type of writing. When you Decipher Writing and roll a critical failure, you get a failure instead, and when you Decipher Writing and roll a success, you get a critical success instead. Additionally, you gain resistance 10 to damage from hazards associated with crystals.",
@@ -6628,7 +6652,7 @@ const archFeats = [{
     "name": "Crystal Ward Spells",
     "level": 4,
     "source": "Pathfinder #148: Fires of the Haunted City pg. 74",
-    "archetype": "Crystal Keeper",
+    "archetype": " Crystal Keeper",
     "prerequisites": "Crystal Keeper Dedication",
     "text": "Your study of crystals and the energies held within a gem\u2019s facets grants you special arcane crystal ward spells, which are a type of focus spell. It costs 1 Focus Point to cast a focus spell, and you start with a focus pool of 1 Focus Point. You refill your focus pool when you make your next daily preparations, and you can regain 1 Focus Point by spending 10 minutes using the Refocus activity to research and memorize the properties of gems. Focus spells are automatically heightened to half your level rounded up. Certain feats can give you more focus spells and increase the size of your focus pool, though your focus pool can never hold more than 3 Focus Points. You gain the focus spell, and you are trained in arcane spell attack rolls and spell DCs. Your spellcasting ability is Intelligence.",
     "traits": ["Archetype"]
@@ -6637,7 +6661,7 @@ const archFeats = [{
     "name": "Simple Crystal Magic",
     "level": 6,
     "source": "Pathfinder #148: Fires of the Haunted City pg. 74",
-    "archetype": "Crystal Keeper",
+    "archetype": " Crystal Keeper",
     "prerequisites": "Crystal Keeper Dedication",
     "text": "As long as you meditate before a gemstone worth at least 10 gp as part of your daily preparations, you are capable of seeing magic as flowing runes that reveal information about magic objects, and you can scribe a personal rune that represents you. You gain the and cantrips. You cast these cantrips as arcane innate spells at will. A cantrip is heightened to a spell level equal to half your level rounded up.",
     "traits": ["Archetype"]
@@ -6646,7 +6670,7 @@ const archFeats = [{
     "name": "Armor Rune Shifter",
     "level": 10,
     "source": "Pathfinder #148: Fires of the Haunted City pg. 75",
-    "archetype": "Crystal Keeper",
+    "archetype": " Crystal Keeper",
     "prerequisites": "Crystal Keeper Dedication",
     "text": "You learn the secrets of armor runes by viewing them through gems and can alter them at your discretion. Once per day when you make your daily preparations, you can focus on a rune\u2019s magical energies through a crystal\u2019s facets to alter a single property rune on one suit of armor in your possession to suppress its normal effects and make it function as a different property rune. You can temporarily alter the rune to function as one of the following runes: , , , , , or . The property rune remains altered until you make your next daily preparations. The armor must meet the prerequisites for the temporary rune, and any other runes that required the suppressed rune are also suppressed while the rune is transformed. The rune is obviously altered, and thus the armor can\u2019t be sold as though it had the temporary rune.",
     "traits": ["Archetype"]
@@ -6655,7 +6679,7 @@ const archFeats = [{
     "name": "Weapon-Rune Shifter",
     "level": 10,
     "source": "Pathfinder #148: Fires of the Haunted City pg. 75",
-    "archetype": "Crystal Keeper",
+    "archetype": " Crystal Keeper",
     "prerequisites": "Crystal Keeper Dedication",
     "traits": ["Archetype"],
     "text": "You learn how to alter the magic of weapon runes by using a crystal as a focusing component. Once per day during your daily preparations, you can focus on a rune\u2019s magical energies through a crystal\u2019s facets to alter a single property rune on one weapon in your possession to suppress its normal effects and make it function as a different property rune. You can temporarily alter the rune to function as one of the following runes: , , , , , , , , or . The property rune remains altered until you make your next daily preparations. The weapon must meet the prerequisites for the temporary rune, and any other runes that required the suppressed rune are also suppressed while the rune is transformed. The rune is obviously altered, and thus the weapon can\u2019t be sold as though it had the temporary rune."
@@ -6664,7 +6688,7 @@ const archFeats = [{
     "name": "Firebrand Braggart Dedication",
     "level": 4,
     "source": "Lost Omens Character Guide pg. 74",
-    "archetype": "Firebrand Braggart",
+    "archetype": " Firebrand Braggart",
     "prerequisites": "Charisma 14, second mark member of the Firebrands",
     "special": "You can\u2019t select another dedication feat until you have gained two other feats from the Firebrand Braggart archetype.",
     "text": "Your Firebrand training has taught you that achieving something is more satisfying if you boast about it first. You declare a boast about a particular skill action, such as , , or . The first time you attempt this action within the next minute in a context the GM deems both suitably challenging and meaningful, you must roll twice and use the lower result. If you succeed at this check, you gain a +1 circumstance bonus to checks to attempt the same action for 10 minutes. If you fail this check or don\u2019t attempt the action within 1 minute, you instead take a \u20131 circumstance penalty on checks to attempt the same action for 1 hour. If the chosen action can be used with multiple skills, such as or Recall Knowledge, you must specify which skill you are using for that particular action, such as using to Identify Magic, and your bonus or penalty after the boast applies only to checks using that skill for that action. Once you declare a boast about a particular action, you cannot declare a boast about the same action until the next time you make daily preparations, regardless of whether you succeed or fail at the check. Typically a challenging task is one with at least a standard DC for your level, though the difficulty may be higher depending on the situation. A meaningful context is one where the action\u2019s success or failure is relevant to the pursuit of your goals, rather than a boast you made simply to gain a bonus later.",
@@ -6674,7 +6698,7 @@ const archFeats = [{
     "name": "Boaster's Challenge",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 74",
-    "archetype": "Firebrand Braggart",
+    "archetype": " Firebrand Braggart",
     "prerequisites": "expert in Deception, Diplomacy, or Intimidation; Firebrand Braggart Dedication",
     "text": "You call out a foe, causing them to become flustered and easier to defeat. Select one creature you can see and declare a challenge. For your challenge, attempt a Deception, Diplomacy, or Intimidation check against that creature\u2019s Will DC. Your challenge must include a , , or component and gains the corresponding trait. If you succeed, you gain a +2 status bonus to damage rolls with your weapon or unarmed Strikes against that foe until the end of your next turn; if you have master proficiency in the skill you used, you gain a +4 status bonus instead, and if you\u2019re legendary, you gain a +6 status bonus. On a critical success, the status bonus lasts for 3 rounds instead. Whether you succeed or fail, creatures who witnessed your challenge gain a +4 circumstance bonus to their Will DCs against your attempts to challenge for 1 minute.",
     "traits": ["Archetype"]
@@ -6683,16 +6707,16 @@ const archFeats = [{
     "name": "Daring Act",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 74",
-    "archetype": "Firebrand Braggart",
+    "archetype": " Firebrand Braggart",
     "prerequisites": "trained in Acrobatics or Athletics, Firebrand Braggart Dedication",
-    "text": "You attempt a death-defying maneuver to distract your enemies. Select one foe within reach and attempt either an Acrobatics or Athletics check against your target\u2019s Reflex DC. If you succeed, you can Stride up to half your Speed (or up to your full Speed if you critically succeed) without triggering reactions from the target due to your movement, and the target is flat-footed against the next melee attack you attempt against it before the end of your turn.",
+    "text": "You attempt a death-defying maneuver to distract your enemies. Select one foe within reach and attempt either an Acrobatics or Athletics check against your target\u2019s Reflex DC. If you succeed, you can Stride up to half your Speed (or up to your full Speed if you critically succeed) without triggering reactions from the target due to your movement, and the target is against the next melee attack you attempt against it before the end of your turn.",
     "traits": ["Archetype"]
 }, {
     "link": "https://2e.aonprd.com/Archetypes.aspx?ID=24",
     "name": "Bravo's Determination",
     "level": 8,
     "source": "Lost Omens Character Guide pg. 75",
-    "archetype": "Firebrand Braggart",
+    "archetype": " Firebrand Braggart",
     "prerequisites": "expert in Deception, Firebrand Braggart Dedication",
     "trigger": "A foe\u2019s Strike reduces you to 0 Hit Points; you were not at 1 Hit Point and you would not be killed.",
     "criticalsuccess": "You avoid being knocked out and remain at 1 Hit Point.",
@@ -6704,7 +6728,7 @@ const archFeats = [{
     "name": "Great Boaster",
     "level": 8,
     "source": "Lost Omens Character Guide pg. 75",
-    "archetype": "Firebrand Braggart",
+    "archetype": " Firebrand Braggart",
     "prerequisites": "Charisma 16, Firebrand Braggart Dedication",
     "text": "Your bragging is particularly effective. If you succeed at a boast, you can attempt a great boast about that same skill by using your Firebrand Braggart Dedication action about the same action during the duration of your original boast\u2019s circumstance bonus; this is an exception to the rule that you can\u2019t make another boast about the same action until your next daily preparations. A great boast uses the Firebrand Braggart Dedication action, except that if you succeed, your circumstance bonus increases to +2 and remains for 1 hour. If you fail the great boast, you take a \u20132 circumstance penalty to attempt the same action for 4 hours. Once you declare a great boast about a particular action, you can\u2019t declare a great boast about the same action until the next time you make daily preparations, regardless of whether you succeed or fail at the check. The minimum challenging task for a great boast is one with at least a hard DC for your level.",
     "traits": ["Archetype"]
@@ -6713,7 +6737,7 @@ const archFeats = [{
     "name": "Daring Flourish",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 75",
-    "archetype": "Firebrand Braggart",
+    "archetype": " Firebrand Braggart",
     "prerequisites": "Daring Act",
     "text": "You make quick use of an opening from your daring stunts. At the end of a successful Daring Act, you can make a melee Strike against the target or attempt to the target. The target is against the Strike you make during Daring Act as well as the next melee attack you attempt against it before the end of your turn.",
     "traits": ["Archetype"]
@@ -6722,7 +6746,7 @@ const archFeats = [{
     "name": "Demanding Challenge",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 75",
-    "archetype": "Firebrand Braggart",
+    "archetype": " Firebrand Braggart",
     "prerequisites": "Boaster\u2019s Challenge",
     "text": "If your skill check to challenge a foe is a success, the target of your challenge takes a \u20131 circumstance penalty to attack rolls (or \u20132 if you critically succeed) until the end of your next turn.",
     "traits": ["Archetype"]
@@ -6731,7 +6755,7 @@ const archFeats = [{
     "name": "Daredevil's Gambit",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 75",
-    "archetype": "Firebrand Braggart",
+    "archetype": " Firebrand Braggart",
     "prerequisites": "Daring Act",
     "traits": ["Archetype"],
     "text": "If you critically succeed at your Daring Act, you can enter the target\u2019s space and remain there until the beginning of your next turn or until the target moves, whichever comes first. You gain a +2 circumstance bonus to AC, and your target is against your attacks while you are sharing its space in this way. If any creature other than your target hits you with an attack roll while you are sharing your target\u2019s space, attempt a DC 15 flat check. On a success, resolve the attack against the target instead of you, using the same attack roll result that hit you."
@@ -6740,7 +6764,7 @@ const archFeats = [{
     "name": "Halcyon Speaker Dedication",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 104",
-    "archetype": "Halcyon Speaker",
+    "archetype": " Halcyon Speaker",
     "prerequisites": "Magaambyan Attendant Dedication, member of the Magaambya of conversant rank",
     "special": "You cannot select another dedication feat until you have gained two other feats from the halcyon speaker archetype.",
     "text": "You devote much of your study to halcyon magic. You gain access to two common Halcyon cantrips and two common 1st-level halcyon spells. In addition to being able to cast your halcyon spells via your arcane or primal spell slots, you also gain a 1st-level halcyon spell slot. You can use your halcyon spell slots to spontaneously cast your halcyon spells.",
@@ -6750,7 +6774,7 @@ const archFeats = [{
     "name": "Dualistic Synergy",
     "level": 8,
     "source": "Lost Omens Character Guide pg. 104",
-    "archetype": "Halcyon Speaker",
+    "archetype": " Halcyon Speaker",
     "prerequisites": "Halcyon Speaker Dedication",
     "text": "If your next action is to Cast a Spell from your spell slots, you gain a benefit. If the spell is arcane, you can attempt a skill check to with a +1 status bonus to the check after casting the spell, or a +2 status bonus if the spell is 7th level or higher. If the spell is primal, you gain a number of temporary Hit Points equal to the spell\u2019s level for 1 round. If the spell is a halcyon spell, you gain both benefits.",
     "traits": ["Archetype", "Metamagic"]
@@ -6759,7 +6783,7 @@ const archFeats = [{
     "name": "Persistent Creation",
     "level": 8,
     "source": "Lost Omens Character Guide pg. 104",
-    "archetype": "Halcyon Speaker",
+    "archetype": " Halcyon Speaker",
     "prerequisites": "Halcyon Speaker Dedication",
     "text": "You can cast as an innate spell at will, choosing whether it is arcane or primal each time. The created object lasts until you spend 1 hour not within its immediate vicinity or until it is destroyed. Such objects are called persistent creations. If you cast creation again, any persistent creation you previously created with the spell immediately disintegrates.",
     "traits": ["Archetype"]
@@ -6768,7 +6792,7 @@ const archFeats = [{
     "name": "Halcyon Spellcasting Initiated",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 104",
-    "archetype": "Halcyon Speaker",
+    "archetype": " Halcyon Speaker",
     "prerequisites": "Halcyon Speaker Dedication",
     "text": "Your knowledge of halcyon magic increases. You gain two common 2nd-level halcyon spells and two 3rd-level halcyon spells. You also gain a 2nd-level halcyon spell slot and a 3rd-level halcyon spell slot. These and all future halcyon spell slots work like the 1st-level halcyon spell slot you gained from Halcyon Speaker Dedication.",
     "traits": ["Archetype"]
@@ -6777,7 +6801,7 @@ const archFeats = [{
     "name": "Shared Synergy",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 104",
-    "archetype": "Halcyon Speaker",
+    "archetype": " Halcyon Speaker",
     "prerequisites": "Dualistic Synergy",
     "text": "You can grant the benefit from Dualistic Synergy to an ally within 30 feet instead of yourself, either allowing that ally to Recall Knowledge, granting that ally temporary Hit Points, or both, depending on the spell\u2019s tradition.",
     "traits": ["Archetype"]
@@ -6786,7 +6810,7 @@ const archFeats = [{
     "name": "Charged Creation",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 104",
-    "archetype": "Halcyon Speaker",
+    "archetype": " Halcyon Speaker",
     "prerequisites": "Persistent Creation",
     "text": "Your magic is drawn to your persistent creations. While you are within 30 feet of and have line of effect to your persistent creation, you can use it as the origin point for your line or cone spells. For instance, a could originate from the persistent creation rather than from you.",
     "traits": ["Archetype"]
@@ -6795,7 +6819,7 @@ const archFeats = [{
     "name": "Flexible Halcyon Spellcasting",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 105",
-    "archetype": "Halcyon Speaker",
+    "archetype": " Halcyon Speaker",
     "prerequisites": "Halcyon Spellcasting Initiate",
     "text": "You broaden your ability to channel your power into halcyon magic. You gain one more common halcyon spell of each level of halcyon spell you can cast other than your highest (you do not gain an additional cantrip). You also gain one additional halcyon spell slot for each level of halcyon spell you can cast, other than the highest.",
     "traits": ["Archetype"]
@@ -6804,7 +6828,7 @@ const archFeats = [{
     "name": "Halcyon Spellcasting Adept",
     "level": 14,
     "source": "Lost Omens Character Guide pg. 105",
-    "archetype": "Halcyon Speaker",
+    "archetype": " Halcyon Speaker",
     "prerequisites": "Halcyon Spellcasting Initiate; master in either Arcana or Nature, expert in the other",
     "text": "You refine your halcyon magic. You gain two common 4th-level halcyon spells and two 5th-level halcyon spells. You also gain a 4th-level halcyon spell slot and a 5th-level halcyon spell slot. Your proficiency rank in either arcane or primal spell DCs and spell attack rolls advances from trained to expert.",
     "traits": ["Archetype"]
@@ -6813,7 +6837,7 @@ const archFeats = [{
     "name": "Fulminating Synergy",
     "level": 16,
     "source": "Lost Omens Character Guide pg. 105",
-    "archetype": "Halcyon Speaker",
+    "archetype": " Halcyon Speaker",
     "prerequisites": "Dualistic Synergy",
     "text": "When you draw upon your spells\u2019 synergy, you create a physical manifestation of their magical resonance and invoke it to harm a foe. When you use Dualistic Synergy, choose a damage type: acid, cold, electricity, or fire. In addition to Dualistic Synergy\u2019s normal effect, a foe within 30 feet of you takes an amount of damage of the chosen type equal to the spell\u2019s level. If the spell already deals damage of the chosen type, combine the damage before applying weaknesses and resistances.",
     "traits": ["Archetype"]
@@ -6822,7 +6846,7 @@ const archFeats = [{
     "name": "Halcyon Spellcasting Sage",
     "level": 18,
     "source": "Lost Omens Character Guide pg. 105",
-    "archetype": "Halcyon Speaker",
+    "archetype": " Halcyon Speaker",
     "prerequisites": "Halcyon Spellcasting Adept; legendary in either Arcana or Nature, master in the other",
     "text": "Your command over halcyon magic is nearly unmatched. You gain two common 6th-level and 7th-level halcyon spells. You also gain a 6th-level halcyon spell slot and a 7th-level halcyon spell slot. Your proficiency rank in either arcane or primal spell DCs and spell attack rolls advances from expert to master.",
     "traits": ["Archetype"]
@@ -6831,7 +6855,7 @@ const archFeats = [{
     "name": "Synergistic Spell",
     "level": 20,
     "source": "Lost Omens Character Guide pg. 105",
-    "archetype": "Halcyon Speaker",
+    "archetype": " Halcyon Speaker",
     "prerequisites": "Halcyon Spellcasting Initiate, Fulminating Synergy, legendary in Arcana and Nature",
     "traits": ["Archetype", "Metamagic"],
     "text": "You combine your synergy and spells into a fantastic web of magic, allowing you to cast two spells at once. If the next action you use is to Cast a Spell from one of your halcyon spell slots, after that spell resolves, you can Cast another Spell as a free action. This spell must be cast from one of your halcyon spell slots and be a spell that would normally take two actions to cast."
@@ -6840,7 +6864,7 @@ const archFeats = [{
     "name": "Hellknight Dedication",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 84",
-    "archetype": "Hellknight",
+    "archetype": " Hellknight",
     "prerequisites": "Hellknight Armiger Dedication, lawful alignment, member of a Hellknight order, passed the Hellknight Test",
     "special": "You cannot select another dedication feat until you have gained two other feats from the Hellknight or Hellknight armigerarchetypes.",
     "text": "You have forged your body to comply with the commands of your mind\u2014orders steeped in the Measure and the Chain. You gain expert proficiency in (or in another skill in which you\u2019re trained of your choice, if you were already an expert in Intimidation). You gain the armor specialization effects of Hellknight plate, and your resistance from that armor specialization is 1 higher than normal. In addition, you gain a +1 circumstance bonus to Intimidation checks while wearing your Hellknight plate.",
@@ -6850,7 +6874,7 @@ const archFeats = [{
     "name": "Sense Chaos",
     "level": 8,
     "source": "Lost Omens Character Guide pg. 84",
-    "archetype": "Hellknight",
+    "archetype": " Hellknight",
     "prerequisites": "Hellknight Dedication",
     "text": "You sense chaos as an unsettling feeling of nervous energy. When in the presence of an aura of chaos that is powerful or overwhelming, you eventually detect the aura, though you might not do so instantly and you can\u2019t pinpoint the location. This is a vague sense, similar to humans\u2019 sense of smell. A chaotic creature using a disguise or otherwise trying to hide its presence attempts a check against your Perception DC to hide its aura from you. If the creature succeeds at its Deception check, it is temporarily immune to your Sense Chaos for 1 day.",
     "traits": ["Archetype"]
@@ -6859,7 +6883,7 @@ const archFeats = [{
     "name": "Blade of Law",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 84",
-    "archetype": "Hellknight",
+    "archetype": " Hellknight",
     "prerequisites": "Hellknight Dedication",
     "text": "You call upon the power of law and make a weapon or unarmed Strike against a foe you have witnessed breaking or disrespecting the law or otherwise acting disorderly. The Strike deals two extra weapon damage dice if the target of your Strike is chaotic. Whether or not the target is chaotic, you can convert the physical damage from the attack into lawful damage.",
     "traits": ["Archetype"]
@@ -6868,7 +6892,7 @@ const archFeats = [{
     "name": "Hell's Armaments",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 84",
-    "archetype": "Hellknight",
+    "archetype": " Hellknight",
     "prerequisites": "Hellknight Dedication",
     "traits": ["Archetype"],
     "text": "You\u2019ve trained with your order\u2019s weapon and your Hellknight plate long enough to apply your expertise from other weapons and armor. If you have expert proficiency in any weapon or unarmed attack, you gain expert proficiency in your order\u2019s weapon as well. If you have expert proficiency in any armor or unarmored defense, you gain expert proficiency in Hellknight plate as well."
@@ -6877,7 +6901,7 @@ const archFeats = [{
     "name": "Hellknight Armiger Dedication",
     "level": 2,
     "source": "Lost Omens World Guide pg. 107",
-    "archetype": "Hellknight Armiger",
+    "archetype": " Hellknight Armiger",
     "prerequisites": "member of a Hellknight order, trained in heavy armor as well as your order\u2019s favored weapon",
     "access": "You are from Old Cheliax.",
     "special": "You can\u2019t select another dedication feat except dedication feats for higher positions within the Hellknights until you have gained two other feats from the Hellknight armiger archetype.",
@@ -6888,7 +6912,7 @@ const archFeats = [{
     "name": "Ardent Armiger",
     "level": 4,
     "source": "Lost Omens World Guide pg. 107",
-    "archetype": "Hellknight Armiger",
+    "archetype": " Hellknight Armiger",
     "prerequisites": "Hellknight Armiger Dedication",
     "text": "You have been trained to resist the manipulations of fiends, and your Hellknight discipline makes you difficult to influence. You gain a +1 circumstance bonus to saves against mental effects that specifically improve your attitude and to your Will DC against someone Coercing you, Demoralizing you, Making an Impression on you, or Making a Request of you. If a mental effect would compel you to act in a way that violates your Hellknight order\u2019s tenets (as determined by the GM), you can attempt to break free from the effect as a reaction triggered by receiving the violating order, and you gain a new Will save against the effect. You can attempt this new save only once for a given effect, even if you are compelled to violate your order\u2019s tenets multiple times.",
     "traits": ["Archetype"]
@@ -6897,7 +6921,7 @@ const archFeats = [{
     "name": "Diabolic Certitude",
     "level": 4,
     "source": "Lost Omens World Guide pg. 107",
-    "archetype": "Hellknight Armiger",
+    "archetype": " Hellknight Armiger",
     "prerequisites": "Hellknight Armiger Dedication",
     "trigger": "Your turn begins and you can observe a devil.",
     "text": "Your Hellknight training drilled details of Hell\u2019s denizens deep into your mind. Make an attempt to Recall Knowledge about a you\u2019re observing. If you roll a critical failure on this check, you get a failure instead.",
@@ -6907,7 +6931,7 @@ const archFeats = [{
     "name": "Mortification",
     "level": 4,
     "source": "Lost Omens World Guide pg. 107",
-    "archetype": "Hellknight Armiger",
+    "archetype": " Hellknight Armiger",
     "prerequisites": "Hellknight Armiger Dedication",
     "text": "Your reckonings have prepared your body for physical punishment. Choose bludgeoning, piercing, or slashing damage, based on the nature of your physical reckonings. You gain resistance to the chosen damage type equal to your number of class feats from the Hellknight Armiger archetype and other Hellknight archetypes.",
     "traits": ["Archetype"]
@@ -6916,7 +6940,7 @@ const archFeats = [{
     "name": "Armiger's Mobility",
     "level": 8,
     "source": "Lost Omens World Guide pg. 107",
-    "archetype": "Hellknight Armiger",
+    "archetype": " Hellknight Armiger",
     "prerequisites": "expert in heavy armor, Hellknight Armiger Dedication",
     "text": "You\u2019ve learned how best to move in heavy armor. When wearing heavy armor, if you meet the Strength requirement, instead of reducing the movement penalty by 5 feet, you reduce the penalty by 10 feet (typically reducing the penalty to 0). If you are a dwarf with the feat, increase your Speed by 5 feet.",
     "traits": ["Archetype"]
@@ -6925,7 +6949,7 @@ const archFeats = [{
     "name": "Order Training",
     "level": 8,
     "source": "Lost Omens Character Guide pg. 81",
-    "archetype": "Hellknight Armiger",
+    "archetype": " Hellknight Armiger",
     "prerequisites": "Hellknight Armiger Dedication",
     "text": "You gain the lesser order benefit for the Hellknight order to which you belong.",
     "traits": ["Archetype"]
@@ -6934,7 +6958,7 @@ const archFeats = [{
     "name": "Advanced Order Training",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 82",
-    "archetype": "Hellknight Armiger",
+    "archetype": " Hellknight Armiger",
     "prerequisites": "Hellknight Armiger Dedication; Hellknight Dedication or Hellknight Signifer Dedication",
     "text": "You gain the greater order benefit for the Hellknight order to which you belong.",
     "traits": ["Archetype"]
@@ -6943,7 +6967,7 @@ const archFeats = [{
     "name": "Hellknight Order Cross-Training",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 83",
-    "archetype": "Hellknight Armiger",
+    "archetype": " Hellknight Armiger",
     "prerequisites": "Hellknight Armiger Dedication; Hellknight Dedication or Hellknight Signifer Dedication",
     "special": "You can select this feat multiple times, gaining the lesser order benefit from a different order each time by training with members of that order.",
     "traits": ["Archetype"],
@@ -6953,17 +6977,17 @@ const archFeats = [{
     "name": "Hellknight Signifer Dedication",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 85",
-    "archetype": "Hellknight Signifer",
+    "archetype": " Hellknight Signifer",
     "prerequisites": "spellcasting class feature, Hellknight Armiger Dedication, lawful alignment, member of a Hellknight order, passed the Hellknight Test",
     "special": "You cannot select another dedication feat until you have gained two other feats from the Hellknight signifer or Hellknight armigerarchetypes.",
-    "text": "You have bolstered your force of will with the power of the Measure and the Chain. Upon initiation, you receive a signifer mask, often devoid of eyeholes or other decorative features. The mask doesn\u2019t obscure your vision, though it makes it impossible for others to see your eyes. While wearing your signifer\u2019s mask, you gain +1 circumstance bonus to checks to Lie, checks, and Deception DCs against . You gain expert proficiency in Intimidation (or in another skill in which you\u2019re trained of your choice, if you were already an expert in Intimidation) as well as in your choice of Arcana, , , or .",
+    "text": "You have bolstered your force of will with the power of the Measure and the Chain. Upon initiation, you receive a signifer mask, often devoid of eyeholes or other decorative features. The mask doesn\u2019t obscure your vision, though it makes it impossible for others to see your eyes. While wearing your signifer\u2019s mask, you gain +1 circumstance bonus to checks to Lie, checks, and Deception DCs against . You gain expert proficiency in Intimidation (or in another skill in which you\u2019re trained of your choice, if you were already an expert in Intimidation) as well as in your choice of , , , or .",
     "traits": ["Archetype", "Dedication"]
 }, {
     "link": "https://2e.aonprd.com/Archetypes.aspx?ID=26",
     "name": "Masked Casting",
     "level": 8,
     "source": "Lost Omens Character Guide pg. 85",
-    "archetype": "Hellknight Signifer",
+    "archetype": " Hellknight Signifer",
     "prerequisites": "Hellknight Signifer Dedication",
     "requirements": "You are wearing your signifer\u2019s mask.",
     "trigger": "You begin Casting a Spell.",
@@ -6974,7 +6998,7 @@ const archFeats = [{
     "name": "Gaze of Veracity",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 85",
-    "archetype": "Hellknight Signifer",
+    "archetype": " Hellknight Signifer",
     "prerequisites": "Hellknight Signifer Dedication, ability to cast focus spells",
     "text": "You can channel your mask\u2019s power to pierce through lies and see the truth in any situation. Increase the number of Focus Points in your focus pool by 1. While wearing your mask, you can cast the cleric domain spell as a divine focus spell.",
     "traits": ["Archetype"]
@@ -6983,7 +7007,7 @@ const archFeats = [{
     "name": "Signifer's Sight",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 85",
-    "archetype": "Hellknight Signifer",
+    "archetype": " Hellknight Signifer",
     "prerequisites": "Hellknight Signifer Dedication",
     "text": "The magic flowing through your signifer\u2019s mask allows you to see in the dark, and the mask dampens the distraction caused by sudden flashes of bright light. While wearing your signifer\u2019s mask, you gain . Additionally, if you are while wearing your signifer\u2019s mask and the target is concealed only because you are dazzled, you reduce the flat check DC to target that creature from 5 to 3.",
     "traits": ["Archetype"]
@@ -6992,7 +7016,7 @@ const archFeats = [{
     "name": "Signifer Armor Expertise",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 85",
-    "archetype": "Hellknight Signifer",
+    "archetype": " Hellknight Signifer",
     "prerequisites": "Hellknight Signifer Dedication",
     "traits": ["Archetype"],
     "text": "You\u2019ve spent enough time helping your comrades equip medium and heavy armor that you spread your own expertise to those armors as well. If you have expert proficiency in any armor or unarmored defense, you also gain expert proficiency in medium and heavy armor."
@@ -7001,7 +7025,7 @@ const archFeats = [{
     "name": "Knight Reclaimant Dedication",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 95",
-    "archetype": "Knight Reclaimant",
+    "archetype": " Knight Reclaimant",
     "prerequisites": "trained in Survival and Stealth, any non-evil alignment, member of the Knights of Lastwall of knight rank",
     "special": "You cannot select another dedication feat until you have gained two other feats from the Knight Reclaimant archetype.",
     "text": "You have sworn the Crimson Oath and become a full member of the Crimson Reclaimers. You gain expert proficiency in Stealth and Survival. Whenever you roll a success on a saving throw against an undead\u2019s special ability, you get a critical success instead. This applies to any abilities that come from being undead, including an undead\u2019s innate spells (but not its prepared or spontaneous spells).",
@@ -7011,7 +7035,7 @@ const archFeats = [{
     "name": "Invoke the Crimson Oath",
     "level": 8,
     "source": "Lost Omens Character Guide pg. 95",
-    "archetype": "Knight Reclaimant",
+    "archetype": " Knight Reclaimant",
     "prerequisites": "Knight Reclaimant Dedication",
     "text": "You can invoke the Crimson Oath to unleash blasts of ruby energy from your weapon. You gain the focus spell. If you don\u2019t already have one, you gain a focus pool of 1 Focus Point, which you can regain using the Refocus activity to recite the Crimson Oath and meditate on its teachings; if you already have a focus pool, increase the number of Focus Points in your focus pool by 1. Your knight reclaimant focus spells are divine spells; when you gain this feat, you become trained in divine spell attacks and spell DCs.",
     "traits": ["Archetype"]
@@ -7020,7 +7044,7 @@ const archFeats = [{
     "name": "Survivor of Desolation",
     "level": 8,
     "source": "Lost Omens Character Guide pg. 95",
-    "archetype": "Knight Reclaimant",
+    "archetype": " Knight Reclaimant",
     "prerequisites": "Knight Reclaimant Dedication",
     "text": "You gain a +2 circumstance bonus to saving throws against unnatural weather events or environmental hazards occurring in blighted or otherwise unnaturally marred regions. If you roll a success on a saving throw against such an effect, you get a critical success instead; if you roll a critical failure, you get a failure instead. This does not apply to unnatural events created or directed by active effects, such as spells that create anomalous weather or hazardous areas.",
     "traits": ["Archetype"]
@@ -7029,7 +7053,7 @@ const archFeats = [{
     "name": "Blade of the Crimson Oath",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 95",
-    "archetype": "Knight Reclaimant",
+    "archetype": " Knight Reclaimant",
     "prerequisites": "Knight Reclaimant Dedication",
     "text": "You call upon the Crimson Oath to smite undead and then make a weapon or unarmed Strike against an undead foe. The Strike deals two extra weapon damage dice, and you can convert all the physical damage from the attack into positive damage.",
     "traits": ["Archetype"]
@@ -7038,7 +7062,7 @@ const archFeats = [{
     "name": "Reaper of Repose",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 95",
-    "archetype": "Knight Reclaimant",
+    "archetype": " Knight Reclaimant",
     "prerequisites": "Knight Reclaimant Dedication, master proficiency in a weapon",
     "traits": ["Archetype"],
     "text": "Your skill and fervor allow you to pierce undead defenses and exploit their weaknesses. When you make an attack using a weapon with which you have master proficiency and hit an undead creature, you ignore 5 points of the creature\u2019s resistances, and the undead\u2019s weaknesses are 2 higher against your attack."
@@ -7047,7 +7071,7 @@ const archFeats = [{
     "name": "Knight Vigilant",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 94",
-    "archetype": "Knight Vigilant",
+    "archetype": " Knight Vigilant",
     "prerequisites": "trained in Religion, any good alignment, member of the Knights of Lastwall of knight rank",
     "special": "You cannot select another dedication feat until you have gained two other feats from the Knight Vigilant archetype.",
     "text": "You are dedicated to the cause of the Shining Sentinels. You gain expert proficiency in . When you are between an ally and a foe and would provide lesser cover to your ally against the foe\u2019s attacks, you twist to become even more obtrusive, providing standard cover instead.",
@@ -7057,7 +7081,7 @@ const archFeats = [{
     "name": "Unshakable Idealism",
     "level": 8,
     "source": "Lost Omens Character Guide pg. 94",
-    "archetype": "Knight Vigilant",
+    "archetype": " Knight Vigilant",
     "prerequisites": "Knight Vigilant, expert in Will saves",
     "text": "Your faith and hope can\u2019t be shaken, and you won\u2019t flee when lives are at stake. You gain a +1 circumstance bonus on saves against effects and effects that inflict despair. When you would gain the condition, you can choose to stand your ground and be for the effect\u2019s duration as well, preventing you from running and allowing you to re-enter the fight more quickly when the effect ends.",
     "traits": ["Archetype"]
@@ -7066,7 +7090,7 @@ const archFeats = [{
     "name": "Endure Death's Touch",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 94",
-    "archetype": "Knight Vigilant",
+    "archetype": " Knight Vigilant",
     "prerequisites": "Knight Vigilant, expert in medium or heavy armor",
     "requirements": "You are wearing medium or heavy armor in which you have expert proficiency.",
     "trigger": "An undead hits you with an unarmed attack.",
@@ -7077,7 +7101,7 @@ const archFeats = [{
     "name": "Aegis of Arnisant",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 94",
-    "archetype": "Knight Vigilant",
+    "archetype": " Knight Vigilant",
     "prerequisites": "Knight Vigilant, Shield Block, master in Religion",
     "requirements": "You are wielding a shield.",
     "trigger": "An enemy casts a spell that targets you or an ally within 15 feet of you",
@@ -7088,7 +7112,7 @@ const archFeats = [{
     "name": "Knight in Shining Armor",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 94",
-    "archetype": "Knight Vigilant",
+    "archetype": " Knight Vigilant",
     "prerequisites": "Knight Vigilant; expert in light armor, medium armor, or unarmored defense; trained in heavy armor",
     "traits": ["Archetype"],
     "text": "As a knight in shining armor, you train daily in the heaviest armor, expanding your expertise to heavy armor. You gain expert proficiency in heavy armor."
@@ -7097,7 +7121,7 @@ const archFeats = [{
     "name": "Lastwall Sentry Dedication",
     "level": 2,
     "source": "Lost Omens World Guide pg. 47",
-    "archetype": "Lastwall Sentry",
+    "archetype": " Lastwall Sentry",
     "prerequisites": "member of the Knights of Lastwall, Shield Block",
     "access": "You are from the Eye of Dread region.",
     "special": "You can't select another dedication feat until you have gained two other feats from the Lastwall sentry archetype.",
@@ -7108,7 +7132,7 @@ const archFeats = [{
     "name": "Eye of Ozem",
     "level": 4,
     "source": "Lost Omens World Guide pg. 47",
-    "archetype": "Lastwall Sentry",
+    "archetype": " Lastwall Sentry",
     "prerequisites": "Lastwall Sentry Dedication, expert in Perception",
     "text": "You\u2019ve learned how to spot danger at a distance, allowing you to serve as a sentry with ease. You gain a +2 circumstance bonus to initiative rolls when using Perception, and when you\u2019re Scouting, you grant your allies a +2 circumstance bonus instead of +1.",
     "traits": ["Archetype"]
@@ -7117,7 +7141,7 @@ const archFeats = [{
     "name": "Necromantic Resistance",
     "level": 4,
     "source": "Lost Omens World Guide pg. 47",
-    "archetype": "Lastwall Sentry",
+    "archetype": " Lastwall Sentry",
     "prerequisites": "Lastwall Sentry Dedication",
     "text": "As part of your training, you\u2019ve inured yourself against necromancy through repeated exposure. You gain a +1 circumstance bonus to saves against necromancy effects and gain resistance to negative damage equal to half your level.",
     "traits": ["Archetype"]
@@ -7126,7 +7150,7 @@ const archFeats = [{
     "name": "Grave Sense",
     "level": 6,
     "source": "Lost Omens World Guide pg. 47",
-    "archetype": "Lastwall Sentry",
+    "archetype": " Lastwall Sentry",
     "prerequisites": "Lastwall Sentry Dedication",
     "text": "Your time spent hunting the undead allows you to sense them. You sense undead as a similar to a human\u2019s sense of smell, an uncomfortable sensation akin to smelling something cloying and rotting. When in proximity to the undead, you eventually sense their presence, though you might not do so instantly, and you can\u2019t pinpoint their location. An undead using a disguise or otherwise trying to hide its presence must attempt a check against your Perception DC to hide its presence from you. If the creature succeeds at its Deception check, it is then temporarily immune to your Grave Sense for 1 day.",
     "traits": ["Archetype"]
@@ -7135,7 +7159,7 @@ const archFeats = [{
     "name": "Necromantic Tenacity",
     "level": 8,
     "source": "Lost Omens World Guide pg. 47",
-    "archetype": "Lastwall Sentry",
+    "archetype": " Lastwall Sentry",
     "prerequisites": "Necromantic Resistance",
     "text": "Your training against necromantic effects allows you to escape the worst of their touch. If you roll a success on a saving throw against a necromancy effect, you get a critical success instead; if you roll a critical failure on such a save, you get a failure instead.",
     "traits": ["Archetype"]
@@ -7144,7 +7168,7 @@ const archFeats = [{
     "name": "Lastwall Warden",
     "level": 10,
     "source": "Lost Omens World Guide pg. 47",
-    "archetype": "Lastwall Sentry",
+    "archetype": " Lastwall Sentry",
     "prerequisites": "Lastwall Sentry Dedication",
     "traits": ["Archetype"],
     "text": "You use your shield to protect your allies, not just yourself, especially against the undead. When you have a shield raised, you can use your reaction when an attack is made against an ally adjacent to you, in addition to its usual trigger. If you do, the shield prevents that ally from taking damage instead of you, following the normal rules for a . If an undead makes an attack against an ally within 10 feet, you can Step to become adjacent to your ally and then use as part of the same reaction."
@@ -7153,7 +7177,7 @@ const archFeats = [{
     "name": "Lion Blade Dedication",
     "level": 2,
     "source": "Lost Omens World Guide pg. 131",
-    "archetype": "Lion Blade",
+    "archetype": " Lion Blade",
     "prerequisites": "member of the Lion Blades, trained in Performance",
     "access": "You are from Taldor.",
     "special": "You cannot select another dedication feat until you have gained two other feats from the Lion Blade archetype.",
@@ -7164,7 +7188,7 @@ const archFeats = [{
     "name": "Lost in the Crowd",
     "level": 4,
     "source": "Lost Omens World Guide pg. 131",
-    "archetype": "Lion Blade",
+    "archetype": " Lion Blade",
     "prerequisites": "Lion Blade Dedication",
     "text": "You\u2019ve learned how to move as one with crowds and hide among them, vanishing into a busy street in the blink of an eye. You move at full Speed in crowds and can use cover from crowds to Hide and Sneak, gaining a +2 circumstance bonus on your Stealth checks when in a crowd of at least 10 creatures and a +4 circumstance bonus on your Stealth checks when in a crowd of at least 100 creatures.",
     "traits": ["Archetype"]
@@ -7173,7 +7197,7 @@ const archFeats = [{
     "name": "Crowd Mastery",
     "level": 6,
     "source": "Lost Omens World Guide pg. 131",
-    "archetype": "Lion Blade",
+    "archetype": " Lion Blade",
     "prerequisites": "Lost in the Crowd",
     "text": "You use the crowd to your advantage, diverting your foes\u2019 attention to potential hidden dangers in the crowd. When determining if your foe is flanked, treat all squares occupied by a crowd as if they were occupied by an ally with a melee reach of 5 feet.",
     "traits": ["Archetype"]
@@ -7182,7 +7206,7 @@ const archFeats = [{
     "name": "Expeditious Advance",
     "level": 6,
     "source": "Lost Omens World Guide pg. 131",
-    "archetype": "Lion Blade",
+    "archetype": " Lion Blade",
     "prerequisites": "Lion Blade Dedication",
     "requirements": "You are unarmored or wearing light armor.",
     "text": "You advance and retreat quickly. You gain a +10-foot status bonus to your speed.",
@@ -7192,7 +7216,7 @@ const archFeats = [{
     "name": "Spy's Countermeasures",
     "level": 10,
     "source": "Lost Omens World Guide pg. 131",
-    "archetype": "Lion Blade",
+    "archetype": " Lion Blade",
     "prerequisites": "Lion Blade Dedication",
     "text": "You\u2019ve learned how to analyze and fake your responses to the most common magic used against spies. Whenever you succeed at your save against a divination or mental effect, you can Identify Magic to identify the spell as a free action triggered when you succeed, even if you didn\u2019t notice the spell being cast. If you successfully identify a divination effect targeting you and the spell would normally fail or have no effect, you can create a substitute result, causing the spell\u2019s caster to think the spell succeeded, with a result of your choice. If you successfully identify a mental effect targeting you and the spell would normally fail or have no effect, you can make it appear as if you were affected and attempt to play along with the spell; if the spell normally establishes a mental link, it functions normally but you can disregard any commands you receive through the link.",
     "traits": ["Archetype"]
@@ -7201,7 +7225,7 @@ const archFeats = [{
     "name": "Flicker",
     "level": 12,
     "source": "Lost Omens World Guide pg. 131",
-    "archetype": "Lion Blade",
+    "archetype": " Lion Blade",
     "prerequisites": "Lion Blade Dedication",
     "traits": ["Archetype"],
     "text": "You use your movements and disguises to make yourself a flickering blur. You gain concealment until your next turn. As usual for concealment involving an obvious visual manifestation, you can\u2019t use this concealment to Hide."
@@ -7210,7 +7234,7 @@ const archFeats = [{
     "name": "Living Monolith Dedication",
     "level": 2,
     "source": "Lost Omens World Guide pg. 59",
-    "archetype": "Living Monolith",
+    "archetype": " Living Monolith",
     "prerequisites": "Ancient Osiriani and Sphinx languages, trained in Crafting",
     "access": "You are from the Golden Road region.",
     "special": "You cannot select another dedication feat until you have gained two other feats from the living monolith archetype.",
@@ -7221,7 +7245,7 @@ const archFeats = [{
     "name": "Ka Stone Ritual",
     "level": 4,
     "source": "Lost Omens World Guide pg. 59",
-    "archetype": "Living Monolith",
+    "archetype": " Living Monolith",
     "prerequisites": "Living Monolith Dedication, a sphinx or living monolith with this feat performs a ritual with you",
     "activate": "(envision), or a different activation if otherwise specified\r\n;",
     "actions": "Two Actions",
@@ -7234,7 +7258,7 @@ const archFeats = [{
     "name": "Stone Blood",
     "level": 6,
     "source": "Lost Omens World Guide pg. 59",
-    "archetype": "Living Monolith",
+    "archetype": " Living Monolith",
     "prerequisites": "Ka Stone Ritual",
     "text": "You can selectively stop your bleeding with ease. Reduce the DC of flat checks to stop persistent bleed damage you have from 15 to 10, and you can use a single action that has the trait to gain an early flat check without physically binding the wounds. You recover naturally from the condition twice as quickly as normal.",
     "traits": ["Archetype"]
@@ -7243,7 +7267,7 @@ const archFeats = [{
     "name": "Fortified Flesh",
     "level": 8,
     "source": "Lost Omens World Guide pg. 59",
-    "archetype": "Living Monolith",
+    "archetype": " Living Monolith",
     "prerequisites": "Ka Stone Ritual",
     "text": "Your flesh takes on the hardness of stone. You gain resistance to physical damage (except adamantine) equal to your number of class feats from the Living Monolith archetype.",
     "traits": ["Archetype"]
@@ -7252,7 +7276,7 @@ const archFeats = [{
     "name": "Attunement to Stone",
     "level": 10,
     "source": "Lost Omens World Guide pg. 59",
-    "archetype": "Living Monolith",
+    "archetype": " Living Monolith",
     "prerequisites": "Ka Stone Ritual",
     "text": "You become attuned to the stone around you. When in contact with a stone surface, you gain tremorsense (imprecise) 5 feet along that surface, and you can activate your ka stone to cast .",
     "traits": ["Archetype"]
@@ -7261,7 +7285,7 @@ const archFeats = [{
     "name": "Judgement of the Monolith",
     "level": 12,
     "source": "Lost Omens World Guide pg. 59",
-    "archetype": "Living Monolith",
+    "archetype": " Living Monolith",
     "prerequisites": "Ka Stone Ritual",
     "text": "You can use the oaths bound in your ka stone to compel the truth from the living and the dead. You can activate your ka stone to target a single living creature, causing that creature to experience the effects of being in a . You can also activate it with a 10-minute activation (envision) to cast .",
     "traits": ["Archetype"]
@@ -7270,7 +7294,7 @@ const archFeats = [{
     "name": "Stone Communion",
     "level": 14,
     "source": "Lost Omens World Guide pg. 59",
-    "archetype": "Living Monolith",
+    "archetype": " Living Monolith",
     "prerequisites": "Ka Stone Ritual",
     "traits": ["Archetype"],
     "text": "You gain a unique communion with the earth and stones. You learn the language and you can Activate your ka stone with a 10-minute activation (envision) to cast ."
@@ -7279,17 +7303,17 @@ const archFeats = [{
     "name": "Magaambyan Attendant Dedication",
     "level": 2,
     "source": "Lost Omens Character Guide pg. 101",
-    "archetype": "Magaambyan Attendent",
+    "archetype": " Magaambyan Attendant",
     "prerequisites": "trained in Arcana or Nature, member of the Magaambya of attendant rank",
     "special": "You cannot select another dedication feat other than Halcyon Speaker Dedicationuntil you have gained two other feats from the Magaambyan Attendant or halcyon speakerarchetype.",
-    "text": "You devote much of your study to halcyon magic. You gain the ability to cast a single or cantrip of your choice, (as is normal for cantrips, it is heightened to a spell level equal to half your level, rounded up). If you weren\u2019t already, you become trained in that tradition\u2019s spell DCs and spell attack rolls, with Intelligence as your spellcasting ability if you choose arcane or Wisdom as your spellcasting ability if you choose primal. Regardless of whether you choose an arcane or primal cantrip, you also either become trained in Arcana or Nature, or an expert in one of those skills in which you were already trained. When you gain this feat, choose to affiliate with the Cascade Bearers, Emerald Boughs, Rain\u2013Scribes, Tempest-Sun Mages, or Uzunjati. This grants you additional feats available to only that branch. Special You cannot select another dedication feat other than Halcyon Speaker",
+    "text": "You devote much of your study to halcyon magic. You gain the ability to cast a single or cantrip of your choice, (as is normal for cantrips, it is heightened to a spell level equal to half your level, rounded up). If you weren\u2019t already, you become trained in that tradition\u2019s spell DCs and spell attack rolls, with Intelligence as your spellcasting ability if you choose arcane or Wisdom as your spellcasting ability if you choose primal. Regardless of whether you choose an arcane or primal cantrip, you also either become trained in Arcana or Nature, or an expert in one of those skills in which you were already trained. When you gain this feat, choose to affiliate with the Cascade Bearers, Emerald Boughs, Rain\u2013Scribes, Tempest-Sun Mages, or Uzunjati. This grants you additional feats available to only that branch.",
     "traits": ["Archetype", "Dedication"]
 }, {
     "link": "https://2e.aonprd.com/Archetypes.aspx?ID=29",
     "name": "Mask Familiar",
     "level": 4,
     "source": "Lost Omens Character Guide pg. 101",
-    "archetype": "Magaambyan Attendent",
+    "archetype": " Magaambyan Attendant",
     "prerequisites": "Magaambyan Attendant Dedication",
     "maskfreeze": ": When in mask form, your familiar can hide its obvious supernatural qualities to pass as a simple, unassuming mask. It doesn\u2019t need to Impersonate to fool a passing glance, and it gains a +4 circumstance bonus to its Deception DC against an active observer Seekingor otherwise studying it.",
     "text": "Your mask takes on a personality of its own, allowing it to serve as your . Though you can still wear it as a mask, you can detach it from your face to grant it a bodily form of colored light that allows it to move around; usually, this is a miniature form of the animal the mask represents. Detaching or reattaching the familiar to transform it is a two-action activity. Even in mask form, the familiar can move around on its master\u2019s face and speaks in a distinct voice (if it can talk). It is easily recognized as more than a simple mask unless the familiar succeeds at a check to a mask. Other than its appearance and the fact that it can be worn, it functions as other familiars. Your mask familiar has access to the mask freeze familiar ability",
@@ -7299,7 +7323,7 @@ const archFeats = [{
     "name": "Adaptive Mask Familiar",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 101",
-    "archetype": "Magaambyan Attendent",
+    "archetype": " Magaambyan Attendant",
     "prerequisites": "Mask Familiar",
     "text": "Your mask familiar adapts quickly to material form, allowing it to gain more familiar and master abilities. You select four master and familiar abilities each day instead of two.",
     "traits": ["Archetype"]
@@ -7308,7 +7332,7 @@ const archFeats = [{
     "name": "Cascade Bearer's Flexibility",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 101",
-    "archetype": "Magaambyan Attendent",
+    "archetype": " Magaambyan Attendant",
     "frequency": "once per day",
     "prerequisites": "Magaambyan Attendant Dedication, Cascade Bearers affiliation",
     "requirements": "You haven\u2019t yet acted on your turn.",
@@ -7319,7 +7343,7 @@ const archFeats = [{
     "name": "Emerald Boughs Accustomation",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 102",
-    "archetype": "Magaambyan Attendent",
+    "archetype": " Magaambyan Attendant",
     "prerequisites": "Magaambyan Attendant Dedication, Emerald Boughs affiliation, expert in Society",
     "text": "You are comfortable and socially capable in almost any cultural context. When you use the Society skill to , if you roll a critical failure, you get a failure instead; if you roll a success, you get a critical success instead; and if you roll a critical success, you can provide for another additional creature. Furthermore, when you attempt a Society check to about cultural practices and roll a critical failure, you get a failure instead.",
     "traits": ["Archetype", "Skill"]
@@ -7328,7 +7352,7 @@ const archFeats = [{
     "name": "Rain-Scribe Sustenance",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 102",
-    "archetype": "Magaambyan Attendent",
+    "archetype": " Magaambyan Attendant",
     "prerequisites": "Magaambyan Attendant Dedication, Rain-Scribes affiliation",
     "text": "You use the power of your Rain-Scribe magic to draw on a stream of primal power for sustenance. You don\u2019t need to eat or drink and need only 6 hours of rest to feel well rested. You must still rest at least 8 hours and spend 1 hour of preparation to regain resources usable only a limited number of times per day, such as spell slots. You can draw on primal power to stay awake and alert while otherwise resting your body and mind, gaining the full benefits of an 8-hour rest without falling asleep. When you do, you lose the other benefits of Rain- Scribe Sustenance for 1 week while your primal energies recharge.",
     "traits": ["Archetype"]
@@ -7337,7 +7361,7 @@ const archFeats = [{
     "name": "Tempest-Sun Redirection",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 102",
-    "archetype": "Magaambyan Attendent",
+    "archetype": " Magaambyan Attendant",
     "prerequisites": "Magaambyan Attendant Dedication, Tempest-Sun Mages affiliation",
     "text": "If the next action you use is to Cast a Spell from your spell slots that damages other creatures, you can bend some of that spell\u2019s offensive energy, protecting allies in the area and boosting your own defenses against certain foes. Select any number of targets of the spell and reduce the spell\u2019s damage to those targets by an amount equal to the spell\u2019s level. Until your next turn, when one of those targets damages you, that damage is reduced by twice the spell\u2019s level.",
     "traits": ["Archetype", "Metamagic"]
@@ -7346,7 +7370,7 @@ const archFeats = [{
     "name": "Uzunjati Storytelling",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 102",
-    "archetype": "Magaambyan Attendent",
+    "archetype": " Magaambyan Attendant",
     "prerequisites": "Magaambyan Attendant Dedication, Uzunjati affiliation, master in a Recall Knowledge skill",
     "text": "You tell a quick story or begin telling a longer tale. This is most useful when you want to prove your scholarly credibility or impress someone quickly. Roll a check with a skill that can be used to in which you have expert proficiency, using the result entry for the action. Like Performing, Storytelling rarely has an effect on its own, but it might influence the DCs of subsequent Diplomacy checks against the observers\u2014or even change their attitudes\u2014if the GM sees fit. This action is not a Performance and cannot be used in place of anything that requires you to Perform.",
     "traits": ["Archetype", "Concentrate", "Skill"]
@@ -7355,7 +7379,7 @@ const archFeats = [{
     "name": "Cascade Bearer's Spellcasting",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 103",
-    "archetype": "Magaambyan Attendent",
+    "archetype": " Magaambyan Attendant",
     "prerequisites": "Magaambyan Attendant Dedication, Cascade Bearers affiliation",
     "text": "Your Cascade Bearer training allows you to broaden the horizons of your halcyon spells further than most Magaambyans, weaving in spiritual magic. You can select halcyon spells from the or spell lists in additional to the arcane or primal spell lists, though they are still halcyon spells (so you choose when casting if they are arcane or primal spells). You gain a halcyon cantrip and a halcyon 1st-level spell.",
     "traits": ["Archetype"]
@@ -7364,7 +7388,7 @@ const archFeats = [{
     "name": "Emerald Boughs Hideaway",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 103",
-    "archetype": "Magaambyan Attendent",
+    "archetype": " Magaambyan Attendant",
     "prerequisites": "Magaambyan Attendant Dedication, Emerald Boughs affiliation",
     "text": "You use Emerald Bough techniques to create a small extradimensional space called a hideaway that lasts as long as you are conscious. The hideaway functions as a , but has no Bulk and takes no hands; it holds one object with a maximum Bulk equal to your highest mental ability score modifier; as you open the hideaway with pure thought, activating it to retrieve an item is a free action with the envision component instead of a single action with the Interact component. The hideaway\u2019s access point appears as an obviously magical gap within 1 foot of your body. Only you can access the hideaway; you can you use an Interact action each round to physically hold it open for another person. A successful spell or similar effect against your spell DC and the hideaway\u2019s counteract level of 2 expels the object; the object is also expelled if you become unconscious. After a successful dispel magic  spell or when you become conscious again, the hideaway immediately reforms with no additional action from you. You can also dismiss the hideaway (if it is empty) or re-form it using a single action with the envision component.",
     "traits": ["Archetype"]
@@ -7373,7 +7397,7 @@ const archFeats = [{
     "name": "Rain-Scribe Mobility",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 103",
-    "archetype": "Magaambyan Attendent",
+    "archetype": " Magaambyan Attendant",
     "prerequisites": "Magaambyan Attendant Dedication, Rain- Scribes affiliation",
     "text": "You surround yourself in a mantle of Rain-Scribe magic and Stride twice; difficult terrain does not reduce your Speed, even if the difficult terrain has been manipulated by magic. Your magic clears the difficult terrain in each square you entered; until your next turn, those squares aren\u2019t difficult terrain for any creature walking through them (or are normal difficult terrain if they were previously greater difficult terrain).",
     "traits": ["Archetype"]
@@ -7382,7 +7406,7 @@ const archFeats = [{
     "name": "Tempest-Sun Shielding",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 103",
-    "archetype": "Magaambyan Attendent",
+    "archetype": " Magaambyan Attendant",
     "prerequisites": "Tempest-Sun Redirection",
     "trigger": "You or an ally within 30 feet takes damage.",
     "text": "You transform unrealized spell energy into a protective shield. If you\u2019re a spontaneous spellcaster, expend a spell slot; if you\u2019re a prepared spellcaster, expend a spell prepared in a spell slot. Reduce the triggering damage by an amount equal to four times the level of the expended slot or spell.",
@@ -7392,7 +7416,7 @@ const archFeats = [{
     "name": "Uzunjati Recollection",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 103",
-    "archetype": "Magaambyan Attendent",
+    "archetype": " Magaambyan Attendant",
     "prerequisites": "Uzunjati Storytelling, master in a Recall Knowledge skill",
     "traits": ["Archetype", "Skill"],
     "text": "You tell a story spontaneously from nearly forgotten facts, delving into your memory and entertaining your audience in the process. with a skill in which you have master proficiency, then use Uzunjati Storytelling with the same skill. You gain a +1 circumstance bonus to your skill check for Uzunjati Storytelling from the added details."
@@ -7401,7 +7425,7 @@ const archFeats = [{
     "name": "Magic Warrior Dedication",
     "level": 2,
     "source": "Lost Omens World Guide pg. 95",
-    "archetype": "Magic Warrior",
+    "archetype": " Magic Warrior",
     "prerequisites": "ability to cast focus spells",
     "access": "You are from the Mwangi Expanse.",
     "special": "You cannot select another dedication feat until you have gained two other feats from the magic warrior archetype.",
@@ -7412,7 +7436,7 @@ const archFeats = [{
     "name": "Magic Warrior Aspect",
     "level": 4,
     "source": "Lost Omens World Guide pg. 95",
-    "archetype": "Magic Warrior",
+    "archetype": " Magic Warrior",
     "prerequisites": "Magic Warrior Dedication",
     "text": "You can alter your form to gain an aspect of the animal your mask represents. You gain the focus spell.",
     "traits": ["Archetype"]
@@ -7421,7 +7445,7 @@ const archFeats = [{
     "name": "Magic Warrior Transformation",
     "level": 4,
     "source": "Lost Omens World Guide pg. 95",
-    "archetype": "Magic Warrior",
+    "archetype": " Magic Warrior",
     "prerequisites": "Magic Warrior Dedication",
     "text": "You can transform fully into the animal your mask represents. You gain the focus spell.",
     "traits": ["Archetype"]
@@ -7430,7 +7454,7 @@ const archFeats = [{
     "name": "Nameless Anonymity",
     "level": 6,
     "source": "Lost Omens World Guide pg. 95",
-    "archetype": "Magic Warrior",
+    "archetype": " Magic Warrior",
     "prerequisites": "Magic Warrior Dedication",
     "traits": ["Archetype"],
     "text": "Your mask protects you further from divination. Once per day, you can cast on yourself, heightened to the highest level of spell you can cast; the spell ends immediately if your mask is removed for even a moment."
@@ -7439,7 +7463,7 @@ const archFeats = [{
     "name": "Pathfinder Agent Dedication",
     "level": 2,
     "source": "Lost Omens World Guide pg. 23",
-    "archetype": "Pathfinder Agent",
+    "archetype": " Pathfinder Agent",
     "prerequisites": "member of the Pathfinder Society",
     "access": "You are from Absalom.",
     "special": "You cannot select another dedication feat until you have gained two other feats from the Pathfinder Agent archetype.",
@@ -7450,7 +7474,7 @@ const archFeats = [{
     "name": "Careful Explorer",
     "level": 4,
     "source": "Lost Omens World Guide pg. 23",
-    "archetype": "Pathfinder Agent",
+    "archetype": " Pathfinder Agent",
     "prerequisites": "Pathfinder Agent Dedication",
     "text": "You\u2019ve explored enough dusty tombs and hidden vaults to gain a sixth sense about traps, and you sometimes notice them even when you\u2019re not trying to. Even if you aren\u2019t Searching in exploration mode, you get a check to find traps that normally require you to Search for them. You still need to meet any other requirements to find the trap.",
     "traits": ["Archetype"]
@@ -7459,7 +7483,7 @@ const archFeats = [{
     "name": "Deft Cooperation",
     "level": 4,
     "source": "Lost Omens World Guide pg. 23",
-    "archetype": "Pathfinder Agent",
+    "archetype": " Pathfinder Agent",
     "prerequisites": "Pathfinder Agent Dedication",
     "text": "When you set things up to help your allies, you also gain some of the fruits of your labors. When you successfully an attack roll or AC, you gain a +1 circumstance bonus to attack rolls or AC against that enemy until the end of your next turn, whichever you granted to your ally. When you successfully Aid a skill check, if you attempt the exact same skill check (not just using the same skill, but using it for the same purpose, for instance a check to Climb the same wall) on your next turn, you gain a +1 circumstance bonus to your skill check.",
     "traits": ["Archetype"]
@@ -7468,7 +7492,7 @@ const archFeats = [{
     "name": "Thorough Reports",
     "level": 4,
     "source": "Lost Omens World Guide pg. 23",
-    "archetype": "Pathfinder Agent",
+    "archetype": " Pathfinder Agent",
     "prerequisites": "Pathfinder Agent Dedication",
     "text": "Your reports are thorough and informative, and putting your thoughts to paper helps you retain the information. Keep track of each type of creature you successfully identify with . When attempting checks against creatures on your list in later encounters, you gain a +2 circumstance bonus, and you learn an additional fact about such creatures on a success.",
     "traits": ["Archetype", "Skill"]
@@ -7477,7 +7501,7 @@ const archFeats = [{
     "name": "Wayfinder Resonance Tinkerer",
     "level": 4,
     "source": "Lost Omens World Guide pg. 23",
-    "archetype": "Pathfinder Agent",
+    "archetype": " Pathfinder Agent",
     "prerequisites": "Pathfinder Agent Dedication",
     "actions": "Single Action",
     "text": "You can use the unusual resonance of your to grant it additional effects. Choose one cantrip from the arcane, divine, occult, or primal list. You can activate your to cast that cantrip at will. Additionally, you can Activate your with a (envision) activation to transform it into a nondescript pin or brooch to hide your affiliation with the Pathfinder Society. This transformation lasts for 1 hour.",
@@ -7487,7 +7511,7 @@ const archFeats = [{
     "name": "Forced Entry",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 112",
-    "archetype": "Pathfinder Agent",
+    "archetype": " Pathfinder Agent",
     "prerequisites": "expert in Athletics, Pathfinder Agent Dedication",
     "text": "You are trained to preserve the archaeological value of your location when entering. You don\u2019t take a penalty to doors, windows, or containers without a crowbar. If you roll a success on a check to Force Open, you get a critical success instead.",
     "traits": ["Archetype", "Skill"]
@@ -7496,7 +7520,7 @@ const archFeats = [{
     "name": "Recognize Threat",
     "level": 8,
     "source": "Lost Omens Character Guide pg. 112",
-    "archetype": "Pathfinder Agent",
+    "archetype": " Pathfinder Agent",
     "prerequisites": "master in a Recall Knowledgeskill, Pathfinder Agent Dedication",
     "requirements": "You have master proficiency in a skill to identify the triggering creature.",
     "trigger": "Your first turn of an encounter begins, and you can see a creature.",
@@ -7507,7 +7531,7 @@ const archFeats = [{
     "name": "Everyon Duck!",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 112",
-    "archetype": "Pathfinder Agent",
+    "archetype": " Pathfinder Agent",
     "prerequisites": "Pathfinder Agent Dedication",
     "trigger": "You fail, but don\u2019t critically fail, an attempt to Disable a Deviceon a trap.",
     "text": "You intentionally set off the trap, but you take special precautions to protect yourself and your allies from the trap\u2019s effects. For the next 2 rounds, if the trap rolls a critical success on an attack roll, it gets a normal success instead, and if anyone rolls a critical failure on their saving throw against the trap, they get a normal failure instead.",
@@ -7517,7 +7541,7 @@ const archFeats = [{
     "name": "Educated Assessment",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 112",
-    "archetype": "Pathfinder Agent",
+    "archetype": " Pathfinder Agent",
     "prerequisites": "Pathfinder Agent Dedication",
     "traits": ["Archetype", "Secret"],
     "text": "You attempt to about a creature, and the GM uses the same secret roll result against the creature\u2019s or DC, giving you the information from a . You might get a different degree of success on the Recall Knowledge check than what you get for the Battle Assessment. If you have the Battle Assessment feat, you gain the effects of Educated Assessment whenever you Recall Knowledge (such as with the feat)."
@@ -7526,7 +7550,7 @@ const archFeats = [{
     "name": "Red Mantis Assassin Dedication",
     "level": 2,
     "source": "Lost Omens World Guide pg. 71",
-    "archetype": "Red Mantis Assassin",
+    "archetype": " Red Mantis Assassin",
     "prerequisites": "trained in sawtooth sabers, deity is Achaekek, lawful evil alignment, member of the Red Mantis assassins",
     "access": "You are from Mediogalti Island.",
     "special": "You cannot select another dedication feat until you have gained two other feats from the Red Mantis assassin archetype.",
@@ -7537,7 +7561,7 @@ const archFeats = [{
     "name": "Basic Red Mantis Magic",
     "level": 4,
     "source": "Lost Omens World Guide pg. 71",
-    "archetype": "Red Mantis Assassin",
+    "archetype": " Red Mantis Assassin",
     "prerequisites": "trained in Religion, Red Mantis Assassin Dedication",
     "text": "You have learned limited divine magic from your Red Mantis training. You gain the activity. You\u2019re a prepared spellcaster, able to prepare two cantrips and one 1st-level spell each day. You prepare these spells from a Red Mantis assassin spellbook, similar to a wizard\u2019s, containing three cantrips and two 1st-level spells. All the spells in your Red Mantis assassin spellbook, from this and later feats, must be either transmutation or illusion spells from the arcane spell list or a spell from the following list: , , , , , , , , . Regardless of their usual magical tradition, your Red Mantis assassin spells are divine spells, as are any Red Mantis focus spells you gain. You can prepare two cantrips and one 1st-level spell each day from those found in your Red Mantis assassin spellbook. You\u2019re trained in spell attack rolls and spell DCs for casting divine spells. Your key spellcasting ability for these spells is Charisma.",
     "traits": ["Archetype"]
@@ -7546,7 +7570,7 @@ const archFeats = [{
     "name": "Advanced Red Mantis Magic",
     "level": 6,
     "source": "Lost Omens World Guide pg. 71",
-    "archetype": "Red Mantis Assassin",
+    "archetype": " Red Mantis Assassin",
     "prerequisites": "Basic Red Mantis Magic",
     "text": "Your Red Mantis magical training has improved. Add two 2nd-level spells to your Red Mantis assassin spellbook. You gain a 2nd-level spell slot that you can use to prepare a spell from your Red Mantis assassin spellbook. At 8th level, add two 3rd-level spells to your Red Mantis assassin spellbook. You gain a 3rd-level spell slot that you can use to prepare a spell from your Red Mantis assassin spellbook. At 10th level, add two 4th-level spells to your Red Mantis assassin spellbook. You gain a 4th-level spell slot that you can use to prepare a spell from your Red Mantis assassin spellbook.",
     "traits": ["Archetype"]
@@ -7555,7 +7579,7 @@ const archFeats = [{
     "name": "Crimson Shroud",
     "level": 6,
     "source": "Lost Omens World Guide pg. 71",
-    "archetype": "Red Mantis Assassin",
+    "archetype": " Red Mantis Assassin",
     "frequency": "A number of times per day equal to your number of class feats from the Red Mantis assassin archetype",
     "prerequisites": "Red Mantis Assassin Dedication",
     "text": "You swathe yourself in a veil of red mist for 1 minute. While the shroud is active, you gain fast healing equal to half your level. You can Interact with your shroud, swirling it around you, to gain a +1 circumstance bonus to AC until the beginning of your next turn. Finally, if you die while the shroud is active, you can choose to have your entire body vanish into red mist, leaving behind only your gear; you make this choice when you activate Crimson Shroud.",
@@ -7565,7 +7589,7 @@ const archFeats = [{
     "name": "Mantis Form",
     "level": 8,
     "source": "Lost Omens World Guide pg. 71",
-    "archetype": "Red Mantis Assassin",
+    "archetype": " Red Mantis Assassin",
     "prerequisites": "Basic Red Mantis Magic",
     "traits": ["Archetype"],
     "text": "You gain the focus spell. If you don\u2019t already have one, you gain a focus pool of 1 Focus Point, which you can Refocus by praying to Achaekek or researching your assigned kill."
@@ -7574,7 +7598,7 @@ const archFeats = [{
     "name": "Runescarred Dedication",
     "level": 2,
     "source": "Lost Omens World Guide pg. 119",
-    "archetype": "Runescarred",
+    "archetype": " Runescarred",
     "prerequisites": "trained in Arcana",
     "access": "You are from the Saga Lands.",
     "special": "You cannot select another dedication feat until you have gained two other feats from the runescarred archetype.",
@@ -7585,7 +7609,7 @@ const archFeats = [{
     "name": "Spell Runes",
     "level": 4,
     "source": "Lost Omens World Guide pg. 119",
-    "archetype": "Runescarred",
+    "archetype": " Runescarred",
     "prerequisites": "Runescarred Dedication",
     "text": "The magical runes on your body grant you several magical abilities. Choose a 1st-level spell. You gain a spell rune on your body corresponding to the chosen spell, which you can cast once per day as an innate spell. At 6th level, you gain a spell rune corresponding to a 2nd-level arcane spell, and at 8th level, you gain a spell rune corresponding to a 3rd-level arcane spell.",
     "traits": ["Archetype"]
@@ -7594,7 +7618,7 @@ const archFeats = [{
     "name": "Living Rune",
     "level": 6,
     "source": "Lost Omens World Guide pg. 119",
-    "archetype": "Runescarred",
+    "archetype": " Runescarred",
     "prerequisites": "Runescarred Dedication",
     "text": "You\u2019ve bridged a connection between the runes on your body and the magic of runestones, allowing you to place an armor rune on your living flesh. Your body can hold a single ; you can\u2019t etch a property rune on your body if it has requirements on the type or category of armor or if the property would affect the armor instead of its wearer. If you wear armor, you gain the property rune\u2019s effects in addition to any effects of that armor.",
     "traits": ["Archetype"]
@@ -7603,7 +7627,7 @@ const archFeats = [{
     "name": "Warding Rune",
     "level": 6,
     "source": "Lost Omens World Guide pg. 119",
-    "archetype": "Runescarred",
+    "archetype": " Runescarred",
     "prerequisites": "Runescarred Dedication",
     "text": "Your runes provide a warding effect that protects you against a specific school of magic. Choose a school of magic other than divination. You gain a rune on your body corresponding to that school, and you gain a +2 circumstance bonus to all saving throws against effects of that school.",
     "traits": ["Archetype"]
@@ -7612,7 +7636,7 @@ const archFeats = [{
     "name": "Greater Spell Runes",
     "level": 10,
     "source": "Lost Omens World Guide pg. 119",
-    "archetype": "Runescarred",
+    "archetype": " Runescarred",
     "prerequisites": "Spell Runes",
     "traits": ["Archetype"],
     "text": "You gain more powerful spell runes. You gain a spell rune corresponding to a 4th-level spell. At 12th level, you gain a spell rune corresponding to a 5th-level arcane spell, and at 14th level, you gain a spell rune corresponding to a 6th-level arcane spell."
@@ -7621,7 +7645,7 @@ const archFeats = [{
     "name": "Scrollmaster Dedication",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 113",
-    "archetype": "Scrollmaster",
+    "archetype": " Scrollmaster",
     "prerequisites": "expert in any Lore skill, member of the Pathfinder Society affiliated with the School of Scrolls",
     "special": "You cannot select another dedication feat until you have gained two other feats from the Scrollmaster archetype.",
     "text": "Your experience chronicling adventures and discoveries grants you heightened discernment and memory. For 24 hours after learning a prominent fact\u2014such as the name of an NPC you have met, the details of your mission briefing, and similar information\u2014you can recall it without attempting a check, though this doesn\u2019t allow you to automatically memorize long strings of numbers or text. You also gain a +2 circumstance bonus to checks to remember a detail that has come up before in the current adventure, even if it was more than 24 hours ago. If you have the feat and have expert proficiency in the skill you\u2019re using to Recall Knowledge, your circumstance bonus to Recall Knowledge about creatures from that feat increases to +4.",
@@ -7631,7 +7655,7 @@ const archFeats = [{
     "name": "Lore Seeker",
     "level": 8,
     "source": "Lost Omens Character Guide pg. 113",
-    "archetype": "Scrollmaster",
+    "archetype": " Scrollmaster",
     "prerequisites": "Scrollmaster Dedication",
     "text": "You see what others don\u2019t, and you\u2019ve developed magical tricks to find hidden truth. You can cast , , and as innate spells, each once per day. If you could already cast spells, these spells are of the same tradition. Otherwise, they are arcane spells, you use Intelligence as your spellcasting ability, and you become trained in spell attack rolls and spell DCs for arcane spells.",
     "traits": ["Archetype"]
@@ -7640,7 +7664,7 @@ const archFeats = [{
     "name": "Unravel Mysteries",
     "level": 8,
     "source": "Lost Omens Character Guide pg. 113",
-    "archetype": "Scrollmaster",
+    "archetype": " Scrollmaster",
     "prerequisites": "master in a Decipher Writing skill, Scrollmaster Dedication",
     "text": "You can understand the true meaning of texts quickly, and even when you get lost or hit a dead end, you aren\u2019t discouraged from making further attempts to get to the bottom of things. When you Decipher Writing, you need only half as long as usual (reducing the time from about 1 minute to about half a minute per page), and if you fail, you don\u2019t take the usual \u20132 circumstance penalty to further checks to decipher that text.",
     "traits": ["Archetype", "Skill"]
@@ -7649,7 +7673,7 @@ const archFeats = [{
     "name": "Font of Knowledge",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 113",
-    "archetype": "Scrollmaster",
+    "archetype": " Scrollmaster",
     "prerequisites": "Scrollmaster Dedication",
     "traits": ["Archetype"],
     "text": "Experience or focused study have granted you mastery of a number of topics. When you know about something, you know about it in great detail. When you succeed at a check to , you gain additional information or context. When you critically succeed at a check to Recall Knowledge, at the GM\u2019s discretion, you might gain even more additional information or context than normal."
@@ -7658,7 +7682,7 @@ const archFeats = [{
     "name": "Spellmaster Dedication",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 114",
-    "archetype": "Spellmaster",
+    "archetype": " Spellmaster",
     "prerequisites": "Intelligence, Wisdom, or Charisma 14; ability to cast focus spells; member of the Pathfinder Society affiliated with the School of Spells",
     "special": "You cannot select another dedication feat until you have gained two other feats from the Spellmaster archetype.",
     "text": "As a Spellmaster, you are adept at identifying magic. You gain a +2 circumstance bonus when you with a skill in which you are trained or better. If you have the feat, you can change the cantrip you chose for that feat each day during your daily preparations.",
@@ -7668,7 +7692,7 @@ const archFeats = [{
     "name": "Surreptitious Spellcaster",
     "level": 8,
     "source": "Lost Omens Character Guide pg. 114",
-    "archetype": "Spellmaster",
+    "archetype": " Spellmaster",
     "prerequisites": "Spellmaster Dedication",
     "text": "You\u2019ve learned that it pays for a Pathfinder to be able to cast spells without being noticed. You gain the wizard class feat, though it\u2019s not a wizard feat for you. You also gain a +2 circumstance bonus to checks to Conceal a Spell and to checks to conceal verbal components.",
     "traits": ["Archetype"]
@@ -7677,7 +7701,7 @@ const archFeats = [{
     "name": "Ward Casting",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 114",
-    "archetype": "Spellmaster",
+    "archetype": " Spellmaster",
     "prerequisites": "Spellmaster Dedication, Steady Spellcasting",
     "trigger": "You attempt a flat check for Steady Spellcasting, but you haven\u2019t rolled yet.",
     "text": "You carefully ward your spell by drawing from a mantle of magical energy you prepared to protect your casting, increasing your chance of retaining the spell. You reduce the DC of the flat check for Steady Spellcasting from 15 to 10.",
@@ -7687,7 +7711,7 @@ const archFeats = [{
     "name": "Spellmaster's Resilience",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 114",
-    "archetype": "Spellmaster",
+    "archetype": " Spellmaster",
     "prerequisites": "Spellmaster Dedication",
     "text": "Your experience with a specific type of harmful magic makes you more resistant to it. Choose a magical tradition (arcane, divine, occult, or primal). You gain a +1 circumstance bonus to saving throws against spells and effects with that tradition\u2019s trait and resistance 5 to all damage from spells and effects with that tradition\u2019s trait. The effect must have actually been cast or created with that tradition, rather than simply being on that tradition\u2019s spell list.",
     "traits": ["Archetype"]
@@ -7696,7 +7720,7 @@ const archFeats = [{
     "name": "Absorb Spell",
     "level": 14,
     "source": "Lost Omens Character Guide pg. 114",
-    "archetype": "Spellmaster",
+    "archetype": " Spellmaster",
     "frequency": "once per 10 minutes",
     "prerequisites": "Spellmaster Dedication, spell repertoire or ability to prepare spells",
     "trigger": "You critically succeed at a saving throw against a foe\u2019s spell, and that spell is of a level you can normally cast.",
@@ -7707,7 +7731,7 @@ const archFeats = [{
     "name": "Student of Perfection Dedication",
     "level": 2,
     "source": "Lost Omens World Guide pg. 83",
-    "archetype": "Student of Perfection",
+    "archetype": " Student of Perfection",
     "prerequisites": "powerful fist or expert in unarmed attacks; member of a House of Perfection",
     "access": "You are from Jalmeray.",
     "special": "You can\u2019t select another dedication feat until you have gained two other feats from the student of perfection archetype.",
@@ -7718,7 +7742,7 @@ const archFeats = [{
     "name": "Perfect Strike",
     "level": 4,
     "source": "Lost Omens World Guide pg. 83",
-    "archetype": "Student of Perfection",
+    "archetype": " Student of Perfection",
     "prerequisites": "Student of Perfection Dedication",
     "text": "You gain the ki spell. Increase the number of Focus Points in your focus pool by 1.",
     "traits": ["Archetype"]
@@ -7727,7 +7751,7 @@ const archFeats = [{
     "name": "Perfect Ki Adept",
     "level": 6,
     "source": "Lost Omens World Guide pg. 83",
-    "archetype": "Student of Perfection",
+    "archetype": " Student of Perfection",
     "prerequisites": "Student of Perfection Dedication",
     "traits": ["Archetype"],
     "text": "You gain the appropriate ki spell for your School of Perfection: for Unblinking Flame, for Unbreaking Waves, for Unfolding Wind, or for Untwisting Iron. Increase the number of Focus Points in your focus pool by 1."
@@ -7736,7 +7760,7 @@ const archFeats = [{
     "name": "Swordmaster Dedication",
     "level": 6,
     "source": "Lost Omens Character Guide pg. 115",
-    "archetype": "Swordmaster",
+    "archetype": " Swordmaster",
     "prerequisites": "Strength, Dexterity, or Constitution 14; member of the Pathfinder Society affiliated with the School of Swords",
     "special": "You cannot select another dedication feat until you have gained two other feats from the Swordmaster archetype.",
     "text": "Your Swords training taught you to never lose hold of your weapon. You gain a +2 circumstance bonus to your Reflex DC when foes attempt to you. If you have the feat and critically succeed on a check to an ally\u2019s attack roll or skill check, you gain a +2 circumstance bonus from Deft Cooperation (instead of a +1 bonus) the first time you attempt an attack roll or attempt a skill check where the bonus would apply.",
@@ -7746,7 +7770,7 @@ const archFeats = [{
     "name": "Harrying Strike",
     "level": 10,
     "source": "Lost Omens Character Guide pg. 115",
-    "archetype": "Swordmaster",
+    "archetype": " Swordmaster",
     "prerequisites": "Swordmaster Dedication",
     "criticalsuccess": "The target takes a \u201315-foot status penalty to its Speeds until the start of your next turn.",
     "success": "The target takes a \u201310-foot status penalty to its Speeds until the start of your next turn.",
@@ -7758,7 +7782,7 @@ const archFeats = [{
     "name": "Shoulder Catastrophe",
     "level": 12,
     "source": "Lost Omens Character Guide pg. 115",
-    "archetype": "Swordmaster",
+    "archetype": " Swordmaster",
     "prerequisites": "Swordmaster Dedication",
     "trigger": "An enemy critically succeeds at a Strike against an adjacent ally.",
     "text": "You\u2019ve trained to protect your allies by diverting the worst attacks to yourself. The enemy doesn\u2019t double the damage from the triggering Strike but instead applies the normal damage to both you and your ally. Both of you take any effects that would happen on a hit that dealt damage, such as poison, but neither of you are subject to any effects that would happen only on a critical success.",
@@ -7768,12 +7792,1850 @@ const archFeats = [{
     "name": "Death's Door",
     "level": 14,
     "source": "Lost Omens Character Guide pg. 115",
-    "archetype": "Swordmaster",
+    "archetype": " Swordmaster",
     "frequency": "once per 10 minutes",
     "prerequisites": "Swordmaster Dedication",
     "trigger": "You take damage that would reduce you to 0 Hit Points.",
     "traits": ["Archetype"],
     "text": "You continue to fight when others would fall. Just before taking the triggering damage, you gain temporary Hit Points equal to twice your level. If you have Hit Points remaining after gaining these temporary Hit Points, you aren\u2019t knocked unconscious, nor do you suffer the other effects of being reduced to 0 Hit Points. Any temporary Hit Points that remain after applying the damage last for up to 4 rounds."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=35",
+    "name": "Zephyr Guard Dedication",
+    "level": 2,
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 81",
+    "archetype": " Zephyr Guard",
+    "special": "You can\u2019t select another dedication feat until you have gained two other feats from the Zephyr Guard archetype.",
+    "text": "As a Zephyr Guard, you\u2019re always vigilant against crime and threats to the city\u2019s safety. You gain a +1 circumstance bonus to Perception checks against attempts to , , or (including you\u2019re concealed objects). You become trained in and Katapesh ; if you were already trained, you become an expert instead.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=35",
+    "name": "Know the Beat",
+    "level": 3,
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 81",
+    "archetype": " Zephyr Guard",
+    "prerequisites": "Zephyr Guard Dedication",
+    "text": "You become trained in your choice of Guild , Legal Lore, Mercantile Lore, or Underworld Lore. You gain a +1 circumstance bonus to checks to and to checks made to investigate crimes.",
+    "traits": ["Archetype", "Skill"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=35",
+    "name": "Decry Thief",
+    "level": 4,
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 81",
+    "archetype": " Zephyr Guard",
+    "prerequisites": "Zephyr Guard Dedication, trained in Intimidation",
+    "criticalsuccess": "For 1 round, the target takes a \u201310-foot status penalty to Speed and a \u20134 status penalty to Stealth.",
+    "success": "For 1 round, the target takes a \u20135-foot status penalty to Speed and a \u20132 status penalty to Stealth.",
+    "text": "When you attempt to , you can make it harder for the target to flee, in place of the action\u2019s normal effects.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=35",
+    "name": "Relentless Disarm",
+    "level": 6,
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 81",
+    "archetype": " Zephyr Guard",
+    "prerequisites": "Zephyr Guard Dedication, trained in Athletics",
+    "text": "When you succeed, but don\u2019t critically succeed, at a check to a creature, your circumstance bonus to further checks to Disarm that creature is +4 instead of +2. Other creatures gain only the normal bonus. When you critically succeed at a Disarm check, you can immediately your target as a reaction.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=35",
+    "name": "Unfazed Assessment",
+    "level": 8,
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 81",
+    "archetype": " Zephyr Guard",
+    "prerequisites": "Zephyr Guard Dedication, expert in Perception",
+    "traits": ["Archetype"],
+    "text": "You have witnessed hundreds of fighting styles and quickly adapt to defend against complicated maneuvers. Choose a creature within 30 feet who you\u2019re aware of, and attempt a Perception check against that target\u2019s Will DC. If you succeed, you size up their fighting style, gaining a +1 circumstance bonus to AC and saving throws against that creature\u2019s attacks (or a +2 circumstance bonus for a critical success). These benefits last until the end of your next turn."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=6",
+    "name": "Druid Dedication",
+    "level": 2,
+    "source": "Core Rulebook pg. 225",
+    "archetype": " Druid",
+    "prerequisites": "Wisdom 14",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the druid archetype.",
+    "text": "You cast spells like a druid. You gain access to the Cast a Spell activity. You can prepare two common cantrips each day from the primal spell list in this book or any other cantrips you learn or discover. You can prepare or add to your repertoire common cantrips of your spellcasting tradition, whether from this book or other cantrips of that tradition you learn or discover. You\u2019re trained in spell attack rolls and spell DCs for primal spells. Your key spellcasting ability for druid archetype spells is Wisdom, and they are primal druid spells. You learn the Druidic language. Choose an order as you would if you were a druid. You become a member of that order and are bound by its anathema, allowing you to take the order\u2019s feats. You become trained in Nature and your order\u2019s associated skill; for each of these skills in which you were already trained, you become trained in a skill of your choice. You don\u2019t gain any other abilities from your choice of order.",
+    "traits": ["Archetype", "Dedication", "Multiclass"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=6",
+    "name": "Basic Druid Spellcasting",
+    "level": 4,
+    "source": "Core Rulebook pg. 225",
+    "archetype": " Druid",
+    "prerequisites": "Druid Dedication",
+    "text": "You gain the basic spellcasting benefits.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=6",
+    "name": "Basic Wilding",
+    "level": 4,
+    "source": "Core Rulebook pg. 225",
+    "archetype": " Druid",
+    "prerequisites": "Druid Dedication",
+    "text": "You gain a 1st- or 2nd-level druid feat.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=6",
+    "name": "Order Spell",
+    "level": 4,
+    "source": "Core Rulebook pg. 225",
+    "archetype": " Druid",
+    "prerequisites": "Druid Dedication",
+    "text": "You gain the initial order spell from your order. If you don\u2019t already have one, you gain a focus pool of 1 Focus Point, which you can Refocus by being one with nature. (For more on order spells, see page 131.)",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=6",
+    "name": "Advanced Wilding",
+    "level": 6,
+    "source": "Core Rulebook pg. 225",
+    "archetype": " Druid",
+    "prerequisites": "Basic Wilding",
+    "special": "You can select this feat more than once. Each time you select it, you gain another druid feat.",
+    "text": "You gain one druid feat. For the purpose of meeting its prerequisites, your druid level is equal to half your character level.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=6",
+    "name": "Primal Breadth",
+    "level": 8,
+    "source": "Core Rulebook pg. 225",
+    "archetype": " Druid",
+    "prerequisites": "Basic Druid Spellcasting",
+    "text": "Increase the spell slots you gain from druid archetype feats by 1 for each spell level other than your two highest spell levels.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=6",
+    "name": "Expert Druid Spellcasting",
+    "level": 12,
+    "source": "Core Rulebook pg. 225",
+    "archetype": " Druid",
+    "prerequisites": "Basic Druid Spellcasting, master in Nature",
+    "text": "You gain the expert spellcasting benefits.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=6",
+    "name": "Master Druid Spellcasting",
+    "level": 18,
+    "source": "Core Rulebook pg. 225",
+    "archetype": " Druid",
+    "prerequisites": "Expert Druid Spellcasting, legendary in Nature",
+    "traits": ["Archetype"],
+    "text": "You gain the master spellcasting benefits."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=7",
+    "name": "Fighter Dedication",
+    "level": 2,
+    "source": "Core Rulebook pg. 226",
+    "archetype": " Fighter",
+    "prerequisites": "Strength 14, Dexterity 14",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the fighter archetype.",
+    "text": "You become trained in simple weapons and martial weapons. You become trained in your choice of or ; if you are already trained in both of these skills, you instead become trained in a skill of your choice. You become trained in fighter class DC.",
+    "traits": ["Archetype", "Dedication", "Multiclass"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=7",
+    "name": "Basic Maneuver",
+    "level": 4,
+    "source": "Core Rulebook pg. 226",
+    "archetype": " Fighter",
+    "prerequisites": "Fighter Dedication",
+    "text": "You gain a 1st- or 2nd-level fighter feat.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=7",
+    "name": "Fighter Resiliency",
+    "level": 4,
+    "source": "Core Rulebook pg. 226",
+    "archetype": " Fighter",
+    "prerequisites": "Fighter Dedication, class granting no more Hit Points per level than 8 + your Constitution modifier",
+    "text": "You gain 3 additional Hit Points for each fighter archetype class feat you have. As you continue selecting fighter archetype class feats, you continue to gain additional Hit Points in this way.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=7",
+    "name": "Opportunist",
+    "level": 4,
+    "source": "Core Rulebook pg. 142",
+    "archetype": " Fighter",
+    "prerequisites": "Fighter Dedication",
+    "trigger": "A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it\u2019s using.",
+    "text": "You gain the Attack of Opportunity reaction. You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn\u2019t count toward your multiple attack penalty, and your multiple attack penalty doesn\u2019t apply to this Strike.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=7",
+    "name": "Advanced Maneuver",
+    "level": 6,
+    "source": "Core Rulebook pg. 226",
+    "archetype": " Fighter",
+    "prerequisites": "Basic Maneuver",
+    "special": "You can select this feat more than once. Each time you select it, you gain another fighter feat.",
+    "text": "You gain a fighter feat. For the purpose of meeting its prerequisites, your fighter level is equal to half your character level.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=7",
+    "name": "Diverse Weapon Expert",
+    "level": 12,
+    "source": "Core Rulebook pg. 226",
+    "archetype": " Fighter",
+    "prerequisites": "Fighter Dedication, expert in any kind of weapon or unarmed attack",
+    "traits": ["Archetype"],
+    "text": "Your proficiency ranks for simple weapons and martial weapons increase to expert, and your proficiency rank for advanced weapons increases to trained."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=8",
+    "name": "Monk Dedication",
+    "level": 2,
+    "source": "Core Rulebook pg. 227",
+    "archetype": " Monk",
+    "prerequisites": "Strength 14, Dexterity 14",
+    "special": "You can\u2019t select another dedication feat until you have gained two other feats from the monk archetype.",
+    "text": "You become trained in unarmed attacks and gain the powerful fist class feature (page 156). You become trained in your choice of Acrobatics or Athletics; if you are already trained in both of these skills, you become trained in a skill of your choice. You become trained in monk class DC.",
+    "traits": ["Archetype", "Dedication", "Multiclass"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=8",
+    "name": "Basic Kata",
+    "level": 4,
+    "source": "Core Rulebook pg. 227",
+    "archetype": " Monk",
+    "prerequisites": "Monk Dedication",
+    "text": "You gain a 1st- or 2nd-level monk feat.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=8",
+    "name": "Monk Resiliency",
+    "level": 4,
+    "source": "Core Rulebook pg. 227",
+    "archetype": " Monk",
+    "prerequisites": "Monk Dedication, class granting no more Hit Points per level than 8 + your Constitution modifier",
+    "text": "You gain 3 additional Hit Points for each monk archetype class feat you have. As you continue selecting monk archetype class feats, you continue to gain additional Hit Points in this way.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=8",
+    "name": "Advanced Kata",
+    "level": 6,
+    "source": "Core Rulebook pg. 227",
+    "archetype": " Monk",
+    "prerequisites": "Basic Kata",
+    "special": "You can select this feat more than once. Each time you select it, you gain another monk feat.",
+    "text": "You gain one monk feat. For the purpose of meeting its prerequisites, your monk level is equal to half your character level.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=8",
+    "name": "Monk Moves",
+    "level": 8,
+    "source": "Core Rulebook pg. 227",
+    "archetype": " Monk",
+    "prerequisites": "Monk Dedication",
+    "text": "You gain a +10-foot status bonus to your Speed when you\u2019re not wearing armor.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=8",
+    "name": "Monk's Flurry",
+    "level": 10,
+    "source": "Core Rulebook pg. 156",
+    "archetype": " Monk",
+    "prerequisites": "Monk Dedication",
+    "text": "You gain the Flurry of Blows action. Make two unarmed Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses. Apply your multiple attack penalty to the Strikes normally. As it has the flourish trait, you can use Flurry of Blows only once per turn.",
+    "traits": ["Archetype", "Flourish", "Monk"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=8",
+    "name": "Perfection's Path",
+    "level": 12,
+    "source": "Core Rulebook pg. 227",
+    "archetype": " Monk",
+    "prerequisites": "Monk Dedication, expert in at least one saving throw",
+    "traits": ["Archetype"],
+    "text": "Choose one saving throw (Fortitude, Reflex, or Will) in which you are an expert. Your proficiency rank in the chosen saving throw increases to master."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=9",
+    "name": "Ranger Dedication",
+    "level": 2,
+    "source": "Core Rulebook pg. 168",
+    "archetype": " Ranger",
+    "prerequisites": "Dexterity 14",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the ranger archetype.",
+    "text": "You become trained in Survival; if you were already trained in Survival, you instead become trained in another skill of your choice. You become trained in ranger class DC. You can use the Hunt Prey action. You designate a single creature as your prey and focus your attacks against that creature. You must be able to see or hear the prey, or you must be tracking the prey during exploration. You gain a +2 circumstance bonus to Perception checks when you Seek your prey and a +2 circumstance bonus to Survival checks when you Track your prey. You also ignore the penalty for making ranged attacks within your second range increment against the prey you\u2019re hunting. You can have only one creature designated as your prey at a time. If you use Hunt Prey against a creature when you already have a creature designated, the prior creature loses the designation and the new prey gains the designation. Your designation lasts until your next daily preparations.",
+    "traits": ["Archetype", "Dedication", "Multiclass", "Concentrate", "Ranger"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=9",
+    "name": "Basic Hunter's Trick",
+    "level": 4,
+    "source": "Core Rulebook pg. 228",
+    "archetype": " Ranger",
+    "prerequisites": "Ranger Dedication",
+    "text": "You gain a 1st- or 2nd-level ranger feat.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=9",
+    "name": "Ranger Resiliency",
+    "level": 4,
+    "source": "Core Rulebook pg. 228",
+    "archetype": " Ranger",
+    "prerequisites": "Ranger Dedication, class granting no more Hit Points per level than 8 + your Constitution modifier",
+    "text": "You gain 3 additional Hit Points for each ranger archetype class feat you have. As you continue selecting ranger archetype class feats, you continue to gain additional Hit Points in this way.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=9",
+    "name": "Advanced Hunter's Trick",
+    "level": 6,
+    "source": "Core Rulebook pg. 228",
+    "archetype": " Ranger",
+    "prerequisites": "Basic Hunter\u2019s Trick",
+    "special": "You can select this feat more than once. Each time you select it, you gain another ranger feat.",
+    "text": "You gain one ranger feat. For the purpose of meeting its prerequisites, your ranger level is equal to half your character level.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=9",
+    "name": "Master Spotter",
+    "level": 12,
+    "source": "Core Rulebook pg. 228",
+    "archetype": " Ranger",
+    "prerequisites": "Ranger Dedication, expert in Perception",
+    "traits": ["Archetype"],
+    "text": "Your proficiency rank in Perception increases to master."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=10",
+    "name": "Rogue Dedication",
+    "level": 2,
+    "source": "Core Rulebook pg. 229",
+    "archetype": " Rogue",
+    "prerequisites": "Dexterity 14",
+    "special": "You cannot gain another dedication feat until you have gained two other feats from the rogue archetype.",
+    "text": "You gain a skill feat and the rogue\u2019s surprise attack class feature (page 181). You become trained in light armor. In addition, you become trained in Stealth or Thievery plus one skill of your choice; if you are already trained in both Stealth and Thievery, you become trained in an additional skill of your choice. You become trained in rogue class DC.",
+    "traits": ["Archetype", "Dedication", "Multiclass"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=10",
+    "name": "Basic Trickery",
+    "level": 4,
+    "source": "Core Rulebook pg. 229",
+    "archetype": " Rogue",
+    "prerequisites": "Rogue Dedication",
+    "text": "You gain a 1st- or 2nd-level rogue feat.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=10",
+    "name": "Sneak Attacker",
+    "level": 4,
+    "source": "Core Rulebook pg. 229",
+    "archetype": " Rogue",
+    "prerequisites": "Rogue Dedication",
+    "text": "You gain the sneak attack class feature (page 181), except it deals 1d4 damage, increasing to 1d6 at 6th level. You don\u2019t increase the number of dice as you gain levels.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=10",
+    "name": "Advanced Trickery",
+    "level": 6,
+    "source": "Core Rulebook pg. 229",
+    "archetype": " Rogue",
+    "prerequisites": "Basic Trickery",
+    "special": "You can select this feat more than once. Each time you select it, you gain another rogue feat.",
+    "text": "You gain one rogue feat. For the purpose of meeting its prerequisites, your rogue level is equal to half your character level.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=10",
+    "name": "Skill Mastery",
+    "level": 8,
+    "source": "Core Rulebook pg. 229",
+    "archetype": " Rogue",
+    "prerequisites": "Rogue Dedication, trained in at least one skill and expert in at least one skill",
+    "special": "You can select this feat up to five times.",
+    "text": "Increase your proficiency rank in one of your skills from expert to master and in another of your skills from trained to expert. You gain a skill feat associated with one of the skills you chose.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=10",
+    "name": "Uncanny Dodge",
+    "level": 10,
+    "source": "Core Rulebook pg. 229",
+    "archetype": " Rogue",
+    "prerequisites": "Rogue Dedication",
+    "text": "You gain the deny advantage class feature (page 181).",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=10",
+    "name": "Evasiveness",
+    "level": 12,
+    "source": "Core Rulebook pg. 229",
+    "archetype": " Rogue",
+    "prerequisites": "Rogue Dedication, expert in Reflex saves",
+    "traits": ["Archetype"],
+    "text": "Your proficiency rank for Reflex saves increases to master."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=11",
+    "name": "Sorcerer Dedication",
+    "level": 2,
+    "source": "Core Rulebook pg. 230",
+    "archetype": " Sorcerer",
+    "prerequisites": "Charisma 14",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the sorcerer archetype.",
+    "text": "Choose a bloodline. You become trained in the bloodline\u2019s two skills; for each of these skills in which you were already trained, you become trained in a skill of your choice. You cast spells like a sorcerer. You gain access to the Cast a Spell activity. You gain a spell repertoire with two common cantrips from the spell list associated with your bloodline, or any other cantrips you learn or discover. You can prepare or add to your repertoire common cantrips of your spellcasting tradition, whether from this book or other cantrips of that tradition you learn or discover. You\u2019re trained in spell attack rolls and spell DCs for your tradition\u2019s spells. Your key spellcasting ability for sorcerer archetype spells is Charisma, and they are sorcerer spells of your bloodline\u2019s tradition. You don\u2019t gain any other abilities from your choice of bloodline.",
+    "traits": ["Archetype", "Dedication", "Multiclass"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=11",
+    "name": "Basic Blood Potency",
+    "level": 4,
+    "source": "Core Rulebook pg. 230",
+    "archetype": " Sorcerer",
+    "prerequisites": "Sorcerer Dedication",
+    "text": "You gain a 1st- or 2nd-level sorcerer feat.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=11",
+    "name": "Basic Bloodline Spell",
+    "level": 4,
+    "source": "Core Rulebook pg. 230",
+    "archetype": " Sorcerer",
+    "prerequisites": "Sorcerer Dedication",
+    "text": "You gain your bloodline\u2019s initial bloodline spell. If you don\u2019t already have one, you also gain a focus pool of 1 Focus Point, which you can Refocus without any special effort. (For more on bloodline spells, see page 194.)",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=11",
+    "name": "Basic Sorcerer Spellcasting",
+    "level": 4,
+    "source": "Core Rulebook pg. 230",
+    "archetype": " Sorcerer",
+    "prerequisites": "Sorcerer Dedication",
+    "text": "Choose a bloodline. You become trained in the bloodline\u2019s two skills; for each of these skills in which you were already trained, you become trained in a skill of your choice. You cast spells like a sorcerer. You gain access to the Cast a Spell activity. You gain a spell repertoire with two common cantrips from the spell list associated with your bloodline, from the spells granted by your bloodline, or any other cantrips of that tradition you learn or discover. You can prepare or add to your repertoire common cantrips of your spellcasting tradition, whether from this book or other cantrips of that tradition you learn or discover. You\u2019re trained in spell attack rolls and spell DCs for your tradition\u2019s spells. Your key spellcasting ability for sorcerer archetype spells is Charisma, and they are sorcerer spells of your bloodline\u2019s tradition. You don\u2019t gain any other abilities from your choice of bloodline.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=11",
+    "name": "Advanced Blood Potency",
+    "level": 6,
+    "source": "Core Rulebook pg. 230",
+    "archetype": " Sorcerer",
+    "prerequisites": "Basic Blood Potency",
+    "special": "You can select this feat more than once. Each time you do, you gain another sorcerer feat.",
+    "text": "You gain one sorcerer feat. For the purpose of prerequisites, your sorcerer level is half your character level.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=11",
+    "name": "Bloodline Breadth",
+    "level": 8,
+    "source": "Core Rulebook pg. 230",
+    "archetype": " Sorcerer",
+    "prerequisites": "Basic Sorcerer Spellcasting",
+    "text": "Your repertoire expands, and you can cast more spells of your bloodline\u2019s tradition each day. Increase the number of spells in your repertoire and number of spell slots you gain from sorcerer archetype feats by 1 for each spell level other than your two highest spell levels.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=11",
+    "name": "Expert Sorcerer Spellcasting",
+    "level": 12,
+    "source": "Core Rulebook pg. 230",
+    "archetype": " Sorcerer",
+    "prerequisites": "Basic Sorcerer Spellcasting; master in Arcana, Nature, Occultism, or Religion, depending on bloodline",
+    "text": "You gain the expert spellcasting benefits.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=11",
+    "name": "Master Sorcerer Spellcasting",
+    "level": 18,
+    "source": "Core Rulebook pg. 230",
+    "archetype": " Sorcerer",
+    "prerequisites": "Expert Sorcerer Spellcasting; legendary in Arcana, Nature, Occultism, or Religion, depending on bloodline",
+    "traits": ["Archetype"],
+    "text": "You gain the master spellcasting benefits."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=12",
+    "name": "Wizard Dedication",
+    "level": 2,
+    "source": "Core Rulebook pg. 231",
+    "archetype": " Wizard",
+    "prerequisites": "Intelligence 14",
+    "special": "You can\u2019t select another dedication feat until you have gained two other feats from the wizard archetype.",
+    "text": "You cast spells like a wizard, gaining a spellbook with four common arcane cantrips of your choice. You gain the Cast a Spell activity. You can prepare two cantrips each day from your spellbook. You\u2019re trained in arcane spell attack rolls and spell DCs. Your key spellcasting ability for wizard archetype spells is Int, and they are arcane wizard spells. You become trained in Arcana; if you were already trained in Arcana, you instead become trained in a skill of your choice.",
+    "traits": ["Archetype", "Dedication", "Multiclass"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=12",
+    "name": "Arcane School Spell",
+    "level": 4,
+    "source": "Core Rulebook pg. 231",
+    "archetype": " Wizard",
+    "prerequisites": "Wizard Dedication",
+    "text": "Select one arcane school of magic. You gain the school\u2019s initial school spell. If you don\u2019t already have one, you gain a focus pool of 1 Focus Point, which you can Refocus by studying. (For more on arcane schools, see page 204.)",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=12",
+    "name": "Basic Arcana",
+    "level": 4,
+    "source": "Core Rulebook pg. 231",
+    "archetype": " Wizard",
+    "prerequisites": "Wizard Dedication",
+    "text": "You gain a 1st- or 2nd-level wizard feat of your choice.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=12",
+    "name": "Basic Wizard Spellcasting",
+    "level": 4,
+    "source": "Core Rulebook pg. 231",
+    "archetype": " Wizard",
+    "prerequisites": "Wizard Dedication",
+    "text": "You gain the basic spellcasting benefits. Each time you gain a spell slot of a new level from the wizard archetype, add two common spells of that level to your spellbook.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=12",
+    "name": "Advanced Arcana",
+    "level": 6,
+    "source": "Core Rulebook pg. 231",
+    "archetype": " Wizard",
+    "prerequisites": "Basic Arcana",
+    "special": "You can select this feat more than once. Each time you select it, you gain another wizard feat.",
+    "text": "You gain one wizard feat. For the purpose of meeting its prerequisites, your wizard level is equal to half your character level.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=12",
+    "name": "Arcane Breadth",
+    "level": 8,
+    "source": "Core Rulebook pg. 231",
+    "archetype": " Wizard",
+    "prerequisites": "Basic Wizard Spellcasting",
+    "text": "You can cast more arcane spells each day. Increase the spell slots you gain from wizard archetype feats by 1 for each spell level other than your two highest spell levels.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=12",
+    "name": "Expert Wizard Spellcasting",
+    "level": 12,
+    "source": "Core Rulebook pg. 231",
+    "archetype": " Wizard",
+    "prerequisites": "Basic Wizard Spellcasting, master in Arcana",
+    "text": "You gain the expert spellcasting benefits.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=12",
+    "name": "Master Wizard Spellcasting",
+    "level": 18,
+    "source": "Core Rulebook pg. 231",
+    "archetype": " Wizard",
+    "prerequisites": "Expert Wizard Spellcasting, legendary in Arcana",
+    "traits": ["Archetype"],
+    "text": "You gain the master spellcasting benefits."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=14",
+    "name": "Aldori Duelist Dedication",
+    "level": 2,
+    "source": "Lost Omens World Guide pg. 35",
+    "archetype": " Aldori Duelist",
+    "prerequisites": "trained in Aldori dueling swords",
+    "access": "You are from the Broken Lands region.",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the Aldori Duelist archetype.",
+    "text": "Your Aldori duelist training teaches you martial techniques and increases your dedication to the Aldori dueling sword. You become trained in your choice of or and in Dueling ; if you were already trained, you become an expert instead. Whenever your proficiency rank in any weapon increases to expert or beyond, you also gain that new proficiency rank with Aldori dueling swords. You gain access to .",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=14",
+    "name": "Aldori Parry",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 35",
+    "archetype": " Aldori Duelist",
+    "prerequisites": "Aldori Duelist Dedication",
+    "requirements": "You are wielding only an Aldori dueling sword and have your other hand or hands free.",
+    "text": "You can parry attacks against you with your . You gain a +2 circumstance bonus to AC until the start of your next turn as long as you continue to meet the requirement.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=14",
+    "name": "Duelist's Edge",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 35",
+    "archetype": " Aldori Duelist",
+    "prerequisites": "Aldori Duelist Dedication",
+    "trigger": "You roll initiative, and you can observe at least one opponent.",
+    "text": "You hone your reaction time through duels and learn to draw your weapon seamlessly as you begin a fight. You gain a +2 circumstance bonus to the triggering initiative roll, and you can immediately Interact to draw your .",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=14",
+    "name": "Aldori Riposte",
+    "level": 6,
+    "source": "Lost Omens World Guide pg. 35",
+    "archetype": " Aldori Duelist",
+    "prerequisites": "Aldori Parry",
+    "requirements": "You are benefiting from Aldori Parry.",
+    "trigger": "An opponent within your reach critically fails a Strike against you.",
+    "text": "You riposte with your when your enemy leaves an opening. Make a melee Strike or use a action against the triggering opponent using your Aldori dueling sword.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=14",
+    "name": "Unnerving Prowess",
+    "level": 6,
+    "source": "Lost Omens World Guide pg. 35",
+    "archetype": " Aldori Duelist",
+    "prerequisites": "Aldori Duelist Dedication",
+    "trigger": "You critically succeed at a Strike or Disarm with your Aldori dueling sword",
+    "text": "Your incredible skill with your blade unnerves your foes. You attempt to the target of your Strike or . This Demoralize attempt does not have the auditory trait, nor do you take a penalty to the check if the target doesn\u2019t understand your language.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=14",
+    "name": "Saving Slash",
+    "level": 10,
+    "source": "Lost Omens World Guide pg. 35",
+    "archetype": " Aldori Duelist",
+    "prerequisites": "Aldori Duelist Dedication",
+    "trigger": "An opponent critically hits you with a melee attack.",
+    "traits": ["Archetype"],
+    "text": "You quickly whirl your blade, trying to deflect enough momentum to avoid the worst of the attack. Attempt a DC 16 flat check. If you succeed, the attack becomes a normal hit, instead of a critical hit."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=23",
+    "name": "Bellflower Dedication",
+    "level": 6,
+    "source": "Pathfinder #147: Tomorrow Must Burn pg. 75",
+    "archetype": " Bellflower Tiller",
+    "prerequisites": "Charisma 14, expert in Stealth and Survival, member of the Bellflower Network",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the Bellflower tiller archetype.",
+    "text": "You dedicate yourself to freeing slaves and escorting them to freedom. You gain a +5-foot status bonus to your Speed. Choose up to six other people to be your \u201ccrop.\u201d Members of your crop can use your Speed for overland travel if it\u2019s higher than their own. Members more than 60 feet from you lose all benefits (from this or other Bellflower tiller feats) of being part of your crop, but they regain those benefits immediately when they return. You can add or remove someone from your crop by spending 10 minutes in conversation with them.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=23",
+    "name": "Garden Path",
+    "level": 8,
+    "source": "Pathfinder #147: Tomorrow Must Burn pg. 75",
+    "archetype": " Bellflower Tiller",
+    "prerequisites": "Bellflower Dedication",
+    "text": "You can guide your crop to move without notice. When you and any of your crop are , you can choose one member of your crop to temporarily gain the benefits of the skill feat until the group is no longer Avoiding Notice. The group rolls two checks instead of one, using the higher die roll. This is a effect.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=23",
+    "name": "Practiced Guidance",
+    "level": 8,
+    "source": "Pathfinder #147: Tomorrow Must Burn pg. 75",
+    "archetype": " Bellflower Tiller",
+    "prerequisites": "Bellflower Dedication",
+    "text": "Making one\u2019s way to safety can be harrowing, but you have extensive practice at helping others along that path. When you roll a success to a member of your crop, you get a critical success instead.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=23",
+    "name": "Scarecrow",
+    "level": 8,
+    "source": "Pathfinder #147: Tomorrow Must Burn pg. 75",
+    "archetype": " Bellflower Tiller",
+    "prerequisites": "Bellflower Dedication",
+    "text": "You fight fiercely to protect your crop. When you hit a creature that is adjacent to two or more members of your crop with a weapon or unarmed attack, you gain a circumstance bonus to your damage roll equal to the number of weapon damage dice. When you hit a creature who has a member of your crop grabbed, that member can attempt to using a reaction.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=23",
+    "name": "Tiller's Aid",
+    "level": 10,
+    "source": "Pathfinder #147: Tomorrow Must Burn pg. 75",
+    "archetype": " Bellflower Tiller",
+    "prerequisites": "Bellflower Dedication",
+    "text": "You can use the reaction to help a member of your crop even if you haven\u2019t prepared to do so.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=23",
+    "name": "Tiller's Drive",
+    "level": 10,
+    "source": "Pathfinder #147: Tomorrow Must Burn pg. 75",
+    "archetype": " Bellflower Tiller",
+    "prerequisites": "Bellflower Dedication",
+    "text": "Your Speed bonus from Bellflower Dedication increases to +10 feet. Members of your crop receive a +5-foot circumstance bonus to Speed.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=23",
+    "name": "Cut the Bonds",
+    "level": 12,
+    "source": "Pathfinder #147: Tomorrow Must Burn pg. 75",
+    "archetype": " Bellflower Tiller",
+    "prerequisites": "Bellflower Dedication, expert in a melee weapon",
+    "traits": ["Archetype", "Attack"],
+    "text": "Select a magical effect that has made an adjacent member of your crop clumsy, grabbed, paralyzed, restrained, or slowed. Attempt a counteract check using your attack modifier (including your multiple attack penalty) with a melee weapon with which you have expert proficiency. Your counteract level is half your level rounded up. On a success, you free that member from the effect; on a failure, you can\u2019t attempt to use Cut the Bonds on that effect on that crop member until 24 hours have passed"
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=34",
+    "name": "Crystal Keeper Dedication",
+    "level": 4,
+    "source": "Pathfinder #148: Fires of the Haunted City pg. 74",
+    "archetype": " Crystal Keeper",
+    "prerequisites": "trained in Elven Lore or Society",
+    "special": "You can\u2019t select another dedication feat until you have gained two other feats from the crystal keeper archetype.",
+    "text": "You can use Arcana, Occultism, Religion, or Society to Decipher Writing by meditating before a crystal, regardless of the type of writing. When you Decipher Writing and roll a critical failure, you get a failure instead, and when you Decipher Writing and roll a success, you get a critical success instead. Additionally, you gain resistance 10 to damage from hazards associated with crystals.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=34",
+    "name": "Crystal Ward Spells",
+    "level": 4,
+    "source": "Pathfinder #148: Fires of the Haunted City pg. 74",
+    "archetype": " Crystal Keeper",
+    "prerequisites": "Crystal Keeper Dedication",
+    "text": "Your study of crystals and the energies held within a gem\u2019s facets grants you special arcane crystal ward spells, which are a type of focus spell. It costs 1 Focus Point to cast a focus spell, and you start with a focus pool of 1 Focus Point. You refill your focus pool when you make your next daily preparations, and you can regain 1 Focus Point by spending 10 minutes using the Refocus activity to research and memorize the properties of gems. Focus spells are automatically heightened to half your level rounded up. Certain feats can give you more focus spells and increase the size of your focus pool, though your focus pool can never hold more than 3 Focus Points. You gain the focus spell, and you are trained in arcane spell attack rolls and spell DCs. Your spellcasting ability is Intelligence.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=34",
+    "name": "Simple Crystal Magic",
+    "level": 6,
+    "source": "Pathfinder #148: Fires of the Haunted City pg. 74",
+    "archetype": " Crystal Keeper",
+    "prerequisites": "Crystal Keeper Dedication",
+    "text": "As long as you meditate before a gemstone worth at least 10 gp as part of your daily preparations, you are capable of seeing magic as flowing runes that reveal information about magic objects, and you can scribe a personal rune that represents you. You gain the and cantrips. You cast these cantrips as arcane innate spells at will. A cantrip is heightened to a spell level equal to half your level rounded up.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=34",
+    "name": "Armor Rune Shifter",
+    "level": 10,
+    "source": "Pathfinder #148: Fires of the Haunted City pg. 75",
+    "archetype": " Crystal Keeper",
+    "prerequisites": "Crystal Keeper Dedication",
+    "text": "You learn the secrets of armor runes by viewing them through gems and can alter them at your discretion. Once per day when you make your daily preparations, you can focus on a rune\u2019s magical energies through a crystal\u2019s facets to alter a single property rune on one suit of armor in your possession to suppress its normal effects and make it function as a different property rune. You can temporarily alter the rune to function as one of the following runes: , , , , , or . The property rune remains altered until you make your next daily preparations. The armor must meet the prerequisites for the temporary rune, and any other runes that required the suppressed rune are also suppressed while the rune is transformed. The rune is obviously altered, and thus the armor can\u2019t be sold as though it had the temporary rune.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=34",
+    "name": "Weapon-Rune Shifter",
+    "level": 10,
+    "source": "Pathfinder #148: Fires of the Haunted City pg. 75",
+    "archetype": " Crystal Keeper",
+    "prerequisites": "Crystal Keeper Dedication",
+    "traits": ["Archetype"],
+    "text": "You learn how to alter the magic of weapon runes by using a crystal as a focusing component. Once per day during your daily preparations, you can focus on a rune\u2019s magical energies through a crystal\u2019s facets to alter a single property rune on one weapon in your possession to suppress its normal effects and make it function as a different property rune. You can temporarily alter the rune to function as one of the following runes: , , , , , , , , or . The property rune remains altered until you make your next daily preparations. The weapon must meet the prerequisites for the temporary rune, and any other runes that required the suppressed rune are also suppressed while the rune is transformed. The rune is obviously altered, and thus the weapon can\u2019t be sold as though it had the temporary rune."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=24",
+    "name": "Firebrand Braggart Dedication",
+    "level": 4,
+    "source": "Lost Omens Character Guide pg. 74",
+    "archetype": " Firebrand Braggart",
+    "prerequisites": "Charisma 14, second mark member of the Firebrands",
+    "special": "You can\u2019t select another dedication feat until you have gained two other feats from the Firebrand Braggart archetype.",
+    "text": "Your Firebrand training has taught you that achieving something is more satisfying if you boast about it first. You declare a boast about a particular skill action, such as , , or . The first time you attempt this action within the next minute in a context the GM deems both suitably challenging and meaningful, you must roll twice and use the lower result. If you succeed at this check, you gain a +1 circumstance bonus to checks to attempt the same action for 10 minutes. If you fail this check or don\u2019t attempt the action within 1 minute, you instead take a \u20131 circumstance penalty on checks to attempt the same action for 1 hour. If the chosen action can be used with multiple skills, such as or Recall Knowledge, you must specify which skill you are using for that particular action, such as using to Identify Magic, and your bonus or penalty after the boast applies only to checks using that skill for that action. Once you declare a boast about a particular action, you cannot declare a boast about the same action until the next time you make daily preparations, regardless of whether you succeed or fail at the check. Typically a challenging task is one with at least a standard DC for your level, though the difficulty may be higher depending on the situation. A meaningful context is one where the action\u2019s success or failure is relevant to the pursuit of your goals, rather than a boast you made simply to gain a bonus later.",
+    "traits": ["Archetype", "Dedication", "Misfortune"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=24",
+    "name": "Boaster's Challenge",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 74",
+    "archetype": " Firebrand Braggart",
+    "prerequisites": "expert in Deception, Diplomacy, or Intimidation; Firebrand Braggart Dedication",
+    "text": "You call out a foe, causing them to become flustered and easier to defeat. Select one creature you can see and declare a challenge. For your challenge, attempt a Deception, Diplomacy, or Intimidation check against that creature\u2019s Will DC. Your challenge must include a , , or component and gains the corresponding trait. If you succeed, you gain a +2 status bonus to damage rolls with your weapon or unarmed Strikes against that foe until the end of your next turn; if you have master proficiency in the skill you used, you gain a +4 status bonus instead, and if you\u2019re legendary, you gain a +6 status bonus. On a critical success, the status bonus lasts for 3 rounds instead. Whether you succeed or fail, creatures who witnessed your challenge gain a +4 circumstance bonus to their Will DCs against your attempts to challenge for 1 minute.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=24",
+    "name": "Daring Act",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 74",
+    "archetype": " Firebrand Braggart",
+    "prerequisites": "trained in Acrobatics or Athletics, Firebrand Braggart Dedication",
+    "text": "You attempt a death-defying maneuver to distract your enemies. Select one foe within reach and attempt either an Acrobatics or Athletics check against your target\u2019s Reflex DC. If you succeed, you can Stride up to half your Speed (or up to your full Speed if you critically succeed) without triggering reactions from the target due to your movement, and the target is against the next melee attack you attempt against it before the end of your turn.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=24",
+    "name": "Bravo's Determination",
+    "level": 8,
+    "source": "Lost Omens Character Guide pg. 75",
+    "archetype": " Firebrand Braggart",
+    "prerequisites": "expert in Deception, Firebrand Braggart Dedication",
+    "trigger": "A foe\u2019s Strike reduces you to 0 Hit Points; you were not at 1 Hit Point and you would not be killed.",
+    "criticalsuccess": "You avoid being knocked out and remain at 1 Hit Point.",
+    "success": "You avoid being knocked out and remain at 1 Hit Point, but you increase your woundedvalue by 1.",
+    "text": "Your confidence borders on self-delusion, but it keeps you going against overwhelming odds. Attempt a Deception check against the attack DC of the triggering Strike. You take a penalty to this check equal to twice your wounded value, if any. If the triggering attack was a critical hit, use the result one degree of success worse than what you rolled.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=24",
+    "name": "Great Boaster",
+    "level": 8,
+    "source": "Lost Omens Character Guide pg. 75",
+    "archetype": " Firebrand Braggart",
+    "prerequisites": "Charisma 16, Firebrand Braggart Dedication",
+    "text": "Your bragging is particularly effective. If you succeed at a boast, you can attempt a great boast about that same skill by using your Firebrand Braggart Dedication action about the same action during the duration of your original boast\u2019s circumstance bonus; this is an exception to the rule that you can\u2019t make another boast about the same action until your next daily preparations. A great boast uses the Firebrand Braggart Dedication action, except that if you succeed, your circumstance bonus increases to +2 and remains for 1 hour. If you fail the great boast, you take a \u20132 circumstance penalty to attempt the same action for 4 hours. Once you declare a great boast about a particular action, you can\u2019t declare a great boast about the same action until the next time you make daily preparations, regardless of whether you succeed or fail at the check. The minimum challenging task for a great boast is one with at least a hard DC for your level.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=24",
+    "name": "Daring Flourish",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 75",
+    "archetype": " Firebrand Braggart",
+    "prerequisites": "Daring Act",
+    "text": "You make quick use of an opening from your daring stunts. At the end of a successful Daring Act, you can make a melee Strike against the target or attempt to the target. The target is against the Strike you make during Daring Act as well as the next melee attack you attempt against it before the end of your turn.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=24",
+    "name": "Demanding Challenge",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 75",
+    "archetype": " Firebrand Braggart",
+    "prerequisites": "Boaster\u2019s Challenge",
+    "text": "If your skill check to challenge a foe is a success, the target of your challenge takes a \u20131 circumstance penalty to attack rolls (or \u20132 if you critically succeed) until the end of your next turn.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=24",
+    "name": "Daredevil's Gambit",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 75",
+    "archetype": " Firebrand Braggart",
+    "prerequisites": "Daring Act",
+    "traits": ["Archetype"],
+    "text": "If you critically succeed at your Daring Act, you can enter the target\u2019s space and remain there until the beginning of your next turn or until the target moves, whichever comes first. You gain a +2 circumstance bonus to AC, and your target is against your attacks while you are sharing its space in this way. If any creature other than your target hits you with an attack roll while you are sharing your target\u2019s space, attempt a DC 15 flat check. On a success, resolve the attack against the target instead of you, using the same attack roll result that hit you."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=30",
+    "name": "Halcyon Speaker Dedication",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 104",
+    "archetype": " Halcyon Speaker",
+    "prerequisites": "Magaambyan Attendant Dedication, member of the Magaambya of conversant rank",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the halcyon speaker archetype.",
+    "text": "You devote much of your study to halcyon magic. You gain access to two common Halcyon cantrips and two common 1st-level halcyon spells. In addition to being able to cast your halcyon spells via your arcane or primal spell slots, you also gain a 1st-level halcyon spell slot. You can use your halcyon spell slots to spontaneously cast your halcyon spells.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=30",
+    "name": "Dualistic Synergy",
+    "level": 8,
+    "source": "Lost Omens Character Guide pg. 104",
+    "archetype": " Halcyon Speaker",
+    "prerequisites": "Halcyon Speaker Dedication",
+    "text": "If your next action is to Cast a Spell from your spell slots, you gain a benefit. If the spell is arcane, you can attempt a skill check to with a +1 status bonus to the check after casting the spell, or a +2 status bonus if the spell is 7th level or higher. If the spell is primal, you gain a number of temporary Hit Points equal to the spell\u2019s level for 1 round. If the spell is a halcyon spell, you gain both benefits.",
+    "traits": ["Archetype", "Metamagic"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=30",
+    "name": "Persistent Creation",
+    "level": 8,
+    "source": "Lost Omens Character Guide pg. 104",
+    "archetype": " Halcyon Speaker",
+    "prerequisites": "Halcyon Speaker Dedication",
+    "text": "You can cast as an innate spell at will, choosing whether it is arcane or primal each time. The created object lasts until you spend 1 hour not within its immediate vicinity or until it is destroyed. Such objects are called persistent creations. If you cast creation again, any persistent creation you previously created with the spell immediately disintegrates.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=30",
+    "name": "Halcyon Spellcasting Initiated",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 104",
+    "archetype": " Halcyon Speaker",
+    "prerequisites": "Halcyon Speaker Dedication",
+    "text": "Your knowledge of halcyon magic increases. You gain two common 2nd-level halcyon spells and two 3rd-level halcyon spells. You also gain a 2nd-level halcyon spell slot and a 3rd-level halcyon spell slot. These and all future halcyon spell slots work like the 1st-level halcyon spell slot you gained from Halcyon Speaker Dedication.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=30",
+    "name": "Shared Synergy",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 104",
+    "archetype": " Halcyon Speaker",
+    "prerequisites": "Dualistic Synergy",
+    "text": "You can grant the benefit from Dualistic Synergy to an ally within 30 feet instead of yourself, either allowing that ally to Recall Knowledge, granting that ally temporary Hit Points, or both, depending on the spell\u2019s tradition.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=30",
+    "name": "Charged Creation",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 104",
+    "archetype": " Halcyon Speaker",
+    "prerequisites": "Persistent Creation",
+    "text": "Your magic is drawn to your persistent creations. While you are within 30 feet of and have line of effect to your persistent creation, you can use it as the origin point for your line or cone spells. For instance, a could originate from the persistent creation rather than from you.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=30",
+    "name": "Flexible Halcyon Spellcasting",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 105",
+    "archetype": " Halcyon Speaker",
+    "prerequisites": "Halcyon Spellcasting Initiate",
+    "text": "You broaden your ability to channel your power into halcyon magic. You gain one more common halcyon spell of each level of halcyon spell you can cast other than your highest (you do not gain an additional cantrip). You also gain one additional halcyon spell slot for each level of halcyon spell you can cast, other than the highest.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=30",
+    "name": "Halcyon Spellcasting Adept",
+    "level": 14,
+    "source": "Lost Omens Character Guide pg. 105",
+    "archetype": " Halcyon Speaker",
+    "prerequisites": "Halcyon Spellcasting Initiate; master in either Arcana or Nature, expert in the other",
+    "text": "You refine your halcyon magic. You gain two common 4th-level halcyon spells and two 5th-level halcyon spells. You also gain a 4th-level halcyon spell slot and a 5th-level halcyon spell slot. Your proficiency rank in either arcane or primal spell DCs and spell attack rolls advances from trained to expert.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=30",
+    "name": "Fulminating Synergy",
+    "level": 16,
+    "source": "Lost Omens Character Guide pg. 105",
+    "archetype": " Halcyon Speaker",
+    "prerequisites": "Dualistic Synergy",
+    "text": "When you draw upon your spells\u2019 synergy, you create a physical manifestation of their magical resonance and invoke it to harm a foe. When you use Dualistic Synergy, choose a damage type: acid, cold, electricity, or fire. In addition to Dualistic Synergy\u2019s normal effect, a foe within 30 feet of you takes an amount of damage of the chosen type equal to the spell\u2019s level. If the spell already deals damage of the chosen type, combine the damage before applying weaknesses and resistances.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=30",
+    "name": "Halcyon Spellcasting Sage",
+    "level": 18,
+    "source": "Lost Omens Character Guide pg. 105",
+    "archetype": " Halcyon Speaker",
+    "prerequisites": "Halcyon Spellcasting Adept; legendary in either Arcana or Nature, master in the other",
+    "text": "Your command over halcyon magic is nearly unmatched. You gain two common 6th-level and 7th-level halcyon spells. You also gain a 6th-level halcyon spell slot and a 7th-level halcyon spell slot. Your proficiency rank in either arcane or primal spell DCs and spell attack rolls advances from expert to master.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=30",
+    "name": "Synergistic Spell",
+    "level": 20,
+    "source": "Lost Omens Character Guide pg. 105",
+    "archetype": " Halcyon Speaker",
+    "prerequisites": "Halcyon Spellcasting Initiate, Fulminating Synergy, legendary in Arcana and Nature",
+    "traits": ["Archetype", "Metamagic"],
+    "text": "You combine your synergy and spells into a fantastic web of magic, allowing you to cast two spells at once. If the next action you use is to Cast a Spell from one of your halcyon spell slots, after that spell resolves, you can Cast another Spell as a free action. This spell must be cast from one of your halcyon spell slots and be a spell that would normally take two actions to cast."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=25",
+    "name": "Hellknight Dedication",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 84",
+    "archetype": " Hellknight",
+    "prerequisites": "Hellknight Armiger Dedication, lawful alignment, member of a Hellknight order, passed the Hellknight Test",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the Hellknight or Hellknight armigerarchetypes.",
+    "text": "You have forged your body to comply with the commands of your mind\u2014orders steeped in the Measure and the Chain. You gain expert proficiency in (or in another skill in which you\u2019re trained of your choice, if you were already an expert in Intimidation). You gain the armor specialization effects of Hellknight plate, and your resistance from that armor specialization is 1 higher than normal. In addition, you gain a +1 circumstance bonus to Intimidation checks while wearing your Hellknight plate.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=25",
+    "name": "Sense Chaos",
+    "level": 8,
+    "source": "Lost Omens Character Guide pg. 84",
+    "archetype": " Hellknight",
+    "prerequisites": "Hellknight Dedication",
+    "text": "You sense chaos as an unsettling feeling of nervous energy. When in the presence of an aura of chaos that is powerful or overwhelming, you eventually detect the aura, though you might not do so instantly and you can\u2019t pinpoint the location. This is a vague sense, similar to humans\u2019 sense of smell. A chaotic creature using a disguise or otherwise trying to hide its presence attempts a check against your Perception DC to hide its aura from you. If the creature succeeds at its Deception check, it is temporarily immune to your Sense Chaos for 1 day.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=25",
+    "name": "Blade of Law",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 84",
+    "archetype": " Hellknight",
+    "prerequisites": "Hellknight Dedication",
+    "text": "You call upon the power of law and make a weapon or unarmed Strike against a foe you have witnessed breaking or disrespecting the law or otherwise acting disorderly. The Strike deals two extra weapon damage dice if the target of your Strike is chaotic. Whether or not the target is chaotic, you can convert the physical damage from the attack into lawful damage.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=25",
+    "name": "Hell's Armaments",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 84",
+    "archetype": " Hellknight",
+    "prerequisites": "Hellknight Dedication",
+    "traits": ["Archetype"],
+    "text": "You\u2019ve trained with your order\u2019s weapon and your Hellknight plate long enough to apply your expertise from other weapons and armor. If you have expert proficiency in any weapon or unarmed attack, you gain expert proficiency in your order\u2019s weapon as well. If you have expert proficiency in any armor or unarmored defense, you gain expert proficiency in Hellknight plate as well."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=20",
+    "name": "Hellknight Armiger Dedication",
+    "level": 2,
+    "source": "Lost Omens World Guide pg. 107",
+    "archetype": " Hellknight Armiger",
+    "prerequisites": "member of a Hellknight order, trained in heavy armor as well as your order\u2019s favored weapon",
+    "access": "You are from Old Cheliax.",
+    "special": "You can\u2019t select another dedication feat except dedication feats for higher positions within the Hellknights until you have gained two other feats from the Hellknight armiger archetype.",
+    "text": "Your Hellknight training teaches you to terrorize others into compliance, but you also study the structure and hierarchy of Hell. You must survive painful tests of your body and mind called reckonings, which steady your mind against all sorts of trauma. You gain resistance to mental damage equal to 1 + your number of class feats from the Hellknight Armiger archetype and other Hellknight archetypes. You become trained in and Hell ; if you were already trained, you become an expert instead.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=20",
+    "name": "Ardent Armiger",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 107",
+    "archetype": " Hellknight Armiger",
+    "prerequisites": "Hellknight Armiger Dedication",
+    "text": "You have been trained to resist the manipulations of fiends, and your Hellknight discipline makes you difficult to influence. You gain a +1 circumstance bonus to saves against mental effects that specifically improve your attitude and to your Will DC against someone Coercing you, Demoralizing you, Making an Impression on you, or Making a Request of you. If a mental effect would compel you to act in a way that violates your Hellknight order\u2019s tenets (as determined by the GM), you can attempt to break free from the effect as a reaction triggered by receiving the violating order, and you gain a new Will save against the effect. You can attempt this new save only once for a given effect, even if you are compelled to violate your order\u2019s tenets multiple times.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=20",
+    "name": "Diabolic Certitude",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 107",
+    "archetype": " Hellknight Armiger",
+    "prerequisites": "Hellknight Armiger Dedication",
+    "trigger": "Your turn begins and you can observe a devil.",
+    "text": "Your Hellknight training drilled details of Hell\u2019s denizens deep into your mind. Make an attempt to Recall Knowledge about a you\u2019re observing. If you roll a critical failure on this check, you get a failure instead.",
+    "traits": ["Archetype", "Skill"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=20",
+    "name": "Mortification",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 107",
+    "archetype": " Hellknight Armiger",
+    "prerequisites": "Hellknight Armiger Dedication",
+    "text": "Your reckonings have prepared your body for physical punishment. Choose bludgeoning, piercing, or slashing damage, based on the nature of your physical reckonings. You gain resistance to the chosen damage type equal to your number of class feats from the Hellknight Armiger archetype and other Hellknight archetypes.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=20",
+    "name": "Armiger's Mobility",
+    "level": 8,
+    "source": "Lost Omens World Guide pg. 107",
+    "archetype": " Hellknight Armiger",
+    "prerequisites": "expert in heavy armor, Hellknight Armiger Dedication",
+    "text": "You\u2019ve learned how best to move in heavy armor. When wearing heavy armor, if you meet the Strength requirement, instead of reducing the movement penalty by 5 feet, you reduce the penalty by 10 feet (typically reducing the penalty to 0). If you are a dwarf with the feat, increase your Speed by 5 feet.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=20",
+    "name": "Order Training",
+    "level": 8,
+    "source": "Lost Omens Character Guide pg. 81",
+    "archetype": " Hellknight Armiger",
+    "prerequisites": "Hellknight Armiger Dedication",
+    "text": "You gain the lesser order benefit for the Hellknight order to which you belong.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=20",
+    "name": "Advanced Order Training",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 82",
+    "archetype": " Hellknight Armiger",
+    "prerequisites": "Hellknight Armiger Dedication; Hellknight Dedication or Hellknight Signifer Dedication",
+    "text": "You gain the greater order benefit for the Hellknight order to which you belong.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=20",
+    "name": "Hellknight Order Cross-Training",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 83",
+    "archetype": " Hellknight Armiger",
+    "prerequisites": "Hellknight Armiger Dedication; Hellknight Dedication or Hellknight Signifer Dedication",
+    "special": "You can select this feat multiple times, gaining the lesser order benefit from a different order each time by training with members of that order.",
+    "traits": ["Archetype"],
+    "text": "You gain the lesser order benefit of a Hellknight order other than the one to which you belong. This represents your time spent training with members of that order to learn their techniques and teachings. If you aren\u2019t in good standing with a given order, you can\u2019t receive their training."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=26",
+    "name": "Hellknight Signifer Dedication",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 85",
+    "archetype": " Hellknight Signifer",
+    "prerequisites": "spellcasting class feature, Hellknight Armiger Dedication, lawful alignment, member of a Hellknight order, passed the Hellknight Test",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the Hellknight signifer or Hellknight armigerarchetypes.",
+    "text": "You have bolstered your force of will with the power of the Measure and the Chain. Upon initiation, you receive a signifer mask, often devoid of eyeholes or other decorative features. The mask doesn\u2019t obscure your vision, though it makes it impossible for others to see your eyes. While wearing your signifer\u2019s mask, you gain +1 circumstance bonus to checks to Lie, checks, and Deception DCs against . You gain expert proficiency in Intimidation (or in another skill in which you\u2019re trained of your choice, if you were already an expert in Intimidation) as well as in your choice of , , , or .",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=26",
+    "name": "Masked Casting",
+    "level": 8,
+    "source": "Lost Omens Character Guide pg. 85",
+    "archetype": " Hellknight Signifer",
+    "prerequisites": "Hellknight Signifer Dedication",
+    "requirements": "You are wearing your signifer\u2019s mask.",
+    "trigger": "You begin Casting a Spell.",
+    "text": "You harness the magical energy flowing through your eyeless mask to effortlessly protect you from visual effects. You .",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=26",
+    "name": "Gaze of Veracity",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 85",
+    "archetype": " Hellknight Signifer",
+    "prerequisites": "Hellknight Signifer Dedication, ability to cast focus spells",
+    "text": "You can channel your mask\u2019s power to pierce through lies and see the truth in any situation. Increase the number of Focus Points in your focus pool by 1. While wearing your mask, you can cast the cleric domain spell as a divine focus spell.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=26",
+    "name": "Signifer's Sight",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 85",
+    "archetype": " Hellknight Signifer",
+    "prerequisites": "Hellknight Signifer Dedication",
+    "text": "The magic flowing through your signifer\u2019s mask allows you to see in the dark, and the mask dampens the distraction caused by sudden flashes of bright light. While wearing your signifer\u2019s mask, you gain . Additionally, if you are while wearing your signifer\u2019s mask and the target is concealed only because you are dazzled, you reduce the flat check DC to target that creature from 5 to 3.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=26",
+    "name": "Signifer Armor Expertise",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 85",
+    "archetype": " Hellknight Signifer",
+    "prerequisites": "Hellknight Signifer Dedication",
+    "traits": ["Archetype"],
+    "text": "You\u2019ve spent enough time helping your comrades equip medium and heavy armor that you spread your own expertise to those armors as well. If you have expert proficiency in any armor or unarmored defense, you also gain expert proficiency in medium and heavy armor."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=28",
+    "name": "Knight Reclaimant Dedication",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 95",
+    "archetype": " Knight Reclaimant",
+    "prerequisites": "trained in Survival and Stealth, any non-evil alignment, member of the Knights of Lastwall of knight rank",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the Knight Reclaimant archetype.",
+    "text": "You have sworn the Crimson Oath and become a full member of the Crimson Reclaimers. You gain expert proficiency in Stealth and Survival. Whenever you roll a success on a saving throw against an undead\u2019s special ability, you get a critical success instead. This applies to any abilities that come from being undead, including an undead\u2019s innate spells (but not its prepared or spontaneous spells).",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=28",
+    "name": "Invoke the Crimson Oath",
+    "level": 8,
+    "source": "Lost Omens Character Guide pg. 95",
+    "archetype": " Knight Reclaimant",
+    "prerequisites": "Knight Reclaimant Dedication",
+    "text": "You can invoke the Crimson Oath to unleash blasts of ruby energy from your weapon. You gain the focus spell. If you don\u2019t already have one, you gain a focus pool of 1 Focus Point, which you can regain using the Refocus activity to recite the Crimson Oath and meditate on its teachings; if you already have a focus pool, increase the number of Focus Points in your focus pool by 1. Your knight reclaimant focus spells are divine spells; when you gain this feat, you become trained in divine spell attacks and spell DCs.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=28",
+    "name": "Survivor of Desolation",
+    "level": 8,
+    "source": "Lost Omens Character Guide pg. 95",
+    "archetype": " Knight Reclaimant",
+    "prerequisites": "Knight Reclaimant Dedication",
+    "text": "You gain a +2 circumstance bonus to saving throws against unnatural weather events or environmental hazards occurring in blighted or otherwise unnaturally marred regions. If you roll a success on a saving throw against such an effect, you get a critical success instead; if you roll a critical failure, you get a failure instead. This does not apply to unnatural events created or directed by active effects, such as spells that create anomalous weather or hazardous areas.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=28",
+    "name": "Blade of the Crimson Oath",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 95",
+    "archetype": " Knight Reclaimant",
+    "prerequisites": "Knight Reclaimant Dedication",
+    "text": "You call upon the Crimson Oath to smite undead and then make a weapon or unarmed Strike against an undead foe. The Strike deals two extra weapon damage dice, and you can convert all the physical damage from the attack into positive damage.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=28",
+    "name": "Reaper of Repose",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 95",
+    "archetype": " Knight Reclaimant",
+    "prerequisites": "Knight Reclaimant Dedication, master proficiency in a weapon",
+    "traits": ["Archetype"],
+    "text": "Your skill and fervor allow you to pierce undead defenses and exploit their weaknesses. When you make an attack using a weapon with which you have master proficiency and hit an undead creature, you ignore 5 points of the creature\u2019s resistances, and the undead\u2019s weaknesses are 2 higher against your attack."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=27",
+    "name": "Knight Vigilant",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 94",
+    "archetype": " Knight Vigilant",
+    "prerequisites": "trained in Religion, any good alignment, member of the Knights of Lastwall of knight rank",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the Knight Vigilant archetype.",
+    "text": "You are dedicated to the cause of the Shining Sentinels. You gain expert proficiency in . When you are between an ally and a foe and would provide lesser cover to your ally against the foe\u2019s attacks, you twist to become even more obtrusive, providing standard cover instead.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=27",
+    "name": "Unshakable Idealism",
+    "level": 8,
+    "source": "Lost Omens Character Guide pg. 94",
+    "archetype": " Knight Vigilant",
+    "prerequisites": "Knight Vigilant, expert in Will saves",
+    "text": "Your faith and hope can\u2019t be shaken, and you won\u2019t flee when lives are at stake. You gain a +1 circumstance bonus on saves against effects and effects that inflict despair. When you would gain the condition, you can choose to stand your ground and be for the effect\u2019s duration as well, preventing you from running and allowing you to re-enter the fight more quickly when the effect ends.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=27",
+    "name": "Endure Death's Touch",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 94",
+    "archetype": " Knight Vigilant",
+    "prerequisites": "Knight Vigilant, expert in medium or heavy armor",
+    "requirements": "You are wearing medium or heavy armor in which you have expert proficiency.",
+    "trigger": "An undead hits you with an unarmed attack.",
+    "text": "Your conviction redirects the undead\u2019s attack through your armor and then harmlessly away. You gain resistance 5 to physical damage and resistance 10 to negative damage against the triggering attack. You gain a +2 circumstance bonus on any saving throws against effects from the undead\u2019s natural attack; if you succeed at the saving throw, you get a critical success instead.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=27",
+    "name": "Aegis of Arnisant",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 94",
+    "archetype": " Knight Vigilant",
+    "prerequisites": "Knight Vigilant, Shield Block, master in Religion",
+    "requirements": "You are wielding a shield.",
+    "trigger": "An enemy casts a spell that targets you or an ally within 15 feet of you",
+    "text": "Inspired by the tale of Arnisant, you transform your shield into a magic ward. Until the beginning of your next turn, you gain the following reaction: You interpose your shield\u2019s ward against the spell. Attempt a check, using your Religion modifier as your counteract modifier. On a success, the spell is counteracted and your shield takes damage equal to four times the spell level as it absorbs and disperses the magical energy. On a failure, the shield takes damage equal to twice the spell\u2019s level.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=27",
+    "name": "Knight in Shining Armor",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 94",
+    "archetype": " Knight Vigilant",
+    "prerequisites": "Knight Vigilant; expert in light armor, medium armor, or unarmored defense; trained in heavy armor",
+    "traits": ["Archetype"],
+    "text": "As a knight in shining armor, you train daily in the heaviest armor, expanding your expertise to heavy armor. You gain expert proficiency in heavy armor."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=15",
+    "name": "Lastwall Sentry Dedication",
+    "level": 2,
+    "source": "Lost Omens World Guide pg. 47",
+    "archetype": " Lastwall Sentry",
+    "prerequisites": "member of the Knights of Lastwall, Shield Block",
+    "access": "You are from the Eye of Dread region.",
+    "special": "You can't select another dedication feat until you have gained two other feats from the Lastwall sentry archetype.",
+    "text": "You\u2019ve sworn yourself as a sentry for the Knights of Lastwall, the first line of defense against incursions by the Whispering Tyrant throughout Golarion. You become trained in and in Undead ; if you were already trained, you become an expert instead. Finally, you gain the fighter feat.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=15",
+    "name": "Eye of Ozem",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 47",
+    "archetype": " Lastwall Sentry",
+    "prerequisites": "Lastwall Sentry Dedication, expert in Perception",
+    "text": "You\u2019ve learned how to spot danger at a distance, allowing you to serve as a sentry with ease. You gain a +2 circumstance bonus to initiative rolls when using Perception, and when you\u2019re Scouting, you grant your allies a +2 circumstance bonus instead of +1.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=15",
+    "name": "Necromantic Resistance",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 47",
+    "archetype": " Lastwall Sentry",
+    "prerequisites": "Lastwall Sentry Dedication",
+    "text": "As part of your training, you\u2019ve inured yourself against necromancy through repeated exposure. You gain a +1 circumstance bonus to saves against necromancy effects and gain resistance to negative damage equal to half your level.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=15",
+    "name": "Grave Sense",
+    "level": 6,
+    "source": "Lost Omens World Guide pg. 47",
+    "archetype": " Lastwall Sentry",
+    "prerequisites": "Lastwall Sentry Dedication",
+    "text": "Your time spent hunting the undead allows you to sense them. You sense undead as a similar to a human\u2019s sense of smell, an uncomfortable sensation akin to smelling something cloying and rotting. When in proximity to the undead, you eventually sense their presence, though you might not do so instantly, and you can\u2019t pinpoint their location. An undead using a disguise or otherwise trying to hide its presence must attempt a check against your Perception DC to hide its presence from you. If the creature succeeds at its Deception check, it is then temporarily immune to your Grave Sense for 1 day.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=15",
+    "name": "Necromantic Tenacity",
+    "level": 8,
+    "source": "Lost Omens World Guide pg. 47",
+    "archetype": " Lastwall Sentry",
+    "prerequisites": "Necromantic Resistance",
+    "text": "Your training against necromantic effects allows you to escape the worst of their touch. If you roll a success on a saving throw against a necromancy effect, you get a critical success instead; if you roll a critical failure on such a save, you get a failure instead.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=15",
+    "name": "Lastwall Warden",
+    "level": 10,
+    "source": "Lost Omens World Guide pg. 47",
+    "archetype": " Lastwall Sentry",
+    "prerequisites": "Lastwall Sentry Dedication",
+    "traits": ["Archetype"],
+    "text": "You use your shield to protect your allies, not just yourself, especially against the undead. When you have a shield raised, you can use your reaction when an attack is made against an ally adjacent to you, in addition to its usual trigger. If you do, the shield prevents that ally from taking damage instead of you, following the normal rules for a . If an undead makes an attack against an ally within 10 feet, you can Step to become adjacent to your ally and then use as part of the same reaction."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=22",
+    "name": "Lion Blade Dedication",
+    "level": 2,
+    "source": "Lost Omens World Guide pg. 131",
+    "archetype": " Lion Blade",
+    "prerequisites": "member of the Lion Blades, trained in Performance",
+    "access": "You are from Taldor.",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the Lion Blade archetype.",
+    "text": "Your lion blade spy training helps you conceal yourself and your identity. You become trained in your choice of or and in Espionage ; if you were already trained, you become an expert instead. You never take circumstance penalties for attempting to take a disguise of a different ancestry, age, and so on, as long as the disguised form is appropriate for your size.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=22",
+    "name": "Lost in the Crowd",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 131",
+    "archetype": " Lion Blade",
+    "prerequisites": "Lion Blade Dedication",
+    "text": "You\u2019ve learned how to move as one with crowds and hide among them, vanishing into a busy street in the blink of an eye. You move at full Speed in crowds and can use cover from crowds to Hide and Sneak, gaining a +2 circumstance bonus on your Stealth checks when in a crowd of at least 10 creatures and a +4 circumstance bonus on your Stealth checks when in a crowd of at least 100 creatures.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=22",
+    "name": "Crowd Mastery",
+    "level": 6,
+    "source": "Lost Omens World Guide pg. 131",
+    "archetype": " Lion Blade",
+    "prerequisites": "Lost in the Crowd",
+    "text": "You use the crowd to your advantage, diverting your foes\u2019 attention to potential hidden dangers in the crowd. When determining if your foe is flanked, treat all squares occupied by a crowd as if they were occupied by an ally with a melee reach of 5 feet.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=22",
+    "name": "Expeditious Advance",
+    "level": 6,
+    "source": "Lost Omens World Guide pg. 131",
+    "archetype": " Lion Blade",
+    "prerequisites": "Lion Blade Dedication",
+    "requirements": "You are unarmored or wearing light armor.",
+    "text": "You advance and retreat quickly. You gain a +10-foot status bonus to your speed.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=22",
+    "name": "Spy's Countermeasures",
+    "level": 10,
+    "source": "Lost Omens World Guide pg. 131",
+    "archetype": " Lion Blade",
+    "prerequisites": "Lion Blade Dedication",
+    "text": "You\u2019ve learned how to analyze and fake your responses to the most common magic used against spies. Whenever you succeed at your save against a divination or mental effect, you can Identify Magic to identify the spell as a free action triggered when you succeed, even if you didn\u2019t notice the spell being cast. If you successfully identify a divination effect targeting you and the spell would normally fail or have no effect, you can create a substitute result, causing the spell\u2019s caster to think the spell succeeded, with a result of your choice. If you successfully identify a mental effect targeting you and the spell would normally fail or have no effect, you can make it appear as if you were affected and attempt to play along with the spell; if the spell normally establishes a mental link, it functions normally but you can disregard any commands you receive through the link.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=22",
+    "name": "Flicker",
+    "level": 12,
+    "source": "Lost Omens World Guide pg. 131",
+    "archetype": " Lion Blade",
+    "prerequisites": "Lion Blade Dedication",
+    "traits": ["Archetype"],
+    "text": "You use your movements and disguises to make yourself a flickering blur. You gain concealment until your next turn. As usual for concealment involving an obvious visual manifestation, you can\u2019t use this concealment to Hide."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=16",
+    "name": "Living Monolith Dedication",
+    "level": 2,
+    "source": "Lost Omens World Guide pg. 59",
+    "archetype": " Living Monolith",
+    "prerequisites": "Ancient Osiriani and Sphinx languages, trained in Crafting",
+    "access": "You are from the Golden Road region.",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the living monolith archetype.",
+    "text": "You\u2019ve begun to inscribe a magical stone called a ka stone that you will some day tie to your soul. You gain knowledge of Ancient Osirion and a connection to your nascent ka stone . If you fail a recovery check while , your dying condition does not increase; if you critically fail, your dying condition increases by only 1. You become trained in Ancient Osirion , or expert if you were already trained.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=16",
+    "name": "Ka Stone Ritual",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 59",
+    "archetype": " Living Monolith",
+    "prerequisites": "Living Monolith Dedication, a sphinx or living monolith with this feat performs a ritual with you",
+    "activate": "(envision), or a different activation if otherwise specified\r\n;",
+    "actions": "Two Actions",
+    "frequency": "once per day;",
+    "effect": "You cast enlargeon yourself or use one of the other activated abilities granted by a later Living Monolith feat.",
+    "text": "You inscribe your true name on your ka stone , as well as oaths to gods and pharaohs, and embed it in your forehead in a special ritual with a sphinx or with a living monolith who already has this feat. The ka stone is an invested magic item that you automatically invest each day. It can\u2019t be removed without your permission, nor can it be dispelled, and you can never lose investiture in the ka stone. Its Bulk is negligible. The ka stone grants you a +1 item bonus to saves against death effects and negative effects, which increases to +2 at 8th level, +3 at 14th level, and +4 at 20th level.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=16",
+    "name": "Stone Blood",
+    "level": 6,
+    "source": "Lost Omens World Guide pg. 59",
+    "archetype": " Living Monolith",
+    "prerequisites": "Ka Stone Ritual",
+    "text": "You can selectively stop your bleeding with ease. Reduce the DC of flat checks to stop persistent bleed damage you have from 15 to 10, and you can use a single action that has the trait to gain an early flat check without physically binding the wounds. You recover naturally from the condition twice as quickly as normal.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=16",
+    "name": "Fortified Flesh",
+    "level": 8,
+    "source": "Lost Omens World Guide pg. 59",
+    "archetype": " Living Monolith",
+    "prerequisites": "Ka Stone Ritual",
+    "text": "Your flesh takes on the hardness of stone. You gain resistance to physical damage (except adamantine) equal to your number of class feats from the Living Monolith archetype.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=16",
+    "name": "Attunement to Stone",
+    "level": 10,
+    "source": "Lost Omens World Guide pg. 59",
+    "archetype": " Living Monolith",
+    "prerequisites": "Ka Stone Ritual",
+    "text": "You become attuned to the stone around you. When in contact with a stone surface, you gain tremorsense (imprecise) 5 feet along that surface, and you can activate your ka stone to cast .",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=16",
+    "name": "Judgement of the Monolith",
+    "level": 12,
+    "source": "Lost Omens World Guide pg. 59",
+    "archetype": " Living Monolith",
+    "prerequisites": "Ka Stone Ritual",
+    "text": "You can use the oaths bound in your ka stone to compel the truth from the living and the dead. You can activate your ka stone to target a single living creature, causing that creature to experience the effects of being in a . You can also activate it with a 10-minute activation (envision) to cast .",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=16",
+    "name": "Stone Communion",
+    "level": 14,
+    "source": "Lost Omens World Guide pg. 59",
+    "archetype": " Living Monolith",
+    "prerequisites": "Ka Stone Ritual",
+    "traits": ["Archetype"],
+    "text": "You gain a unique communion with the earth and stones. You learn the language and you can Activate your ka stone with a 10-minute activation (envision) to cast ."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=29",
+    "name": "Magaambyan Attendant Dedication",
+    "level": 2,
+    "source": "Lost Omens Character Guide pg. 101",
+    "archetype": " Magaambyan Attendant",
+    "prerequisites": "trained in Arcana or Nature, member of the Magaambya of attendant rank",
+    "special": "You cannot select another dedication feat other than Halcyon Speaker Dedicationuntil you have gained two other feats from the Magaambyan Attendant or halcyon speakerarchetype.",
+    "text": "You devote much of your study to halcyon magic. You gain the ability to cast a single or cantrip of your choice, (as is normal for cantrips, it is heightened to a spell level equal to half your level, rounded up). If you weren\u2019t already, you become trained in that tradition\u2019s spell DCs and spell attack rolls, with Intelligence as your spellcasting ability if you choose arcane or Wisdom as your spellcasting ability if you choose primal. Regardless of whether you choose an arcane or primal cantrip, you also either become trained in Arcana or Nature, or an expert in one of those skills in which you were already trained. When you gain this feat, choose to affiliate with the Cascade Bearers, Emerald Boughs, Rain\u2013Scribes, Tempest-Sun Mages, or Uzunjati. This grants you additional feats available to only that branch.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=29",
+    "name": "Mask Familiar",
+    "level": 4,
+    "source": "Lost Omens Character Guide pg. 101",
+    "archetype": " Magaambyan Attendant",
+    "prerequisites": "Magaambyan Attendant Dedication",
+    "maskfreeze": ": When in mask form, your familiar can hide its obvious supernatural qualities to pass as a simple, unassuming mask. It doesn\u2019t need to Impersonate to fool a passing glance, and it gains a +4 circumstance bonus to its Deception DC against an active observer Seekingor otherwise studying it.",
+    "text": "Your mask takes on a personality of its own, allowing it to serve as your . Though you can still wear it as a mask, you can detach it from your face to grant it a bodily form of colored light that allows it to move around; usually, this is a miniature form of the animal the mask represents. Detaching or reattaching the familiar to transform it is a two-action activity. Even in mask form, the familiar can move around on its master\u2019s face and speaks in a distinct voice (if it can talk). It is easily recognized as more than a simple mask unless the familiar succeeds at a check to a mask. Other than its appearance and the fact that it can be worn, it functions as other familiars. Your mask familiar has access to the mask freeze familiar ability",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=29",
+    "name": "Adaptive Mask Familiar",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 101",
+    "archetype": " Magaambyan Attendant",
+    "prerequisites": "Mask Familiar",
+    "text": "Your mask familiar adapts quickly to material form, allowing it to gain more familiar and master abilities. You select four master and familiar abilities each day instead of two.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=29",
+    "name": "Cascade Bearer's Flexibility",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 101",
+    "archetype": " Magaambyan Attendant",
+    "frequency": "once per day",
+    "prerequisites": "Magaambyan Attendant Dedication, Cascade Bearers affiliation",
+    "requirements": "You haven\u2019t yet acted on your turn.",
+    "text": "You call upon your Cascade Bearer training to help you adjust a spell for the current situation. Until the end of your turn, you gain a single from the druid class or the wizard class that has a level requirement of no more than half your level.",
+    "traits": ["Archetype", "Metamagic"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=29",
+    "name": "Emerald Boughs Accustomation",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 102",
+    "archetype": " Magaambyan Attendant",
+    "prerequisites": "Magaambyan Attendant Dedication, Emerald Boughs affiliation, expert in Society",
+    "text": "You are comfortable and socially capable in almost any cultural context. When you use the Society skill to , if you roll a critical failure, you get a failure instead; if you roll a success, you get a critical success instead; and if you roll a critical success, you can provide for another additional creature. Furthermore, when you attempt a Society check to about cultural practices and roll a critical failure, you get a failure instead.",
+    "traits": ["Archetype", "Skill"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=29",
+    "name": "Rain-Scribe Sustenance",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 102",
+    "archetype": " Magaambyan Attendant",
+    "prerequisites": "Magaambyan Attendant Dedication, Rain-Scribes affiliation",
+    "text": "You use the power of your Rain-Scribe magic to draw on a stream of primal power for sustenance. You don\u2019t need to eat or drink and need only 6 hours of rest to feel well rested. You must still rest at least 8 hours and spend 1 hour of preparation to regain resources usable only a limited number of times per day, such as spell slots. You can draw on primal power to stay awake and alert while otherwise resting your body and mind, gaining the full benefits of an 8-hour rest without falling asleep. When you do, you lose the other benefits of Rain- Scribe Sustenance for 1 week while your primal energies recharge.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=29",
+    "name": "Tempest-Sun Redirection",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 102",
+    "archetype": " Magaambyan Attendant",
+    "prerequisites": "Magaambyan Attendant Dedication, Tempest-Sun Mages affiliation",
+    "text": "If the next action you use is to Cast a Spell from your spell slots that damages other creatures, you can bend some of that spell\u2019s offensive energy, protecting allies in the area and boosting your own defenses against certain foes. Select any number of targets of the spell and reduce the spell\u2019s damage to those targets by an amount equal to the spell\u2019s level. Until your next turn, when one of those targets damages you, that damage is reduced by twice the spell\u2019s level.",
+    "traits": ["Archetype", "Metamagic"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=29",
+    "name": "Uzunjati Storytelling",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 102",
+    "archetype": " Magaambyan Attendant",
+    "prerequisites": "Magaambyan Attendant Dedication, Uzunjati affiliation, master in a Recall Knowledge skill",
+    "text": "You tell a quick story or begin telling a longer tale. This is most useful when you want to prove your scholarly credibility or impress someone quickly. Roll a check with a skill that can be used to in which you have expert proficiency, using the result entry for the action. Like Performing, Storytelling rarely has an effect on its own, but it might influence the DCs of subsequent Diplomacy checks against the observers\u2014or even change their attitudes\u2014if the GM sees fit. This action is not a Performance and cannot be used in place of anything that requires you to Perform.",
+    "traits": ["Archetype", "Concentrate", "Skill"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=29",
+    "name": "Cascade Bearer's Spellcasting",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 103",
+    "archetype": " Magaambyan Attendant",
+    "prerequisites": "Magaambyan Attendant Dedication, Cascade Bearers affiliation",
+    "text": "Your Cascade Bearer training allows you to broaden the horizons of your halcyon spells further than most Magaambyans, weaving in spiritual magic. You can select halcyon spells from the or spell lists in additional to the arcane or primal spell lists, though they are still halcyon spells (so you choose when casting if they are arcane or primal spells). You gain a halcyon cantrip and a halcyon 1st-level spell.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=29",
+    "name": "Emerald Boughs Hideaway",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 103",
+    "archetype": " Magaambyan Attendant",
+    "prerequisites": "Magaambyan Attendant Dedication, Emerald Boughs affiliation",
+    "text": "You use Emerald Bough techniques to create a small extradimensional space called a hideaway that lasts as long as you are conscious. The hideaway functions as a , but has no Bulk and takes no hands; it holds one object with a maximum Bulk equal to your highest mental ability score modifier; as you open the hideaway with pure thought, activating it to retrieve an item is a free action with the envision component instead of a single action with the Interact component. The hideaway\u2019s access point appears as an obviously magical gap within 1 foot of your body. Only you can access the hideaway; you can you use an Interact action each round to physically hold it open for another person. A successful spell or similar effect against your spell DC and the hideaway\u2019s counteract level of 2 expels the object; the object is also expelled if you become unconscious. After a successful dispel magic  spell or when you become conscious again, the hideaway immediately reforms with no additional action from you. You can also dismiss the hideaway (if it is empty) or re-form it using a single action with the envision component.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=29",
+    "name": "Rain-Scribe Mobility",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 103",
+    "archetype": " Magaambyan Attendant",
+    "prerequisites": "Magaambyan Attendant Dedication, Rain- Scribes affiliation",
+    "text": "You surround yourself in a mantle of Rain-Scribe magic and Stride twice; difficult terrain does not reduce your Speed, even if the difficult terrain has been manipulated by magic. Your magic clears the difficult terrain in each square you entered; until your next turn, those squares aren\u2019t difficult terrain for any creature walking through them (or are normal difficult terrain if they were previously greater difficult terrain).",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=29",
+    "name": "Tempest-Sun Shielding",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 103",
+    "archetype": " Magaambyan Attendant",
+    "prerequisites": "Tempest-Sun Redirection",
+    "trigger": "You or an ally within 30 feet takes damage.",
+    "text": "You transform unrealized spell energy into a protective shield. If you\u2019re a spontaneous spellcaster, expend a spell slot; if you\u2019re a prepared spellcaster, expend a spell prepared in a spell slot. Reduce the triggering damage by an amount equal to four times the level of the expended slot or spell.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=29",
+    "name": "Uzunjati Recollection",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 103",
+    "archetype": " Magaambyan Attendant",
+    "prerequisites": "Uzunjati Storytelling, master in a Recall Knowledge skill",
+    "traits": ["Archetype", "Skill"],
+    "text": "You tell a story spontaneously from nearly forgotten facts, delving into your memory and entertaining your audience in the process. with a skill in which you have master proficiency, then use Uzunjati Storytelling with the same skill. You gain a +1 circumstance bonus to your skill check for Uzunjati Storytelling from the added details."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=19",
+    "name": "Magic Warrior Dedication",
+    "level": 2,
+    "source": "Lost Omens World Guide pg. 95",
+    "archetype": " Magic Warrior",
+    "prerequisites": "ability to cast focus spells",
+    "access": "You are from the Mwangi Expanse.",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the magic warrior archetype.",
+    "text": "You have taken up a nameless mask and sworn the oath of the magic warriors. You become trained in your choice of or and in Magic Warrior ; if you were already trained in the skill, you become an expert instead. You hide your identity behind a mask representing an animal of your choice, corresponding to one of the general animal types in the animal form spell. You gain a +1 circumstance bonus to saves against divination effects, though sometimes refusing to remove your mask can cause issues in areas that don\u2019t respect or understand the magic warrior tradition. Once you take this feat, if another creature ever learns your true face or name, you lose your abilities from this archetype. Close allies who knew of your decision to take the mask before your dedication don\u2019t break this taboo unless they tell someone else. To regain your abilities, you must discard your mask and obtain a new one of a different animal, then retrain Magic Warrior Dedication into a new Magic Warrior Dedication with your new mask. Your focus spells from the magic warrior archetype are the same tradition as your other spells (choose one if you have spells from multiple traditions).",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=19",
+    "name": "Magic Warrior Aspect",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 95",
+    "archetype": " Magic Warrior",
+    "prerequisites": "Magic Warrior Dedication",
+    "text": "You can alter your form to gain an aspect of the animal your mask represents. You gain the focus spell.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=19",
+    "name": "Magic Warrior Transformation",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 95",
+    "archetype": " Magic Warrior",
+    "prerequisites": "Magic Warrior Dedication",
+    "text": "You can transform fully into the animal your mask represents. You gain the focus spell.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=19",
+    "name": "Nameless Anonymity",
+    "level": 6,
+    "source": "Lost Omens World Guide pg. 95",
+    "archetype": " Magic Warrior",
+    "prerequisites": "Magic Warrior Dedication",
+    "traits": ["Archetype"],
+    "text": "Your mask protects you further from divination. Once per day, you can cast on yourself, heightened to the highest level of spell you can cast; the spell ends immediately if your mask is removed for even a moment."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=13",
+    "name": "Pathfinder Agent Dedication",
+    "level": 2,
+    "source": "Lost Omens World Guide pg. 23",
+    "archetype": " Pathfinder Agent",
+    "prerequisites": "member of the Pathfinder Society",
+    "access": "You are from Absalom.",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the Pathfinder Agent archetype.",
+    "text": "Your Pathfinder training has broadened your horizons and made you more flexible at various skills, since you never know when you might need an obscure skill to complete your mission. You become trained in one skill of your choice, or expert in a skill of your choice in which you were trained. You also become trained in Pathfinder , or an expert if you were already trained. When using a skill untrained, your proficiency bonus is equal to your level instead of 0. You gain access to .",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=13",
+    "name": "Careful Explorer",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 23",
+    "archetype": " Pathfinder Agent",
+    "prerequisites": "Pathfinder Agent Dedication",
+    "text": "You\u2019ve explored enough dusty tombs and hidden vaults to gain a sixth sense about traps, and you sometimes notice them even when you\u2019re not trying to. Even if you aren\u2019t Searching in exploration mode, you get a check to find traps that normally require you to Search for them. You still need to meet any other requirements to find the trap.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=13",
+    "name": "Deft Cooperation",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 23",
+    "archetype": " Pathfinder Agent",
+    "prerequisites": "Pathfinder Agent Dedication",
+    "text": "When you set things up to help your allies, you also gain some of the fruits of your labors. When you successfully an attack roll or AC, you gain a +1 circumstance bonus to attack rolls or AC against that enemy until the end of your next turn, whichever you granted to your ally. When you successfully Aid a skill check, if you attempt the exact same skill check (not just using the same skill, but using it for the same purpose, for instance a check to Climb the same wall) on your next turn, you gain a +1 circumstance bonus to your skill check.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=13",
+    "name": "Thorough Reports",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 23",
+    "archetype": " Pathfinder Agent",
+    "prerequisites": "Pathfinder Agent Dedication",
+    "text": "Your reports are thorough and informative, and putting your thoughts to paper helps you retain the information. Keep track of each type of creature you successfully identify with . When attempting checks against creatures on your list in later encounters, you gain a +2 circumstance bonus, and you learn an additional fact about such creatures on a success.",
+    "traits": ["Archetype", "Skill"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=13",
+    "name": "Wayfinder Resonance Tinkerer",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 23",
+    "archetype": " Pathfinder Agent",
+    "prerequisites": "Pathfinder Agent Dedication",
+    "actions": "Single Action",
+    "text": "You can use the unusual resonance of your to grant it additional effects. Choose one cantrip from the arcane, divine, occult, or primal list. You can activate your to cast that cantrip at will. Additionally, you can Activate your with a (envision) activation to transform it into a nondescript pin or brooch to hide your affiliation with the Pathfinder Society. This transformation lasts for 1 hour.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=13",
+    "name": "Forced Entry",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 112",
+    "archetype": " Pathfinder Agent",
+    "prerequisites": "expert in Athletics, Pathfinder Agent Dedication",
+    "text": "You are trained to preserve the archaeological value of your location when entering. You don\u2019t take a penalty to doors, windows, or containers without a crowbar. If you roll a success on a check to Force Open, you get a critical success instead.",
+    "traits": ["Archetype", "Skill"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=13",
+    "name": "Recognize Threat",
+    "level": 8,
+    "source": "Lost Omens Character Guide pg. 112",
+    "archetype": " Pathfinder Agent",
+    "prerequisites": "master in a Recall Knowledgeskill, Pathfinder Agent Dedication",
+    "requirements": "You have master proficiency in a skill to identify the triggering creature.",
+    "trigger": "Your first turn of an encounter begins, and you can see a creature.",
+    "text": "You quickly assess the threat so you can relay the information to your team. Attempt a Recall Knowledge check against the triggering creature.",
+    "traits": ["Archetype", "Skill"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=13",
+    "name": "Everyon Duck!",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 112",
+    "archetype": " Pathfinder Agent",
+    "prerequisites": "Pathfinder Agent Dedication",
+    "trigger": "You fail, but don\u2019t critically fail, an attempt to Disable a Deviceon a trap.",
+    "text": "You intentionally set off the trap, but you take special precautions to protect yourself and your allies from the trap\u2019s effects. For the next 2 rounds, if the trap rolls a critical success on an attack roll, it gets a normal success instead, and if anyone rolls a critical failure on their saving throw against the trap, they get a normal failure instead.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=13",
+    "name": "Educated Assessment",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 112",
+    "archetype": " Pathfinder Agent",
+    "prerequisites": "Pathfinder Agent Dedication",
+    "traits": ["Archetype", "Secret"],
+    "text": "You attempt to about a creature, and the GM uses the same secret roll result against the creature\u2019s or DC, giving you the information from a . You might get a different degree of success on the Recall Knowledge check than what you get for the Battle Assessment. If you have the Battle Assessment feat, you gain the effects of Educated Assessment whenever you Recall Knowledge (such as with the feat)."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=17",
+    "name": "Red Mantis Assassin Dedication",
+    "level": 2,
+    "source": "Lost Omens World Guide pg. 71",
+    "archetype": " Red Mantis Assassin",
+    "prerequisites": "trained in sawtooth sabers, deity is Achaekek, lawful evil alignment, member of the Red Mantis assassins",
+    "access": "You are from Mediogalti Island.",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the Red Mantis assassin archetype.",
+    "text": "You have learned how to stalk your foes and slay them with a sawtooth sabre. You become trained in and Assassin ; if you were already trained, you become an expert instead. Whenever your proficiency in any weapon increases to expert or beyond, you also gain that new proficiency with .",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=17",
+    "name": "Basic Red Mantis Magic",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 71",
+    "archetype": " Red Mantis Assassin",
+    "prerequisites": "trained in Religion, Red Mantis Assassin Dedication",
+    "text": "You have learned limited divine magic from your Red Mantis training. You gain the activity. You\u2019re a prepared spellcaster, able to prepare two cantrips and one 1st-level spell each day. You prepare these spells from a Red Mantis assassin spellbook, similar to a wizard\u2019s, containing three cantrips and two 1st-level spells. All the spells in your Red Mantis assassin spellbook, from this and later feats, must be either transmutation or illusion spells from the arcane spell list or a spell from the following list: , , , , , , , , . Regardless of their usual magical tradition, your Red Mantis assassin spells are divine spells, as are any Red Mantis focus spells you gain. You can prepare two cantrips and one 1st-level spell each day from those found in your Red Mantis assassin spellbook. You\u2019re trained in spell attack rolls and spell DCs for casting divine spells. Your key spellcasting ability for these spells is Charisma.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=17",
+    "name": "Advanced Red Mantis Magic",
+    "level": 6,
+    "source": "Lost Omens World Guide pg. 71",
+    "archetype": " Red Mantis Assassin",
+    "prerequisites": "Basic Red Mantis Magic",
+    "text": "Your Red Mantis magical training has improved. Add two 2nd-level spells to your Red Mantis assassin spellbook. You gain a 2nd-level spell slot that you can use to prepare a spell from your Red Mantis assassin spellbook. At 8th level, add two 3rd-level spells to your Red Mantis assassin spellbook. You gain a 3rd-level spell slot that you can use to prepare a spell from your Red Mantis assassin spellbook. At 10th level, add two 4th-level spells to your Red Mantis assassin spellbook. You gain a 4th-level spell slot that you can use to prepare a spell from your Red Mantis assassin spellbook.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=17",
+    "name": "Crimson Shroud",
+    "level": 6,
+    "source": "Lost Omens World Guide pg. 71",
+    "archetype": " Red Mantis Assassin",
+    "frequency": "A number of times per day equal to your number of class feats from the Red Mantis assassin archetype",
+    "prerequisites": "Red Mantis Assassin Dedication",
+    "text": "You swathe yourself in a veil of red mist for 1 minute. While the shroud is active, you gain fast healing equal to half your level. You can Interact with your shroud, swirling it around you, to gain a +1 circumstance bonus to AC until the beginning of your next turn. Finally, if you die while the shroud is active, you can choose to have your entire body vanish into red mist, leaving behind only your gear; you make this choice when you activate Crimson Shroud.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=17",
+    "name": "Mantis Form",
+    "level": 8,
+    "source": "Lost Omens World Guide pg. 71",
+    "archetype": " Red Mantis Assassin",
+    "prerequisites": "Basic Red Mantis Magic",
+    "traits": ["Archetype"],
+    "text": "You gain the focus spell. If you don\u2019t already have one, you gain a focus pool of 1 Focus Point, which you can Refocus by praying to Achaekek or researching your assigned kill."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=21",
+    "name": "Runescarred Dedication",
+    "level": 2,
+    "source": "Lost Omens World Guide pg. 119",
+    "archetype": " Runescarred",
+    "prerequisites": "trained in Arcana",
+    "access": "You are from the Saga Lands.",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the runescarred archetype.",
+    "text": "Whether through blood (if you\u2019re Varisian, Shoanti, or New Thassilonian) or by exposure to rune magic, you have become runescarred, with visible, glowing runes on your body in the form of tattoos or scars. You might have possessed these marks before gaining the archetype, but you only truly became runescarred when you chose to study and tap into the runes\u2019 power. You become an expert in and you also become trained in Thassilon , or an expert in Thassilon Lore if you were already trained in it. Choose one cantrip from the list. One of the runes on your body corresponds to the chosen cantrip, and you can cast the chosen cantrip as an innate arcane spell.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=21",
+    "name": "Spell Runes",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 119",
+    "archetype": " Runescarred",
+    "prerequisites": "Runescarred Dedication",
+    "text": "The magical runes on your body grant you several magical abilities. Choose a 1st-level spell. You gain a spell rune on your body corresponding to the chosen spell, which you can cast once per day as an innate spell. At 6th level, you gain a spell rune corresponding to a 2nd-level arcane spell, and at 8th level, you gain a spell rune corresponding to a 3rd-level arcane spell.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=21",
+    "name": "Living Rune",
+    "level": 6,
+    "source": "Lost Omens World Guide pg. 119",
+    "archetype": " Runescarred",
+    "prerequisites": "Runescarred Dedication",
+    "text": "You\u2019ve bridged a connection between the runes on your body and the magic of runestones, allowing you to place an armor rune on your living flesh. Your body can hold a single ; you can\u2019t etch a property rune on your body if it has requirements on the type or category of armor or if the property would affect the armor instead of its wearer. If you wear armor, you gain the property rune\u2019s effects in addition to any effects of that armor.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=21",
+    "name": "Warding Rune",
+    "level": 6,
+    "source": "Lost Omens World Guide pg. 119",
+    "archetype": " Runescarred",
+    "prerequisites": "Runescarred Dedication",
+    "text": "Your runes provide a warding effect that protects you against a specific school of magic. Choose a school of magic other than divination. You gain a rune on your body corresponding to that school, and you gain a +2 circumstance bonus to all saving throws against effects of that school.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=21",
+    "name": "Greater Spell Runes",
+    "level": 10,
+    "source": "Lost Omens World Guide pg. 119",
+    "archetype": " Runescarred",
+    "prerequisites": "Spell Runes",
+    "traits": ["Archetype"],
+    "text": "You gain more powerful spell runes. You gain a spell rune corresponding to a 4th-level spell. At 12th level, you gain a spell rune corresponding to a 5th-level arcane spell, and at 14th level, you gain a spell rune corresponding to a 6th-level arcane spell."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=31",
+    "name": "Scrollmaster Dedication",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 113",
+    "archetype": " Scrollmaster",
+    "prerequisites": "expert in any Lore skill, member of the Pathfinder Society affiliated with the School of Scrolls",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the Scrollmaster archetype.",
+    "text": "Your experience chronicling adventures and discoveries grants you heightened discernment and memory. For 24 hours after learning a prominent fact\u2014such as the name of an NPC you have met, the details of your mission briefing, and similar information\u2014you can recall it without attempting a check, though this doesn\u2019t allow you to automatically memorize long strings of numbers or text. You also gain a +2 circumstance bonus to checks to remember a detail that has come up before in the current adventure, even if it was more than 24 hours ago. If you have the feat and have expert proficiency in the skill you\u2019re using to Recall Knowledge, your circumstance bonus to Recall Knowledge about creatures from that feat increases to +4.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=31",
+    "name": "Lore Seeker",
+    "level": 8,
+    "source": "Lost Omens Character Guide pg. 113",
+    "archetype": " Scrollmaster",
+    "prerequisites": "Scrollmaster Dedication",
+    "text": "You see what others don\u2019t, and you\u2019ve developed magical tricks to find hidden truth. You can cast , , and as innate spells, each once per day. If you could already cast spells, these spells are of the same tradition. Otherwise, they are arcane spells, you use Intelligence as your spellcasting ability, and you become trained in spell attack rolls and spell DCs for arcane spells.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=31",
+    "name": "Unravel Mysteries",
+    "level": 8,
+    "source": "Lost Omens Character Guide pg. 113",
+    "archetype": " Scrollmaster",
+    "prerequisites": "master in a Decipher Writing skill, Scrollmaster Dedication",
+    "text": "You can understand the true meaning of texts quickly, and even when you get lost or hit a dead end, you aren\u2019t discouraged from making further attempts to get to the bottom of things. When you Decipher Writing, you need only half as long as usual (reducing the time from about 1 minute to about half a minute per page), and if you fail, you don\u2019t take the usual \u20132 circumstance penalty to further checks to decipher that text.",
+    "traits": ["Archetype", "Skill"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=31",
+    "name": "Font of Knowledge",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 113",
+    "archetype": " Scrollmaster",
+    "prerequisites": "Scrollmaster Dedication",
+    "traits": ["Archetype"],
+    "text": "Experience or focused study have granted you mastery of a number of topics. When you know about something, you know about it in great detail. When you succeed at a check to , you gain additional information or context. When you critically succeed at a check to Recall Knowledge, at the GM\u2019s discretion, you might gain even more additional information or context than normal."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=32",
+    "name": "Spellmaster Dedication",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 114",
+    "archetype": " Spellmaster",
+    "prerequisites": "Intelligence, Wisdom, or Charisma 14; ability to cast focus spells; member of the Pathfinder Society affiliated with the School of Spells",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the Spellmaster archetype.",
+    "text": "As a Spellmaster, you are adept at identifying magic. You gain a +2 circumstance bonus when you with a skill in which you are trained or better. If you have the feat, you can change the cantrip you chose for that feat each day during your daily preparations.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=32",
+    "name": "Surreptitious Spellcaster",
+    "level": 8,
+    "source": "Lost Omens Character Guide pg. 114",
+    "archetype": " Spellmaster",
+    "prerequisites": "Spellmaster Dedication",
+    "text": "You\u2019ve learned that it pays for a Pathfinder to be able to cast spells without being noticed. You gain the wizard class feat, though it\u2019s not a wizard feat for you. You also gain a +2 circumstance bonus to checks to Conceal a Spell and to checks to conceal verbal components.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=32",
+    "name": "Ward Casting",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 114",
+    "archetype": " Spellmaster",
+    "prerequisites": "Spellmaster Dedication, Steady Spellcasting",
+    "trigger": "You attempt a flat check for Steady Spellcasting, but you haven\u2019t rolled yet.",
+    "text": "You carefully ward your spell by drawing from a mantle of magical energy you prepared to protect your casting, increasing your chance of retaining the spell. You reduce the DC of the flat check for Steady Spellcasting from 15 to 10.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=32",
+    "name": "Spellmaster's Resilience",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 114",
+    "archetype": " Spellmaster",
+    "prerequisites": "Spellmaster Dedication",
+    "text": "Your experience with a specific type of harmful magic makes you more resistant to it. Choose a magical tradition (arcane, divine, occult, or primal). You gain a +1 circumstance bonus to saving throws against spells and effects with that tradition\u2019s trait and resistance 5 to all damage from spells and effects with that tradition\u2019s trait. The effect must have actually been cast or created with that tradition, rather than simply being on that tradition\u2019s spell list.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=32",
+    "name": "Absorb Spell",
+    "level": 14,
+    "source": "Lost Omens Character Guide pg. 114",
+    "archetype": " Spellmaster",
+    "frequency": "once per 10 minutes",
+    "prerequisites": "Spellmaster Dedication, spell repertoire or ability to prepare spells",
+    "trigger": "You critically succeed at a saving throw against a foe\u2019s spell, and that spell is of a level you can normally cast.",
+    "traits": ["Archetype"],
+    "text": "You absorb a spell and store it in your body. If you are a spontaneous spellcaster, you can cast the triggering spell once during the next 10 minutes, even if it\u2019s not on your spell list as if it were in your repertoire. If you are a prepared spellcaster, you can replace one of your prepared spells of the same level with the absorbed spell, but you must cast the absorbed spell within 10 minutes or you lose that spell slot for the day. You cast the spell at the same spell level as the spell you absorbed, but the spell is of your magical tradition and uses your spell DC, spell attack roll, and other statistics to determine its effects."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=18",
+    "name": "Student of Perfection Dedication",
+    "level": 2,
+    "source": "Lost Omens World Guide pg. 83",
+    "archetype": " Student of Perfection",
+    "prerequisites": "powerful fist or expert in unarmed attacks; member of a House of Perfection",
+    "access": "You are from Jalmeray.",
+    "special": "You can\u2019t select another dedication feat until you have gained two other feats from the student of perfection archetype.",
+    "text": "You have learned the martial arts techniques of your House of Perfection. You become trained in your choice of or and Warfare ; if you were already trained, you become an expert instead. You gain the monk class feat, which grants you the ki spell and a focus pool of 1 Focus Point that you can recover using the Refocus activity as a monk does. Your ki spells from Student of Perfection are occult spells.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=18",
+    "name": "Perfect Strike",
+    "level": 4,
+    "source": "Lost Omens World Guide pg. 83",
+    "archetype": " Student of Perfection",
+    "prerequisites": "Student of Perfection Dedication",
+    "text": "You gain the ki spell. Increase the number of Focus Points in your focus pool by 1.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=18",
+    "name": "Perfect Ki Adept",
+    "level": 6,
+    "source": "Lost Omens World Guide pg. 83",
+    "archetype": " Student of Perfection",
+    "prerequisites": "Student of Perfection Dedication",
+    "traits": ["Archetype"],
+    "text": "You gain the appropriate ki spell for your School of Perfection: for Unblinking Flame, for Unbreaking Waves, for Unfolding Wind, or for Untwisting Iron. Increase the number of Focus Points in your focus pool by 1."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=33",
+    "name": "Swordmaster Dedication",
+    "level": 6,
+    "source": "Lost Omens Character Guide pg. 115",
+    "archetype": " Swordmaster",
+    "prerequisites": "Strength, Dexterity, or Constitution 14; member of the Pathfinder Society affiliated with the School of Swords",
+    "special": "You cannot select another dedication feat until you have gained two other feats from the Swordmaster archetype.",
+    "text": "Your Swords training taught you to never lose hold of your weapon. You gain a +2 circumstance bonus to your Reflex DC when foes attempt to you. If you have the feat and critically succeed on a check to an ally\u2019s attack roll or skill check, you gain a +2 circumstance bonus from Deft Cooperation (instead of a +1 bonus) the first time you attempt an attack roll or attempt a skill check where the bonus would apply.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=33",
+    "name": "Harrying Strike",
+    "level": 10,
+    "source": "Lost Omens Character Guide pg. 115",
+    "archetype": " Swordmaster",
+    "prerequisites": "Swordmaster Dedication",
+    "criticalsuccess": "The target takes a \u201315-foot status penalty to its Speeds until the start of your next turn.",
+    "success": "The target takes a \u201310-foot status penalty to its Speeds until the start of your next turn.",
+    "failure": "The target takes a \u20135-foot status penalty to its Speeds until the start of your next turn.",
+    "text": "Your attack prevents a foe from pursuing your allies. Make a melee Strike, adding the following effects in addition to the normal effects of the Strike.",
+    "traits": ["Archetype", "Attack", "Press"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=33",
+    "name": "Shoulder Catastrophe",
+    "level": 12,
+    "source": "Lost Omens Character Guide pg. 115",
+    "archetype": " Swordmaster",
+    "prerequisites": "Swordmaster Dedication",
+    "trigger": "An enemy critically succeeds at a Strike against an adjacent ally.",
+    "text": "You\u2019ve trained to protect your allies by diverting the worst attacks to yourself. The enemy doesn\u2019t double the damage from the triggering Strike but instead applies the normal damage to both you and your ally. Both of you take any effects that would happen on a hit that dealt damage, such as poison, but neither of you are subject to any effects that would happen only on a critical success.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=33",
+    "name": "Death's Door",
+    "level": 14,
+    "source": "Lost Omens Character Guide pg. 115",
+    "archetype": " Swordmaster",
+    "frequency": "once per 10 minutes",
+    "prerequisites": "Swordmaster Dedication",
+    "trigger": "You take damage that would reduce you to 0 Hit Points.",
+    "traits": ["Archetype"],
+    "text": "You continue to fight when others would fall. Just before taking the triggering damage, you gain temporary Hit Points equal to twice your level. If you have Hit Points remaining after gaining these temporary Hit Points, you aren\u2019t knocked unconscious, nor do you suffer the other effects of being reduced to 0 Hit Points. Any temporary Hit Points that remain after applying the damage last for up to 4 rounds."
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=35",
+    "name": "Zephyr Guard Dedication",
+    "level": 2,
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 81",
+    "archetype": " Zephyr Guard",
+    "special": "You can\u2019t select another dedication feat until you have gained two other feats from the Zephyr Guard archetype.",
+    "text": "As a Zephyr Guard, you\u2019re always vigilant against crime and threats to the city\u2019s safety. You gain a +1 circumstance bonus to Perception checks against attempts to , , or (including you\u2019re concealed objects). You become trained in and Katapesh ; if you were already trained, you become an expert instead.",
+    "traits": ["Archetype", "Dedication"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=35",
+    "name": "Know the Beat",
+    "level": 3,
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 81",
+    "archetype": " Zephyr Guard",
+    "prerequisites": "Zephyr Guard Dedication",
+    "text": "You become trained in your choice of Guild , Legal Lore, Mercantile Lore, or Underworld Lore. You gain a +1 circumstance bonus to checks to and to checks made to investigate crimes.",
+    "traits": ["Archetype", "Skill"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=35",
+    "name": "Decry Thief",
+    "level": 4,
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 81",
+    "archetype": " Zephyr Guard",
+    "prerequisites": "Zephyr Guard Dedication, trained in Intimidation",
+    "criticalsuccess": "For 1 round, the target takes a \u201310-foot status penalty to Speed and a \u20134 status penalty to Stealth.",
+    "success": "For 1 round, the target takes a \u20135-foot status penalty to Speed and a \u20132 status penalty to Stealth.",
+    "text": "When you attempt to , you can make it harder for the target to flee, in place of the action\u2019s normal effects.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=35",
+    "name": "Relentless Disarm",
+    "level": 6,
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 81",
+    "archetype": " Zephyr Guard",
+    "prerequisites": "Zephyr Guard Dedication, trained in Athletics",
+    "text": "When you succeed, but don\u2019t critically succeed, at a check to a creature, your circumstance bonus to further checks to Disarm that creature is +4 instead of +2. Other creatures gain only the normal bonus. When you critically succeed at a Disarm check, you can immediately your target as a reaction.",
+    "traits": ["Archetype"]
+}, {
+    "link": "https://2e.aonprd.com/Archetypes.aspx?ID=35",
+    "name": "Unfazed Assessment",
+    "level": 8,
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 81",
+    "archetype": " Zephyr Guard",
+    "prerequisites": "Zephyr Guard Dedication, expert in Perception",
+    "traits": ["Archetype"],
+    "text": "You have witnessed hundreds of fighting styles and quickly adapt to defend against complicated maneuvers. Choose a creature within 30 feet who you\u2019re aware of, and attempt a Perception check against that target\u2019s Will DC. If you succeed, you size up their fighting style, gaining a +1 circumstance bonus to AC and saving throws against that creature\u2019s attacks (or a +2 circumstance bonus for a critical success). These benefits last until the end of your next turn."
 }]
 
 module.exports = { baseFeats, archFeats}

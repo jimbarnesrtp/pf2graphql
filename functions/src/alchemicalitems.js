@@ -574,7 +574,7 @@ const elixirs = [{
     "text": "Your features transform into something bestial and you take on muscle mass, but your lumbering form is clumsy. You gain a +4 item bonus, your claw deals 1d8 slashing damage, your jaws deal 1d10 piercing damage, and the duration is 1 hour. You gain weapon specialization with the claws and jaws, or greater weapon specialization, if you already have weapon specialization with these unarmed attacks."
 }, {
     "source": "Core Rulebook pg. 547",
-    "name": " Cognative Mutagen (Lesser)",
+    "name": " Cognitive Mutagen (Lesser)",
     "link": " https://2e.aonprd.com/Equipment.aspx?ID=87",
     "level": 1,
     "price": "4 gp",
@@ -587,7 +587,7 @@ const elixirs = [{
     "actions": "Single Action",
     "activate": "Interact"
 }, {
-    "name": " Cognative Mutagen (Moderate)",
+    "name": " Cognitive Mutagen (Moderate)",
     "link": " https://2e.aonprd.com/Equipment.aspx?ID=87",
     "source": "Core Rulebook pg. 547",
     "level": 3,
@@ -601,7 +601,7 @@ const elixirs = [{
     "actions": "Single Action",
     "activate": "Interact"
 }, {
-    "name": " Cognative Mutagen (Greater)",
+    "name": " Cognitive Mutagen (Greater)",
     "link": " https://2e.aonprd.com/Equipment.aspx?ID=87",
     "source": "Core Rulebook pg. 547",
     "level": 11,
@@ -615,7 +615,7 @@ const elixirs = [{
     "actions": "Single Action",
     "activate": "Interact"
 }, {
-    "name": " Cognative Mutagen (Major)",
+    "name": " Cognitive Mutagen (Major)",
     "link": " https://2e.aonprd.com/Equipment.aspx?ID=87",
     "source": "Core Rulebook pg. 547",
     "level": 17,
@@ -1320,6 +1320,17 @@ const elixirs = [{
     "link": " https://2e.aonprd.com/Equipment.aspx?ID=497",
     "level": 20,
     "text": "When you drink this elixir, you physically become as you were in whatever phase of your youth you desire. Your new body begins in peak health, regardless of what your actual condition was at that age. Any physical or mental imperfections\u2014 including scars, lost limbs, and curses, diseases, poisons of 20th level or lower\u2014 are removed, and you regain your full Hit Points. You immediately begin to age normally again, with your natural lifespan extended as if you had never aged past your new apparent age. You retain all your memories. Unlike Crafting most items, brewing the sun orchid elixir takes 1 month\u2019s time. While an individual vial of sun orchid elixir isn\u2019t unique, the formula is unique, and it\u2019s known only to Artokus Kirran of Thuvia."
+}, {
+    "source": "Lost Omens Character Guide pg. 92",
+    "traits": ["Uncommon", "Alchemical", "Consumable", "Elixir"],
+    "price": "3 gp",
+    "usage": "held in 2 hands;",
+    "bulk": "L",
+    "activate": "1 minute (Interact)",
+    "name": "Lastwall Soup",
+    "link": " https://2e.aonprd.com/Equipment.aspx?ID=516",
+    "level": 1,
+    "text": "Crimson Reclaimers make this rich, hearty soup using herbs that baffle the senses of the undead. A bowl of Lastwall soup is as nourishing as a full meal. In addition, for 1 hour after consuming a bowl of Lastwall soup, you gain a +2 item bonus to checks and DCs against undead."
 }]
 
 const poisons = [{
@@ -1356,7 +1367,7 @@ const poisons = [{
     "maximumduration": " 6 rounds; ",
     "stage1": " 1d6 poison damage (1 round); Stage\u00a02 1d8 poison damage and flat-footed (1 round); ",
     "stage3": " 1d12 poison damage, clumsy 1, and flat-footed (1 round)",
-    "actions": "Three Actions",
+    "actions": "Two Actions",
     "activate": " Interact"
 }, {
     "name": "Belladonna",
@@ -1375,7 +1386,7 @@ const poisons = [{
     "stage1": " dazzled (10 minutes); ",
     "stage2": " 1d6 poison damage and sickened 1 (10 minutes); ",
     "stage3": " 1d6 poison damage, confused, and sickened 1 (1 minute)",
-    "actions": "Single Action",
+    "actions": "Two Actions",
     "activate": " Interact"
 }, {
     "name": "Black Smear Poison",
@@ -1410,7 +1421,7 @@ const poisons = [{
     "maximumduration": " 3 rounds; ",
     "stage1": " 1d8 poison damage (1 round); Stage\u00a02 1d10 poison damage (1 round); ",
     "stage3": " 2d6 poison damage (1\u00a0round)",
-    "actions": "Three Actions",
+    "actions": "Two Actions",
     "activate": " Interact"
 }, {
     "name": "Lethargy Poison",
@@ -1428,7 +1439,7 @@ const poisons = [{
     "stage1": " slowed 1 (1 round); ",
     "stage2": " slowed 1 (1 minute); ",
     "stage3": " unconscious with no Perception check to wake up (1 round) Stage 4 unconscious with no Perception check to wake up (1d4 hours). ",
-    "actions": "Three Actions",
+    "actions": "Two Actions",
     "activate": " Interact"
 }, {
     "name": "Blue Dragonfly Poison",
@@ -1462,7 +1473,7 @@ const poisons = [{
     "stage1": " 1d10 poison damage (1 round); ",
     "stage2": " 1d12 poison damage (1 round); ",
     "stage3": " 2d10 poison damage (1\u00a0round)",
-    "actions": "Single Action",
+    "actions": "Two Actions",
     "activate": " Interact"
 }, {
     "name": "Graveroot",
@@ -1480,7 +1491,24 @@ const poisons = [{
     "stage1": " 1d10 poison damage (1 round); ",
     "stage2": " 1d12 poison damage and stupefied 1 (1 round); ",
     "stage3": " 2d6 poison damage and stupefied 2 (1 round)",
-    "actions": "Three Actions",
+    "actions": "Two Actions",
+    "activate": " Interact"
+}, {
+    "name": "False Death",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=551",
+    "category": "poison",
+    "level": 5,
+    "price": " 25 gp",
+    "bulk": " L",
+    "traits": ["Uncommon", "Alchemical", "Consumable", "Ingested", "Poison"],
+    "text": "Typically used to fake one\u2019s death, this poison swiftly causes the imbiber to lose consciousness and suppresses vital signs. A creature examining the unconscious target must succeed at a   check against the imbiber\u2019s   DC + 4 to determine that the target is alive, and a critical success allows the examiner to determine that a toxin is causing the effect. The false death toxin has an extremely bitter taste (Perception DC 10 to detect), making it difficult to trick a creature into consuming the poison against its wishes.   (1 round);   (1 hour); ",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 78",
+    "usage": " held in 1 hand; ",
+    "savingthrow": " DC 18 Fortitude; ",
+    "onset": " 10 minutes; ",
+    "maximumduration": " 5 days; ",
+    "stage3": " unconscious (1 day)",
+    "actions": "Single Action",
     "activate": " Interact"
 }, {
     "name": "Hunting Spider Venom",
@@ -1498,7 +1526,7 @@ const poisons = [{
     "stage1": " 1d10 poison damage and flat-footed (1 round); ",
     "stage2": " 1d12 poison damage, clumsy 1, and flat-footed (1 round); ",
     "stage3": " 2d6 poison damage, clumsy\u00a02, and flat-footed (1 round)",
-    "actions": "Three Actions",
+    "actions": "Two Actions",
     "activate": " Interact"
 }, {
     "name": "Giant Scorpion Venom",
@@ -1516,7 +1544,7 @@ const poisons = [{
     "stage1": " 1d10 poison damage and enfeebled 1 (1 round); ",
     "stage2": " 2d10 poison damage and enfeebled 1 (1 round); ",
     "stage3": " 2d10 poison damage and enfeebled 2 (1 round)",
-    "actions": "Three Actions",
+    "actions": "Two Actions",
     "activate": " Interact"
 }, {
     "name": "Giant Wasp Venom",
@@ -1534,7 +1562,24 @@ const poisons = [{
     "stage1": " 2d6 poison damage and clumsy 1 (1 round); ",
     "stage2": " 3d6 poison damage and clumsy 2 (1 round); ",
     "stage3": " 4d6 poison and clumsy 2 (1 round)",
-    "actions": "Three Actions",
+    "actions": "Two Actions",
+    "activate": " Interact"
+}, {
+    "name": "Isolation Draught",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=555",
+    "category": "poison",
+    "level": 7,
+    "price": " 55 gp",
+    "bulk": " L",
+    "traits": ["Uncommon", "Alchemical", "Consumable", "Ingested", "Poison"],
+    "text": "Derived from steeping toxic highland plum pits in refined grain alcohols, this clear tonic slowly shuts down the imbiber\u2019s senses. , \u20133 to all Perception checks (1 minute);  , \u20135 to all Perception checks (1 minute);  , deafened, \u20135 to all Perception checks (5 minutes)",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 79",
+    "usage": " held in 1 hand; ",
+    "savingthrow": " DC 25 Fortitude; ",
+    "onset": " 10 minutes; ",
+    "maximumduration": " 30 minutes; ",
+    "stage2": " dazzled, ",
+    "actions": "Single Action",
     "activate": " Interact"
 }, {
     "name": "Malyass Root Paste",
@@ -1607,7 +1652,7 @@ const poisons = [{
     "stage1": " 5d6 poison damage (1 round); ",
     "stage2": " 6d6 poison damage (1 round); ",
     "stage3": " 8d6 poison damage (1 round)",
-    "actions": "Three Actions",
+    "actions": "Two Actions",
     "activate": " Interact"
 }, {
     "name": "Lich Dust",
@@ -1681,7 +1726,7 @@ const poisons = [{
     "stage1": " 3d6 negative damage and 2d6 poison damage (1\u00a0round); ",
     "stage2": " 3d6 negative damage, 2d6 poison damage, and enfeebled\u00a01 (1 round); ",
     "stage3": " 3d6 negative damage, 2d6 poison damage, and enfeebled 2 (1 round)",
-    "actions": "Three Actions",
+    "actions": "Two Actions",
     "activate": " Interact"
 }, {
     "name": "Blightburn Resin",
@@ -1701,6 +1746,24 @@ const poisons = [{
     "stage2": " 10d6 poison damage (1 round); ",
     "stage3": " 15d6 poison damage (1 round)",
     "actions": "Single Action",
+    "activate": " Interact"
+}, {
+    "name": "Mage Bane",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=556",
+    "category": "poison",
+    "level": 12,
+    "price": " 325 gp",
+    "bulk": " L",
+    "traits": ["Uncommon", "Alchemical", "Consumable", "Injury", "Poison"],
+    "text": "Upon being mixed and injected into the bloodstream, this powder of the crimson orchid quickly assaults the brain and nerves, disrupting the victim\u2019s ability to piece together coherent thoughts and spells.  (1 round); ",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 79",
+    "usage": " held in 2 hands; ",
+    "savingthrow": " DC 32 Fortitude; ",
+    "maximumduration": " 6 rounds; ",
+    "stage1": " 2d6 mental damage and ",
+    "stage2": " 3d6 mental damage and stupefied 3 (1 round); ",
+    "stage3": " 4d6 mental damage and stupefied 4 (1 round)",
+    "actions": "Three Actions",
     "activate": " Interact"
 }, {
     "name": "Slumber Wine",
@@ -1741,6 +1804,24 @@ const poisons = [{
     "actions": "Single Action",
     "activate": " Interact"
 }, {
+    "name": "Gorgon's Breath",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=554",
+    "category": "poison",
+    "level": 13,
+    "price": " 475 gp",
+    "bulk": " L",
+    "traits": ["Uncommon", "Alchemical", "Consumable", "Inhaled", "Poison"],
+    "text": "Gorgon\u2019s breath is a fine powder that can easily enter living creatures\u2019 bloodstreams through their lungs before binding to mucous membranes and causing any nearby soft tissues to harden.  (1 round);   (1 round); ",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 78",
+    "usage": " held in 1 hand; ",
+    "savingthrow": " DC 32 Fortitude; ",
+    "onset": " 1 round; ",
+    "maximumduration": " 6 rounds; ",
+    "stage2": " 4d6 bludgeoning damage and slowed 1 (1 round); ",
+    "stage4": " petrified permanently",
+    "actions": "Single Action",
+    "activate": " Interact"
+}, {
     "name": "Purple Worm Venom",
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=126",
     "category": "poison",
@@ -1756,7 +1837,7 @@ const poisons = [{
     "stage1": " 5d6 poison damage and enfeebled 2 (1 round); ",
     "stage2": " 6d6 poison damage and enfeebled 2 (1 round); ",
     "stage3": " 8d6 poison and enfeebled 2 (1 round)",
-    "actions": "Three Actions",
+    "actions": "Two Actions",
     "activate": " Interact"
 }, {
     "name": "Dragon Bile",
@@ -1816,6 +1897,24 @@ const poisons = [{
     "actions": "Single Action",
     "activate": " Interact"
 }, {
+    "name": "Weeping Midnight",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=559",
+    "category": "poison",
+    "level": 16,
+    "price": " 1,400 gp",
+    "bulk": " L",
+    "traits": ["Uncommon", "Alchemical", "Consumable", "Injury", "Poison"],
+    "text": "Alchemists have refined the devastatingly allergenic pollen of the widow orchid to create this venom, which swiftly causes the victim\u2019s eyes to leak mucus and swell shut.  (1 round);   (1 round);   (1 round)",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 79",
+    "usage": " held in 2 hands; ",
+    "savingthrow": " DC 36 Fortitude; ",
+    "maximumduration": " 6 rounds; ",
+    "stage1": " 6d6 poison damage and ",
+    "stage2": " 7d6 poison damage, dazzled, and ",
+    "stage3": " 8d6 poison damage and ",
+    "actions": "Three Actions",
+    "activate": " Interact"
+}, {
     "name": "Brimstone Fumes",
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=109",
     "category": "poison",
@@ -1832,6 +1931,25 @@ const poisons = [{
     "stage1": " 7d6 poison damage and enfeebled 1 (1\u00a0round); ",
     "stage2": " 8d6 poison damage and enfeebled 2 (1\u00a0round); ",
     "stage3": " 10d6 poison damage and enfeebled 3 (1\u00a0round)",
+    "actions": "Single Action",
+    "activate": " Interact"
+}, {
+    "name": "Frenzy Oil",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=552",
+    "category": "poison",
+    "level": 16,
+    "price": " 1,500 gp",
+    "bulk": " L",
+    "traits": ["Uncommon", "Alchemical", "Consumable", "Contact", "Poison"],
+    "text": "This oil, which is pressed from   spores and mixed with a combination of acacia ash and thistle seeds, seeps into the skin of living creatures, initially inspiring irritability that unpredictably manifests as berserk rage. , attack nearby creatures as if   (1 round);  , attack nearby creatures as if confused (1 round)",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 78",
+    "usage": " held in 1 hand; ",
+    "savingthrow": " DC 37 Fortitude; ",
+    "onset": " 1d6 minutes; ",
+    "maximumduration": " 6 rounds; ",
+    "stage1": " 4d6 mental damage, ",
+    "stage2": " 6d6 mental damage, attack nearby creatures as if confused (1 round); ",
+    "stage3": " 8d6 mental damage, ",
     "actions": "Single Action",
     "activate": " Interact"
 }, {
@@ -1891,6 +2009,24 @@ const poisons = [{
     "actions": "Single Action",
     "activate": " Interact"
 }, {
+    "name": "Oblivion Essence",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=558",
+    "category": "poison",
+    "level": 19,
+    "price": " 6,500 gp",
+    "bulk": " L",
+    "traits": ["Uncommon", "Alchemical", "Consumable", "Injury", "Poison"],
+    "text": "Created from a daemon\u2019s powdered soul gems or refined from the waters of Abaddon\u2019s rivers, oblivion essence causes victims to rapidly age and decay.  (1 round);  , and slowed 1 (1 round); ",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 79",
+    "usage": " held in 2 hands; ",
+    "savingthrow": " DC 42 Fortitude; ",
+    "maximumduration": " 6 rounds; ",
+    "stage1": " 8d6 poison damage and ",
+    "stage2": " 10d6 poison damage, ",
+    "stage3": " 12d6 poison damage, enfeebled 3, slowed 1 (1 round)",
+    "actions": "Single Action",
+    "activate": " Interact"
+}, {
     "name": "Tears of Death",
     "link": "https://2e.aonprd.com/Equipment.aspx?ID=130",
     "category": "poison",
@@ -1908,6 +2044,24 @@ const poisons = [{
     "stage2": " 25d6 poison damage and paralyzed (1 minute); ",
     "stage3": " 30d6 poison damage and paralyzed (1 minute)",
     "actions": "Single Action",
+    "activate": " Interact"
+}, {
+    "name": "Nightmare Salt",
+    "link": "https://2e.aonprd.com/Equipment.aspx?ID=557",
+    "category": "poison",
+    "level": 20,
+    "price": " 14,000 gp",
+    "bulk": " L",
+    "traits": ["Rare", "Alchemical", "Consumable", "Ingested", "Poison"],
+    "text": "This potent poison consists of crystals whose flavor and appearance mimics edible salt but whose effects are deadly: victims experience periods of waking nightmares that overload the senses and eventually result in death through a combination of shock and exhaustion.  once every 1d4 hours, plus   (1 day);   for 1 minute once every 1d4 hours, plus frightened 3 and fatigued (1 day); ",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 79",
+    "usage": " held in 2 hands; ",
+    "savingthrow": " DC 43 Fortitude; ",
+    "onset": " 1 hour; ",
+    "maximumduration": " 5 days; ",
+    "stage3": " frightened 3, plus confused for 1d4 minutes, once every hour, plus fatigued (1 day); ",
+    "stage4": " death",
+    "actions": "Three Actions",
     "activate": " Interact"
 }]
 

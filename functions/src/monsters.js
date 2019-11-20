@@ -1,5 +1,5 @@
 const monsters = [{
-    "name": "Aasimar Redeemer",
+    "name": "Aasimar",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=333",
     "family": "Planar Scion",
     "level": 5,
@@ -28,7 +28,7 @@ const monsters = [{
         "text": " DC 20; 3rd (1 Focus Point) lay on hands"
     }, {
         "name": "Divine Innate Spells",
-        "text": " DC 20; Cantrips (2nd) light"
+        "text": " DC 20; Cantrips (3rd) light"
     }],
     "skills": ["Athletics", " +11, ", "Diplomacy", " +12, ", "Medicine", " +9, ", "Religion", " +11, ", "Society", " +7"],
     "items": ["crossbow (10 bolts)", ", ", "half plate", ", ", "longsword", ", ", "steel shield", " (Hardness 5, HP 20, BT 10)"],
@@ -68,8 +68,8 @@ const monsters = [{
     "level": 18,
     "alignment": "Neutral",
     "type": "Construct",
-    "size": "Large",
-    "traits": ["Rare", "N", "Large", "Construct", "Golem", "Mindless"],
+    "size": "Huge",
+    "traits": ["Rare", "N", "Huge", "Construct", "Golem", "Mindless"],
     "recallKnowledge": "rcana: DC 43",
     "source": "Bestiary pg. 189",
     "Perception": " +26; darkvision",
@@ -1163,9 +1163,8 @@ const monsters = [{
         "damage": " 2d10+6 piercing plus alchemical injection"
     }, {
         "name": "Ranged",
-        "text": "  bomb +20 (magical, thrown 20 feet), ",
-        "actions": "Single Action",
-        "damage": " see Generate Bomb"
+        "text": "  bomb +20 (magical, thrown 20 feet), Effect see Generate Bomb",
+        "actions": "Single Action"
     }, {
         "name": "Alchemical Injection",
         "text": " When an alchemical golem hits a creature with a syringe Strike, roll 1d6 on the alchemical chambers list to determine the additional effect of the attack. The syringe deals an additional 2d6 damage of the appropriate type (or exposes the target to the sickness effect, as appropriate)."
@@ -1218,6 +1217,57 @@ const monsters = [{
         "text": " (curse, occult, virulent)  Fortitude DC 25;  no ill effect (1 round);  the victim\u2019s skin softens, inflicting drained 1 (1 round);  the victim\u2019s skin transforms into a clear, slimy membrane, inflicting drained 2 until the curse ends; every hour this membrane remains dry, the creature\u2019s drained condition increases by 1 (permanent). A remove disease spell can counteract this curse, but immunity to disease offers no protection against it."
     }],
     "text": "Aboleths form the core of alghollthu society, and while they are the \u201ccommon folk\u201d of their own societies, they see themselves as masters of all others. Unlike their leaders, who mask their actions using magical disguises, aboleths revel in their monstrous forms, appearing as primeval fish with tentacles. Masters of psychic manipulation, they are a species so ancient that they were present in the world when it was young, before the gods had turned their attention to the planet. They see all other life as something they have the right to control, so the idea that potential slaves might have faith in a higher power other than themselves enrages aboleths."
+}, {
+    "name": "Aluum Enforcer",
+    "link": "https://2e.aonprd.com/Monsters.aspx?ID=476",
+    "family": "Aluum",
+    "level": 10,
+    "alignment": "Neutral",
+    "type": "Construct",
+    "size": "Large",
+    "traits": ["Uncommon", "N", "Large", "Construct", "Mindless"],
+    "recallKnowledge": "rcana: DC 29",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 82",
+    "Perception": " +17; darkvision",
+    "Str": " +7, ",
+    "Dex": " +2, ",
+    "Con": " +5, ",
+    "Int": " -5, ",
+    "Wis": " +1, ",
+    "Cha": " -5",
+    "AC": " 30, ",
+    "Fort": " +21, ",
+    "Ref": " +18, ",
+    "Will": " +15",
+    "HP": " 145; ",
+    "Immunities": " bleed, disease, death effects, doomed, drained, fatigued, magic (see below), mental, nonlethal attacks, paralyzed, poison, sickened, unconscious; ",
+    "Resistances": " 10 physical (except adamantine)",
+    "Speed": " 25 feet",
+    "spells": [],
+    "Languages": [],
+    "skills": ["Athletics", " +23"],
+    "items": [],
+    "actions": [{
+        "name": "Attack of Opportunity",
+        "action": "Reaction"
+    }],
+    "attacks": [{
+        "name": "Melee",
+        "text": "  fist +23 (magical), ",
+        "actions": "Single Action",
+        "damage": " 2d10+13 bludgeoning plus paralyzing force"
+    }, {
+        "name": "Aluum Antimagic",
+        "text": " Aluum enforcers are immune to spells and magical abilities, with two exceptions. A negative spell or magical ability grants an aluum enforcer the quickened condition until the end of its next turn instead of its normal effects. A positive spell or ability makes an aluum enforcer slowed 1 until the end of its next turn instead of its normal effects."
+    }, {
+        "name": "Paralyzing Force",
+        "text": " (arcane, incapacitation, necromancy) A creature damaged by the aluum enforcer\u2019s fist Strike must succeed at a DC 27 Fortitude save or become paralyzed for 1 round. On a critical failure, the creature is paralyzed for 1d4 minutes and falls prone."
+    }, {
+        "name": "Soul Shriek",
+        "text": "   (arcane, auditory, evocation, mental, sonic) The aluum enforcer emits a keening wail in a 15-foot cone that deals 9d6 sonic damage (DC 27 basic Fortitude save). A creature that fails its save is stunned 1, or stunned 3 on a critical failure. The aluum can\u2019t use Soul Shriek again for 1d4 rounds.",
+        "actions": "Two Actions"
+    }],
+    "text": "The most common aluum is powered by the bound soul of a loyal city servant, but its creation is among the Pactmasters\u2019 most guarded secrets. There are dozens of dormant aluums spread throughout Katapesh, and only someone wearing an aluum charm can activate and command one of these 14-foot-tall soldiers. The Pactmasters entrust few beyond the Zephyr Guard to carry these charms, and stealing such a charm is one of the most severe crimes in the city."
 }, {
     "name": "Anadi Elder",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=432",
@@ -1742,9 +1792,9 @@ const monsters = [{
         "text": " When the dragon scores a critical hit with a Strike, it recharges its Breath Weapon."
     }, {
         "name": "Water Mastery",
-        "text": " For up to 60 minutes per day, the dragon, along with allied creatures and vessels within 50 feet, can move at double their normal Speed in water."
+        "text": " For up to 120 minutes per day, the dragon, along with allied creatures and vessels within 50 feet, can move at double their normal Speed in water."
     }],
-    "text": "Bronze dragons are among the most common of metallic dragons and the most likely to ally with mortals on worthy quests. However, they are naturally scholarly creatures who would rather remain in their lairs studying esoteric lore than go off on a wild adventure. These aloof and stoic dragons also act as preservationists, guarding storehouses of ancient lore from destruction or perversion. Bronze dragons are principled and protective, but while their silver cousins are quick to crusade for justice, bronze dragons prefer to find an important location worthy of their protection and guard it against any attack or unwelcome intrusion., Bronze dragons\u2019 mastery over water and affinity for electricity means they are a boon to sailors caught in thunderstorms. A bronze dragon\u2019s enemies quickly discover neither cloudy sky nor turbulent sea provides shelter from their wrath. Bronze dragons lair along shorelines, often in partially submerged sea caves., While all dragons keep hoards of treasure, the hoard of a bronze dragon more resembles a vast library\u2014with the shelves kept carefully above the waterline, of course. In addition to their collections of esoteric lore, bronze dragons keep treasures associated with the sea, such as beautiful scrimshaw, flawless pearls, and equipment inlaid with mother-of-pearl and abalone shell."
+    "text": "Bronze dragons are among the most common of metallic dragons and the most likely to ally with mortals on worthy quests. However, they are naturally scholarly creatures who would rather remain in their lairs studying esoteric lore than go off on a wild adventure. These aloof and stoic dragons also act as preservationists, guarding storehouses of ancient lore from destruction or perversion. Bronze dragons are principled and protective, but while their silver cousins are quick to crusade for justice, bronze dragons prefer to find an important location worthy of their protection and guard it against any attack or unwelcome intrusion., Bronze dragons\u2019 mastery over water and affinity for electricity means they are a boon to sailors caught in thunderstorms. A bronze dragon\u2019s enemies quickly discover neither cloudy sky nor turbulent sea provides shelter from their wrath. ,Bronze dragons lair along shorelines, often in partially submerged sea caves. While all dragons keep hoards of treasure, the hoard of a bronze dragon more resembles a vast library\u2014with the shelves kept carefully above the waterline, of course. In addition to their collections of esoteric lore, bronze dragons keep treasures associated with the sea, such as beautiful scrimshaw, flawless pearls, and equipment inlaid with mother-of-pearl and abalone shell."
 }, {
     "name": "Ancient Copper Dragon",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=150",
@@ -1820,7 +1870,7 @@ const monsters = [{
         "actions": "Two Actions"
     }, {
         "name": "Climb Stone",
-        "text": " The dragon's climb speed functions only when climbing stone surfaces"
+        "text": " The dragon's climb speed functions only when climbing stone surfaces."
     }, {
         "name": "Draconic Frenzy",
         "text": "   The dragon makes two claw Strikes and one tail Strike in any order.",
@@ -1860,7 +1910,7 @@ const monsters = [{
     "HP": " 450; ",
     "Immunities": " fire, paralyzed, sleep; ",
     "Weaknesses": " cold 20",
-    "Speed": " 50 feet, fly 180 feet, swim 50 feet",
+    "Speed": " 60 feet, fly 200 feet, swim 60 feet",
     "spells": [{
         "name": "Arcane Innate Spells",
         "text": " DC 41; 10th sunburst; 3rd locate (gems only); 1st detect alignment (evil only)Gold dragon spellcasters tend to cast the following spells. Unlike most dragons, they cast divine spells instead of arcane."
@@ -2171,8 +2221,9 @@ const monsters = [{
         "action": "Reaction"
     }, {
         "name": "Redirect Fire",
-        "text": "  (abjuration, arcane); Trigger A creature within 100 feet casts a fire spell, or a fire spell otherwise comes into effect from a source within 100 feet. Effect The dragon makes all the choices to determine the targets, destination, or other effects of the spell, as though it were the caster.",
-        "action": "Reaction"
+        "text": "  (abjuration, arcane); Trigger A creature within 100 feet casts a fire spell, or a fire spell otherwise comes into effect from a source within 100 feet. ",
+        "action": "Reaction",
+        "Effect": " The dragon makes all the choices to determine the targets, destination, or other effects of the spell, as though it were the caster."
     }],
     "attacks": [{
         "name": "Melee",
@@ -2259,13 +2310,13 @@ const monsters = [{
         "text": " (aura, emotion, fear, mental) 90 feet, DC 40 "
     }, {
         "name": "Cold Aura",
-        "text": " (cold, aura) 15 feet, 3d6 cold damage. The silver dragon can turn this aura on or o as a single action, which has the concentrate trait, and can choose not to affect allies within the aura. "
+        "text": " (cold, aura) 15 feet, 3d6 cold damage. The silver dragon can turn this aura on or off as a single action, which has the concentrate trait, and can choose not to affect allies within the aura. "
     }, {
         "name": "Reflect Spell",
-        "text": "  ",
+        "text": "  spell turning",
         "action": "Reaction",
         "Trigger": " The silver dragon critically succeeds at a saving throw against a spell, or a caster trying to target the dragon critically fails their attack roll. ",
-        "Effect": " The spell is reflected back upon the caster, with the effect of spell turning."
+        "Effect": "."
     }, {
         "name": "Wing Deflection",
         "text": "  ",
@@ -2609,7 +2660,7 @@ const monsters = [{
     "AC": " 26, ",
     "Fort": " +16, ",
     "Ref": " +10, ",
-    "Will": " +16",
+    "Will": " +12",
     "HP": " 90",
     "Speed": " 25 feet",
     "spells": [],
@@ -3153,7 +3204,7 @@ const monsters = [{
     "Speed": " 25 feet",
     "spells": [{
         "name": "Divine Innate Spells",
-        "text": " DC 27, attack +17; 5th telekinetic haul; 4th detect scrying, divine wrath (lawful), lightning bolt (x3); 3rd haste (x3), paralyze; 2nd telekinetic maneuver; 1st true strike (at will); Cantrips (4th) telekinetic projectileOn the planar metropolis of Axis, an axiomite fills one of three roles: construction and maintenance of inevitables, building and repairing Axis\u2019s buildings, and exploring the laws and constants that underlie all of reality."
+        "text": " DC 27, attack +17; 5th telekinetic haul; 4th dispel magic, divine wrath (lawful), lightning bolt (x3); 3rd haste (x3), paralyze; 2nd telekinetic maneuver; 1st true strike (at will); Cantrips (4th) telekinetic projectileOn the planar metropolis of Axis, an axiomite fills one of three roles: construction and maintenance of inevitables, building and repairing Axis\u2019s buildings, and exploring the laws and constants that underlie all of reality."
     }],
     "skills": ["Acrobatics", " +16, ", "Axis Lore", " +17, ", "Crafting", " +21, ", "Diplomacy", " +15, ", "Occultism", " +17, ", "Religion", " +17"],
     "items": ["sterling artisan's tools", ", "],
@@ -3401,7 +3452,7 @@ const monsters = [{
         "action": "Reaction"
     }, {
         "name": "Death Throes",
-        "text": " (death, divine, evocation, fire) When a balor dies, their body explodes in a 100-foot aura of intense demonic flame. All creatures and objects in range take 16d10 fire damage (DC 45 basic Re  ex save). Because the flame is infused with Abyssal energy, creatures in the area apply only half their usual fire resistance. Creatures with immunity to fire use an outcome one degree of success better than what they rolled, instead of gaining the usual benefit of immunity. The bodies of creatures reduced to 0 Hit Points by a balor\u2019s death throes are completely incinerated into fine ash."
+        "text": " (death, divine, evocation, fire) When a balor dies, their body explodes in a 100-foot aura of intense demonic flame. All creatures and objects in range take 16d10 fire damage (DC 45 basic Reflex save). Because the flame is infused with Abyssal energy, creatures in the area apply only half their usual fire resistance. Creatures with immunity to fire use an outcome one degree of success better than what they rolled, instead of gaining the usual benefit of immunity. The bodies of creatures reduced to 0 Hit Points by a balor\u2019s death throes are completely incinerated into fine ash."
     }],
     "attacks": [{
         "name": "Melee",
@@ -3438,10 +3489,10 @@ const monsters = [{
     "family": "\u2014",
     "level": 17,
     "alignment": "Chaotic Evil",
-    "type": "Spirit",
+    "type": "Spirit, Undead",
     "size": "Medium",
     "traits": ["Uncommon", "CE", "Medium", "Incorporeal", "Spirit", "Undead"],
-    "recallKnowledge": "Occultism: DC 38",
+    "recallKnowledge": "Religion: DC 38",
     "source": "Bestiary pg. 34",
     "Perception": " +32; hears heartbeats (imprecise) 60 feet, darkvision",
     "Languages": ["Common", "Elven"],
@@ -3468,7 +3519,7 @@ const monsters = [{
         "name": "Vengeful Spite",
         "text": "  (evocation, occult); ",
         "action": "Reaction",
-        "Trigger": " A foe critically hits the banshee, or the banshee critically fails their save against a foe\u2019s damaging effect.",
+        "Trigger": " A foe critically hits the banshee, or the banshee critically fails their save against a foe\u2019s damaging effect. ",
         "Effect": " The banshee lashes back at their tormentor, dealing 4d10+14 mental damage (DC 38 basic Will save) and applying the effects of terrifying touch based on the results of the same Will save."
     }],
     "attacks": [{
@@ -3526,7 +3577,7 @@ const monsters = [{
         "action": "Reaction"
     }, {
         "name": "Double Opportunity",
-        "text": " A baomal gains an extra reaction each round that it can use only to make an Attack of Opportunity. It must use a diflerent head for each one it attempts, and it can\u2019t make more than one Attack of Opportunity for the same triggering action. "
+        "text": " A baomal gains an extra reaction each round that it can use only to make an Attack of Opportunity. It must use a different head for each one it attempts, and it can\u2019t make more than one Attack of Opportunity for the same triggering action. "
     }, {
         "name": "Psychic Static Aura",
         "text": " (aura, divination, mental, occult) 120 feet. All creatures, except aberrations, that begin their turn in the area take 5d6 mental damage. "
@@ -3706,7 +3757,7 @@ const monsters = [{
     "AC": " 22, ",
     "Fort": " +14, ",
     "Ref": " +8, ",
-    "Will": " +1",
+    "Will": " +11",
     "HP": " 75",
     "Speed": " 20 feet",
     "spells": [],
@@ -4138,9 +4189,8 @@ const monsters = [{
     "actions": [],
     "attacks": [{
         "name": "Melee",
-        "text": "  barbed leg +8 (finesse), ",
-        "actions": "Single Action",
-        "damage": " attach"
+        "text": "  barbed leg +8 (finesse), Effect attach",
+        "actions": "Single Action"
     }, {
         "name": "Attach",
         "text": " When a bloodseeker hits a target larger than itself, its barbed legs attach it to that creature. This is similar to grabbing the creature, but the bloodseeker moves with that creature rather than holding it in place. The bloodseeker is flat-footed while attached. If the bloodseeker is killed or pushed away while attached to a creature it has drained blood from, that creature takes 1 persistent bleed damage. Escaping the attach or removing the bloodseeker in other ways doesn\u2019t cause bleed damage."
@@ -4190,7 +4240,7 @@ const monsters = [{
         "damage": " 2d6+4 piercing"
     }, {
         "name": "Boar Charge",
-        "text": "   The boar Strides twice and then makes a tusk Strike. As long as it moved at least 20 feet, it gains a +2 circumstance bonus to its attack roll. A Medium or smaller creature struck by this attack must succeed at a DC 19 Reflex save or be knocked prone by the force of the blow.",
+        "text": "   The boar Strides twice and then makes a tusk Strike. As long as it moved at least 20 feet, it gains a +2 circumstance bonus to its attack roll.",
         "actions": "Two Actions"
     }],
     "text": "Boars are omnivorous mammals, hunted heavily because their meat is considered a delicacy. Boars are most likely to attack humanoids either in self-defense or during their mating season in the winter months, when the males grow an extra inch of tissue to protect their organs as they fight off rivals. Of course, in some cultures boars are trained to become much more aggressive so they can fill the roles of warbeast and guardian. When such boars escape back into the wild, they can become true terrors of the region."
@@ -4230,12 +4280,11 @@ const monsters = [{
         "damage": " 1d6+3 bludgeoning"
     }, {
         "name": "Melee",
-        "text": "  Tongue +8 (reach 10 feet), ",
-        "actions": "Single Action",
-        "damage": " Tongue Grab"
+        "text": "  Tongue +8 (reach 10 feet), Effect Tongue Grab",
+        "actions": "Single Action"
     }, {
         "name": "Ranged",
-        "text": "  Sling +7 (propulsive, reload 1, range 50 feet), ",
+        "text": "  Sling +7 (propulsive, reload 1, range increment 50 feet), ",
         "actions": "Single Action",
         "damage": " 1d6+1 bludgeoning"
     }, {
@@ -4289,9 +4338,8 @@ const monsters = [{
         "damage": " 1d4+6 bludgeoning"
     }, {
         "name": "Melee",
-        "text": "  Tongue +10 (reach 10 feet), ",
-        "actions": "Single Action",
-        "damage": " Tongue Grab"
+        "text": "  Tongue +10 (reach 10 feet), Effect Tongue Grab",
+        "actions": "Single Action"
     }, {
         "name": "Destructive Croak",
         "text": "   (sonic) The swampseer utters a powerful croak that deals 4d6 sonic damage to any non-boggard within a 15-foot emanation (DC 19 basic Fortitude save); any creature with the frightened condition takes additional sonic damage equal to twice the value of their frightened condition. The boggard can\u2019t use Destructive Croak again for 1d4 rounds",
@@ -4348,9 +4396,8 @@ const monsters = [{
         "damage": " 1d6+6 bludgeoning"
     }, {
         "name": "Melee",
-        "text": "  Tongue +10 (reach 10 feet), ",
-        "actions": "Single Action",
-        "damage": " Tongue Grab"
+        "text": "  Tongue +10 (reach 10 feet), Effect Tongue Grab",
+        "actions": "Single Action"
     }, {
         "name": "Ranged",
         "text": "  Javelin +6 (thrown 30 feet), ",
@@ -4358,7 +4405,7 @@ const monsters = [{
         "damage": " 1d6+4 piercing"
     }, {
         "name": "Ranged",
-        "text": "  Club +10 (thrown 10 feet), ",
+        "text": "  Club +6 (thrown 10 feet), ",
         "actions": "Single Action",
         "damage": " 1d6+6 bludgeoning"
     }, {
@@ -4417,7 +4464,7 @@ const monsters = [{
         "name": "Melee",
         "text": "  Jaws +20, ",
         "actions": "Single Action",
-        "damage": " \"2d12+6 piercing plus brain collector venom\r\""
+        "damage": " 2d12+6 piercing plus brain collector venom\r"
     }, {
         "name": "Melee",
         "text": "  Claw +20 (agile), ",
@@ -4425,7 +4472,7 @@ const monsters = [{
         "damage": " 2d8+6 slashing"
     }, {
         "name": "Stage 3",
-        "text": " (poison) Saving Throw DC 26 Fortitude; 6 rounds; 1d6 poison damage and enfeebled 1 (1 round); 1d6 poison damage, enfeebled 1, and slowed 1 (1 round); 2d6 poison damage, enfeebled 2, and slowed 1 (1 round)"
+        "text": " (poison) Saving Throw DC 26 Fortitude;  6 rounds;  1d6 poison damage and enfeebled 1 (1 round);  1d6 poison damage, enfeebled 1, and slowed 1 (1 round);  2d6 poison damage, enfeebled 2, and slowed 1 (1 round)"
     }, {
         "name": "Collect Brain",
         "text": "   (manipulate) The brain collector collects a brain of a creature that has been dead for no more than 1 minute. It can then use an Interact action to secure the brain in one of its empty brain blisters",
@@ -4726,7 +4773,7 @@ const monsters = [{
         "damage": " 1d8+4 bludgeoning"
     }, {
         "name": "Trigger",
-        "text": "   The bunyip is not fatigued or already in a frenzy.  The bunyip deals bleed damage to a living creature.Effect The bunyip flies into a frenzy that lasts 1 minute. While frenzied, the bunyip gains a +4 status bonus to damage rolls with its jaws, gains 8 temporary HP that go away at the end of the frenzy, and takes a \u20132 penalty to AC.",
+        "text": "   The bunyip is not fatigued or already in a frenzy.  The bunyip deals bleed damage to a living creature. Effect The bunyip flies into a frenzy that lasts 1 minute. While frenzied, the bunyip gains a +4 status bonus to damage rolls with its jaws, gains 8 temporary HP that go away at the end of the frenzy, and takes a \u20132 penalty to AC.",
         "actions": "Reaction"
     }, {
         "name": "Roar",
@@ -4836,8 +4883,8 @@ const monsters = [{
         "actions": "Single Action",
         "damage": " 1d4 piercing plus "
     }, {
-        "name": "Ranged",
-        "text": "Sneak Attack"
+        "name": "Sneak Attack",
+        "text": " The Caligni Creeper deals 1d6 extra precision damage to flat-footed creatures."
     }],
     "text": "The most widespread of the caligni are the mischievous caligni creepers."
 }, {
@@ -4876,7 +4923,7 @@ const monsters = [{
         "text": "  (fortune, manipulate) ",
         "action": "Reaction",
         "Trigger": " An ally within 10 feet of the dancer rolls a saving throw against a mental or illusion effect. ",
-        "Effect": " The target ally can roll the save twice and take the better result. "
+        "Effect": " The target ally can roll the save twice and take the better result."
     }, {
         "name": "Death Flare",
         "text": " (light) When the dancer dies, their body combusts in a flare of white light. All creatures in a 10-foot emanation must succeed at a DC 17 Fortitude save or be dazzled for 1d4 rounds. Calignis that fail this save are also frightened 1. The dancer\u2019s gear and treasure are left in a pile where they died. As this isn\u2019t a magical effect, the light has no effect within magical darkness."
@@ -4912,8 +4959,8 @@ const monsters = [{
     "level": 4,
     "alignment": "Chaotic Neutral",
     "type": "Humanoid",
-    "size": "Small",
-    "traits": ["CN", "Small", "Caligni", "Humanoid"],
+    "size": "Medium",
+    "traits": ["CN", "Medium", "Caligni", "Humanoid"],
     "recallKnowledge": "Society: DC 19",
     "source": "Bestiary pg. 51",
     "Perception": " +10; greater darkvision, light blindness",
@@ -4935,7 +4982,7 @@ const monsters = [{
         "text": " DC 19; 2nd darkness (at will), obscuring mist (at will); Cantrips (2nd) detect magic"
     }],
     "skills": ["Acrobatics", " +13, ", "Athletics", " +8, ", "Stealth", " +13, ", "Thievery", " +11"],
-    "items": ["black smear poison (6 doses)", ", ", "leather armor (6 doses)", ", ", "shortsword (2)"],
+    "items": ["black smear poison (6 doses)", ", ", "leather armor", ", ", "shortsword (2)"],
     "actions": [{
         "name": "Death Flame",
         "text": " (light) When the stalker dies, their body combusts in a flash of white-hot flame. All creatures in a 20-foot burst take 5d6 fire damage (DC 21 basic Reflex save). The stalker\u2019s gear and treasure are unaffected by the flames and are left in a pile where they died."
@@ -4958,6 +5005,67 @@ const monsters = [{
         "text": " The Caligni Stalker deals 1d6 extra precision damage to flat-footed creatures."
     }],
     "text": "Caligni stalkers are often leaders of caligni enclaves."
+}, {
+    "name": "Calikang",
+    "link": "https://2e.aonprd.com/Monsters.aspx?ID=478",
+    "family": "\u2014",
+    "level": 12,
+    "alignment": "Lawful Neutral",
+    "type": "Humanoid",
+    "size": "Large",
+    "traits": ["Uncommon", "LN", "Large", "Humanoid"],
+    "recallKnowledge": "Society: DC 32",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 84",
+    "Perception": " +20; darkvision, ",
+    "Languages": ["Common", "Jotun"],
+    "Str": " +7, ",
+    "Dex": " +4, ",
+    "Con": " +5, ",
+    "Int": " -2, ",
+    "Wis": " +2, ",
+    "Cha": " +4",
+    "Suspended Animation": " () By spending 5 minutes concentrating, the calikang can enter a state of suspended animation, freezing in place and becoming motionless but remaining aware of its surroundings. While in this state, the calikang gains a +4 status bonus to all Fortitude saves, does not age, and is immune to disease, inhaled toxins, poison, starvation, and thirst. The calikang can exit suspended animation as a free action. If it exits this state to attack, the calikang gains a +4 circumstance bonus to its initiative roll.",
+    "Items": "<i>+1 <a href=\"Equipment.aspx?ID=280\" style=\"text-decoration:underline\">striking</a> <a href=\"Weapons.aspx?ID=31\" style=\"text-decoration:underline\">longsword</a></i>",
+    "AC": " 35, ",
+    "Fort": " +23, ",
+    "Ref": " +22, ",
+    "Will": " +20; +1 status to all saves vs. magic",
+    "HP": " 235; ",
+    "Immunities": " electricity",
+    "Speed": " 35 feet",
+    "spells": [{
+        "name": "Arcane Innate Spells",
+        "text": " DC 28; 6th chain lightning; 1st magic weapon (at will); (6th)true seeingLegend holds that an ancient god failed to protect an important treasury, and in shame he severed the fingers from his hand and cast them down upon the world. Calikangs arose from these severed remains, and as penance, they have sought to protect worldly holdings from robberies or invasions ever since."
+    }],
+    "skills": ["Athletics", " +25, ", "Intimidation", " +24"],
+    "items": [" (2)"],
+    "actions": [{
+        "name": "Defensive Stance",
+        "text": " A calikang gains a circumstance bonus to its AC equal to the number of its hands that aren\u2019t wielding weapons, to a maximum of +4 (this bonus is already factored into this calikang\u2019s stats). "
+    }, {
+        "name": "Energy Conversion",
+        "text": " (abjuration, arcane) Whenever the calikang is hit by an electricity spell or rolls a successful save against a spell that deals energy damage, it absorbs the energy. This heals the calikang for an amount of HP equal to quadruple the spell\u2019s level, and recharges its Breath Weapon. A calikang can\u2019t absorb its own spells this way."
+    }],
+    "attacks": [{
+        "name": "Melee",
+        "text": "   +28 (magical, reach 10 feet, versatile P), ",
+        "actions": "Single Action",
+        "damage": " 2d8+15 slashing"
+    }, {
+        "name": "Melee",
+        "text": "  fist +25 (agile, reach 10 feet, nonlethal), ",
+        "actions": "Single Action",
+        "damage": " 3d8+13 bludgeoning"
+    }, {
+        "name": "Breath Weapon",
+        "text": "   (acid, arcane, cold, electricity, evocation, fire, sonic) Frequency once per day; Effect The calikang breathes a blast of energy that deals 13d6 energy damage to all creatures in a 60-foot line (DC 28 basic Reflex save). The calikang can choose the damage type each time: acid, cold, electricity, fire, or sonic. Increase the die size to d8 if the calikang chooses electricity.",
+        "actions": "Two Actions"
+    }, {
+        "name": "Sixfold Flurry",
+        "text": "   The calikang makes up to six fist Strikes. Each Strike can be against a different target. These attacks count toward its multiple attack penalty, which doesn\u2019t increase until after all the attacks are complete.",
+        "actions": "Two Actions"
+    }],
+    "text": "The calikangs are giant blue-skinned, six-armed guardians of ancient tombs and treasuries. Their unique physiologies enable them to absorb and manipulate electrical magic, as well as other energies. A calikang can live for 200 years\u2014though it may further extend its life via suspended animation."
 }, {
     "name": "Carnivorous Crystal",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=464",
@@ -5741,7 +5849,7 @@ const monsters = [{
     "Divine Rituals": " DC 23; ",
     "spells": [{
         "name": "Divine Innate Spells",
-        "text": " DC 23, attack +13; 3rd heal, remove curse, remove disease, remove fear (at will), sound burst; 2nd invisibility (at will, self only), sound burst (at will); 1st ghost sound, inspire competence, inspire courage; (5th)tongues1stangelic messenger"
+        "text": " DC 23, attack +13; 3rd heal, remove curse, remove disease, remove fear (at will), sound burst; 2nd invisibility (at will, self only), sound burst (at will); 1st counter performance (at will); Cantrips (3rd) ghost sound, inspire competence, inspire courage; (5th)tongues1stangelic messenger"
     }],
     "skills": ["Acrobatics", " +12, ", "Diplomacy", " +15, ", "Performance", " +17, ", "Religion", " +14"],
     "items": [],
@@ -5985,9 +6093,10 @@ const monsters = [{
     "family": "Giant",
     "level": 11,
     "alignment": "Neutral",
-    "type": "Giant",
+    "type": "Giant, Humanoid",
     "size": "Huge",
     "traits": ["N", "Huge", "Air", "Giant", "Humanoid"],
+    "recallKnowledge": "Society: DC 28",
     "source": "Bestiary pg. 173",
     "Perception": " +22; low-light vision, scent (imprecise) 30 feet",
     "Languages": ["Common", "Jotun"],
@@ -6084,6 +6193,83 @@ const monsters = [{
         "text": " (incapacitation, primal, transmutation) A peck from a cockatrice hardens the flesh of the creature struck. The target must succeed at a DC 20 Fortitude save or become slowed 1 (or slowed 2 on a critical failure). Further failed saves against calcification increase the slowed condition. Once a creature\u2019s actions are reduced to 0 by calcification, that creature becomes petrified.Every 24 hours after it was petrified, the victim can attempt a DC 20 Fortitude save to recover. On a success, it becomes flesh again, but is slowed 1 for the next 24 hours. On a critical success, the creature recovers and isn\u2019t slowed. On a failure, the creature remains petrified, but can try again in 24 hours. On a critical failure, the petrification is permanent, and the creature can\u2019t attempt any more saves."
     }],
     "text": "Ugly and aggressive, the dread cockatrice stalks garbage pits and hillside dumps in search of prey that it can turn to stone with its petrifying beak and subsequently consume piece by broken piece. Cockatrices resemble gaunt and sickly roosters with bat wings and serpentine tails, and they rarely grow more than 2 feet tall and twice as long. Their absentminded clucking gives smart prey ample warning of their presence, and when angered cockatrices let out a shrill crow like that of a rooster. Their peck releases a magical toxin that causes flesh to quickly calcify, and any creature pecked repeatedly by an irritable cockatrice eventually transforms into a stone statue of itself., The first cockatrice is rumored to have hatched from a rooster\u2019s egg incubated on a dung hill by a toad. Whether or not the rumor is true, the cockatrice\u2019s monstrous appearance certainly doesn\u2019t contradict its strange and filthy origin story, and these creatures are more than capable of propagating on their own. Cockatrices are remarkably fecund and gather in flocks of up to a dozen members. Each flock contains only a few females. The males\u2014which differ in appearance from the females by having warty wattles and gnarled combs\u2014 often fight with each other, with lower-ranking males eventually driven away to find their own lairs or compete among other flocks. Most creatures who run afoul of a solitary cockatrice do so with one of these surly outcasts., Cockatrice lairs are often littered with fragments of statuary from past victims\u2014although these are as likely to be remnants of frogs, lizards, and insects as people. Curiously, weasels and ferrets, who infiltrate cockatrice lairs to steal their eggs, are immune to the creatures\u2019 petrifying bites. For unknown reasons, cockatrices are both terrified of and enraged by conventional roosters, and they are equally likely to flee or attack when confronted by one., Particularly brave (or foolhardy) individuals sometimes keep cockatrices as pets or guard animals. In their natural habitat among plains, forests, and sewers near humanoid settlements, cockatrices are content to live off vermin or scraps of waste, but their greatest pleasure is consuming warm meals of freshly petrified flesh."
+}, {
+    "name": "Cornugon (Horned Devil)",
+    "link": "https://2e.aonprd.com/Monsters.aspx?ID=482",
+    "family": "Devil",
+    "level": 16,
+    "alignment": "Lawful Evil",
+    "type": "Fiend",
+    "size": "Large",
+    "traits": ["LE", "Large", "Devil", "Fiend"],
+    "recallKnowledge": "Religion: DC 35",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 87",
+    "Perception": " +28; greater darkvision",
+    "Languages": ["Celestial", "Common", "Draconic", "Infernal"],
+    "Str": " +8, ",
+    "Dex": " +6, ",
+    "Con": " +7, ",
+    "Int": " +2, ",
+    "Wis": " +6, ",
+    "Cha": " +6",
+    "Items": "<i>+1 <a href=\"Equipment.aspx?ID=280\" style=\"text-decoration:underline\">greater striking</a> <a href=\"Equipment.aspx?ID=307\" style=\"text-decoration:underline\">unholy</a> <a href=\"Weapons.aspx?ID=60\" style=\"text-decoration:underline\">spiked chain</a></i>",
+    "AC": " 38, ",
+    "Fort": " +31, ",
+    "Ref": " +26, ",
+    "Will": " +26; +1 status to all saves vs. magic",
+    "HP": " 300; ",
+    "Immunities": " fire; ",
+    "Resistances": " physical 15 (except silver), poison 15; ",
+    "Weaknesses": " good 15",
+    "Speed": " 25 feet, fly 50 feet",
+    "Divine Rituals": " DC 36; ",
+    "spells": [{
+        "name": "Divine Innate Spells",
+        "text": " DC 36; 7th dispel magic, fireball (x2), lightning bolt (x2); 5th dimension door; 4th dimension door (at will)1stinfernal pactEvery 5,000 years, the mightiest of the cornugons is chosen to rise to the station of malebranche, a form of lesser divinity just below that of the archdevils. Currently 12 members of the malebranche are known to exist, and while each exhibits unique forms of depravity and wickedness, all share the same goal of conquering the Material Plane."
+    }],
+    "skills": ["Acrobatics", " +28, ", "Athletics", " +32, ", "Intimidation", " +30, ", "Religion", " +28, ", "Stealth", " +26, ", "Warfare Lore", " +30"],
+    "items": [],
+    "actions": [{
+        "name": "Circle of Protection",
+        "text": " (abjuration, aura, divine, evil) 10 feet. A constant circle of protection against good is centered on the horned devil. The horned devil can disable or activate this aura as a single action, which has the concentrate trait. "
+    }, {
+        "name": "Commander\u2019s Aura",
+        "text": " (aura, divine, enchantment) 100 feet. Lower-level, allied evil creatures in the aura gain a +1 circumstance bonus to attack rolls, damage rolls, AC, saves, and skill checks. "
+    }, {
+        "name": "Frightful Presence",
+        "text": " (aura, divine, emotion, enchantment, fear, mental) 10 feet, DC 34 "
+    }, {
+        "name": "Attack of Opportunity",
+        "text": " ",
+        "action": "Reaction"
+    }],
+    "attacks": [{
+        "name": "Melee",
+        "text": "   +34 (disarm, evil, finesse, magical, reach 10 feet, trip), ",
+        "actions": "Single Action",
+        "damage": " 3d8+14 slashing plus 1d6 evil and stunning chain"
+    }, {
+        "name": "Melee",
+        "text": "  claw +32 (agile, magical, reach 10 feet), ",
+        "actions": "Single Action",
+        "damage": " 3d10+14 slashing"
+    }, {
+        "name": "Melee",
+        "text": "  tail +32 (magical, reach 10 feet), ",
+        "actions": "Single Action",
+        "damage": " 2d10+14 slashing plus infernal wound"
+    }, {
+        "name": "Requirements",
+        "text": "   The cornugon hit a creature with its spiked chain on its most recent action this turn; Effect The devil pulls the creature 5 feet closer and grabs it with the spiked chain (Escape attempts use the cornugon\u2019s Athletics DC). The creature is automatically freed if the devil makes another spiked chain attack or moves away.",
+        "actions": "Single Action"
+    }, {
+        "name": "Infernal Wound",
+        "text": " (divine, necromancy) A cornugon\u2019s tail Strike deals 4d6 persistent bleed damage. The flat check DC to stop the bleeding starts at 20, and is reduced to 15 only if someone successfully assists with the recovery. The DC to Administer First Aid to a creature with an infernal wound is increased by 10. A spellcaster or item using healing magic on an infernally wounded creature must succeed at a DC 34 counteract check or the magic fails to heal the creature."
+    }, {
+        "name": "Stunning Chain",
+        "text": " If the cornugon critically hits with its spiked chain Strike, the target must succeed at a DC 34 Fortitude save or be stunned for 1 round (1d4 rounds on a critical failure)."
+    }],
+    "text": "The cornugon, or horned devil, is a hulking red fiend with a crown of deadly horns and a body bristling with spines. Cornugons serve as the commanders of Hell\u2019s infernal armies."
 }, {
     "name": "Crag Linnorm",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=284",
@@ -6211,9 +6397,10 @@ const monsters = [{
         "actions": "Single Action",
         "damage": " 2d12+18 piercing plus 2d6 fire and crimson worm venom"
     }, {
-        "name": "body +36",
-        "text": "   (fire, reach 15 feet)",
-        "actions": "Single Action"
+        "name": "Melee",
+        "text": "  body +36 (fire, reach 15 feet), ",
+        "actions": "Single Action",
+        "damage": " 2d10+16 bludgeoning plus 2d6 fire"
     }, {
         "name": "Breath Weapon",
         "text": "   (evocation, fire, primal) The crimson worm breathes a blast of flame in a 60-foot cone that deals 18d6 fire damage to all creatures in the area (DC 41 basic Reflex save). It can\u2019t use Breath Weapon again for 1d4 rounds.",
@@ -6291,14 +6478,72 @@ const monsters = [{
     }],
     "text": "Crocodiles can be found basking on riverbanks, lurking in swamps, or floating in lakes. They are usually are indistinguishable from logs when viewed from afar\u2014at least until they attack. Alligators have similar statistics, but because they often live in more temperate climates, they endure cold temperatures better. Unlike alligators, crocodiles can tolerate salt water. Both are formidable predators that are likely to devour careless adventurers who fail to watch where they step."
 }, {
+    "name": "Crucidaemon (Torture Daemon)",
+    "link": "https://2e.aonprd.com/Monsters.aspx?ID=479",
+    "family": "Daemon",
+    "level": 15,
+    "alignment": "Neutral Evil",
+    "type": "Fiend",
+    "size": "Medium",
+    "traits": ["NE", "Medium", "Daemon", "Fiend"],
+    "recallKnowledge": "Religion: DC 34",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 85",
+    "Perception": " +26; darkvision,  (good only), lifesense 30 feet",
+    "Languages": ["Abyssal", "Draconic", "Infernal"],
+    "Str": " +4, ",
+    "Dex": " +7, ",
+    "Con": " +7, ",
+    "Int": " +3, ",
+    "Wis": " +7, ",
+    "Cha": " +5",
+    "AC": " 38, ",
+    "Fort": " +26, ",
+    "Ref": " +30, ",
+    "Will": " +26; +1 status to all saves vs. magic",
+    "HP": " 225; ",
+    "Immunities": " death effects; ",
+    "Resistances": " physical 10 (except adamantine); ",
+    "Weaknesses": " good 10",
+    "Speed": " 50 feet, ",
+    "Constant": " (good only)",
+    "spells": [{
+        "name": "Divine Innate Spells",
+        "text": " DC 32, attack +28; 7th glyph of warding (x3), paralyze; 4th death knell, fear, invisibility (at will), phantom pain (at will); (2nd)detect alignmentCrucidaemons excel at trapmaking, and they line their lairs or the lairs of their masters with mazes of intricate and deadly traps and enchanted glyphs of warding through which they draw their victims. Perhaps even eerier than the crucidaemon\u2019s methodical nature in trapmaking is its nearly medical interest in the mutilation and crippling of captured foes."
+    }],
+    "skills": ["Acrobatics", " +30, ", "Arcana", " +26, ", "Crafting", " +30, ", "Deception", " +26, ", "Intimidation", " +28, ", "Stealth", " +30, ", "Thievery", " +26"],
+    "items": [],
+    "actions": [{
+        "name": "Trap Dodger",
+        "text": " Crucidaemons are all but impossible to fool with traps. Whenever a crucidaemon rolls a saving throw against a trap hazard, its degree of success is one better than it rolled."
+    }],
+    "attacks": [{
+        "name": "Melee",
+        "text": "  chained dagger +30 (agile, finesse, magical, reach 10 feet, versatile S), persistent",
+        "actions": "Single Action",
+        "damage": " bleed"
+    }, {
+        "name": "Daemonic Trap Making",
+        "text": " (divine) When the crucidaemon casts its innate glyph of warding spell, it can store any arcane or divine spell of an appropriate level in the glyph, even if it can\u2019t otherwise cast the spell."
+    }, {
+        "name": "Flurry of Daggers",
+        "text": "   The crucidaemon makes two chained dagger Strikes against a single target. These attacks count toward the crucidaemon\u2019s multiple attack penalty and its multiple attack penalty doesn\u2019t increase until after both attacks.",
+        "actions": "Single Action"
+    }, {
+        "name": "Manifest Dagger",
+        "text": "   The crucidaemon summons a new chained dagger to replace a destroyed one. A crucidaemon\u2019s daggers can\u2019t be disarmed, and they become non-magical when severed from the daemon or upon the daemon\u2019s death.",
+        "actions": "Single Action"
+    }],
+    "text": "Of all the ways to die, crucidaemons represent perhaps one of the least desirable: death by torture. The fiend\u2019s shapely body, which appears to be sculpted from iron or mithril, belies a sinister wrath and love of inflicting pain. Crucidaemons particularly enjoy inflicting pain with their curved, serrated daggers, which are attached to their bodies via a chain that pierces each wrist., A crucidaemon\u2019s existence is dedicated to subjecting its prey to an eternity of pain and terror. Unlike other daemons, many of which are eager to feed on mortal souls as soon as they can, the crucidaemon takes much greater pleasure in prolonging the agony of its victims. Oftentimes, a crucidaemon will inflict such torment and pain upon its prey that when the end finally comes, the victim tearfully thanks the daemon for the mercy of oblivion. An encounter with a crucidaemon that does not end with its death is far from over\u2014crucidaemons have unequaled patience for those who dare oppose them.\r\n"
+}, {
     "name": "Cyclops",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=86",
     "family": "Cyclops",
     "level": 5,
     "alignment": "Lawful Evil",
-    "type": "Giant",
+    "type": "Giant, Humanoid",
     "size": "Large",
     "traits": ["Uncommon", "LE", "Large", "Giant", "Humanoid"],
+    "recallKnowledge": "Society: DC 22",
     "source": "Bestiary pg. 68",
     "Perception": " +12; low-light vision",
     "Languages": ["Common", "Cyclops", "Jotun"],
@@ -6324,7 +6569,7 @@ const monsters = [{
     }, {
         "name": "Flash of Insight",
         "text": "  (divination, occult, fortune) ",
-        "action": "Three Actions"
+        "action": "Free Action"
     }, {
         "name": "Frequency",
         "text": " once per day; ",
@@ -6705,6 +6950,9 @@ const monsters = [{
     "spells": [{
         "name": "Primal Innate Spells",
         "text": " DC 21; 1st illusory disguise"
+    }, {
+        "name": "Primal Prepared Spells",
+        "text": " DC 24, attack +14; 3rd blindness, meld into stone; 2nd acid arrow, deafness, spider climb; 1st ant haul, shocking grasp, ventriloquism; Cantrips (3rd) acid splash, detect magic, prestidigitation, produce flame, read aura"
     }],
     "skills": ["Crafting", " +9, ", "Diplomacy", " +11, ", "Nature", " +14, ", "Stealth", " +9"],
     "items": ["hide armor", ", ", "pick", ", ", "sling (10 bullets)", ", primal focus, scroll of ", "nondetection"],
@@ -6860,12 +7108,12 @@ const monsters = [{
         "actions": "Single Action",
         "damage": " 1d6+3 slashing plus 1d4 bleed"
     }, {
+        "name": "Darting Attack",
+        "text": "   The deinonychus Strides up to 10 feet and then makes a Strike, or makes a Strike and then Strides up to 10 feet.",
+        "actions": "Single Action"
+    }, {
         "name": "Predator's Advantage",
         "text": " Bleeding creatures are flat-footed to the deinonychus."
-    }, {
-        "name": "The deinonychus Strides up to 10ft and then makes a Strike, or makes a Strike and then Strides up to 10 feet.",
-        "text": "  ",
-        "actions": "Single Action"
     }],
     "text": "Deinonychuses are wily hunters that attack in groups of up to a dozen individuals, ripping apart their prey with sharp talons and powerful jaws. They are lean and muscular, and have two powerful legs and a long tail that helps them maintain balance. Although deinonychuses don\u2019t use their dexterous clawed forelimbs to attack, the dinosaurs can use them to pull aside small barriers. Although some of these dinosaurs have scaly skin, most have thatches of vibrantly colored feathers as well. A deinonychus is about 6 feet tall and weighs about 150 pounds., However, larger deinonychuses exist. These creatures\u2014which stand taller than a human\u2014are called megaraptors."
 }, {
@@ -7032,21 +7280,21 @@ const monsters = [{
     "items": ["aklys"],
     "actions": [{
         "name": "Vulnerable to Sunlight",
-        "text": " As dero stalker but 10 damage."
+        "text": " A dero magister takes 10 damage for every hour they're exposed to sunlight."
     }],
     "attacks": [{
         "name": "Melee",
-        "text": "  aklys +10, ",
+        "text": "  aklys +10 (trip), ",
         "actions": "Single Action",
         "damage": " 1d6+3 bludgeoning"
     }, {
         "name": "Ranged",
-        "text": "  aklys +13, ",
+        "text": "  aklys +13 (ranged trip, tethered, thrown 20 feet), ",
         "actions": "Single Action",
         "damage": " 1d6+3 bludgeoning"
     }, {
         "name": "Cytillesh Stare",
-        "text": "  Frequency once per round; Effect The magister focuses their gaze on a creature they can see within 30 feet. The target is dazzled for 1 round and must succeed at a DC 24 Will saving throw or be confused for 1 round.",
+        "text": "   (concentrate, incapacitation, mental, visual) Frequency once per round; Effect The magister focuses their gaze on a creature they can see within 30 feet. The target is dazzled for 1 round and must succeed at a DC 24 Will saving throw or be confused for 1 round.",
         "actions": "Single Action"
     }],
     "text": "Dero magisters are leaders among dero society. They perform the bulk of the cruel operations and memory-altering procedures inflicted upon their victims."
@@ -7102,7 +7350,7 @@ const monsters = [{
         "damage": " 1d6+2 bludgeoning"
     }, {
         "name": "Ranged",
-        "text": "  aklys +10 (Athletics skill at a distance up to the weapon\u2019s first range increment. The skill check takes a \u20132 circumstance penalty. You can add the weapon\u2019s item bonus to attack rolls as a bonus to the check. As with using a melee weapon to trip, a ranged trip doesn\u2019t deal any damage when used to Trip. This trait usually only appears on a thrown weapon.\">, Interact action to pull the weapon back into your grasp after you have thrown it as a ranged attack or after it has been disarmed (unless it is being held by another creature).\">, thrown 20 feet), ",
+        "text": "  aklys +10 (ranged trip, tethered, thrown 20 feet), ",
         "actions": "Single Action",
         "damage": " 1d6+2 bludgeoning"
     }, {
@@ -7150,7 +7398,7 @@ const monsters = [{
     "items": ["aklys", ", ", "hand crossbow (10 bolts)", ", ", "lethargy poison (5 doses)", ", ", "rope (50 feet)"],
     "actions": [{
         "name": "Vulnerable to Sunlight",
-        "text": " As dero stalker, but 8 damage."
+        "text": " A dero strangler takes 8 damage for every hour they're exposed to sunlight."
     }],
     "attacks": [{
         "name": "Melee",
@@ -7159,7 +7407,7 @@ const monsters = [{
         "damage": " 1d6+6 bludgeoning"
     }, {
         "name": "Ranged",
-        "text": "  aklys +10 (Athletics skill at a distance up to the weapon\u2019s first range increment. The skill check takes a \u20132 circumstance penalty. You can add the weapon\u2019s item bonus to attack rolls as a bonus to the check. As with using a melee weapon to trip, a ranged trip doesn\u2019t deal any damage when used to Trip. This trait usually only appears on a thrown weapon.\">, Interact action to pull the weapon back into your grasp after you have thrown it as a ranged attack or after it has been disarmed (unless it is being held by another creature).\">, thrown 20 feet), ",
+        "text": "  aklys +10 (ranged trip, tethered, thrown 20 feet), ",
         "actions": "Single Action",
         "damage": " 1d6+6 bludgeoning"
     }, {
@@ -7214,7 +7462,7 @@ const monsters = [{
         "name": "Melee",
         "text": "  Fangs +20, ",
         "actions": "Single Action",
-        "damage": " \"2d12+8 piercing plus 1d6 electricity\r\""
+        "damage": " 2d12+8 piercing plus 1d6 electricity\r"
     }, {
         "name": "Melee",
         "text": "  Tail +20 (reach 10 feet), ",
@@ -7490,7 +7738,7 @@ const monsters = [{
     }],
     "attacks": [{
         "name": "Melee",
-        "text": "  scimitar +15 (forceful, reach 10 feet, sweep), ",
+        "text": "  scimitar +15 (forceful +1, reach 10 feet, sweep), ",
         "actions": "Single Action",
         "damage": " 1d6+10 slashing"
     }, {
@@ -7618,7 +7866,7 @@ const monsters = [{
         "text": "  (attack); ",
         "action": "Reaction",
         "Trigger": " The doppelganger is transformed with Change Shape and another creature moves adjacent to it or takes a hostile action against it. ",
-        "Effect": " The doppelganger reverts to its natural form and can make a Strike against the triggering creature. If the creature was unaware the doppelganger was in disguise, that creature is  at-footed against this attack."
+        "Effect": " The doppelganger reverts to its natural form and can make a Strike against the triggering creature. If the creature was unaware the doppelganger was in disguise, that creature is flat-footed against this attack."
     }],
     "attacks": [{
         "name": "Melee",
@@ -7847,9 +8095,8 @@ const monsters = [{
         "damage": " 1d8+8 piercing"
     }, {
         "name": "Ranged",
-        "text": "  web +15 (range increment 30 feet), ",
-        "actions": "Single Action",
-        "damage": " web trap"
+        "text": "  web +15 (range increment 30 feet), Effect web trap",
+        "actions": "Single Action"
     }, {
         "name": "Stage 1",
         "text": " (poison)  DC 23 Fortitude;  6 rounds;  1d8 poison damage and enfeebled 1 (1 round)"
@@ -7939,7 +8186,7 @@ const monsters = [{
     "Int": " +0, ",
     "Wis": " +4, ",
     "Cha": " +1",
-    "AC": " 20 22 with shield raised, ",
+    "AC": " 20 (22 with shield raised), ",
     "Fort": " +8, ",
     "Ref": " +7, ",
     "Will": " +11; +1 status to all saves vs. magic, +2 status to all saves vs. mental",
@@ -7948,7 +8195,7 @@ const monsters = [{
     "Speed": " 30 feet",
     "spells": [{
         "name": "Divine Prepared Spells",
-        "text": " DC 21; 2nd burning hands, harm (x3), silence; 1st bless, command, fear; Cantrips (2nd) detect magic, guidance, know direction, read aura, stabilize"
+        "text": " DC 21; 2nd harm (x3), silence, spiritual weapon; 1st bless, command, fear; Cantrips (2nd) detect magic, guidance, know direction, read aura, stabilize"
     }, {
         "name": "Divine Innate Spells",
         "text": " DC 17; 4th darkness; 3rd dispel magic, levitate (x3); 2nd darkness (at will), faerie fire (at will); 1st command (at will); Cantrips (4th) dancing lights"
@@ -8016,7 +8263,7 @@ const monsters = [{
     }],
     "attacks": [{
         "name": "Melee",
-        "text": "  Shortsword +10 (agile, finesse, versatileS), ",
+        "text": "  Shortsword +10 (agile, finesse, versatile S), ",
         "actions": "Single Action",
         "damage": " 1d6+4 piercing"
     }, {
@@ -8039,7 +8286,7 @@ const monsters = [{
     "family": "Nymph",
     "level": 13,
     "alignment": "Chaotic Good",
-    "type": "Fey",
+    "type": "Fey, Plant",
     "size": "Medium",
     "traits": ["Uncommon", "CG", "Medium", "Fey", "Nymph", "Plant"],
     "recallKnowledge": "Nature: DC 33",
@@ -8107,7 +8354,7 @@ const monsters = [{
     "family": "Nymph",
     "level": 3,
     "alignment": "Chaotic Good",
-    "type": "Fey",
+    "type": "Fey, Plant",
     "size": "Medium",
     "traits": ["CG", "Medium", "Fey", "Nymph", "Plant"],
     "recallKnowledge": "Nature: DC 18",
@@ -8191,9 +8438,8 @@ const monsters = [{
         "damage": " 1d8+1 bludgeoning"
     }, {
         "name": "Ranged",
-        "text": "  Bomb +8 (range increment 30 feet, splash), ",
-        "actions": "Single Action",
-        "damage": " varies by bomb"
+        "text": "  Bomb +8 (range increment 30 feet, splash), Effect varies by bomb",
+        "actions": "Single Action"
     }, {
         "name": "(1st)",
         "text": "  lesser acid flask, lesser alchemist fire, lesser tanglefoot bag"
@@ -8227,7 +8473,7 @@ const monsters = [{
     "Dex": " +3, ",
     "Con": " +3, ",
     "Int": " +0, ",
-    "Wis": " +1, ",
+    "Wis": " +2, ",
     "Cha": " -2",
     "AC": " 17, ",
     "Fort": " +7, ",
@@ -8338,7 +8584,7 @@ const monsters = [{
     "Weaknesses": " good 5",
     "Speed": " 20 feet",
     "spells": [],
-    "skills": ["Acrobatics", " +15, ", "Intimidation", " +17, ", "Stealth", " +13, ", "Survival", " +15"],
+    "skills": ["Athletics", " +15, ", "Intimidation", " +17, ", "Stealth", " +13, ", "Survival", " +15"],
     "items": ["+1 hatchet", ", ", "+1 longsword", ", ", "full plate"],
     "actions": [{
         "name": "Frightful Presence",
@@ -8350,22 +8596,22 @@ const monsters = [{
     }],
     "attacks": [{
         "name": "Melee",
-        "text": "   +18, ",
+        "text": "   +18 (magical, versatile P), ",
         "actions": "Single Action",
         "damage": " 1d8+10 slashing"
     }, {
         "name": "Melee",
-        "text": "   +17, ",
+        "text": "   +17 (agile, sweep), ",
         "actions": "Single Action",
         "damage": " 1d6+10 slashing"
     }, {
         "name": "Melee",
-        "text": "  fist +18, ",
+        "text": "  fist +18 (agile, nonlethal), ",
         "actions": "Single Action",
         "damage": " 1d4+10 bludgeoning"
     }, {
         "name": "Ranged",
-        "text": "   +14, ",
+        "text": "   +14 (agile, thrown 10 feet), ",
         "actions": "Single Action",
         "damage": " 2d8+10 slashing"
     }, {
@@ -8382,7 +8628,63 @@ const monsters = [{
     }],
     "text": "Riding on a horse as black as night, the headless hunter known as the dullahan tracks down and takes the heads of those it deems unfit to continue living. When closing in for the kill, the dullahan first whispers its victim\u2019s name, then swiftly collects its prize, casting a pall of dread upon all who witness the grim execution., A dullahan manifests when a particularly violent warrior is beheaded and the warrior\u2019s soul stubbornly clings to material existence (or is refused entry to the afterlife). Most dullahans return to their former homelands, where they can exact vengeance those they feel wronged them in life (or their living descendants). A dullahan\u2019s concept of justice is swift and merciless, and once it has selected a target, it is unwavering in its cause., Perhaps even more than revenge on the living, a dullahan desires its own rotted head. An individual who wields the head of a dullahan is powerful indeed, for a dullahan will grudgingly serve such a master in the hopes of reclaiming its missing skull. Mighty fiends such as devils command dullahans to harvest souls or lead armies for them, while a mortal might use such an undead warrior to fulfill a personal vendetta. No matter its master\u2019s rank or station, however, a dullahan won\u2019t hesitate to kill its liege and reclaim its head when the opportunity presents itself., Most dullahan lairs are abandoned, overgrown ruins or other dilapidated places where severed heads and other trophies line the walls. Some dullahans, on the other hand, are content to simply commit their foul deeds and leave the remains of their decapitated victims in the streets, strewn among a copse of dead trees, or unceremoniously tossed in a bog hole."
 }, {
-    "name": "Duskwalker Ghost Hunter",
+    "name": "Duneshaker Solifugid",
+    "link": "https://2e.aonprd.com/Monsters.aspx?ID=485",
+    "family": "Solifugid",
+    "level": 18,
+    "alignment": "Neutral",
+    "type": "Animal",
+    "size": "Gargantuan",
+    "traits": ["N", "Gargantuan", "Animal"],
+    "recallKnowledge": "Nature: DC 38",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 89",
+    "Perception": " +30; darkvision, tremorsense (imprecise) 30 feet",
+    "Str": " +9, ",
+    "Dex": " +7, ",
+    "Con": " +7, ",
+    "Int": " -5, ",
+    "Wis": " +4, ",
+    "Cha": " -4",
+    "AC": " 42, ",
+    "Fort": " +31, ",
+    "Ref": " +33, ",
+    "Will": " +28",
+    "HP": " 340",
+    "Speed": " 50 feet, burrow 25 feet, climb 25 feet",
+    "spells": [],
+    "Languages": [],
+    "skills": ["Acrobatics", " +33, ", "Athletics", " +35, ", "Stealth", " +33 (+37 in desert)"],
+    "items": [],
+    "actions": [],
+    "attacks": [{
+        "name": "Melee",
+        "text": "  jaws +35 (reach 10 feet), ",
+        "actions": "Single Action",
+        "damage": " 4d10+17 piercing"
+    }, {
+        "name": "Melee",
+        "text": "  claw +35 (agile, reach 20 feet), ",
+        "actions": "Single Action",
+        "damage": " 3d10+17 slashing"
+    }, {
+        "name": "Earth Shaker",
+        "text": " The first time per turn the duneshaker solifugid moves adjacent to a Large or smaller creature, that creature must succeed at a DC 39 Acrobatics check or fall prone."
+    }, {
+        "name": "Pounce",
+        "text": "   The duneshaker solifugid Strides and makes a Strike at the end of that movement. If the duneshaker solifugid began this action hidden, it remains hidden until after this ability\u2019s Strike.",
+        "actions": "Single Action"
+    }, {
+        "name": "Rend",
+        "text": "   claw",
+        "actions": "Single Action"
+    }, {
+        "name": "Venom Spray",
+        "text": "   (poison) The duneshaker solifugid spews toxic barbs at all creatures in a 30-foot cone. Each creature within the cone takes 10d6 poison damage (DC 39 basic Fortitude save). A creature that fails is blinded for 1d6 rounds (or permanently on a critical failure). The duneshaker solifugid can\u2019t use Venom Spray again for 1d4 rounds.",
+        "actions": "Two Actions"
+    }],
+    "text": "The largest solifugids, duneshakers, literally make the terrain around them tremble."
+}, {
+    "name": "Duskwalker",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=332",
     "family": "Planar Scion",
     "level": 4,
@@ -8625,7 +8927,7 @@ const monsters = [{
         "name": "Frequency",
         "text": " once per day. ",
         "Trigger": " The elananx takes damage from a hostile source. ",
-        "Effect": " The elananx disperses into a cloud of smoke and cinders, filling its space and a 20- foot emanation. While in this form, the elananx can\u2019t be attacked or targeted, and it doesn\u2019t take up space. Anything inside this cloud is concealed, and any creature ending its turn there takes 2d6 fire damage. At the start of its turn, the elananx returns to its normal form in any square the cloud covered. If the elananx Strikes a creature using its first action after returning to its normal form, the target is flatfooted and the Strike deals an extra 1d6 fire damage."
+        "Effect": " The elananx disperses into a cloud of smoke and cinders, filling its space and a 20-foot emanation. While in this form, the elananx can\u2019t be attacked or targeted, and it doesn\u2019t take up space. Anything inside this cloud is concealed, and any creature ending its turn there takes 2d6 fire damage. At the start of its turn, the elananx returns to its normal form in any square the cloud covered. If the elananx Strikes a creature using its first action after returning to its normal form, the target is flat-footed and the Strike deals an extra 1d6 fire damage."
     }],
     "attacks": [{
         "name": "Melee",
@@ -8726,8 +9028,10 @@ const monsters = [{
         "text": " (aura, earth, primal, transmutation) 10 feet. As stone mauler, but 2d8 piercing. "
     }, {
         "name": "Crumble",
-        "text": "  As living landslide.",
-        "action": "Reaction"
+        "text": "  ",
+        "action": "Reaction",
+        "Trigger": " The living landslide takes damage from a hostile source while atop rock or earth. ",
+        "Effect": " The living landslide crumbles into the ground, Burrowing down 10 feet. This Burrowing does not trigger reactions. The living landslide can\u2019t Crumble again for 1d4 rounds."
     }],
     "attacks": [{
         "name": "Melee",
@@ -8785,7 +9089,7 @@ const monsters = [{
         "text": "  ",
         "action": "Reaction",
         "Trigger": " The elemental hurricane takes damage from a hostile action. ",
-        "Effect": " The elemental hurricane disperses. Until the end of the current turn, it can\u2019t be attacked or targeted, doesn\u2019t take up space, and any auras or emanations it has are suppressed. At the end of the turn, the elemental hurricane reforms in any space in which it can flt within 100 feet of where it dispersed and any auras or emanations it has are restored as long as their duration didn\u2019t run out while it was dispersed."
+        "Effect": " The elemental hurricane disperses. Until the end of the current turn, it can\u2019t be attacked or targeted, doesn\u2019t take up space, and any auras or emanations it has are suppressed. At the end of the turn, the elemental hurricane reforms in any space in which it can fit within 100 feet of where it dispersed and any auras or emanations it has are restored as long as their duration didn\u2019t run out while it was dispersed."
     }],
     "attacks": [{
         "name": "Melee",
@@ -8949,9 +9253,8 @@ const monsters = [{
         "damage": " 3d8+9 piercing"
     }, {
         "name": "Melee",
-        "text": "  trunk +18 (reach 15 feet), ",
-        "actions": "Single Action",
-        "damage": " grabbing trunk"
+        "text": "  trunk +18 (reach 15 feet), Effect grabbing trunk",
+        "actions": "Single Action"
     }, {
         "name": "Melee",
         "text": "  foot +16 (reach 10 feet), ",
@@ -9011,9 +9314,8 @@ const monsters = [{
         "damage": " 1d4+8 piercing"
     }, {
         "name": "Ranged",
-        "text": "  blowgun +17 (agile, nonlethal, range increment 20 feet, reload 1), ",
-        "actions": "Single Action",
-        "damage": " 1 piercing plus 2d4 persistent poison"
+        "text": "  blowgun +17 (agile, nonlethal, range increment 20 feet, reload 1), Effect 1 piercing plus 2d4 persistent poison",
+        "actions": "Single Action"
     }, {
         "name": "Ranged",
         "text": "   +18 (agile, magical, thrown 10 feet, versatile S), ",
@@ -9129,15 +9431,14 @@ const monsters = [{
         "damage": " 2d8+4 piercing plus 1d6 evil and 1d6 fire"
     }, {
         "name": "Ranged",
-        "text": "  rope +19 (magical, range increment 30 feet), ",
-        "actions": "Single Action",
-        "damage": " rope snare"
+        "text": "  rope +19 (magical, range increment 30 feet), Effect rope snare",
+        "actions": "Single Action"
     }, {
         "name": "Flames of Fury",
         "text": " Any weapon an erinys holds gains the effects of a flaming rune while they hold it."
     }, {
         "name": "Furious Fusillade",
-        "text": "   The erinys hovers in place if they are flying and fires one arrow at any number of creatures in a 30-foot cone. Each attack is rolled separately. This counts as one attack for the purpose of the erinys\u0081fs multiple attack penalty.",
+        "text": "   The erinys hovers in place if they are flying and fires one arrow at any number of creatures in a 30-foot cone. Each attack is rolled separately. This counts as one attack for the purpose of the erinys's multiple attack penalty.",
         "actions": "Three Actions"
     }, {
         "name": "Rope Snare",
@@ -9150,10 +9451,10 @@ const monsters = [{
     "family": "\u2014",
     "level": 5,
     "alignment": "Neutral",
-    "type": "Beast",
+    "type": "Beast, Ethereal",
     "size": "Large",
     "traits": ["N", "Large", "Beast", "Ethereal"],
-    "recallKnowledge": "rcana: DC 20",
+    "recallKnowledge": "Occultism: DC 20",
     "source": "Bestiary pg. 155",
     "Perception": " +12; darkvision",
     "Str": " +5, ",
@@ -9180,9 +9481,8 @@ const monsters = [{
         "damage": " 1d10+7 piercing plus ether spider venom and Grab"
     }, {
         "name": "Ranged",
-        "text": "  web +14 (magical, range increment 30 feet), ",
-        "actions": "Single Action",
-        "damage": " ethereal web trap"
+        "text": "  web +14 (magical, range increment 30 feet), Effect ethereal web trap",
+        "actions": "Single Action"
     }, {
         "name": "Stage 3",
         "text": " (poison)  DC 22 Fortitude;  6 rounds;  1d6 poison damage and clumsy 1 (1 round);  2d6 poison damage, clumsy 2 and slowed 1 (1 round);  3d6 poison damage, clumsy 3 and slowed 2 (1 round)"
@@ -9205,9 +9505,10 @@ const monsters = [{
     "family": "\u2014",
     "level": 6,
     "alignment": "Chaotic Evil",
-    "type": "Giant",
+    "type": "Giant, Humanoid",
     "size": "Large",
     "traits": ["CE", "Large", "Giant", "Humanoid"],
+    "recallKnowledge": "Society: DC 22",
     "source": "Bestiary pg. 156",
     "Perception": " +16; low-light vision",
     "Languages": ["Goblin", "Jotun", "Orcish"],
@@ -9415,9 +9716,10 @@ const monsters = [{
     "family": "Giant",
     "level": 10,
     "alignment": "Lawful Evil",
-    "type": "Giant",
+    "type": "Giant, Humanoid",
     "size": "Large",
     "traits": ["LE", "Large", "Fire", "Giant", "Humanoid"],
+    "recallKnowledge": "Society: DC 27",
     "source": "Bestiary pg. 172",
     "Perception": " +18; low-light vision",
     "Languages": ["Common", "Jotun"],
@@ -9496,7 +9798,7 @@ const monsters = [{
     "Fort": " +3, ",
     "Ref": " +9, ",
     "Will": " +7",
-    "HP": " 16 (fast healing 2 (while touching  re)); ",
+    "HP": " 16 (fast healing 2 (while touching fire)); ",
     "Immunities": " bleed, fire, paralyzed, poison, sleep; ",
     "Weaknesses": " cold 3",
     "Speed": " 20 feet, fly 25 feet",
@@ -9563,7 +9865,7 @@ const monsters = [{
         "actions": "Single Action",
         "damage": " 2d8+11 fire plus 2d8 persistent fire"
     }, {
-        "name": "Melee",
+        "name": "Ranged",
         "text": "  fire mote +20 (range increment 60 feet), ",
         "actions": "Single Action",
         "damage": " 2d8+6 fire"
@@ -9606,7 +9908,8 @@ const monsters = [{
     "items": [],
     "actions": [{
         "name": "Attack of Opportunity",
-        "text": " [reaction] Fangs only."
+        "text": "  Fangs only.",
+        "action": "Reaction"
     }],
     "attacks": [{
         "name": "Melee",
@@ -9650,7 +9953,7 @@ const monsters = [{
     "Int": " -5, ",
     "Wis": " +1, ",
     "Cha": " -2",
-    "AC": " 13, ",
+    "AC": " 16, ",
     "Fort": " +5, ",
     "Ref": " +8, ",
     "Will": " +4",
@@ -9765,10 +10068,10 @@ const monsters = [{
     "items": ["warhammer", ", "],
     "actions": [{
         "name": "Eternal Damnation",
-        "text": " (divine, necromancy) As long as its  remains intact, a forge-spurned can\u0081ft be truly destroyed. It rises again fully healed at the next sundown, even if its physical body was destroyed. "
+        "text": " (divine, necromancy) As long as its  remains intact, a forge-spurned can't be truly destroyed. It rises again fully healed at the next sundown, even if its physical body was destroyed. "
     }, {
         "name": "Searing Heat",
-        "text": " (fire) A creature that touches a forge.spurned (including by Grappling it or hitting it with an unarmed attack) takes 2d6 fire damage with a DC 21 basic Reflex save."
+        "text": " (fire) A creature that touches a forge-spurned (including by Grappling it or hitting it with an unarmed attack) takes 2d6 fire damage with a DC 21 basic Reflex save."
     }],
     "attacks": [{
         "name": "Melee",
@@ -9864,9 +10167,10 @@ const monsters = [{
     "family": "Giant",
     "level": 9,
     "alignment": "Chaotic Evil",
-    "type": "Giant",
+    "type": "Giant, Humanoid",
     "size": "Large",
     "traits": ["CE", "Large", "Cold", "Giant", "Humanoid"],
+    "recallKnowledge": "Society: DC 26",
     "source": "Bestiary pg. 171",
     "Perception": " +17; low-light vision",
     "Languages": ["Common", "Jotun"],
@@ -10150,8 +10454,8 @@ const monsters = [{
     "level": 3,
     "alignment": "Neutral",
     "type": "Ooze",
-    "size": "Medium",
-    "traits": ["N", "Medium", "Mindless", "Ooze"],
+    "size": "Large",
+    "traits": ["N", "Large", "Mindless", "Ooze"],
     "recallKnowledge": "Occultism: DC 18",
     "source": "Bestiary pg. 254",
     "Perception": " +5; motion sense 60 feet, no vision",
@@ -10187,7 +10491,7 @@ const monsters = [{
         "actions": "Two Actions"
     }, {
         "name": "Paralysis",
-        "text": " (incapacitation) A creature Engulfed by the cube or hit by its attack is paralyzed unless it succeeds at a DC 20 Fortitude save. A victim can attempt a new save to recover at the end of each of its turn."
+        "text": " (incapacitation) A creature Engulfed by the cube or hit by its attack is paralyzed unless it succeeds at a DC 20 Fortitude save. A victim can attempt a new save to recover at the end of each of its turns."
     }, {
         "name": "Weak Acid",
         "text": " A gelatinous cube's acid damages only organic material\u2014not metal, stone, or other inorganic substances."
@@ -10360,7 +10664,7 @@ const monsters = [{
     "items": [],
     "actions": [{
         "name": "Stench",
-        "text": " (aura, olfactory) 10 feet. See Ghast Abilities; DC 16."
+        "text": " (aura, olfactory) 10 feet. A creature entering the aura or starting its turn in the aura must succeed at a DC 16 Fortitude save or become sickened 1 (plus slowed 1 as long as it's sickened on a critical failure). While within the aura, the creature takes a \u20132 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute."
     }],
     "attacks": [{
         "name": "Melee",
@@ -10394,10 +10698,10 @@ const monsters = [{
     "family": "Ghost",
     "level": 4,
     "alignment": "Chaotic Evil",
-    "type": "Spirit",
+    "type": "Spirit, Undead",
     "size": "Medium",
     "traits": ["CE", "Medium", "Ghost", "Incorporeal", "Spirit", "Undead"],
-    "recallKnowledge": "Occultism: DC 19",
+    "recallKnowledge": "Religion: DC 19",
     "source": "Bestiary pg. 167",
     "Perception": " +10; darkvision",
     "Str": " -5, ",
@@ -10420,7 +10724,7 @@ const monsters = [{
     "items": [],
     "actions": [{
         "name": "Rejuvenation",
-        "text": " (divine, necromancy) Setting right the injustice that led to the commoners death allows it to move on to the afterlife."
+        "text": " (divine, necromancy) Setting right the injustice that led to the commoner's death allows it to move on to the afterlife."
     }],
     "attacks": [{
         "name": "Melee",
@@ -10439,10 +10743,10 @@ const monsters = [{
     "family": "Ghost",
     "level": 10,
     "alignment": "Chaotic Evil",
-    "type": "Spirit",
+    "type": "Spirit, Undead",
     "size": "Medium",
     "traits": ["CE", "Medium", "Ghost", "Incorporeal", "Spirit", "Undead"],
-    "recallKnowledge": "Occultism: DC 27",
+    "recallKnowledge": "Religion: DC 27",
     "source": "Bestiary pg. 167",
     "Perception": " +17; darkvision",
     "Languages": ["Common", "Draconic"],
@@ -10740,7 +11044,7 @@ const monsters = [{
         "name": "Melee",
         "text": "  mandibles +6 (finesse), ",
         "actions": "Single Action",
-        "damage": " 1 piercing plus giant centipede venom"
+        "damage": " 1d4-1 piercing plus giant centipede venom"
     }, {
         "name": "Stage 3",
         "text": " (poison)  DC 14 Fortitude;  6 rounds;  1d6 poison damage (1 round);  1d8 poison damage and flat-footed (1 round)  1d12 poison damage, clumsy 1, and flat-footed (1 round)"
@@ -11246,6 +11550,55 @@ const monsters = [{
     }],
     "text": "These massive, terrifying arachnids are typically 8 feet long from head to the base of the tail. Giant scorpions are the favored pack animals and war beasts of various desert-dwelling monsters, particularly gnolls. They are most commonly encountered in the wild, however. There they lair in mountainside caves or burrow beneath shallow layers of sand where they lie in wait for prey to wander near. Sleek, pallid subterranean scorpions also exist, as do still larger species."
 }, {
+    "name": "Giant Solifugid",
+    "link": "https://2e.aonprd.com/Monsters.aspx?ID=484",
+    "family": "Solifugid",
+    "level": 1,
+    "alignment": "Neutral",
+    "type": "Animal",
+    "size": "Medium",
+    "traits": ["N", "Medium", "Animal"],
+    "recallKnowledge": "Nature: DC 15",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 89",
+    "Perception": " +6; darkvision",
+    "Str": " +1, ",
+    "Dex": " +3, ",
+    "Con": " +3, ",
+    "Int": " -5, ",
+    "Wis": " +1, ",
+    "Cha": " -4",
+    "AC": " 16, ",
+    "Fort": " +6, ",
+    "Ref": " +8, ",
+    "Will": " +4",
+    "HP": " 20",
+    "Speed": " 35 feet, climb 25 feet",
+    "spells": [],
+    "Languages": [],
+    "skills": ["Acrobatics", " +8, ", "Athletics", " +6, ", "Stealth", " +6 (+10 in desert)"],
+    "items": [],
+    "actions": [],
+    "attacks": [{
+        "name": "Melee",
+        "text": "  jaws +8, ",
+        "actions": "Single Action",
+        "damage": " 1d10+1 piercing"
+    }, {
+        "name": "Melee",
+        "text": "  claw +8 (agile, reach 10 feet), ",
+        "actions": "Single Action",
+        "damage": " 1d8+1 slashing"
+    }, {
+        "name": "Pounce",
+        "text": "   The giant solifugid Strides and makes a Strike at the end of that movement. If the giant solifugid began this action hidden, it remains hidden until after this ability\u2019s Strike.",
+        "actions": "Single Action"
+    }, {
+        "name": "Rend",
+        "text": "   claw",
+        "actions": "Single Action"
+    }],
+    "text": "The smallest of giant solifugids are still large enough to harry desert traders and their mounts."
+}, {
     "name": "Giant Stag Beetle",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=50",
     "family": "Beetle",
@@ -11381,8 +11734,8 @@ const monsters = [{
         "text": "   The giant viper uses an action to coil itself, increasing its reach with its fangs from 5 to 10 feet. After the giant viper Strikes with its fangs, it becomes uncoiled.",
         "actions": "Single Action"
     }, {
-        "name": "Maximum Duration 6 rounds; Stage 1 1d6 poison (1 round); Stage 2 1d6 poison and drained 1.",
-        "text": " (poison)  DC 17 Fortitude; "
+        "name": "Stage 2",
+        "text": " (poison)  DC 17 Fortitude;  6 rounds;  1d6 poison (1 round);  1d6 poison and drained 1."
     }],
     "text": "The giant viper\u2019s fangs are a frightening sight, with injection tubes as long as daggers. The sheer amount of venom injected by a giant viper can cause severe blood clotting and leave a victim utterly drained of vitality."
 }, {
@@ -11708,8 +12061,8 @@ const monsters = [{
     "level": 2,
     "alignment": "Chaotic Evil",
     "type": "Humanoid",
-    "size": "Large",
-    "traits": ["CE", "Large", "Gnoll", "Humanoid"],
+    "size": "Medium",
+    "traits": ["CE", "Medium", "Gnoll", "Humanoid"],
     "recallKnowledge": "Society: DC 16",
     "source": "Bestiary pg. 178",
     "Perception": " +7; darkvision",
@@ -11780,7 +12133,7 @@ const monsters = [{
     "Speed": " 25 feet",
     "spells": [],
     "skills": ["Athletics", " +13, ", "Intimidation", " +9, ", "Stealth", " +11, ", "Survival", " +10"],
-    "items": ["hide armor", ", ", "scimitar", ", ", "shortbow (20 arrows)"],
+    "items": ["composite shortbow (20 arrows)", ", ", "hide armor", ", ", "scimitar"],
     "actions": [{
         "name": "Attack of Opportunity",
         "text": " ",
@@ -11846,7 +12199,7 @@ const monsters = [{
         "text": "  ",
         "action": "Reaction",
         "Trigger": " A goblin ally ends a move action adjacent to the commando. ",
-        "Effect": " The goblin warrior Steps."
+        "Effect": " The goblin commando Steps."
     }],
     "attacks": [{
         "name": "Melee",
@@ -11894,7 +12247,10 @@ const monsters = [{
         "action": "Reaction"
     }, {
         "name": "Irritating Dander",
-        "text": " A creature that hits the goblin dog with an unarmed attack, tries to Grapple it, or otherwise touches it is exposed to goblin pox. Juke  ",
+        "text": " A creature that hits the goblin dog with an unarmed attack, tries to Grapple it, or otherwise touches it is exposed to goblin pox. "
+    }, {
+        "name": "Juke",
+        "text": "  ",
         "action": "Reaction"
     }, {
         "name": "Requirement",
@@ -11952,7 +12308,7 @@ const monsters = [{
         "text": "  ",
         "action": "Reaction",
         "Trigger": " A goblin ally ends a move action adjacent to the pyro. ",
-        "Effect": " The goblin warrior Steps."
+        "Effect": " The goblin pyro Steps."
     }],
     "attacks": [{
         "name": "Melee",
@@ -11997,7 +12353,7 @@ const monsters = [{
         "text": "  ",
         "action": "Reaction",
         "Trigger": " A goblin ally ends a move action adjacent to the war chanter. ",
-        "Effect": " The goblin warrior Steps."
+        "Effect": " The goblin war chanter Steps."
     }],
     "attacks": [{
         "name": "Melee",
@@ -12167,9 +12523,8 @@ const monsters = [{
         "damage": " 2d12+12 piercing plus goliath spider venom"
     }, {
         "name": "Ranged",
-        "text": "  web +22 (range increment 60 feet), ",
-        "actions": "Single Action",
-        "damage": " web trap"
+        "text": "  web +22 (range increment 60 feet), Effect web trap",
+        "actions": "Single Action"
     }, {
         "name": "Descend on a Web",
         "text": "   (move) The goliath spider moves straight down up to 120 feet, suspended by a web line. It can hang from the web or drop off. The distance it Descends on a Web doesn\u2019t count for falling damage. A creature that successfully Strikes the web (AC 20, Hardness 5, 20 HP) severs it, causing the spider to fall.",
@@ -12454,9 +12809,10 @@ const monsters = [{
     "family": "Cyclops",
     "level": 12,
     "alignment": "Chaotic Evil",
-    "type": "Giant",
+    "type": "Giant, Humanoid",
     "size": "Huge",
     "traits": ["Uncommon", "CE", "Huge", "Giant", "Humanoid", "Mutant"],
+    "recallKnowledge": "Society: DC 32",
     "source": "Bestiary pg. 69",
     "Perception": " +22; low-light vision",
     "Languages": ["Common", "Cyclops", "Jotun"],
@@ -12635,10 +12991,10 @@ const monsters = [{
     "family": "Nightmare",
     "level": 11,
     "alignment": "Neutral Evil",
-    "type": "Beast",
+    "type": "Beast, Fiend",
     "size": "Huge",
     "traits": ["NE", "Huge", "Beast", "Fiend"],
-    "recallKnowledge": "rcana: DC 28",
+    "recallKnowledge": "Religion: DC 28",
     "source": "Bestiary pg. 244",
     "Perception": " +22; darkvision",
     "Languages": ["Abyssal", "Daemonic", "Infernal"],
@@ -12750,7 +13106,7 @@ const monsters = [{
     "recallKnowledge": "Society: DC 19",
     "source": "Bestiary pg. 201",
     "Perception": " +10; darkvision",
-    "Languages": ["Aklo", "Common", "Jotun"],
+    "Languages": ["Aklo", "Common", "Jotun", "tongues"],
     "Str": " +5, ",
     "Dex": " +3, ",
     "Con": " +3, ",
@@ -12882,7 +13238,7 @@ const monsters = [{
         "name": "Primal Innate Spells",
         "text": " DC 18; 2nd glitterdust, invisibility (self only); 1st illusory disguise; Cantrips (2nd) ghost sound"
     }],
-    "skills": ["Acrobatics", " +7, ", "Athletics", " +2 (6 to High Jump or Long Jump)"],
+    "skills": ["Acrobatics", " +7, ", "Athletics", " +2 (6 to High Jump or Long Jump), ", "Performance", " +7, ", "Stealth", " +7"],
     "items": [],
     "actions": [],
     "attacks": [{
@@ -13226,7 +13582,7 @@ const monsters = [{
     "Con": " +4, ",
     "Int": " -5, ",
     "Wis": " +0, ",
-    "Cha": " +3",
+    "Cha": " -3",
     "AC": " 19, ",
     "Fort": " +11, ",
     "Ref": " +5, ",
@@ -13243,7 +13599,7 @@ const monsters = [{
         "text": " (acid, poison) When the grothlut is reduced to 0 Hit Points, its digestive organs rupture, unleashing alchemical acid and poison upon all creatures in a 30-foot emanation. Each creature in the area must succeed at a DC 19 Fortitude save or take 2d6 acid damage and become sickened 1 (double damage and sickened 2 on a critical failure). "
     }, {
         "name": "Piteous Moan",
-        "text": " (aura, auditory, emotion, mental, occult) 60feet. Each non-grothlut creature that enters or starts its turn within the area must succeed at a DC 17 Will saving throw or become sickened 1 (sickened 2 on a critical failure). The creature then becomes temporarily immune for 1 minute. The grothlut can activate or deactivate the aura by using a single free action that has the concentrate trait. A grothlut usually does not begin moaning until it senses the presence of a non-grothlut creature, and it usually stops once it doesn\u2019t sense any more such creatures."
+        "text": " (aura, auditory, emotion, mental, occult) 60 feet. Each non-grothlut creature that enters or starts its turn within the area must succeed at a DC 17 Will saving throw or become sickened 1 (sickened 2 on a critical failure). The creature then becomes temporarily immune for 1 minute. The grothlut can activate or deactivate the aura by using a single free action that has the concentrate trait. A grothlut usually does not begin moaning until it senses the presence of a non-grothlut creature, and it usually stops once it doesn\u2019t sense any more such creatures."
     }],
     "attacks": [{
         "name": "Melee",
@@ -13335,9 +13691,8 @@ const monsters = [{
         "damage": " 2d8+8 piercing plus guardian naga venom"
     }, {
         "name": "Ranged",
-        "text": "  spit +22 (agile, poison, range increment 30 feet), ",
-        "actions": "Single Action",
-        "damage": " guardian naga venom"
+        "text": "  spit +22 (agile, poison, range increment 30 feet), Effect guardian naga venom",
+        "actions": "Single Action"
     }, {
         "name": "Stage 2",
         "text": " (poison)  DC 29 Fortitude;  6 rounds;  3d6 poison (1 round);  3d6 poison and drained 1 (1 round)"
@@ -13523,10 +13878,10 @@ const monsters = [{
     "family": "Hell Hound",
     "level": 3,
     "alignment": "Lawful Evil",
-    "type": "Beast",
+    "type": "Beast, Fiend",
     "size": "Medium",
     "traits": ["LE", "Medium", "Beast", "Fiend", "Fire"],
-    "recallKnowledge": "rcana: DC 18",
+    "recallKnowledge": "Religion: DC 18",
     "source": "Bestiary pg. 205",
     "Perception": " +9; darkvision, scent (imprecise) 60 feet",
     "Languages": ["Infernal"],
@@ -13609,9 +13964,10 @@ const monsters = [{
     "family": "Giant",
     "level": 7,
     "alignment": "Chaotic Evil",
-    "type": "Giant",
+    "type": "Giant, Humanoid",
     "size": "Large",
     "traits": ["CE", "Large", "Earth", "Giant", "Humanoid"],
+    "recallKnowledge": "Society: DC 23",
     "source": "Bestiary pg. 170",
     "Perception": " +13; low-light vision",
     "Languages": ["Common", "Jotun"],
@@ -13668,8 +14024,8 @@ const monsters = [{
     "alignment": "Neutral",
     "type": "Animal",
     "size": "Huge",
-    "traits": ["N", "Huge", "Animal"],
-    "recallKnowledge": "Nature: DC 24",
+    "traits": ["Uncommon", "N", "Huge", "Animal"],
+    "recallKnowledge": "Nature: DC 26",
     "source": "Bestiary pg. 22",
     "Perception": " +16; darkvision, tremorsense (imprecise) 90 feet",
     "Str": " +6, ",
@@ -14017,9 +14373,8 @@ const monsters = [{
         "damage": " 1d6+2 piercing plus hunting spider venom"
     }, {
         "name": "Ranged",
-        "text": "  web +7 (range increment 30 feet), ",
-        "actions": "Single Action",
-        "damage": " web trap"
+        "text": "  web +7 (range increment 30 feet), Effect web trap",
+        "actions": "Single Action"
     }, {
         "name": "Descend on a Web",
         "text": "   (move) The hunting spider moves straight down up to 40 feet, suspended by a web line. It can hang from the web or drop off. The distance it Descends on a Web doesn\u2019t count for falling damage. A creature that successfully Strikes the web (AC 20, Hardness 3, 5 HP) severs it, causing the spider to fall.",
@@ -14100,7 +14455,7 @@ const monsters = [{
     "Fort": " +15, ",
     "Ref": " +12, ",
     "Will": " +10",
-    "HP": " 90 ((body), hydra regeneration",
+    "HP": " 90 ((body), hydra regeneration)",
     "Speed": " 25 feet, swim 25 feet",
     "spells": [],
     "Languages": [],
@@ -14108,7 +14463,7 @@ const monsters = [{
     "items": [],
     "actions": [{
         "name": "HP",
-        "text": " 15 (head), head regrowth); ",
+        "text": " 15 ((head), head regrowth); ",
         "Immunities": " area damage; ",
         "Weaknesses": " slashing 5"
     }, {
@@ -14254,6 +14609,66 @@ const monsters = [{
     }],
     "text": "The ice linnorm dwells amid glacial crevasses, atop wind-blasted mountain peaks, or within glittering caverns carved from the hearts of the mightiest of icebergs."
 }, {
+    "name": "Immortal Ichor",
+    "link": "https://2e.aonprd.com/Monsters.aspx?ID=483",
+    "family": "\u2014",
+    "level": 15,
+    "alignment": "Neutral Evil",
+    "type": "Ooze",
+    "size": "Medium",
+    "traits": ["Rare", "NE", "Medium", "Ooze"],
+    "recallKnowledge": "Occultism: DC 39",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 88",
+    "Perception": " +20; motion sense 60 feet, no vision",
+    "Languages": ["Abyssal", "Aklo", "Infernal", "Undercommon"],
+    "Str": " +6, ",
+    "Dex": " +3, ",
+    "Con": " +9, ",
+    "Int": " +7, ",
+    "Wis": " +6, ",
+    "Cha": " +6",
+    "AC": " 26, ",
+    "Fort": " +30, ",
+    "Ref": " +20, ",
+    "Will": " +29",
+    "HP": " 350, regeneration 15 (deactivated by good); ",
+    "Immunities": " acid, critical hits, mental, precision, unconscious, visual; ",
+    "Resistances": " physical 15",
+    "Speed": " 20 feet, fly 20 feet",
+    "spells": [{
+        "name": "Dead Spells",
+        "text": " An immortal ichor can cast an initial and advanced domain spell of a domain that belonged to the dead deity from which the ichor arose (the domain spells presented here are from the destruction domain)."
+    }, {
+        "name": "Divine Innate Spells",
+        "text": " DC 37, attack +31; 7th charm (x3), feeblemind, possession, suggestion; 6th crisis of faith, telekinetic haul (at will); 3rd mind reading (at will); 2nd telekinetic maneuver (at will); 1st charm (at will), command (at will); Cantrips (7th) telekinetic projectile"
+    }, {
+        "name": "Cleric Domain Spells",
+        "text": " DC 37, attack +31, 3 Focus Points; 8th cry of destruction, destructive auraImmortal ichors can arise from practically any evil, dead deity. Cults whose deities have fallen sometimes rededicate themselves to the search for the blood of their former master."
+    }],
+    "skills": ["Ancient History Lore", " +30, ", "Arcana", " +30, ", "Religion", " +29"],
+    "items": [],
+    "actions": [{
+        "name": "Immortality",
+        "text": " The immortal ichor doesn\u2019t age, nor does it need to eat or breathe. It can die only as a result of violence."
+    }],
+    "attacks": [{
+        "name": "Melee",
+        "text": "  pseudopod +27, ",
+        "actions": "Single Action",
+        "damage": " 3d8+12 bludgeoning plus mental erosion"
+    }, {
+        "name": "Corrupt Ally",
+        "text": " (divine, enchantment, mental) A creature that fails to save against an immortal ichor\u2019s charm spell becomes stupefied 1. The stupefied value reduces by 1 every 24 hours. The first time each day a creature stupefied by the ichor\u2019s  fails to save against another casting of the ichor\u2019s , the value of the condition increases by 1d4. If the stupefied condition ever equals the creature\u2019s Wisdom score, it becomes controlled by the ichor permanently; if it dies, it rises the next round as a zombie (of the GM\u2019s choice) under the ichor\u2019s control. If the ichor is killed, these zombies are destroyed."
+    }, {}, {
+        "name": "Mental Erosion",
+        "text": " A creature hit by the ichor\u2019s pseudopod is stupefied 2 for 1 day unless it succeeds at a DC 35 Will save."
+    }, {
+        "name": "Resanguinate",
+        "text": "   (divine, healing, necromancy) The immortal ichor draws blood from the pores of living creatures around it. Any living creature within 30 feet that has blood takes 4d6 damage (DC 33 basic Fortitude save). The immortal ichor regains HP equal to the total damage dealt. A creature that fails its save is also drained 1 (or drained 2 on a critical failure).",
+        "actions": "Three Actions"
+    }],
+    "text": "An immortal ichor is an intelligent mass of blood from a dead evil deity. The cultists who perform the ritual to create immortal ichor typically seal up the sentient ooze in an underground or remote chamber that blocks its magical abilities, but over time these seals break or weaken, freeing the unholy monster."
+}, {
     "name": "Imp",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=109",
     "family": "Devil",
@@ -14306,7 +14721,7 @@ const monsters = [{
         "text": " (poison)  DC 16 Fortitude;  6 rounds;  1d6 poison and clumsy 1 (1 round);  1d6 poison damage, clumsy 1, and slowed 1 (1 round)"
     }, {
         "name": "Infernal Temptation",
-        "text": "   (divine, concentrate, enchantment, evil, fortune) Frequency once per day. Effect The imp offers a non.fiend within 15 feet a bargain, granting a boon of good luck if the creature accepts. The boon lasts for 1 hour once accepted. If the creature dies while the boon is in place, its soul travels to Hell, where it is bound for eternity and unable to be raised or resurrected except by  or similar magic. Once during the hour, the creature can roll an attack roll or saving throw twice and use the higher result.",
+        "text": "   (divine, concentrate, enchantment, evil, fortune) Frequency once per day. Effect The imp offers a non-fiend within 15 feet a bargain, granting a boon of good luck if the creature accepts. The boon lasts for 1 hour once accepted. If the creature dies while the boon is in place, its soul travels to Hell, where it is bound for eternity and unable to be raised or resurrected except by  or similar magic. Once during the hour, the creature can roll an attack roll or saving throw twice and use the higher result.",
         "actions": "Single Action"
     }],
     "text": "Imps are infiltrators and corruptors who, despite their diminutive stature, are more than capable of subtly influencing a weak-willed individual into performing increasingly evil acts over time. An imp will often agree to serve a mortal and act docile and loyal in a long-term plot to eventually damn its master\u2019s soul to Hell. Imps are born directly from Hell itself, rather than from mortal souls, and thus they serve outside the usual diabolic hierarchy, granting them leeway to pursue their specialties. Despite standing a mere 2-feet tall, imps can be vicious combatants, flying out of reach and turning invisible to escape should the odds turn against them."
@@ -14626,13 +15041,13 @@ const monsters = [{
         "actions": "Two Actions"
     }, {
         "name": "Stage 2",
-        "text": " (poison)  Fortitude DC 24;  6 rounds; 1d6 poison damage and enfeebled 1 (1 round); 1d6 poison damage and enfeebled 2 (1 round)"
+        "text": " (poison)  Fortitude DC 24;  6 rounds;  1d6 poison damage and enfeebled 1 (1 round);  1d6 poison damage and enfeebled 2 (1 round)"
     }, {
         "name": "Predatory Grab",
         "text": " As Grab, but the jungle drake\u2019s Grab does not end if it moves away. Instead, it carries the grabbed creature with it. A jungle drake can\u2019t Fly while grabbing a creature unless that creature can also Fly."
     }, {
         "name": "Speed Surge",
-        "text": "   (move) \"The jungle drake moves up to twice its Speed. It can do",
+        "text": "   (move) The jungle drake moves up to twice its Speed. It can do this three times per day.",
         "actions": "Single Action"
     }, {
         "name": "Spit Venom",
@@ -15172,7 +15587,7 @@ const monsters = [{
     "items": [],
     "actions": [{
         "name": "Attack of Opportunity",
-        "text": "  Tail only . ",
+        "text": "  Tail only. ",
         "action": "Reaction"
     }, {
         "name": "Pain Frenzy",
@@ -15238,7 +15653,7 @@ const monsters = [{
         "name": "Occult Innate Spells",
         "text": " DC 28; 4th charm (x3), suggestion (x3); 3rd sleep; 2nd illusory disguise (at will), illusory object (at will), mirror image; 1st ventriloquism (at will)"
     }],
-    "skills": ["Arcana", " +18, ", "Cult Lore", " +15, ", "Deception", " +25, ", "Diplomacy", " +20, ", "Intimidation", " +18, ", "Occultism", " +17, ", "Stealth", " +16, ", "Survival", " +13"],
+    "skills": ["Arcana", " +18, ", "Cult Lore", " +15, ", "Deception", " +20, ", "Diplomacy", " +20, ", "Intimidation", " +18, ", "Occultism", " +17, ", "Stealth", " +16, ", "Survival", " +13"],
     "items": [],
     "actions": [],
     "attacks": [{
@@ -15457,18 +15872,16 @@ const monsters = [{
     "HP": " 100; ",
     "Resistances": " fire 15; ",
     "Weaknesses": " evil 10",
-    "Speed": " Speed 30 feet, fly 60 feet",
+    "Speed": " 30 feet, fly 60 feet",
     "spells": [{
         "name": "Divine Innate Spells",
         "text": " DC 24; 4th dimension door (at will); 1st true strike (x3); Cantrips (4th) light, message; (5th)tongues"
     }],
-    "skills": ["Acrobatics", " +13, ", "Athletics", " +14, ", "Diplomacy", " +16, ", "Intimidation", " +16, ", "Religion", " +14, ", "Survival", " +14"],
+    "skills": ["Acrobatics", " +13, ", "Athletics", " +14, ", "Diplomacy", " +16, ", "Intimidation", " +16, ", "Religion", " +13, ", "Survival", " +14"],
     "items": ["full plate"],
     "actions": [{
         "name": "Menacing Guardian",
         "text": " (aura, divine, enchantment) 30 feet. Enemies that start their turn in the area or enter it must attempt a DC 23 Will save. On a failure, they take a \u20131 status penalty to attack rolls, spell rolls, and damage rolls against any other target while in the aura for 24 hours or until they damage the archon, whichever comes first. On a critical failure, they can\u2019t use hostile actions against any other target while in the area for 24 hours or until they damage the archon, whichever comes first. Regardless of the result, a creature is then temporarily immune to further menacing guardian auras for 24 hours."
-    }, {
-        "name": "Retributive Strike"
     }, {
         "name": "Retributive Strike",
         "text": "  A legion archon can also make a Retributive Strike by throwing its flame of justice.",
@@ -15641,7 +16054,7 @@ const monsters = [{
         "damage": " 3d10+14 slashing plus 1d12 negative"
     }, {
         "name": "Infuse Weapon",
-        "text": " (divine, evocation) Any scythe gains the agile trait, can\u2019t be disarmed, and becomes a +3 major striking keen scythe while the grim reaper wields it. If the grim reaper Strikes a creature with a weakness to any specific type of damage, the scythe\u2019s damage counts as that type of damage, in addition to slashing."
+        "text": " (divine, evocation) Any scythe gains the agile trait, can\u2019t be disarmed, and becomes a  while the grim reaper wields it. If the grim reaper Strikes a creature with a weakness to any specific type of damage, the scythe\u2019s damage counts as that type of damage, in addition to slashing."
     }],
     "text": "No one is quite sure what lesser deaths are, though some claim that they are avatars of the grim reaper. Unlike that strange hunter, however, lesser deaths hunt in packs on rare occasions. More often than not, they manifest from cursed magic items. Other times, they are just the enactors of death, hunting in the same way the grim reaper does\u2014 silently, with neither remorse nor quarter. Rarely, multiple lesser deaths work together to cull a large population, their scythes cutting through crowds and leaving entire cities devoid of life, inspiring (hopefully) false rumors of multiple grim reapers."
 }, {
@@ -15884,7 +16297,7 @@ const monsters = [{
     "recallKnowledge": "rcana: DC 20",
     "source": "Bestiary pg. 146",
     "Perception": " +12; darkvision, tremorsense (imprecise) 60 feet",
-    "Str": " +4, ",
+    "Str": " +5, ",
     "Dex": " -1, ",
     "Con": " +4, ",
     "Int": " -2, ",
@@ -16048,7 +16461,7 @@ const monsters = [{
         "text": "  ",
         "action": "Reaction",
         "Trigger": " The living whirlwind takes damage from a hostile action. ",
-        "Effect": " The living whirlwind disperses. Until the end of the current turn, it can\u2019t be attacked or targeted, doesn\u2019t take up space, and any auras or emanations it has are suppressed. At the end of the turn, the living whirlwind reforms in any space in which it can flt within 25 feet of where it dispersed and any auras or emanations it has are restored as long as their duration didn\u2019t run out while it was dispersed."
+        "Effect": " The living whirlwind disperses. Until the end of the current turn, it can\u2019t be attacked or targeted, doesn\u2019t take up space, and any auras or emanations it has are suppressed. At the end of the turn, the living whirlwind reforms in any space in which it can fit within 25 feet of where it dispersed and any auras or emanations it has are restored as long as their duration didn\u2019t run out while it was dispersed."
     }],
     "attacks": [{
         "name": "Melee",
@@ -16133,7 +16546,7 @@ const monsters = [{
     "HP": " 21",
     "Speed": " 25 feet, swim 15 feet",
     "spells": [],
-    "skills": ["Acrobatics", " +5, ", "Athletics", " +6, ", "Stealth", " +5"],
+    "skills": ["Acrobatics", " +5, ", "Athletics", " +6, ", "Survival", " +5"],
     "items": ["flail", ", ", "javelin (3)", ", ", "wooden shield", " (Hardness 3, HP 12, BT 6)"],
     "actions": [{
         "name": "Attack of Opportunity",
@@ -16213,9 +16626,8 @@ const monsters = [{
         "damage": " 1d4+2 bludgeoning"
     }, {
         "name": "Ranged",
-        "text": "  blowgun +8 (agile, nonlethal, range increment 20 feet, reload 1), ",
-        "actions": "Single Action",
-        "damage": " 1 piercing plus giant centipede venom"
+        "text": "  blowgun +8 (agile, nonlethal, range increment 20 feet, reload 1), Effect 1 piercing plus giant centipede venom",
+        "actions": "Single Action"
     }, {
         "name": "Deep Breath",
         "text": " A lizardfolk scout can hold their breath for 150 rounds (15 minutes)."
@@ -16373,9 +16785,8 @@ const monsters = [{
         "damage": " 3d8+12 piercing"
     }, {
         "name": "Melee",
-        "text": "  trunk +22 (reach 15 feet), ",
-        "actions": "Single Action",
-        "damage": " grabbing trunk"
+        "text": "  trunk +22 (reach 15 feet), Effect grabbing trunk",
+        "actions": "Single Action"
     }, {
         "name": "Melee",
         "text": "  foot +22 (reach 10 feet), ",
@@ -16825,9 +17236,6 @@ const monsters = [{
     "spells": [{
         "name": "Primal Prepared Spells",
         "text": " DC 18, attack +10; 1st charm, heal, hydraulic push; Cantrips (1st) dancing lights, detect magic, electric arc, ray of frost, stabilize"
-    }, {
-        "name": "Primal Prepared Spells",
-        "text": " DC 18, attack +10; 1st charm, heal, hydraulic push; Cantrips (1st) dancing lights, detect magic, electric arc, ray of frost, stabilize"
     }],
     "skills": ["Athletics", " +7 (+9 to Swim), ", "Deception", " +6, ", "Nature", " +8, ", "Religion", " +8"],
     "items": ["dagger"],
@@ -16846,7 +17254,7 @@ const monsters = [{
         "name": "Hydraulic Asphyxiation",
         "text": "   (divine, evocation, water) Requirement The target is fully submerged in water, within 30 feet of the merfolk wavecaller, and holding its breath. Effect The merfolk wavecaller commands the tides to crush their foe's throat, rooting the target in place and forcing it to choke up precious air. The target must succeed at a DC 18 Fortitude save or become immobilized for 1 round and immediately lose 1d4 actions' worth of air (or twice that on a critical failure).",
         "actions": "Single Action"
-    }, {}],
+    }],
     "text": "Merfolk wavecallers use their primal power to call forth allies and defend their people with deadly magic."
 }, {
     "name": "Mimic",
@@ -16867,14 +17275,14 @@ const monsters = [{
     "Wis": " +1, ",
     "Cha": " +0",
     "AC": " 20, ",
-    "Fort": " +1, ",
+    "Fort": " +11, ",
     "Ref": " +9, ",
     "Will": " +9",
     "HP": " 75",
     "Speed": " 10 feet",
     "spells": [],
     "Languages": ["Common"],
-    "skills": ["Athletics", " +12"],
+    "skills": ["Athletics", " +12, ", "Deception", " +8, ", "Dwelling Lore", " +10 (applies only to the dungeon it lives in)"],
     "items": [],
     "actions": [{
         "name": "Adhesive",
@@ -16924,7 +17332,7 @@ const monsters = [{
     "Speed": " 25 feet",
     "spells": [],
     "Languages": ["Jotun"],
-    "skills": ["Athletics", " +14, ", "Deception", " +8, ", "Dwelling Lore", " +10 (applies only to the dungeon it lives in), ", "Intimidation", " +9, ", "Survival", " +12 (natural cunning)"],
+    "skills": ["Athletics", " +14, ", "Intimidation", " +9, ", "Survival", " +12 (natural cunning)"],
     "items": ["greataxe"],
     "actions": [],
     "attacks": [{
@@ -17359,7 +17767,7 @@ const monsters = [{
     "items": [],
     "actions": [{
         "name": "Great Despair",
-        "text": " (aura, divine, emotion, enchantment, fear, incapacitation, mental) 30 feet. As the mummy guardian\u2019s despair, except the DC is 26 and the paralysis lasts 1d4 rounds. "
+        "text": " (aura, divine, emotion, enchantment, fear, incapacitation, mental) 30 feet. Living creatures are frightened 1 while in a mummy guardian\u2019s despair aura. They can\u2019t naturally recover from this fear while in the area but recover instantly once they leave the area. When a creature first enters the area, it must succeed at a DC 26 Will save (after taking the penalty from being frightened) or be paralyzed for 1d4 rounds. The creature is then temporarily immune for 24 hours. "
     }, {
         "name": "Rejuvenation",
         "text": " (divine, necromancy) When a mummy pharaoh is destroyed, necromantic energies rebuild its body in its tomb over 1d10 days. If the re-forming body is destroyed during that time, the process starts anew. A slain mummy pharaoh can be destroyed for good with a consecrate ritual. "
@@ -17426,7 +17834,7 @@ const monsters = [{
         "text": " DC 28, attack +18; 4th heal, summon animal; 3rd earthbind, haste, heal; 2nd animal messenger, faerie fire, tree shape; 1st fleet step, gust of wind, negate aroma; Cantrips (4th) detect magic, guidance, light, ray of frost, stabilize"
     }, {
         "name": "Primal Innate Spells",
-        "text": " DC 28; 4th tidal surge; 1st charm, create water"
+        "text": " DC 28; 4th tidal surge (at will); 1st charm, create water"
     }],
     "skills": ["Acrobatics", " +16, ", "Athletics", " +9 (+13 to Swim), ", "Diplomacy", " +20, ", "Medicine", " +15, ", "Nature", " +15, ", "Performance", " +20, ", "Stealth", " +14, ", "Survival", " +15"],
     "items": [],
@@ -17507,6 +17915,69 @@ const monsters = [{
     }],
     "text": "Naiads protect streams, ponds, springs, and other natural bodies of fresh water. While most naiads lead solitary lives close to their chosen ward, sometimes these nymphs congregate in coven-like groups where river tributaries meet, performing great magic and blessing the waters of the land. Because naiads\u2019 bonds to their bodies of water permit more flexibility, they are the nymphs most likely to interact with humanoids and even visit their settlements on occasion. Unlike other nymphs, naiads occasionally become adventurers, especially when dark forces seek to despoil nature or otherwise threaten the land, joining forces with others to prevent the corruption of nature."
 }, {
+    "name": "Nalfeshnee (Boar Demon)",
+    "link": "https://2e.aonprd.com/Monsters.aspx?ID=481",
+    "family": "Demon",
+    "level": 14,
+    "alignment": "Chaotic Evil",
+    "type": "Fiend",
+    "size": "Huge",
+    "traits": ["CE", "Huge", "Demon", "Fiend"],
+    "recallKnowledge": "Religion: DC 32",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 86",
+    "Perception": " +25; darkvision, ",
+    "Languages": ["Abyssal", "Celestial", "Draconic"],
+    "Str": " +8, ",
+    "Dex": " +2, ",
+    "Con": " +8, ",
+    "Int": " +5, ",
+    "Wis": " +5, ",
+    "Cha": " +4",
+    "AC": " 34, ",
+    "Fort": " +26, ",
+    "Ref": " +22, ",
+    "Will": " +23; +1 status to all saves vs. spells",
+    "HP": " 360; ",
+    "Weaknesses": " cold iron 15, good 15",
+    "Speed": " 30 feet, fly 40 feet",
+    "Divine Rituals": " DC 34; ",
+    "spells": [{
+        "name": "Divine Innate Spells",
+        "text": " DC 34; 6th dispel magic (at will), divine wrath (at will); 5th dimension door, illusory object (at will); 4th circle of protection, dimension door (at will); (6th)true seeing1stabyssal pactNalfeshnees covet knowledge as well as goods, especially if such information can help satisfy the needs and desires of the Abyss. Each nalfeshnee has areas of interest in which it is highly knowledgeable, but before a nalfeshnee reveals a secret, it typically demands a secret of at least equal value in return."
+    }],
+    "skills": ["Abyss Lore", " +25, ", "Arcana", " +25, ", "Athletics", " +28, ", "Deception", " +26, ", "Diplomacy", " +24, ", "Intimidation", " +28, ", "Religion", " +25"],
+    "items": [],
+    "actions": [{
+        "name": "Forfeiture Aversion",
+        "text": " A nalfeshnee\u2019s greed is such that losing possessions causes it harm. If an item is stolen from a nalfeshnee, the demon takes 3d6 mental damage. "
+    }, {
+        "name": "Greedy Grab",
+        "text": "  Disarm",
+        "action": "Reaction",
+        "Trigger": " A creature critically fails a weapon Strike against the nalfeshnee; ",
+        "Effect": " the weapon used in the triggering Strike at a \u20132 circumstance penalty. On a success, the nalfeshnee steals the weapon."
+    }],
+    "attacks": [{
+        "name": "Melee",
+        "text": "  jaws +28 (magical, reach 15 feet), ",
+        "actions": "Single Action",
+        "damage": " 3d12+14 piercing"
+    }, {
+        "name": "Melee",
+        "text": "  claw +28 (agile, magical, reach 15 feet), ",
+        "actions": "Single Action",
+        "damage": " 3d8+14 slashing"
+    }, {
+        "name": "Claim Wealth",
+        "text": "   (conjuration, divine, extradimensional) The nalfeshnee steals all unattended items glowing with its Light of Avarice into an extradimensional space. The demon can Interact to regurgitate any number of these items into its hand or onto the ground. If the demon dies, is affected by a teleportation effect, or consumes an extradimensional space (such as a bag of holding), it vomits up all the items.",
+        "actions": "Single Action"
+    }, {
+        "name": "Light of Avarice",
+        "text": "   (divine, enchantment, light, mental) Frequency once per hour; Effect Beams of unholy light shoot out from the nalfeshnee toward four items within 60 feet. If someone is holding or wearing a targeted item, they can keep it from being affected with a DC 34 Reflex save. For 1 minute, all affected items glow in nauseating colors. Any non-demon is sickened 2 and slowed 1 as long as it holds, wears, or touches a glowing item. Recovering from this sickness requires a DC 29 Will save instead of a Fortitude save. Ending the sickness in this way ends the slowed condition and makes the creature temporarily immune to the Light of Avarice for 24 hours. If the creature removes or drops the item, both the conditions end immediately, but the creature doesn\u2019t become immune.",
+        "actions": "Two Actions"
+    }],
+    "text": "Nalfeshnees are huge, corpulent, boar-headed demons that hoard treasures and knowledge alike and form from the souls of avaricious mortals."
+}, {
     "name": "Naunet",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=337",
     "family": "Protean",
@@ -17582,10 +18053,10 @@ const monsters = [{
     "family": "Hell Hound",
     "level": 9,
     "alignment": "Lawful Evil",
-    "type": "Beast",
+    "type": "Beast, Fiend",
     "size": "Large",
     "traits": ["LE", "Large", "Beast", "Fiend", "Fire"],
-    "recallKnowledge": "rcana: DC 26",
+    "recallKnowledge": "Religion: DC 26",
     "source": "Bestiary pg. 205",
     "Perception": " +19; darkvision, scent (imprecise) 120 feet",
     "Languages": ["Infernal"],
@@ -17630,10 +18101,10 @@ const monsters = [{
     "family": "Hag",
     "level": 9,
     "alignment": "Neutral Evil",
-    "type": "Fiend",
+    "type": "Fiend, Humanoid",
     "size": "Medium",
     "traits": ["NE", "Medium", "Fiend", "Hag", "Humanoid"],
-    "recallKnowledge": "Religion: DC 26",
+    "recallKnowledge": "Society: DC 26",
     "source": "Bestiary pg. 202",
     "Perception": " +18; darkvision",
     "Languages": ["Abyssal", "Aklo", "Celestial", "Common", "Infernal"],
@@ -17693,10 +18164,10 @@ const monsters = [{
     "family": "Nightmare",
     "level": 6,
     "alignment": "Neutral Evil",
-    "type": "Beast",
+    "type": "Beast, Fiend",
     "size": "Large",
     "traits": ["NE", "Large", "Beast", "Fiend"],
-    "recallKnowledge": "rcana: DC 22",
+    "recallKnowledge": "Religion: DC 22",
     "source": "Bestiary pg. 244",
     "Perception": " +14; darkvision",
     "Languages": ["Abyssal", "Daemonic", "Infernal"],
@@ -17718,7 +18189,7 @@ const monsters = [{
         "name": "Divine Innate Spells",
         "text": " DC 24; 7th plane shift (self and rider only)"
     }],
-    "skills": ["Acrobatics", " +13, ", "Athletics", " +16, ", "Intimidation", " +14, ", "Stealth", " +12"],
+    "skills": ["Acrobatics", " +13, ", "Athletics", " +16, ", "Intimidation", " +14, ", "Survival", " +12"],
     "items": [],
     "actions": [],
     "attacks": [{
@@ -17945,9 +18416,10 @@ const monsters = [{
     "family": "Ogre",
     "level": 7,
     "alignment": "Chaotic Evil",
-    "type": "Giant",
+    "type": "Giant, Humanoid",
     "size": "Large",
     "traits": ["CE", "Large", "Giant", "Humanoid"],
+    "recallKnowledge": "Society: DC 23",
     "source": "Bestiary pg. 253",
     "Perception": " +12; darkvision",
     "Languages": ["Common", "Jotun"],
@@ -17997,9 +18469,10 @@ const monsters = [{
     "family": "Ogre",
     "level": 4,
     "alignment": "Chaotic Evil",
-    "type": "Giant",
+    "type": "Giant, Humanoid",
     "size": "Large",
     "traits": ["CE", "Large", "Giant", "Humanoid"],
+    "recallKnowledge": "Society: DC 19",
     "source": "Bestiary pg. 253",
     "Perception": " +6; darkvision",
     "Str": " +6, ",
@@ -18048,9 +18521,10 @@ const monsters = [{
     "family": "Ogre",
     "level": 3,
     "alignment": "Chaotic Evil",
-    "type": "Giant",
+    "type": "Giant, Humanoid",
     "size": "Large",
     "traits": ["CE", "Large", "Giant", "Humanoid"],
+    "recallKnowledge": "Society: DC 18",
     "source": "Bestiary pg. 252",
     "Perception": " +5; darkvision",
     "Str": " +5, ",
@@ -18351,7 +18825,7 @@ const monsters = [{
     "items": [],
     "actions": [{
         "name": "Stench",
-        "text": " (aura, olfactory) 40 feet. A creature entering the aura must succeed at a DC 20 Fortitude save or be sickened 1 (plus slowed 1 for the same duration on a critical failure). On a success, the creature is temporarily immune to the sickened and slowed effects of this stench for 1 hour. Regardless of the save, while within the aura, creatures take a \u20132 circumstance penalty to saves against diseases. An otyugh\u2019s stench is due to the oflal and refuse that it wallows in, so cleaning the creature thoroughly (with create water and sufficient scrubbing, for example) deactivates the aura, while a sufficiently plugged nose allows an individual to avoid exposure to the stench."
+        "text": " (aura, olfactory) 40 feet. A creature entering the aura must succeed at a DC 20 Fortitude save or be sickened 1 (plus slowed 1 for the same duration on a critical failure). On a success, the creature is temporarily immune to the sickened and slowed effects of this stench for 1 hour. Regardless of the save, while within the aura, creatures take a \u20132 circumstance penalty to saves against diseases. An otyugh\u2019s stench is due to the offal and refuse that it wallows in, so cleaning the creature thoroughly (with create water and sufficient scrubbing, for example) deactivates the aura, while a sufficiently plugged nose allows an individual to avoid exposure to the stench."
     }],
     "attacks": [{
         "name": "Melee",
@@ -18779,7 +19253,8 @@ const monsters = [{
         "damage": " 1d8+4 bludgeoning plus Grab and zombie rot"
     }, {
         "name": "Jaws",
-        "text": " (attack) As zombie shambler, but with an attack bonus of +9 that deals 1d12+4 piercing damage. A creature damaged by the jaws is exposed to zombie rot."
+        "text": "   (attack) Requirement The plague zombie has a creature grabbed or restrained. Effect The plague zombie makes a jaws unarmed melee Strike against the grabbed or restrained creature with an attack modifier of +9 that deals 1d12+4 piercing damage. A creature damaged by the jaws is exposed to zombie rot.",
+        "actions": "Single Action"
     }, {
         "name": "Stage 5",
         "text": " (disease, necromancy) An infected creature can\u2019t heal damage it takes from zombie rot until it has been cured of the disease.  DC 18 Fortitude;  carrier with no ill effect (1 day);  1d6 negative damage (1 day);  1d6 negative damage (1 day);  1d6 negative damage (1 day);  dead, rising as a plague zombie immediately"
@@ -18834,9 +19309,8 @@ const monsters = [{
         "damage": " 5d8+18 positive or negative damage plus 1d6 lawful"
     }, {
         "name": "Ranged",
-        "text": "  Sphere of Oblivion +37 (magical), ",
-        "actions": "Single Action",
-        "damage": " see Sphere of Oblivion"
+        "text": "  Sphere of Oblivion +37 (magical), Effect see Sphere of Oblivion",
+        "actions": "Single Action"
     }, {
         "name": "Energy Touch",
         "text": " A pleroma\u2019s touch deals its choice of positive or negative damage, but neither energy can be used to heal a creature."
@@ -18849,17 +19323,17 @@ const monsters = [{
         "text": "   (incapacitation, magical) Three times per day, a pleroma can manifest a 2-foot-diameter sphere of complete and utter darkness that hovers above its right hand. It can move and control the sphere in the same manner as its Sphere of Creation. The sphere is an empty void that lasts for 1 minute before collapsing in on itself and winking out of existence. Once manifested, the sphere can be used as a ranged attack, but it blinks out of existence immediately after that attack is resolved. Any unattended object that touches the void is sucked in and completely destroyed. Larger objects (such as ships or buildings) are destroyed at a rate of one 10-foot cube per round of contact. The sphere can enter the space of a creature, with effects similar to the Sphere of Creation except that it deals negative damage (even to undead) on a failure and annihilates rather than incorporating the creature into material. Such a destroyed creature can be restored only by a 10th-level spell.",
         "actions": "Two Actions"
     }],
-    "text": "Among the most powerful of all the true aeons, pleromas are a manifestation of the duality of creation and destruction. Their physical manifestation is a constant state of  ux between these two poles, their forms a shifting cloak of black where galaxies and other celestial objects  it in and out of existence, as if depicting the constant life, death, and rebirth of a miniature, self-contained universe.,Pleromas see the multiverse as both eternal and cyclical, doomed and malleable, ending only if these cycles ever become unbalanced. They believe the current Convergence is necessary to obtain this essential balance, and act to ensure that the grand design of the Monad is carried out to the smallest detail."
+    "text": "Among the most powerful of all the true aeons, pleromas are a manifestation of the duality of creation and destruction. Their physical manifestation is a constant state of flux between these two poles, their forms a shifting cloak of black where galaxies and other celestial objects flit in and out of existence, as if depicting the constant life, death, and rebirth of a miniature, self-contained universe.,Pleromas see the multiverse as both eternal and cyclical, doomed and malleable, ending only if these cycles ever become unbalanced. They believe the current Convergence is necessary to obtain this essential balance, and act to ensure that the grand design of the Monad is carried out to the smallest detail."
 }, {
     "name": "Poltergeist",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=334",
     "family": "\u2014",
     "level": 5,
     "alignment": "Lawful Evil",
-    "type": "Spirit",
+    "type": "Spirit, Undead",
     "size": "Medium",
     "traits": ["LE", "Medium", "Incorporeal", "Spirit", "Undead"],
-    "recallKnowledge": "Occultism: DC 20",
+    "recallKnowledge": "Religion: DC 20",
     "source": "Bestiary pg. 264",
     "Perception": " +11; darkvision",
     "Str": " -5, ",
@@ -19166,9 +19640,8 @@ const monsters = [{
         "damage": " 1d10+13 bludgeoning"
     }, {
         "name": "Ranged",
-        "text": "  regurgitate +26 (brutal, range increment 60 feet), ",
-        "actions": "Single Action",
-        "damage": " varies (see ability)"
+        "text": "  regurgitate +26 (brutal, range increment 60 feet), Effect varies (see ability)",
+        "actions": "Single Action"
     }, {
         "name": "Trigger",
         "text": "   The purple worm Grabs a creature. Effect The worm uses Swallow Whole.",
@@ -19557,9 +20030,8 @@ const monsters = [{
         "damage": " 1d6 piercing"
     }, {
         "name": "Ranged",
-        "text": "  alchemical bomb +13 (range increment 20 feet, splash), ",
-        "actions": "Single Action",
-        "damage": " varies by bomb"
+        "text": "  alchemical bomb +13 (range increment 20 feet, splash), Effect varies by bomb",
+        "actions": "Single Action"
     }, {
         "name": "Cheek Pouches",
         "text": " A ratfolk grenadier has stretchy cheek pouches that can store up to 1 cubic foot of objects (though no more than 4 light items). The ratfolk can remove or store an item using the Interact action. As long as the ratfolk has at least one object in its cheek pouches, its speech is noticeably difficult to understand."
@@ -19827,7 +20299,8 @@ const monsters = [{
     "items": [],
     "actions": [{
         "name": "Buck",
-        "text": " [reaction] DC 17"
+        "text": "  DC 17",
+        "action": "Reaction"
     }],
     "attacks": [{
         "name": "Melee",
@@ -20094,9 +20567,8 @@ const monsters = [{
         "damage": " 2d12+12 piercing"
     }, {
         "name": "Melee",
-        "text": "  strand +23 (reach 50 feet), ",
-        "actions": "Single Action",
-        "damage": " sticky strand"
+        "text": "  strand +23 (reach 50 feet), Effect sticky strand",
+        "actions": "Single Action"
     }, {
         "name": "Extend Strands",
         "text": "   The roper extends or retracts six thin, sticky tendrils from its body. While the strands are extended, the roper takes a \u20134 circumstance penalty to Stealth checks, and while they\u2019re retracted, it can\u2019t use its strand Strikes.",
@@ -20120,9 +20592,10 @@ const monsters = [{
     "family": "Giant",
     "level": 16,
     "alignment": "Lawful Evil",
-    "type": "Giant",
+    "type": "Giant, Humanoid",
     "size": "Gargantuan",
     "traits": ["Uncommon", "LE", "Gargantuan", "Evil", "Giant", "Humanoid"],
+    "recallKnowledge": "Society: DC 37",
     "source": "Bestiary pg. 175",
     "Perception": " +28; low-light vision",
     "Languages": ["Common", "Jotun", "Terran"],
@@ -20229,7 +20702,7 @@ const monsters = [{
     "Speed": "<i><a href=\"Spells.aspx?ID=371\" style=\"text-decoration:underline\">water walk</a></i>",
     "spells": [{
         "name": "Primal Innate Spells",
-        "text": " DC 35; 5th control water (at will), summon elemental (living waterfall only); 3rd charm; 2nd invisibility (at will), obscuring mist (at will); (6th)water walkThose living in areas where rusalkas dwell know well to avoid the water during the week-long period in early Sarenith when the fey become particularly active, a time known in many regions as Blue Week. Most villages maintain a prohibition on swimming and fishing during this time\u2014though the prohibition is difficult to enforce, as it takes place during the height of good weather\u2014and particularly superstitious folk take care to lock their doors both from within and without."
+        "text": " DC 35; 5th control water (at will), summon elemental (living waterfall only); 3rd charm (at will); 2nd invisibility (at will), obscuring mist (at will); (6th)water walkThose living in areas where rusalkas dwell know well to avoid the water during the week-long period in early Sarenith when the fey become particularly active, a time known in many regions as Blue Week. Most villages maintain a prohibition on swimming and fishing during this time\u2014though the prohibition is difficult to enforce, as it takes place during the height of good weather\u2014and particularly superstitious folk take care to lock their doors both from within and without."
     }],
     "skills": ["Acrobatics", " +21, ", "Athletics", " +22, ", "Deception", " +25, ", "Diplomacy", " +21, ", "Nature", " +21, ", "Performance", " +23 (+25 to sing), ", "Stealth", " +25"],
     "items": [],
@@ -20301,9 +20774,8 @@ const monsters = [{
     }],
     "attacks": [{
         "name": "Melee",
-        "text": "  antenna +10 (finesse), ",
-        "actions": "Single Action",
-        "damage": " rust"
+        "text": "  antenna +10 (finesse), Effect rust",
+        "actions": "Single Action"
     }, {
         "name": "Melee",
         "text": "  mandibles +8 (finesse), ",
@@ -20415,7 +20887,7 @@ const monsters = [{
     "Speed": " 20 feet",
     "spells": [],
     "skills": ["Acrobatics", " +12, ", "Athletics", " +17, ", "Crafting", " +15 (+17 for blacksmithing), ", "Deception", " +12, ", "Intimidation", " +14, ", "Society", " +13"],
-    "items": [],
+    "items": ["+1 ranseur"],
     "actions": [{
         "name": "Attack of Opportunity",
         "text": " ",
@@ -20568,7 +21040,7 @@ const monsters = [{
     "Speed": " 25 feet, swim 35 feet",
     "spells": [],
     "skills": ["Athletics", " +15 (+18 to Swim), ", "Intimidation", " +12, ", "Stealth", " +12, ", "Survival", " +11"],
-    "items": ["longspear (2)", ", ", "spear"],
+    "items": ["longspear", ", ", "spear (2)"],
     "actions": [],
     "attacks": [{
         "name": "Melee",
@@ -20630,7 +21102,7 @@ const monsters = [{
     "HP": " 60",
     "Speed": " 25 feet, swim 35 feet",
     "spells": [],
-    "skills": ["Athletics", " +12 (+15 to Swim), ", "Intimidation", " +9, ", "Stealth", " +9"],
+    "skills": ["Athletics", " +12 (+15 to Swim), ", "Intimidation", " +9, ", "Survival", " +9"],
     "items": ["trident"],
     "actions": [],
     "attacks": [{
@@ -20712,7 +21184,7 @@ const monsters = [{
         "damage": " 1d8+3 piercing"
     }, {
         "name": "Ranged",
-        "text": "  spear +12, ",
+        "text": "  spear +12 (thrown 20 feet), ",
         "actions": "Single Action",
         "damage": " 1d6+3 piercing"
     }, {
@@ -20881,9 +21353,10 @@ const monsters = [{
     "family": "Giant",
     "level": 13,
     "alignment": "Lawful Evil",
-    "type": "Giant",
+    "type": "Giant, Humanoid",
     "size": "Large",
     "traits": ["LE", "Large", "Giant", "Humanoid"],
+    "recallKnowledge": "Society: DC 31",
     "source": "Pathfinder #147: Tomorrow Must Burn pg. 79",
     "Perception": " +20; darkvision",
     "Languages": ["Jotun", "Shadowtongue"],
@@ -21032,7 +21505,7 @@ const monsters = [{
         "name": "Melee",
         "text": "  fist +19 (agile, magical, nonlethal, reach 10 feet), ",
         "actions": "Single Action",
-        "damage": " 1d4+12 bludgeoning"
+        "damage": " 1d4+12 bludgeoning plus Push 10 feet and shove into stone"
     }, {
         "name": "Earth Glide",
         "text": " The shaitan can Burrow through dirt and stone at its full burrow Speed, leaving no tunnels or signs of its passing."
@@ -21306,7 +21779,7 @@ const monsters = [{
     "Int": " -3, ",
     "Wis": " +6, ",
     "Cha": " +1",
-    "AC": " 39 all-around vision, ",
+    "AC": " 39, all-around vision, ",
     "Fort": " +33, ",
     "Ref": " +30, ",
     "Will": " +30; +1 status to all saves vs. magic",
@@ -21448,9 +21921,8 @@ const monsters = [{
         "damage": " 4d8+10 slashing plus banishing swipe"
     }, {
         "name": "Ranged",
-        "text": "  glaring ray +34 (magical, range 100 feet), ",
-        "actions": "Single Action",
-        "damage": " 10d6 fire"
+        "text": "  glaring ray +34 (magical, range 100 feet), Effect 10d6 fire",
+        "actions": "Single Action"
     }, {
         "name": "Banishing Swipe",
         "text": " If a creature hit by the simurgh\u2019s tail Strike is not currently on its home plane, it must succeed at a DC 42 Will save or be affected by banishment, except that if the creature critically succeeds its save the simurgh is not stunned."
@@ -21659,7 +22131,7 @@ const monsters = [{
         "name": "Melee",
         "text": "  hoof +9, ",
         "actions": "Single Action",
-        "damage": " 1d*+5 bludgeoning"
+        "damage": " 1d8+5 bludgeoning"
     }, {
         "name": "Gallop",
         "text": "   The horse Strides twice, with its Speed increased by 10 feet.",
@@ -21707,7 +22179,7 @@ const monsters = [{
         "damage": " 2d6+11 slashing"
     }, {
         "name": "Broad Swipe",
-        "text": "   As skeletal giant, but with its claw Strike.",
+        "text": "   The hulk makes two Strikes with its claw against two adjacent foes, both of whom are within its reach. The multiple attack penalty does not increase until after both attacks are resolved.",
         "actions": "Two Actions"
     }, {
         "name": "Massive Rush",
@@ -21819,7 +22291,7 @@ const monsters = [{
         "damage": " 3d8+6 piercing plus 3d6 negative"
     }, {
         "name": "Bonetaker",
-        "text": " (divine, necromancy) Whenever a creature dies within 60 feet of a skulltaker, the skulltaker draws a portion of the creature\u2019s bones into its shard storm. The creature must succeed at a DC 40 Will save or rise as a skeletal champion (page 298) in 1d4 rounds. These skeletal champions are controlled by the skulltaker."
+        "text": " (divine, necromancy) Whenever a creature dies within 60 feet of a skulltaker, the skulltaker draws a portion of the creature\u2019s bones into its shard storm. The creature must succeed at a DC 40 Will save or rise as a  in 1d4 rounds. These skeletal champions are controlled by the skulltaker."
     }, {
         "name": "Energy Drain",
         "text": " (divine, necromancy) When a skulltaker hits with a melee Strike, the target must succeed at a DC 40 Fortitude save or become drained 2 and doomed 1."
@@ -21907,7 +22379,7 @@ const monsters = [{
     "HP": " 35",
     "Speed": " 30 feet, climb 30 feet",
     "spells": [],
-    "skills": ["Acrobatics", " +6 (+8 to Escape), ", "Athletics", " +8, ", "Stealth", " +5"],
+    "skills": ["Acrobatics", " +6 (+8 to Escape), ", "Athletics", " +8, ", "Athletics", " +25, ", "Intimidation", " +24, ", "Stealth", " +5"],
     "items": [],
     "actions": [],
     "attacks": [{
@@ -21917,7 +22389,7 @@ const monsters = [{
         "damage": " 1d8+4 piercing"
     }, {
         "name": "Ranged",
-        "text": "  slime squirt +9 (range increment 30 feet)",
+        "text": "  slime squirt +9 (range increment 30 feet), Effect entangling slime",
         "actions": "Single Action"
     }, {
         "name": "Belly Grease",
@@ -22065,7 +22537,7 @@ const monsters = [{
     "Speed": " 30 feet, burrow 20 feet; earth glide",
     "spells": [],
     "Languages": [],
-    "skills": ["Athletics", " +11, ", "Stealth", " +9 (+11 to Track)"],
+    "skills": ["Athletics", " +11, ", "Survival", " +9 (+11 to Track)"],
     "items": [],
     "actions": [],
     "attacks": [{
@@ -22125,10 +22597,10 @@ const monsters = [{
     "family": "\u2014",
     "level": 15,
     "alignment": "Neutral Evil",
-    "type": "Construct",
+    "type": "Construct, Undead",
     "size": "Gargantuan",
     "traits": ["NE", "Gargantuan", "Construct", "Undead"],
-    "recallKnowledge": "rcana: DC 34",
+    "recallKnowledge": "Religion: DC 34",
     "source": "Pathfinder #148: Fires of the Haunted City pg. 85",
     "Perception": " +25; darkvision",
     "Languages": ["Common"],
@@ -22211,7 +22683,7 @@ const monsters = [{
         "name": "Occult Innate Spells",
         "text": " DC 27; 4th clairaudience (at will), clairvoyance (at will), read omens, remove curse; 3rd dispel magic, locate; Cantrips (4th) detect magic; (5th)tongues(2nd)see invisibilitySphinxes are well-known for their love of riddles, a love that often moves beyond into the realm of obsession. A would-be foe who can answer a sphinx\u2019s favorite riddles, or better yet, can stump the sphinx with a crafty and creative riddle of their own, can often avoid combat with the monster as well as secure its aid."
     }],
-    "skills": ["Arcana", " +17, ", "Bardic Lore", " +19, ", "Deception", " +16, ", "Diplomacy", " +16, ", "Intimidation", " +18, ", "Occultism", " +17"],
+    "skills": ["Arcana", " +17, ", "Athletics", " +18, ", "Bardic Lore", " +19, ", "Deception", " +16, ", "Diplomacy", " +16, ", "Intimidation", " +18, ", "Occultism", " +17"],
     "items": [],
     "actions": [],
     "attacks": [{
@@ -22274,6 +22746,67 @@ const monsters = [{
         "actions": "Single Action"
     }],
     "text": "An abundance of food, the sudden hatching of a clutch of eggs, or magical influence can cause smaller spiders to gather in terrifying, deadly masses."
+}, {
+    "name": "Spiritbound Aluum",
+    "link": "https://2e.aonprd.com/Monsters.aspx?ID=477",
+    "family": "Aluum",
+    "level": 16,
+    "alignment": "Neutral",
+    "type": "Construct",
+    "size": "Large",
+    "traits": ["Rare", "N", "Large", "Construct", "Mindless", "Soulbound"],
+    "recallKnowledge": "rcana: DC 40",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 83",
+    "Perception": " +28; darkvision",
+    "Str": " +9, ",
+    "Dex": " +3, ",
+    "Con": " +6, ",
+    "Int": " -5, ",
+    "Wis": " +4, ",
+    "Cha": " -2",
+    "AC": " 39, ",
+    "Fort": " +30, ",
+    "Ref": " +25, ",
+    "Will": " +28",
+    "HP": " 255; ",
+    "Immunities": " bleed, disease, death effects, doomed, drained, fatigued, magic (see below), mental, nonlethal attacks, paralyzed, poison, sickened, unconscious; ",
+    "Resistances": " 15 physical (except adamantine)",
+    "Speed": " 25 feet, fly 25 feet",
+    "spells": [{
+        "name": "Arcane Innate Spells",
+        "text": " DC 38; 9th bind soul (x3); 5th locate"
+    }],
+    "Languages": [],
+    "skills": ["Athletics", " +33"],
+    "items": [],
+    "actions": [{
+        "name": "Attack of Opportunity",
+        "action": "Reaction"
+    }],
+    "attacks": [{
+        "name": "Melee",
+        "text": "  fist +33 (magical), ",
+        "actions": "Single Action",
+        "damage": " 3d10+17 bludgeoning plus paralyzing force"
+    }, {
+        "name": "Aluum Antimagic",
+        "text": " Spiritbound aluum are immune to spells and magical abilities, with two exceptions. A negative spell or magical ability grants a spiritbound aluum the quickened condition until the end of its next turn instead of its normal effects. A positive spell or ability makes a spiritbound aluum slowed 1 until the end of its next turn instead of its normal effects."
+    }, {
+        "name": "Requirements",
+        "text": "   (arcane, evocation, force)  The spiritbound aluum has bound a soul using its bind soul innate spell; Effect The spiritbound aluum transforms the captured soul\u2019s essence into raw magical energy, channeling the spirit into a beam that deals 20d6 force damage in a 30-foot line (DC 38 basic Reflex save). The remaining fragments of the captured soul are released to the Great Beyond. The spiritbound aluum can\u2019t use Obliteration Beam again for 1d4 rounds.",
+        "actions": "Two Actions"
+    }, {
+        "name": "Paralyzing Force",
+        "text": " (arcane, incapacitation, necromancy) A creature damaged by the spiritbound aluum's fist Strike must succeed at a DC 35 Fortitude save or become paralyzed for 1 round. On a critical failure, the creature is paralyzed for 1d4 minutes and falls prone."
+    }, {
+        "name": "Soul Binder",
+        "text": " When a spiritbound aluum uses its bind soul innate spell, it binds the soul into its central crystal instead of the normal material component. The crystal can hold up to 60 souls. When encountered, a spiritbound aluum\u2019s crystal typically contains 1d6 souls."
+    }, {
+        "name": "Soul Shriek",
+        "text": "   (arcane, auditory, evocation, mental, sonic) The spiritbound aluum emits a keening wail in a 15-foot cone that deals 16d6 sonic damage (DC 27 basic Fortitude save). A creature that fails its save is stunned 1, or stunned 3 on a critical failure. The aluum can\u2019t use Soul Shriek again for 1d4 rounds.",
+        "actions": "Two Actions"
+    }],
+    "text": "Whereas most aluums are animated by the souls of volunteers loyal to Katapesh, the Pactmasters created a handful of more capable (and deadly) aluums powered by the souls of a dozen or more dangerous criminals. These spiritbound aluums are rarely used as peacekeepers, instead serving as assassins, elite bodyguards, or riot control during times of martial law., A spiritbound aluum has a dull blue crystalline focus that stores constituent souls, surrounded by a host of smaller gems used for trapping souls the Pactmasters wish to deny from entering the Great Beyond. Spiritbound aluums rarely use this soul-binding ability except when instructed by their masters. However, the murderous or embittered souls within the aluum sometimes exert control and willfully consume a departing soul either out of malice or to incorporate it into the construct\u2019s core. If not relieved of its trapped souls in a timely manner, a spiritbound aluum can develop enough will to overcome its masters\u2019 orders and even awaken to full sentience. These rogue aluums typically lose the , trait, are evil, have an Intelligence modifier of \u20132 or higher, and gain several skills with bonuses ranging from +25 to +32."
 }, {
     "name": "Sprite",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=389",
@@ -22377,9 +22910,10 @@ const monsters = [{
     "family": "Giant",
     "level": 8,
     "alignment": "Neutral",
-    "type": "Giant",
+    "type": "Giant, Humanoid",
     "size": "Large",
     "traits": ["N", "Large", "Earth", "Giant", "Humanoid"],
+    "recallKnowledge": "Society: DC 24",
     "source": "Bestiary pg. 170",
     "Perception": " +16; darkvision",
     "Languages": ["Common", "Jotun"],
@@ -22519,8 +23053,10 @@ const monsters = [{
         "text": " (aura, earth, primal, transmutation) 5 feet. Spikes of rock rise up from all stone surfaces in the emanation, creating difficult terrain. A creature moving in the terrain takes 2d6 piercing damage for each square of spikes it moves into (a Large or larger creature takes damage only once for each square it moves, even if its space covers multiple squares of spikes). Creatures with the earth trait ignore all effects within the area. The stone mauler can disable or activate spike stones as a single action, which has the concentrate trait. "
     }, {
         "name": "Crumble",
-        "text": "  As living landslide, but 15 feet down.",
-        "action": "Reaction"
+        "text": "  ",
+        "action": "Reaction",
+        "Trigger": " The living landslide takes damage from a hostile source while atop rock or earth. ",
+        "Effect": " The living landslide crumbles into the ground, Burrowing down 15 feet. This Burrowing does not trigger reactions. The living landslide can\u2019t Crumble again for 1d4 rounds."
     }],
     "attacks": [{
         "name": "Melee",
@@ -22543,9 +23079,10 @@ const monsters = [{
     "family": "Giant",
     "level": 13,
     "alignment": "Chaotic Good",
-    "type": "Giant",
+    "type": "Giant, Humanoid",
     "size": "Huge",
     "traits": ["CG", "Huge", "Amphibious", "Giant", "Humanoid"],
+    "recallKnowledge": "Society: DC 31",
     "source": "Bestiary pg. 174",
     "Perception": " +24; low-light vision",
     "Languages": ["Auran", "Common", "Draconic", "Jotun"],
@@ -22640,7 +23177,7 @@ const monsters = [{
         "text": "  ",
         "action": "Reaction",
         "Trigger": " The storm lord takes damage from a hostile action. ",
-        "Effect": " The storm lord disperses. Until the end of the current turn, it can\u2019t be attacked or targeted, doesn\u2019t take up space, and any auras or emanations it has are suppressed. At the end of the turn, the storm lord reforms in any space in which it can flt within 50 feet of where it dispersed and any auras or emanations it has are restored as long as their duration didn\u2019t run out while it was dispersed."
+        "Effect": " The storm lord disperses. Until the end of the current turn, it can\u2019t be attacked or targeted, doesn\u2019t take up space, and any auras or emanations it has are suppressed. At the end of the turn, the storm lord reforms in any space in which it can fit within 50 feet of where it dispersed and any auras or emanations it has are restored as long as their duration didn\u2019t run out while it was dispersed."
     }],
     "attacks": [{
         "name": "Melee",
@@ -22799,7 +23336,7 @@ const monsters = [{
     }],
     "text": "Although more powerful linnorms exist, the multi-headed tarn linnorm can wreak an awe-inspiring amount of devastation."
 }, {
-    "name": "Tengu Sneak",
+    "name": "Tengu",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=392",
     "family": "\u2014",
     "level": 2,
@@ -22910,7 +23447,7 @@ const monsters = [{
         "name": "Sticky Spores",
         "text": " A creature hit by a terotricus\u2019s spores must succeed at a DC 40 Reflex save or take a \u201310-foot status penalty to all its Speeds for 1 minute. On a critical failure, the creature is immobilized until it Escapes (DC 40)."
     }],
-    "text": "The legendary terotricus is a massive slime-mold that hails from the Abyss. Its collective consciousness encapsulates entire regions, spreading as far as its ever-growing cloud of spores will take it. Once it has seeped onto the Material Plane from the Abyssal realm, a terotricus\u2019s agenda is to feed on all living creatures, infecting them with its spores, and its presence can spell doom for any in its way., Terotricuses move by rapidly expanding and contracting their slimy \u201cbodies,\u201d which are capable of burrowing through soil, gliding across water, and scrabbling up steep slopes. These behemoths of rot don\u2019t need to travel to see their plans come to fruition, though; their spores easily latch onto demons and other denizens of the Abyss, who in turn bring this blight to the Material Plane when the flends are summoned., When a terotricus infects a creature with its spores, web-like fungal growths start appearing on the victim\u2019s skin until they cover the entire body, at which point the victim\u2019s mind is also subdued and bent to the terotricus\u2019s will. The terotricus\u2019s favored victims include animals, elves, and fey, though it is happy to infect any creature it can catch. Cults of Treerazer occasionally attempt to make contact with a terotricus, but such acts almost always simply result in a new sect of spore-blighted slaves."
+    "text": "The legendary terotricus is a massive slime-mold that hails from the Abyss. Its collective consciousness encapsulates entire regions, spreading as far as its ever-growing cloud of spores will take it. Once it has seeped onto the Material Plane from the Abyssal realm, a terotricus\u2019s agenda is to feed on all living creatures, infecting them with its spores, and its presence can spell doom for any in its way., Terotricuses move by rapidly expanding and contracting their slimy \u201cbodies,\u201d which are capable of burrowing through soil, gliding across water, and scrabbling up steep slopes. These behemoths of rot don\u2019t need to travel to see their plans come to fruition, though; their spores easily latch onto demons and other denizens of the Abyss, who in turn bring this blight to the Material Plane when the fiends are summoned., When a terotricus infects a creature with its spores, web-like fungal growths start appearing on the victim\u2019s skin until they cover the entire body, at which point the victim\u2019s mind is also subdued and bent to the terotricus\u2019s will. The terotricus\u2019s favored victims include animals, elves, and fey, though it is happy to infect any creature it can catch. Cults of Treerazer occasionally attempt to make contact with a terotricus, but such acts almost always simply result in a new sect of spore-blighted slaves."
 }, {
     "name": "Tidal Master",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=199",
@@ -22958,7 +23495,7 @@ const monsters = [{
     }],
     "text": "Tidal masters use their power over waves and water to drown their enemies."
 }, {
-    "name": "Tiefling Adept",
+    "name": "Tiefling",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=331",
     "family": "Planar Scion",
     "level": 3,
@@ -23103,9 +23640,8 @@ const monsters = [{
         "damage": " 1d12+5 piercing"
     }, {
         "name": "Melee",
-        "text": "  tongue +12 (reach 20 feet), ",
-        "actions": "Single Action",
-        "damage": " tongue pull"
+        "text": "  tongue +12 (reach 20 feet), Effect tongue pull",
+        "actions": "Single Action"
     }, {
         "name": "Melee",
         "text": "  leg +10 (agile), ",
@@ -23254,7 +23790,7 @@ const monsters = [{
     }, {
         "name": "Defoliation",
         "text": "   (primal, necromancy, plant) Treerazer exudes a pulse of sickly green light in a 30-foot-radius emanation. All plants in the area (including creatures under the effect of his aura of corruption) blacken and wither. Non-creature plants immediately wither and die. Plant creatures take 20d8 negative damage with a DC 49 basic Fortitude save. A creature that fails its save is doomed 1 for 1 minute and sickened 3. Treerazer can choose to exclude any number of plants in the area from this effect, and generally does so to preserve twisted and corrupted plants or fungi, or plant creatures that are allied to his cause. Treerazer can\u2019t use Defoliation for 1d4 rounds.",
-        "actions": "Single Action"
+        "actions": "Two Actions"
     }, {
         "name": "Trigger",
         "text": "   (abjuration, primal) Frequency once per round;  Treerazer hits a creature, object, or spell effect with a weapon Strike or a defoliation attack. Effect Treerazer casts his innate dispel magic, targeting the creature he hit with his Strike or one spell affecting that creature.",
@@ -23413,7 +23949,7 @@ const monsters = [{
     "Fort": " +17, ",
     "Ref": " +11, ",
     "Will": " +7",
-    "HP": " 115, regeneration 20 (deactivated by acid or  re); ",
+    "HP": " 115, regeneration 20 (deactivated by acid or fire); ",
     "Weaknesses": " fire 10",
     "Speed": " 30 feet",
     "spells": [],
@@ -23504,10 +24040,10 @@ const monsters = [{
     "family": "\u2014",
     "level": 3,
     "alignment": "Chaotic Good",
-    "type": "Beast",
+    "type": "Beast, Fey",
     "size": "Large",
     "traits": ["CG", "Large", "Beast", "Fey"],
-    "recallKnowledge": "rcana: DC 18",
+    "recallKnowledge": "Nature: DC 18",
     "source": "Bestiary pg. 316",
     "Perception": " +13; darkvision, scent (imprecise) 30 feet",
     "Languages": ["Common", "Sylvan"],
@@ -23561,7 +24097,7 @@ const monsters = [{
     "size": "Medium",
     "traits": ["No Alignment", "Medium", "Mindless"],
     "source": "Core Rulebook pg. 380",
-    "Perception": " +0",
+    "Perception": " +0; darkvision",
     "Languages": [],
     "Str": " -4, ",
     "Dex": " +2, ",
@@ -23575,7 +24111,7 @@ const monsters = [{
     "Ref": " +4, ",
     "Will": " +0",
     "HP": " 4; ",
-    "Immunities": " disease, mental, non-magical attacks, paralysis, poison, precision, unconscious;\r\n; ",
+    "Immunities": " disease, mental, non-magical attacks, paralysis, poison, precision, unconscious\r\n; ",
     "Resistances": " all damage 5 (except force or ghost touch)",
     "Speed": " fly 30 feet",
     "spells": [],
@@ -24149,7 +24685,7 @@ const monsters = [{
     "Int": " +2, ",
     "Wis": " +3, ",
     "Cha": " +3",
-    "AC": " 26, ",
+    "AC": " 28, ",
     "Fort": " +20, ",
     "Ref": " +18, ",
     "Will": " +15; +1 status to all saves vs. magic",
@@ -24227,7 +24763,7 @@ const monsters = [{
     "Speed": " 40 feet",
     "spells": [],
     "Languages": [],
-    "skills": ["Acrobatics", " +7, ", "Acrobatics", " +11"],
+    "skills": ["Acrobatics", " +7, ", "Athletics", " +11"],
     "items": [],
     "actions": [{
         "name": "Buck",
@@ -24321,10 +24857,8 @@ const monsters = [{
         "name": "Avenging Bite",
         "text": "  ",
         "action": "Reaction",
-        "Trigger": " A creature within reach of the warg\u2019s jaws attacks one of the warg\u2019s allies. "
-    }, {
-        "name": "Eflect",
-        "text": " The warg makes a jaws Strike against the triggering creature."
+        "Trigger": " A creature within reach of the warg\u2019s jaws attacks one of the warg\u2019s allies. ",
+        "Effect": " The warg makes a jaws Strike against the triggering creature."
     }],
     "attacks": [{
         "name": "Melee",
@@ -24384,9 +24918,8 @@ const monsters = [{
         "damage": " 4d12+9 bludgeoning plus energy drain"
     }, {
         "name": "Melee",
-        "text": "  animated weapon +30 (agile, magical, reach 100 feet, versatile B, versatile P), ",
-        "actions": "Single Action",
-        "damage": " four of the weapon\u2019s damage dice +9 of the weapon\u2019s damage type"
+        "text": "  animated weapon +30 (agile, magical, reach 100 feet, versatile B, versatile P), Effect four of the weapon\u2019s damage dice +9 of the weapon\u2019s damage type",
+        "actions": "Single Action"
     }, {
         "name": "Ranged",
         "text": "  scrap ball +28 (magical, range increment 100 feet), ",
@@ -24488,7 +25021,7 @@ const monsters = [{
     "actions": [],
     "attacks": [{
         "name": "Melee",
-        "text": "  claw +8, ",
+        "text": "  claw +8 (finesse), ",
         "actions": "Single Action",
         "damage": " 1d6+1 slashing"
     }, {
@@ -24687,10 +25220,10 @@ const monsters = [{
     "family": "Werecreature",
     "level": 4,
     "alignment": "Lawful Good",
-    "type": "Beast",
+    "type": "Beast, Humanoid",
     "size": "Large",
     "traits": ["Uncommon", "LG", "Large", "Beast", "Human", "Humanoid", "Werecreature"],
-    "recallKnowledge": "rcana: DC 21",
+    "recallKnowledge": "Society: DC 21",
     "source": "Bestiary pg. 331",
     "Perception": " +11; low-light vision, scent (imprecise) 30 feet",
     "Languages": ["Common"],
@@ -24739,7 +25272,7 @@ const monsters = [{
         "damage": " 1d6+7 slashing"
     }, {
         "name": "Change Shape",
-        "text": "   (concentrate, polymorph, primal, transmutation)",
+        "text": "   (concentrate, polymorph, primal, transmutation) Medium human with fist +13 for 1d4+7 bludgeoning, or grizzly bear with Speed 35 feet.",
         "actions": "Single Action"
     }, {
         "name": "Saving Throw",
@@ -24765,10 +25298,10 @@ const monsters = [{
     "family": "Werecreature",
     "level": 2,
     "alignment": "Lawful Evil",
-    "type": "Beast",
+    "type": "Beast, Humanoid",
     "size": "Medium",
     "traits": ["LE", "Medium", "Beast", "Human", "Humanoid", "Werecreature"],
-    "recallKnowledge": "rcana: DC 16",
+    "recallKnowledge": "Society: DC 16",
     "source": "Bestiary pg. 329",
     "Perception": " +8; low-light vision, scent (imprecise) 30 feet",
     "Languages": ["Common"],
@@ -24787,7 +25320,7 @@ const monsters = [{
     "Weaknesses": " silver 5",
     "Speed": " 25 feet",
     "spells": [],
-    "skills": ["Acrobatics", " +8, ", "Athletics", " +6 (+8 to Climb or Swim), ", "Deception", " +5, ", "Religion", " +4, ", "Stealth", " +8"],
+    "skills": ["Acrobatics", " +8, ", "Athletics", " +6 (+8 to Climb or Swim), ", "Deception", " +5, ", "Society", " +4, ", "Stealth", " +8"],
     "items": ["hand crossbow (20 bolts)", ", ", "leather armor", ", ", "shortsword"],
     "actions": [{
         "name": "Nimble Dodge",
@@ -24839,10 +25372,10 @@ const monsters = [{
     "family": "Werecreature",
     "level": 3,
     "alignment": "Chaotic Evil",
-    "type": "Beast",
+    "type": "Beast, Humanoid",
     "size": "Medium",
     "traits": ["CE", "Medium", "Beast", "Human", "Humanoid", "Werecreature"],
-    "recallKnowledge": "rcana: DC 18",
+    "recallKnowledge": "Society: DC 18",
     "source": "Bestiary pg. 330",
     "Perception": " +9; low-light vision, scent (imprecise) 30 feet",
     "Languages": ["Common"],
@@ -24861,7 +25394,7 @@ const monsters = [{
     "Weaknesses": " silver 5",
     "Speed": " 25 feet",
     "spells": [],
-    "skills": ["Acrobatics", " +7, ", "Athletics", " +9, ", "Stealth", " +10"],
+    "skills": ["Acrobatics", " +7, ", "Athletics", " +9, ", "Survival", " +10"],
     "items": ["battle axe", ", ", "composite shortbow (20 arrows)", ", ", "studded leather armor"],
     "actions": [{
         "name": "Attack of Opportunity",
@@ -24949,7 +25482,7 @@ const monsters = [{
         "text": " (divine, necromancy) When the wight damages a living creature with its claw Strike, the wight gains 3 temporary Hit Points and the creature must succeed at a DC 17 Fortitude save or become drained 1. Further damage dealt by the wraith increases the amount of drain by 1 on a failed save to a maximum of drained 4"
     }, {
         "name": "Wight Spawn",
-        "text": " (divine, necromancy) A living humanoid slain by a wight\u2019s claw Strike rises as a wight after 1d4 rounds. This wight spawn is under the command of the wight that killed it. It doesn\u2019t have Drain Life or Wight Spawn and becomes clumsy 2 for as long as it is a wight spawn. If the creator of the wight spawn dies, the wight spawn becomes a full-fledged, autonomous wight; it regains its free will, gains Drain Life and Wight Spawn, and is no longer clumsy.clumsy 2"
+        "text": " (divine, necromancy) A living humanoid slain by a wight\u2019s claw Strike rises as a wight after 1d4 rounds. This wight spawn is under the command of the wight that killed it. It doesn\u2019t have Drain Life or Wight Spawn and becomes clumsy 2 for as long as it is a wight spawn. If the creator of the wight spawn dies, the wight spawn becomes a full-fledged, autonomous wight; it regains its free will, gains Drain Life and Wight Spawn, and is no longer clumsy."
     }],
     "text": "Wights are undead humanoids that, much like wraiths, can drain the life from living creatures with but a touch. They arise as a result of necromantic rituals, especially violent deaths, or the sheer malevolent will of the deceased., As many types of wights exist as types of people from which they might be created. Hulking brutes, skittering sneaks, and cunning tinkers all make for different wights with different niches to fill. Environment, too, plays a part in determining a wight\u2019s special abilities and defenses. Frost wights, for instances, can be found in the parts of the world where exposure is a common end. Regardless, wights typically haunt burial grounds, catacombs, or other places of the dead. But their hunger is targeted toward the living\u2014those individuals who remind them of the shackles of mortality and whom they feel compelled to \u201cfree\u201d to the state of undeath., A single wight can wreak a lot of havoc if it is compelled to rise from its tomb. Because creatures slain by wights become wights as well, all it takes is a single wight and a handful of unlucky graveyard visitors to create a veritable horde of these undead. Thus, canny priests and adventurers know that the best solution to a wight problem is swift and total eradication. Care must be taken, though, to destroy wight spawn before attempting to destroy the parent wight, for spawn without a master gain the ability to create spawn of their own., Durable and sustained as they are by negative energy, wights can last in harsh environments without decaying the way some lesser undead do. They might dwell in high mountain passes, sealed passageways, or submerged in bogs or lakes for decades or even centuries before the passage of an unsuspecting traveler rouses them from their rest."
 }, {
@@ -25035,15 +25568,14 @@ const monsters = [{
     "items": [],
     "actions": [{
         "name": "Buck",
-        "text": " [reaction] DC 21\n"
+        "text": "  DC 21\n",
+        "action": "Reaction"
     }, {
         "name": "Avenging Bite",
         "text": "  ",
         "action": "Reaction",
-        "Trigger": " A creature within reach of the warg\u2019s jaws attacks one of the warg\u2019s allies. "
-    }, {
-        "name": "Eflect",
-        "text": " The warg makes a jaws Strike against the triggering creature."
+        "Trigger": " A creature within reach of the warg\u2019s jaws attacks one of the warg\u2019s allies. ",
+        "Effect": " The warg makes a jaws Strike against the triggering creature."
     }],
     "attacks": [{
         "name": "Melee",
@@ -25059,6 +25591,64 @@ const monsters = [{
         "text": " The winter wolf\u2019s Strikes deal 1d6 extra damage to creatures within the reach of at least two of the winter wolf\u2019s allies."
     }],
     "text": "Winter wolves are related to wargs, but are larger, smarter, and far more dangerous. They are capable of exhaling plumes of freezing breath and are big enough to easily serve as mounts for orcs and hobgoblins\u2014provided the winter wolf is willing, of course. Like wargs, winter wolves hunt in packs, but unlike their smaller cousins, they have a notable proud streak. When they deign to serve others, they reserve this privilege for larger and more dangerous creatures such as frost giants, renegade yetis, or even white dragons."
+}, {
+    "name": "Witchwyrd",
+    "link": "https://2e.aonprd.com/Monsters.aspx?ID=486",
+    "family": "\u2014",
+    "level": 6,
+    "alignment": "Lawful Neutral",
+    "type": "Humanoid",
+    "size": "Medium",
+    "traits": ["Uncommon", "LN", "Medium", "Humanoid"],
+    "recallKnowledge": "Society: DC 24",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 90",
+    "Perception": " +12; darkvision, ",
+    "Languages": ["Common", "Draconic", "tongues"],
+    "Str": " +3, ",
+    "Dex": " +3, ",
+    "Con": " +1, ",
+    "Int": " +4, ",
+    "Wis": " +3, ",
+    "Cha": " +5",
+    "AC": " 22, ",
+    "Fort": " +13, ",
+    "Ref": " +13, ",
+    "Will": " +15",
+    "HP": " 110; ",
+    "Resistances": " force 5",
+    "Effect": "<i>magic missile</i>",
+    "Speed": " 25 feet",
+    "spells": [{
+        "name": "Arcane Innate Spells",
+        "text": " DC 23, attack +15; 5th dimension door; 4th resilient sphere, resist energy (x2), suggestion; 3rd dispel magic; 2nd mirror image; 1st floating disk (at will), unseen servant (at will); Cantrips (3rd) detect magic; (5th)tonguesWhile witchwyrds often appear to be solitary creatures, the most successful among them rarely wander the planes and planets alone. High-ranking or wealthy witchwyrds employ a variety of bodyguards to accompany them, and their entourage is usually composed of a variety of strange beings met during their travels."
+    }],
+    "skills": ["Arcana", " +16, ", "Deception", " +15, ", "Desert Lore", " +14 (plus one or more Lore skills related to a specific plane), ", "Diplomacy", " +15, ", "Intimidation", " +15"],
+    "items": ["+1 ranseur"],
+    "actions": [{
+        "name": "Absorb Force",
+        "text": "  (arcane, evocation, force) ",
+        "action": "Reaction"
+    }, {
+        "name": "Frequency",
+        "text": " once per round; magic missile",
+        "Effect": ". This absorbs the missile and causes that hand to glow while it holds this energy. A hand that\u2019s holding energy can\u2019t be used for any other purpose except to use Force Bolt. The energy lasts for 6 rounds or until it is released."
+    }],
+    "attacks": [{
+        "name": "Melee",
+        "text": "   +16 (disarm, magical, reach 10 feet), ",
+        "actions": "Single Action",
+        "damage": " 1d10+6 piercing"
+    }, {
+        "name": "Melee",
+        "text": "  fist +15 (agile, nonlethal), Grab",
+        "actions": "Single Action",
+        "damage": " 1d6+6 bludgeoning plus "
+    }, {
+        "name": "Force Bolt",
+        "text": "  to   (arcane, evocation, force) The witchwyrd fires one magic missile per action spent (dealing 1d4+1 damage each). It can\u2019t spend more actions on this ability than it has free hands. If it uses a hand that has Absorbed Force, that hand hurls two missiles instead of one, expending the held energy.",
+        "actions": "Three Actions"
+    }],
+    "text": "Witchwyrds are four-armed humanoid creatures with hairless blue-gray skin and glowing yellow eyes. They are typically 6-1/2 feet tall and weigh 300 pounds. Their hands possess three evenly sized and spaced digits in a tripod-like arrangement. Witchwyrds conceal most of their faces, leaving only their eyes unmasked. Their inscrutability is a boon to one of their most significant interests, mercantilism, and many haughty witchwyrds openly revel in the befuddlement inspired by their mysterious guises and mannerisms. Witchwyrds have a keen eye for new opportunities and markets, and a witchwyrd almost always knows when someone is trying to pull one over on them., When not trying to blend in with the local community, witchwyrds favor outlandish, loose-fitting clothes in bright reds or yellows and a signature conical hat. Witchwyrds tend to prefer the driest, warmest regions of the areas they visit\u2014perhaps an indicator of their mysterious home world.\r\n"
 }, {
     "name": "Wolf",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=415",
@@ -25110,7 +25700,7 @@ const monsters = [{
     "recallKnowledge": "Religion: DC 22",
     "source": "Bestiary pg. 335",
     "Perception": " +14; darkvision, lifesense 60 feet",
-    "Languages": ["Aklo", "Common"],
+    "Languages": ["Common", "Necril"],
     "Str": " -5, ",
     "Dex": " +4, ",
     "Con": " +0, ",
@@ -25211,11 +25801,11 @@ const monsters = [{
         "actions": "Two Actions"
     }, {
         "name": "Requirements",
-        "text": "   The wyvern grabbed a creature this turn using Powerful Dive.Effect The wyvern can Fly at half Speed while holding the creature in its claws, carrying that creature along with it and dropping it at the end of its movement. Alternatively, the wyvern can Strike the creature with its stinger with a +2 circumstance bonus.",
+        "text": "   The wyvern grabbed a creature this turn using Powerful Dive. Effect The wyvern can Fly at half Speed while holding the creature in its claws, carrying that creature along with it and dropping it at the end of its movement. Alternatively, the wyvern can Strike the creature with its stinger with a +2 circumstance bonus.",
         "actions": "Single Action"
     }, {
         "name": "Stage 3",
-        "text": " (poison)  Fortitude DC 22;  6 rounds; 5d6 poison damage (1 round); 6d6 poison damage (1 round); 8d6 poison damage (1 round)"
+        "text": " (poison)  Fortitude DC 22;  6 rounds;  5d6 poison damage (1 round);  6d6 poison damage (1 round);  8d6 poison damage (1 round)"
     }],
     "text": "A wyvern is a venomous drake with a well-earned reputation for impatience and aggression. As much as 15 feet long and weighing up to 1,000 pounds, a wyvern\u2019s resilient body allows it to crash talons-first into large prey without serious risk to itself. A wyvern uses its momentum to stun its target before injecting it with searing venom or carrying it over the side of a nearby cliff. Because a wyvern lacks the strength to haul its prey all the way to its nest intact, it is far more likely to lift and drop its victim over a gully or canyon and let gravity do its work before it descends to pick apart the carcass., Conversation is of little interest to a wyvern, as the creature typically speaks only to taunt its prey, issue territorial claims, or demand tribute. Even so, many wyverns enjoy grim humor and tales of violent acts, particularly if those acts were committed by the storyteller. A wyvern properly appeased with meat, entertainment, and treasure sometimes agrees to provide assistance ranging from giving directions to serving as a mount for a powerful humanoid. However, these arrangements rarely last more than a few weeks before the wyvern\u2019s pride, malice, or insolence inspires it to flee or even betray its allies. Only the truly cruel can cow a wyvern into servitude for an extended period, as most wyverns are so self-interested that they go out of their way to avoid helping others."
 }, {
@@ -25269,6 +25859,65 @@ const monsters = [{
         "text": " The xorn can Burrow through any earthen matter, including rock. When it does so, the xorn moves at its full burrow Speed, leaving no tunnels or signs of its passing."
     }],
     "text": "These squat, rotund elementals have three legs, three arms, three eyes, and one massive maw, which they fill with the gems and metals they find so delicious."
+}, {
+    "name": "Xotanispawn",
+    "link": "https://2e.aonprd.com/Monsters.aspx?ID=487",
+    "family": "\u2014",
+    "level": 17,
+    "alignment": "Chaotic Evil",
+    "type": "Animal",
+    "size": "Large",
+    "traits": ["Rare", "CE", "Large", "Animal", "Fire"],
+    "recallKnowledge": "Nature: DC 41",
+    "source": "Pathfinder #149: Against the Scarlet Triad pg. 91",
+    "Perception": " +29; darkvision, tremorsense (imprecise) 60 feet",
+    "Str": " +9, ",
+    "Dex": " +6, ",
+    "Con": " +8, ",
+    "Int": " -5, ",
+    "Wis": " +4, ",
+    "Cha": " +5 (, , , ) 60 feet, DC 36",
+    "AC": " 40, ",
+    "Fort": " +31, ",
+    "Ref": " +29, ",
+    "Will": " +23",
+    "HP": " 340; ",
+    "Immunities": " chaotic, evil, fire; ",
+    "Weaknesses": " cold 20",
+    "Speed": " 40 feet, burrow 40 feet, climb 40 feet",
+    "spells": [],
+    "Languages": [],
+    "skills": ["Athletics", " +34, ", "Stealth", " +31, ", "Survival", " +29"],
+    "items": [],
+    "actions": [{
+        "name": "Explosion",
+        "text": " (fire) When a Xotanispawn dies, it explodes, dealing 15d8 fire damage to creatures in a 30-foot emanation (DC 39 basic Reflex save).Light Blindness "
+    }, {
+        "name": "Internal Furnace",
+        "text": "  (fire) persistent",
+        "action": "Reaction",
+        "Trigger": " A creature adjacent to the Xotanispawn touches it or hits it with a physical attack; ",
+        "Effect": " fire damage (DC 37 Reflex save to negate)."
+    }],
+    "attacks": [{
+        "name": "Melee",
+        "text": "  jaws +30 (reach 10 feet), persistentGrab",
+        "actions": "Single Action",
+        "damage": " fire and "
+    }, {
+        "name": "Melee",
+        "text": "  claw +30 (agile, reach 10 feet), persistent",
+        "actions": "Single Action",
+        "damage": " fire"
+    }, {
+        "name": "Breath Weapon",
+        "text": "   (arcane, evocation, fire) The Xotanispawn sprays a 60-foot cone of magma that deals 10d10 fire damage and 2d6 persistent fire damage to all creatures in the area (DC 39 basic Reflex save). The Xotanispawn can\u2019t use its Breath Weapon again for 1d4 rounds.",
+        "actions": "Two Actions"
+    }, {
+        "name": "Heat Surge",
+        "text": " When the Xotanispawn critically hits, its body surges with heat, increasing the damage of its Internal Furnace to 10d8 until the start of its next turn."
+    }],
+    "text": "Xotanispawn are monstrous versions of scavenging beetle larvae that\r\nhave been corrupted and mutated by feeding on the remains of Xotani\r\nthe Firebleeder, a slain Spawn of Rovagug buried beneath Pale Mountain\r\nin Katapesh. These creatures look vaguely like the minute insects they\r\nonce were, with a sclerotized head and chitinous body plates, six legs,\r\nand numerous dorsal spines lining the joints and edges of each segment.\r\nHowever, by feeding on the unholy remains of Xotani, the spawn have\r\nmanifested many of the traits of the infamous Firebleeder, most notably\r\na blisteringly hot internal temperature and powerful fire attacks\u2014to say\r\nnothing of their monstrous size.,\r\nInternal heat radiates from every surface of a Xotanispawn, even from\r\nits mouth. Any contact with a Xotanispawn results in burns and the risk\r\nof catching on fire. Thankfully, Xotanispawn have also inherited Xotani\u2019s\r\nweaknesses to cold and sunlight. They are rarely encountered on the\r\nsurface during the day, opting to emerge from their subterranean lairs only\r\nat night."
 }, {
     "name": "Xulgath Leader",
     "link": "https://2e.aonprd.com/Monsters.aspx?ID=420",
@@ -25677,7 +26326,7 @@ const monsters = [{
     "recallKnowledge": "rcana: DC 23",
     "source": "Bestiary pg. 117",
     "Perception": " +15; darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 30 feet",
-    "Languages": ["Common", "Draconic", "Gnomish", "Halfling", "speak with animals"],
+    "Languages": ["Common", "Draconic", "Gnomish", "Halfling", "Sylvan", "speak with animals"],
     "Str": " +5, ",
     "Dex": " +2, ",
     "Con": " +3, ",
@@ -26355,7 +27004,7 @@ const monsters = [{
         "actions": "Two Actions"
     }, {
         "name": "Draconic Frenzy",
-        "text": "   The dragon makes two claw Strikes and one tail Strike in any orde",
+        "text": "   The dragon makes two claw Strikes and one tail Strike in any order.",
         "actions": "Two Actions"
     }, {
         "name": "Draconic Momentum",
@@ -26533,7 +27182,7 @@ const monsters = [{
     "traits": ["NE", "Huge", "Mindless", "Undead", "Zombie"],
     "recallKnowledge": "Religion: DC 22",
     "source": "Bestiary pg. 341",
-    "Perception": " +8",
+    "Perception": " +8; darkvision",
     "Str": " +7, ",
     "Dex": " -1, ",
     "Con": " +4, ",
