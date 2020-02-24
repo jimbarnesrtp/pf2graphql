@@ -115,17 +115,78 @@ consum.write("module.exports = { ammunition, other, oils, potions, talismans}\n"
 
 consum.close
 
-### loading consumables
+### loading alchemical items
 with open('alchemical-pf2.json') as f:
-  data6 = json.load(f)
+  data7 = json.load(f)
 
 filealchem = "alchemicalitems.js"
 alchem = open(filealchem, "w")
-alchem.write("const bombs = "+json.dumps(data6['bombs'])+"\n")
-alchem.write("const elixirs = "+json.dumps(data6['elixirs'])+"\n")
-alchem.write("const poisons = "+json.dumps(data6['poisons'])+"\n")
-alchem.write("const tools = "+json.dumps(data6['tools'])+"\n")
+alchem.write("const bombs = "+json.dumps(data7['bombs'])+"\n")
+alchem.write("const elixirs = "+json.dumps(data7['elixirs'])+"\n")
+alchem.write("const poisons = "+json.dumps(data7['poisons'])+"\n")
+alchem.write("const tools = "+json.dumps(data7['tools'])+"\n")
 alchem.write("\n")
 alchem.write("module.exports = { bombs, elixirs, poisons, tools}\n")
 
 alchem.close
+
+### loading shields
+with open('shields-pf2.json') as f:
+  data8 = json.load(f)
+
+fileshield = "shields.js"
+shield = open(fileshield, "w")
+shield.write("const baseShields = "+json.dumps(data8['baseShields'])+"\n")
+shield.write("const specialMaterialShields = "+json.dumps(data8['specialMaterialShields'])+"\n")
+shield.write("const specificShields = "+json.dumps(data8['specificShields'])+"\n")
+shield.write("\n")
+shield.write("module.exports = { baseShields, specialMaterialShields, specificShields}\n")
+
+shield.close
+
+## loading focus spells
+with open('focus-spells-pf2.json') as f:
+  data9 = json.load(f)
+
+filefspells = "focusspells.js"
+fspells = open(filefspells, "w")
+fspells.write("const spellList = "+json.dumps(data9['spells'])+"\n")
+fspells.write("\n")
+fspells.write("module.exports = { spellList}\n")
+fspells.close
+
+## loading rituals
+with open('rituals-pf2.json') as f:
+  data10 = json.load(f)
+
+filerituals = "rituals.js"
+rituals = open(filerituals, "w")
+rituals.write("const rituals = "+json.dumps(data10['rituals'])+"\n")
+rituals.write("\n")
+rituals.write("module.exports = { rituals}\n")
+rituals.close
+
+## loading armors
+with open('armor-pf2.json') as f:
+  data11 = json.load(f)
+
+filearmor = "armors.js"
+armor = open(filearmor, "w")
+armor.write("const armorList = "+json.dumps(data11['baseArmor'])+"\n")
+armor.write("const baseMagicArmor = "+json.dumps(data11['baseMagicArmor'])+"\n")
+armor.write("const preciousMaterialArmor = "+json.dumps(data11['preciousMaterialArmor'])+"\n")
+armor.write("const magicArmorList = "+json.dumps(data11['magicArmor'])+"\n")
+armor.write("\n")
+armor.write("module.exports = { armorList, baseMagicArmor,preciousMaterialArmor,magicArmorList}\n")
+armor.close
+
+## loading conditions
+with open('conditions-pf2.json') as f:
+  data12 = json.load(f)
+
+filecond = "conditions.js"
+cond = open(filecond, "w")
+cond.write("const conditions = "+json.dumps(data12['conditions'])+"\n")
+cond.write("\n")
+cond.write("module.exports = { conditions}\n")
+cond.close
